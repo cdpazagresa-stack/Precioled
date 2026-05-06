@@ -266,6 +266,30 @@
                         <button class="period-btn btn text-[10px] px-0 h-12" data-period="PRÓRROGA" onclick="setPeriod(this)">PRÓR</button>
                         <button class="period-btn btn text-[10px] px-0 h-12" data-period="FINAL" onclick="setPeriod(this)">FIN</button>
                     </div>
+
+                    <!-- Tournament & Halftime Config -->
+                    <div class="mt-4 space-y-3 p-3 bg-black/30 rounded-2xl border border-white/5">
+                        <h3 class="text-[10px] font-black text-cdpa-yellow uppercase tracking-[0.2em]">🏆 Etiqueta del Partido</h3>
+                        <input type="text" id="tournament-name-input" class="form-input text-xs" placeholder="Ej: Liga Intercomarcal, Copa Navarra..." oninput="updateTournamentName()">
+                        <input type="text" id="halftime-team-input" class="form-input text-xs" placeholder="Subtítulo Descanso: Ej: Infantil, Cadete..." oninput="updateHalftimeTeamName()">
+                        <p class="text-[9px] text-gray-600 italic">El nombre aparece arriba del marcador. El subtítulo se muestra en la pantalla de DESCANSO.</p>
+                    </div>
+
+                    <!-- Sponsor Logos Management -->
+                    <div class="mt-4 space-y-3 p-3 bg-black/30 rounded-2xl border border-white/5">
+                        <h3 class="text-[10px] font-black text-cdpa-yellow uppercase tracking-[0.2em]">📢 Patrocinadores (Logos Rotativos)</h3>
+                        <div class="flex gap-2">
+                            <input type="text" id="sponsor-name-input" class="form-input text-xs flex-1" placeholder="Nombre Patrocinador">
+                            <input type="text" id="sponsor-logo-input" class="form-input text-xs flex-1" placeholder="URL del Logo (opcional)">
+                            <button class="btn btn-success text-xs" onclick="addSponsorLogo()">+</button>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <label class="text-[9px] text-gray-500 font-bold">Rotación (seg):</label>
+                            <input type="number" id="sponsor-interval-input" class="form-input w-16 text-center text-xs" value="8" min="3" max="60" onchange="updateSponsorInterval()">
+                        </div>
+                        <div id="sponsor-logos-list" class="max-h-32 overflow-y-auto space-y-1 bg-black/20 p-2 rounded-xl"></div>
+                        <p class="text-[9px] text-gray-600 italic">Los logos rotan automáticamente en la parte inferior del marcador.</p>
+                    </div>
                 </div>
             </div>
 

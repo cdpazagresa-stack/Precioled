@@ -79,8 +79,9 @@ function renderDisplay() {
         renderDualMatch();
     }
     
-    renderSponsors();
+    renderSponsorOverlay();
     renderGraphics();
+    renderHalftimeOverlay();
 }
 
 // ── Single Match Render ─────────────────────────────────────
@@ -124,6 +125,9 @@ function renderSingleMatch() {
 
     // Fouls
     renderFouls(1);
+
+    // Tournament label
+    renderTournamentLabel();
 }
 
 // ── Dual Match Render ───────────────────────────────────────
@@ -216,23 +220,104 @@ function renderFouls(fieldNum) {
     }
 }
 
-// ── Sponsors Render ─────────────────────────────────────────
-function renderSponsors() {
-    const sponsors = matchState.sponsors || [];
-    if (sponsors.length === 0 || sponsors.every(s => !s.name)) return;
+// ── Tournament Label Render ─────────────────────────────────
+function renderTournamentLabel() {
+    const labelEl = document.getElementById('tournament-label');
+    const textEl = document.getElementById('tournament-text');
+    if (!labelEl || !textEl) return;
     
-    const tracks = document.querySelectorAll('[id^="sponsor-track"]');
-    tracks.forEach(track => {
-        // Duplicate for seamless scroll
-        const items = sponsors.filter(s => s.name).map(s => `
-            <div class="sponsor-item">
-                <span class="sponsor-prefix">${s.prefix}:</span>
-                <span class="sponsor-name">${s.name}</span>
-            </div>
-            <div class="sponsor-separator">◆</div>
-        `).join('');
-        track.innerHTML = items + items; // Duplicate for seamless loop
-    });
+    const name = matchState.tournamentName;
+    if (name && name.trim()) {
+        textEl.textContent = name;
+        labelEl.style.display = 'block';
+    } else {
+        labelEl.style.display = 'none';
+    }
+}
+
+// ── Halftime Overlay Render ─────────────────────────────────
+function renderHalftimeOverlay() {
+    const overlay = document.getElementById('halftime-overlay');
+    if (!overlay) return;
+    
+    const f = matchState.fields[1];
+    const isHalftime = f.period === 'DESCANSO';
+    
+    if (isHalftime) {
+        // Update badges and scores
+        setBadge('halftime-home-badge', f.homeBadge, f.homeName);
+        setBadge('halftime-away-badge', f.awayBadge, f.awayName);
+        setText('halftime-home-score', f.homeScore);
+        setText('halftime-away-score', f.awayScore);
+        
+        // Set title and subtitle
+        setText('halftime-title', 'DESCANSO');
+        const subtitle = matchState.halftimeTeamName || '';
+        setText('halftime-subtitle', subtitle);
+        
+        overlay.classList.add('active');
+    } else {
+        overlay.classList.remove('active');
+    }
+}
+
+// ── Sponsor Overlay Render (Rotating Logos) ─────────────────
+let _sponsorInterval = null;
+let _sponsorIndex = 0;
+let _lastSponsorKey = '';
+
+function renderSponsorOverlay() {
+    const overlay = document.getElementById('sponsor-overlay');
+    const content = document.getElementById('sponsor-overlay-content');
+    if (!overlay || !content) return;
+    
+    const logos = matchState.sponsorLogos || [];
+    if (logos.length === 0) {
+        overlay.style.display = 'none';
+        if (_sponsorInterval) { clearInterval(_sponsorInterval); _sponsorInterval = null; }
+        return;
+    }
+    
+    // Check if sponsors changed
+    const key = logos.map(l => l.name + l.logoUrl).join('|');
+    if (key === _lastSponsorKey) return;
+    _lastSponsorKey = key;
+    
+    overlay.style.display = 'block';
+    _sponsorIndex = 0;
+    showSponsorAtIndex(content, logos, 0);
+    
+    // Clear old interval and start new
+    if (_sponsorInterval) clearInterval(_sponsorInterval);
+    const interval = (matchState.sponsorRotationInterval || 8) * 1000;
+    _sponsorInterval = setInterval(() => {
+        _sponsorIndex = (_sponsorIndex + 1) % logos.length;
+        showSponsorAtIndex(content, logos, _sponsorIndex);
+    }, interval);
+}
+
+function showSponsorAtIndex(container, logos, idx) {
+    const logo = logos[idx];
+    if (!logo) return;
+    
+    // Fade out first
+    container.style.animation = 'sponsorFadeOut 0.4s ease forwards';
+    setTimeout(() => {
+        if (logo.logoUrl) {
+            container.innerHTML = `
+                <div class="sponsor-logo-wrapper">
+                    <img class="sponsor-logo" src="${logo.logoUrl}" alt="${logo.name}" onerror="this.style.display='none'">
+                </div>
+            `;
+        } else {
+            container.innerHTML = `
+                <div class="sponsor-logo-wrapper">
+                    <span class="sponsor-name-text">${logo.name}</span>
+                </div>
+            `;
+        }
+        container.style.animation = 'sponsorFadeIn 0.6s ease forwards';
+    }, 400);
 }
 
 // ── Goal Overlay ────────────────────────────────────────────

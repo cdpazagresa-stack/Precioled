@@ -72,8 +72,15 @@ const DEFAULT_MATCH_STATE = {
     sponsors: [
         { prefix: 'Patrocina', name: '' },
     ],
+    // Tournament / Match Label (shows at top of display)
+    tournamentName: '',
+    // Sponsor logos for rotating overlay
+    sponsorLogos: [],  // [{name, logoUrl}]
+    sponsorRotationInterval: 8, // seconds between sponsor logo changes
+    // Halftime overlay config
+    halftimeTeamName: '', // e.g. "Infantil" — shown during DESCANSO overlay
     // New fields for graphics
-    activeGraphic: null, // null, 'lineup', 'substitution', 'card', 'referees', 'summary'
+    activeGraphic: null, // null, 'lineup', 'substitution', 'card', 'referees', 'summary', 'halftime'
     graphicData: {}
 };
 

@@ -41,82 +41,92 @@
 </head>
 <body class="bg-black overflow-hidden cursor-none select-none" id="display-body">
 
+    <!-- Tournament / Match Label (Global) -->
+    <div class="tournament-label" id="tournament-label" style="display:none">
+        <span id="tournament-text"></span>
+    </div>
+
     <!-- ============================================================ -->
-    <!-- SINGLE MATCH MODE -->
+    <!-- HERO DISPLAY FRAME (3D PERSPECTIVE) -->
     <!-- ============================================================ -->
-    <div id="single-match" class="match-container">
+    <div class="scoreboard-hero-frame">
+        <div class="perspective-container">
+            <div id="single-match" class="match-container">
         <!-- Top Gradient Line -->
         <div class="top-accent"></div>
 
         <!-- Main Scoreboard Area -->
         <div class="scoreboard-main">
-            
-            <!-- HOME TEAM -->
-            <div class="team-section team-home">
-                <div class="team-identity">
-                    <div class="badge-container">
-                        <img id="home-badge" src="assets/escudos/default.svg" alt="Local" class="team-badge">
-                        <div class="badge-glow"></div>
-                    </div>
-                    <div class="team-info">
-                        <span class="team-name" id="home-name">EQUIPO LOCAL</span>
-                        <div class="team-cards">
-                            <div class="team-fouls" id="home-fouls-container" style="display:none">
-                                <span class="foul-label">FALTAS</span>
-                                <span class="foul-count" id="home-fouls">0</span>
+            <div class="score-row">
+                <!-- HOME TEAM -->
+                <div class="team-section team-home">
+                    <div class="team-identity">
+                        <div class="badge-container">
+                            <img id="home-badge" src="assets/escudos/default.svg" alt="Local" class="team-badge">
+                            <div class="badge-glow"></div>
+                        </div>
+                        <div class="team-info">
+                            <span class="team-name" id="home-name">EQUIPO LOCAL</span>
+                            <div class="team-cards">
+                                <div class="team-fouls" id="home-fouls-container" style="display:none">
+                                    <span class="foul-label">FALTAS</span>
+                                    <span class="foul-count" id="home-fouls">0</span>
+                                </div>
+                                <span class="card-yellow" id="home-yellows" style="display:none">
+                                    <span class="card-icon yellow"></span><span class="card-count">0</span>
+                                </span>
+                                <span class="card-red" id="home-reds" style="display:none">
+                                    <span class="card-icon red"></span><span class="card-count">0</span>
+                                </span>
                             </div>
-                            <span class="card-yellow" id="home-yellows" style="display:none">
-                                <span class="card-icon yellow"></span><span class="card-count">0</span>
-                            </span>
-                            <span class="card-red" id="home-reds" style="display:none">
-                                <span class="card-icon red"></span><span class="card-count">0</span>
-                            </span>
                         </div>
                     </div>
+                    <div class="score-box">
+                        <span class="score-number" id="home-score">0</span>
+                    </div>
                 </div>
-                <div class="score-box">
-                    <span class="score-number" id="home-score">0</span>
-                </div>
-            </div>
 
-            <!-- CENTER: Timer + Period -->
-            <div class="center-section">
-                <div class="timer-container">
-                    <div class="timer-display" id="timer-display">00:00</div>
-                    <div class="period-badge" id="period-badge">1ª PARTE</div>
-                </div>
-                <div class="vs-separator">
+                <!-- CENTER: VS Dots -->
+                <div class="center-divider">
                     <div class="vs-dot"></div>
                     <div class="vs-line"></div>
                     <div class="vs-dot"></div>
                 </div>
-            </div>
 
-            <!-- AWAY TEAM -->
-            <div class="team-section team-away">
-                <div class="score-box">
-                    <span class="score-number" id="away-score">0</span>
-                </div>
-                <div class="team-identity">
-                    <div class="team-info team-info-away">
-                        <span class="team-name" id="away-name">EQUIPO VISITANTE</span>
-                        <div class="team-cards">
-                            <div class="team-fouls" id="away-fouls-container" style="display:none">
-                                <span class="foul-label">FALTAS</span>
-                                <span class="foul-count" id="away-fouls">0</span>
+                <!-- AWAY TEAM -->
+                <div class="team-section team-away">
+                    <div class="score-box">
+                        <span class="score-number" id="away-score">0</span>
+                    </div>
+                    <div class="team-identity">
+                        <div class="team-info team-info-away">
+                            <span class="team-name" id="away-name">EQUIPO VISITANTE</span>
+                            <div class="team-cards">
+                                <div class="team-fouls" id="away-fouls-container" style="display:none">
+                                    <span class="foul-label">FALTAS</span>
+                                    <span class="foul-count" id="away-fouls">0</span>
+                                </div>
+                                <span class="card-yellow" id="away-yellows" style="display:none">
+                                    <span class="card-icon yellow"></span><span class="card-count">0</span>
+                                </span>
+                                <span class="card-red" id="away-reds" style="display:none">
+                                    <span class="card-icon red"></span><span class="card-count">0</span>
+                                </span>
                             </div>
-                            <span class="card-yellow" id="away-yellows" style="display:none">
-                                <span class="card-icon yellow"></span><span class="card-count">0</span>
-                            </span>
-                            <span class="card-red" id="away-reds" style="display:none">
-                                <span class="card-icon red"></span><span class="card-count">0</span>
-                            </span>
+                        </div>
+                        <div class="badge-container">
+                            <img id="away-badge" src="assets/escudos/default.svg" alt="Visitante" class="team-badge">
+                            <div class="badge-glow"></div>
                         </div>
                     </div>
-                    <div class="badge-container">
-                        <img id="away-badge" src="assets/escudos/default.svg" alt="Visitante" class="team-badge">
-                        <div class="badge-glow"></div>
-                    </div>
+                </div>
+            </div>
+
+            <!-- TIMER + PERIOD ROW (below scores) -->
+            <div class="timer-row">
+                <div class="timer-container">
+                    <div class="timer-display" id="timer-display">00:00</div>
+                    <div class="period-badge" id="period-badge">1ª PARTE</div>
                 </div>
             </div>
         </div>
@@ -137,26 +147,28 @@
             <span id="extra-text"></span>
         </div>
 
-        <!-- SPONSOR BAR -->
-        <div class="sponsor-bar">
-            <div class="sponsor-track" id="sponsor-track">
-                <div class="sponsor-item">
-                    <span class="sponsor-prefix">Patrocina:</span>
-                    <span class="sponsor-name">PATROCINADOR 1</span>
+        <!-- HALFTIME / DESCANSO OVERLAY (full-screen cinematic) -->
+        <!-- HALFTIME / DESCANSO OVERLAY (full-screen cinematic) -->
+        <div class="halftime-overlay" id="halftime-overlay">
+            <div class="halftime-bg"></div>
+            <div class="halftime-content">
+                <div class="halftime-badge-row">
+                    <img class="halftime-badge" id="halftime-home-badge" src="assets/escudos/default.svg" alt="">
+                    <div class="halftime-score-mini">
+                        <span id="halftime-home-score">0</span>
+                        <span class="halftime-dash">—</span>
+                        <span id="halftime-away-score">0</span>
+                    </div>
+                    <img class="halftime-badge" id="halftime-away-badge" src="assets/escudos/default.svg" alt="">
                 </div>
-                <div class="sponsor-separator">◆</div>
-                <div class="sponsor-item">
-                    <span class="sponsor-prefix">Colabora:</span>
-                    <span class="sponsor-name">PATROCINADOR 2</span>
-                </div>
-                <div class="sponsor-separator">◆</div>
-                <div class="sponsor-item">
-                    <span class="sponsor-prefix">Con el apoyo de:</span>
-                    <span class="sponsor-name">PATROCINADOR 3</span>
-                </div>
+                <div class="halftime-title" id="halftime-title">DESCANSO</div>
+                <div class="halftime-subtitle" id="halftime-subtitle"></div>
+                <div class="halftime-line"></div>
             </div>
         </div>
     </div>
+</div>
+</div>
 
     <!-- ============================================================ -->
     <!-- DUAL MATCH MODE (2 fields F8) -->
@@ -224,19 +236,13 @@
                 </div>
             </div>
         </div>
-        <!-- Shared Sponsor Bar -->
-        <div class="sponsor-bar">
-            <div class="sponsor-track" id="sponsor-track-dual">
-                <div class="sponsor-item">
-                    <span class="sponsor-prefix">Patrocina:</span>
-                    <span class="sponsor-name">PATROCINADOR 1</span>
-                </div>
-                <div class="sponsor-separator">◆</div>
-                <div class="sponsor-item">
-                    <span class="sponsor-prefix">Colabora:</span>
-                    <span class="sponsor-name">PATROCINADOR 2</span>
-                </div>
-            </div>
+    </div>
+
+    <!-- SPONSOR OVERLAY (rotating logos) -->
+    <div class="sponsor-overlay" id="sponsor-overlay" style="display:none">
+        <div class="sponsor-overlay-content" id="sponsor-overlay-content">
+            <!-- Sponsor logos injected dynamically -->
+            <img src="assets/sponsors/default-sponsor.png" id="current-sponsor-logo" alt="Patrocinador" class="sponsor-logo">
         </div>
     </div>
 

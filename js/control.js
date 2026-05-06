@@ -536,7 +536,6 @@ function importRosterFromFile(event) {
             const firstSheetName = workbook.SheetNames[0];
             const worksheet = workbook.Sheets[firstSheetName];
             
-            // Convert to JSON
             const json = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
             
             if (json.length === 0) {
@@ -546,54 +545,82 @@ function importRosterFromFile(event) {
 
             const newPlayers = [];
             let coachName = '';
+            
+            // Identify column mapping
+            let nameCol = -1;
+            let numCol = -1;
+            let startRow = 0;
 
-            json.forEach((row, index) => {
-                // Ignore headers if they look like headers (e.g. contains "nombre", "dorsal", etc.)
+            // Try to find header row in the first 5 rows
+            for (let i = 0; i < Math.min(5, json.length); i++) {
+                const row = json[i];
+                if (!row) continue;
+                
+                row.forEach((cell, idx) => {
+                    if (!cell) return;
+                    const val = cell.toString().toLowerCase();
+                    if (val.includes('nombre') || val.includes('jugador') || val.includes('player')) nameCol = idx;
+                    if (val.includes('dorsal') || val.includes('nº') || val.includes('number') || val.includes('#')) numCol = idx;
+                });
+
+                if (nameCol !== -1) {
+                    startRow = i + 1;
+                    break;
+                }
+            }
+
+            // Fallback if no headers found
+            if (nameCol === -1) {
+                nameCol = 1; // Assume 2nd column
+                numCol = 0;  // Assume 1st column
+                startRow = 0;
+            }
+
+            json.slice(startRow).forEach((row) => {
+                if (!row || row.length === 0) return;
+
                 const rowStr = row.join(' ').toLowerCase();
-                if (index === 0 && (rowStr.includes('nombre') || rowStr.includes('jugador') || rowStr.includes('dorsal'))) {
+                
+                // Try to find coach if not already found
+                if (!coachName && (rowStr.includes('entrenador') || rowStr.includes('coach'))) {
+                    coachName = row[nameCol] || row[1] || row[0].split(':')[1]?.trim() || '';
                     return;
                 }
 
-                // Try to find coach
-                if (rowStr.includes('entrenador') || rowStr.includes('coach')) {
-                    coachName = row[1] || row[0].split(':')[1]?.trim() || '';
-                    return;
-                }
+                let name = row[nameCol] || '';
+                let dorsal = row[numCol] !== undefined ? row[numCol] : '-';
 
-                // Player logic: [Dorsal, Nombre] or just [Nombre]
-                let dorsal = '-';
-                let name = '';
+                // Data cleaning
+                name = name.toString().trim();
+                dorsal = dorsal.toString().trim();
 
-                if (row.length >= 2) {
-                    dorsal = row[0];
-                    name = row[1];
-                } else if (row.length === 1) {
-                    name = row[0];
-                }
-
-                if (name && name.toString().trim()) {
-                    newPlayers.push({
-                        number: dorsal.toString().trim(),
-                        name: name.toString().trim()
-                    });
+                if (name && name !== '') {
+                    // Avoid exact duplicates
+                    const exists = currentRoster.some(p => p.name === name && p.number === dorsal);
+                    if (!exists) {
+                        newPlayers.push({
+                            number: dorsal || '-',
+                            name: name
+                        });
+                    }
                 }
             });
 
             if (newPlayers.length > 0) {
                 currentRoster = [...currentRoster, ...newPlayers];
                 if (coachName) {
-                    document.getElementById('roster-coach-name').value = coachName;
+                    const coachInput = document.getElementById('roster-coach-name');
+                    if (coachInput) coachInput.value = coachName;
                 }
                 renderRosterPlayers();
                 showToast(`Se han importado ${newPlayers.length} jugadores`, 'success');
             } else {
-                showToast('No se encontraron jugadores válidos', 'warning');
+                showToast('No se encontraron nuevos jugadores válidos', 'warning');
             }
         } catch (err) {
-            console.error(err);
+            console.error('Import Error:', err);
             showToast('Error al procesar el archivo', 'error');
         }
-        // Reset input
         event.target.value = '';
     };
     reader.readAsArrayBuffer(file);
@@ -917,6 +944,18 @@ function updateControlUI() {
     renderEvents();
     updateTimerUI();
     updateStatusBadge();
+    
+    // Config fields
+    const tn = document.getElementById('tournament-name-input');
+    if (tn) tn.value = matchState.tournamentName || '';
+    
+    const ht = document.getElementById('halftime-team-input');
+    if (ht) ht.value = matchState.halftimeTeamName || '';
+    
+    const si = document.getElementById('sponsor-interval-input');
+    if (si) si.value = matchState.sponsorRotationInterval || 8;
+    
+    renderSponsorLogosList();
 }
 
 // ── Toast ───────────────────────────────────────────────────
@@ -940,4 +979,81 @@ function playAlarm() {
         gain.gain.value = 0.3;
         osc.start(); osc.stop(ctx.currentTime + 1.5);
     } catch(e) {}
+}
+
+// ── Tournament & Halftime Config ────────────────────────────
+function updateTournamentName() {
+    const el = document.getElementById('tournament-name-input');
+    if (!el) return;
+    matchState.tournamentName = el.value;
+    broadcastState();
+}
+
+function updateHalftimeTeamName() {
+    const el = document.getElementById('halftime-team-input');
+    if (!el) return;
+    matchState.halftimeTeamName = el.value;
+    broadcastState();
+}
+
+// ── Sponsor Logos Management ────────────────────────────────
+function addSponsorLogo() {
+    const nameInput = document.getElementById('sponsor-name-input');
+    const logoInput = document.getElementById('sponsor-logo-input');
+    
+    const name = nameInput.value.trim();
+    const logoUrl = logoInput.value.trim();
+    
+    if (!name && !logoUrl) return; // Need at least something
+    
+    if (!matchState.sponsorLogos) matchState.sponsorLogos = [];
+    
+    matchState.sponsorLogos.push({
+        id: Date.now().toString(),
+        name: name,
+        logoUrl: logoUrl
+    });
+    
+    nameInput.value = '';
+    logoInput.value = '';
+    
+    broadcastState();
+    renderSponsorLogosList();
+}
+
+function removeSponsorLogo(id) {
+    if (!matchState.sponsorLogos) return;
+    matchState.sponsorLogos = matchState.sponsorLogos.filter(s => s.id !== id);
+    broadcastState();
+    renderSponsorLogosList();
+}
+
+function updateSponsorInterval() {
+    const el = document.getElementById('sponsor-interval-input');
+    if (!el) return;
+    matchState.sponsorRotationInterval = parseInt(el.value) || 8;
+    broadcastState();
+}
+
+function renderSponsorLogosList() {
+    const container = document.getElementById('sponsor-logos-list');
+    if (!container) return;
+    
+    const logos = matchState.sponsorLogos || [];
+    if (logos.length === 0) {
+        container.innerHTML = '<p class="text-xs text-gray-500 text-center italic py-2">No hay patrocinadores configurados.</p>';
+        return;
+    }
+    
+    container.innerHTML = logos.map(s => `
+        <div class="flex items-center justify-between bg-black/40 p-2 rounded border border-white/5 mb-1">
+            <div class="flex items-center gap-2 overflow-hidden">
+                ${s.logoUrl ? `<img src="${s.logoUrl}" class="w-6 h-6 object-contain rounded bg-white/10" onerror="this.style.display='none'">` : `<div class="w-6 h-6 rounded bg-cdpa-yellow/20 flex items-center justify-center text-[10px] font-bold text-cdpa-yellow">${s.name.charAt(0)}</div>`}
+                <span class="text-xs text-white truncate">${s.name || 'Logo sin nombre'}</span>
+            </div>
+            <button class="text-red-500 hover:bg-red-500/20 p-1 rounded" onclick="removeSponsorLogo('${s.id}')">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+            </button>
+        </div>
+    `).join('');
 }
