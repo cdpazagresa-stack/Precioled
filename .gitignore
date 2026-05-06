@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+*.xlsx
+# No subir el Excel si el usuario prefiere mantenerlo privado o si se lee localmente
+# Pero en este caso, el Excel es la base de datos de los escudos, así que quizás sí deba ir.
+# El usuario dijo "subas todo", así que incluiré el Excel a menos que sea muy grande.
+# Pero lo pondré en el gitignore si es un archivo de trabajo local.
+# En este proyecto, los escudos se cargan desde assets/escudos/.
+# El archivo .xlsx se usa para generar escudos.js o similar.

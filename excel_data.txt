@@ -1,0 +1,130 @@
+﻿Rows: 128, Cols: 5
+Nombre archivo|Equipo|Nombre archivo|url||
+ESC_A.D. CABANILLAS.png|A.D. CABANILLAS|ESC_A.D. CABANILLAS.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_A.D. CABANILLAS.png||
+ESC_A.D. MENDILLORRI..>|A.D. MENDILLORRI|ESC_A.D. MENDILLORRI..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_A.D. MENDILLORRI.png||
+ESC_A.D. SAN JUAN.png|A.D. SAN JUAN|ESC_A.D. SAN JUAN.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_A.D. SAN JUAN.png||
+ESC_ARGA IBAIA K.E..png|ARGA IBAI K.E.|ESC_ARGA IBAIA K.E..png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_ARGA IBAIA K.E..png||
+ESC_BERRIOZAR C.F..png|BERRIOZAR C.F.|ESC_BERRIOZAR C.F..png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_BERRIOZAR C.F..png||
+ESC_BETI GASTE KULTU..>|BETI GASTE KULTU|ESC_BETI GASTE KULTU..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_BETI GASTE KULTUR JOLAS K.E..png||
+ESC_BETI GAZTE K.J.K..>|BETI GAZTE K.J.K.|ESC_BETI GAZTE K.J.K..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_BETI GAZTE K.J.K.E..png||
+ESC_BETI KOZKOR K.E...>|BETI KOZKOR K.E.|ESC_BETI KOZKOR K.E...>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_BETI KOZKOR K.E..png||
+ESC_BETI ONAK C.D..png|BETI ONAL C.D.|ESC_BETI ONAK C.D..png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_BETI ONAK C.D..png||
+ESC_C. AMIGO.png|C. AMIGO|ESC_C. AMIGO.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C. AMIGO.png||
+ESC_C. ATLÉTICO AURO..>|C.A. AURORA MARCILLA|ESC_C. ATLÉTICO AURO..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C. ATL%c9TICO AURORA.png||
+ESC_C. ATLÉTICO HURA..>|C. A. HURACAN|ESC_C. ATLÉTICO HURA..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C. ATL%c9TICO HURAC%c1N.png||
+ESC_C. ATLÉTICO MARC..>|C.A. MARCILLA AURORA|ESC_C. ATLÉTICO MARC..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C. ATL%c9TICO MARCILLA AURORA.png||
+ESC_C. ATLÉTICO MONT..>|C.A. MONTEAGUDO|ESC_C. ATLÉTICO MONT..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C. ATL%c9TICO MONTEAGUDO.png||
+ESC_C. ATLETICO ARTA..>|C.A. ARTAJONES|ESC_C. ATLETICO ARTA..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C. ATLETICO ARTAJONES.png||
+ESC_C.ATLETICO CIRBO..>|C.A. CIRBONERO|ESC_C.ATLETICO CIRBO..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.ATLETICO CIRBONERO .png||
+ESC_C.ATLETICO CIRBO..>|C.A. CIRBONERO|ESC_C.ATLETICO CIRBO..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.ATLETICO CIRBONERO.png||
+ESC_C.ATLETICO OSASU..>|C.A. OSASUNA|ESC_C.ATLETICO OSASU..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.ATLETICO OSASUNA.png||
+ESC_C.ATLETICO VALTI..>|C.A. VALTIERRANO|ESC_C.ATLETICO VALTI..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.ATLETICO VALTIERRANO.png||
+ESC_C.D. ABLITENSE.png|C.D. ABLITENSE|ESC_C.D. ABLITENSE.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ABLITENSE.png||
+ESC_C.D. AIBARÉS-1.png|C.D. AIBARES|ESC_C.D. AIBARÉS-1.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. AIBAR%c9S-1.png||
+ESC_C.D. ALESVES.png|C.D. ALESVES|ESC_C.D. ALESVES.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ALESVES.png||
+ESC_C.D. ALUVION .png|C.D. ALUVION|ESC_C.D. ALUVION .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ALUVION .png||
+ESC_C.D. AMAYA .png|C.D. AMAYA|ESC_C.D. AMAYA .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. AMAYA .png||
+ESC_C.D. AMIGÓ.png|C.D. AMIGÓ|ESC_C.D. AMIGÓ.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. AMIG%d3.png||
+ESC_C.D. AOIZ.png|C.D. AOIZ|ESC_C.D. AOIZ.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. AOIZ.png||
+ESC_C.D. ARDOI .png|C.D. ARDOI|ESC_C.D. ARDOI .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ARDOI  .png||
+ESC_C.D. ARENAS.png|C.D. ARENAS|ESC_C.D. ARENAS.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ARENAS.png||
+ESC_C.D. ASDEFOR.png|C.D. ASDEFOR|ESC_C.D. ASDEFOR.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ASDEFOR.png||
+ESC_C.D. AURRERÁ DE ..>|C.D. AURRERÁ DE LIEDENA|ESC_C.D. AURRERÁ DE ..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. AURRER%c1 DE LI%c9DENA.png||
+ESC_C.D. AURRERA K.E..>|C.D. AURRERÁ K.E.|ESC_C.D. AURRERA K.E..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. AURRERA K.E..png||
+ESC_C.D. AVANCE E..png|C.D. AVANCE EZKABARTE|ESC_C.D. AVANCE E..png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. AVANCE E..png||
+ESC_C.D. AZKARRENA.png|C.D. AZKARRENA|ESC_C.D. AZKARRENA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. AZKARRENA.png||
+ESC_C.D. AZKOYEN.png|C.D. AZKOYEN|ESC_C.D. AZKOYEN.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. AZKOYEN.png||
+ESC_C.D. BAZTAN.png|C.D. BAZTÁN|ESC_C.D. BAZTAN.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. BAZTAN.png||
+ESC_C.D. BETI-ONAK.png|C.D. BETI ONAK|ESC_C.D. BETI-ONAK.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. BETI-ONAK.png||
+ESC_C.D. BUÑUEL.png|C.D. BUÑUEL|ESC_C.D. BUÑUEL.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. BU%d1UEL.png||
+ESC_C.D. CÁRCAR.png|C.D. CARCAR|ESC_C.D. CÁRCAR.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. C%c1RCAR.png||
+ESC_C.D. CADREITA.png|C.D. CADREITA|ESC_C.D. CADREITA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. CADREITA.png||
+ESC_C.D. CALATRAVA.png|C.D. CALATRAVA|ESC_C.D. CALATRAVA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. CALATRAVA.png||
+ESC_C.D. CANTOLAGUA ..>|C.D. CANTOLAGUA|ESC_C.D. CANTOLAGUA ..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. CANTOLAGUA .png||
+ESC_C.D. CASTEJÓN-1.png|C.D. CASTEJÓN|ESC_C.D. CASTEJÓN-1.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. CASTEJ%d3N-1.png||
+ESC_C.D. CASTILLO DE..>|C.D. CASTILLO DE TIEBAS|ESC_C.D. CASTILLO DE..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. CASTILLO DE TIEBAS.png||
+ESC_C.D. CORELLANO.png|C.D. CORELLANO|ESC_C.D. CORELLANO.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. CORELLANO.png||
+ESC_C.D. CORTES.png|C.D. CORTES|ESC_C.D. CORTES.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. CORTES.png||
+ESC_C.D. ERRI-BERRI.png|C.D. ERRIBERRI|ESC_C.D. ERRI-BERRI.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ERRI-BERRI.png||
+ESC_C.D. ETXARRI ARA..>|C.D. ETXARRI ARANAZ|ESC_C.D. ETXARRI ARA..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ETXARRI ARANATZ K.E..png||
+ESC_C.D.F. MILAGRÉS.png|C.A. MILAGRES|ESC_C.D.F. MILAGRÉS.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D.F. MILAGR%c9S.png||
+ESC_C.D. FALCESINO.png|C.D. FALCESINO|ESC_C.D. FALCESINO.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. FALCESINO.png||
+ESC_C.D. FONTELLAS.png|C.D. FONTELLAS|ESC_C.D. FONTELLAS.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. FONTELLAS.png||
+ESC_C.D. FUNES.png|C.D. FUNES|ESC_C.D. FUNES.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. FUNES.png||
+ESC_C.D. GARES.png|C.D. GARES|ESC_C.D. GARES.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. GARES.png||
+ESC_C.D. GAZTE BERRI..>|C.D. GAZTE BERRIAK|ESC_C.D. GAZTE BERRI..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. GAZTE BERRIAK.png||
+ESC_C.D. HUARTE .png|C.D. HUARTE|ESC_C.D. HUARTE .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. HUARTE .png||
+ESC_C.D. IDOYA .png|C.D. IDOYA|ESC_C.D. IDOYA .png|https://www.google.com/url?sa=i&url=https%3A%2F%2Fclubshop.macron.com%2Fnavarra_nafarroa%2Fcd-idoya%2Fother&psig=AOvVaw2iMSignTfQ3MXVZrBP-2uO&ust=1771525740398000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKCH0OXV45IDFQAAAAAdAAAAABAE||
+ESC_C.D. ILUMBERRI.png|C.D. ILUMBERRI|ESC_C.D. ILUMBERRI.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ILUMBERRI.png||
+ESC_C.D. INFANTONES.png|C.D. INFANZONES|ESC_C.D. INFANTONES.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. INFANTONES.png||
+ESC_C.D. INJERTO.png|C.D. INJERTO|ESC_C.D. INJERTO.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. INJERTO.png||
+ESC_C.D. IRUÑA .png|C.D. IRUÑA|ESC_C.D. IRUÑA .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. IRU%d1A .png||
+ESC_C.D. IRUNTXIKI.png|C.D. IRUNTXIKI|ESC_C.D. IRUNTXIKI.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. IRUNTXIKI.png||
+ESC_C.D. IZARRA .png|C.D. IZARRA|ESC_C.D. IZARRA .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. IZARRA .png||
+ESC_C.D. KIROL SPORT..>|C.D. KIROL SPORT|ESC_C.D. KIROL SPORT..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. KIROL SPORT.png||
+ESC_C.D. LAGUNAK .png|C.D. LAGUNAK|ESC_C.D. LAGUNAK .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. LAGUNAK .png||
+ESC_C.D. LA PEÑA.png|C.D. LA PEÑA FUSTIÑANA|ESC_C.D. LA PEÑA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. LA PE%d1A.png||
+ESC_C.D. LARRATE.png|C.D. LARRATE|ESC_C.D. LARRATE.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. LARRATE.png||
+ESC_C.D. LERINÉS.png|C.D. LERINES|ESC_C.D. LERINÉS.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. LERIN%c9S.png||
+ESC_C.D. LEZKAIRU.png|C.D. LEZKAIRU|ESC_C.D. LEZKAIRU.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. LEZKAIRU.png||
+ESC_C.D. LICEO MONJA..>|C.D. LICEO MONJARDIN|ESC_C.D. LICEO MONJA..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. LICEO MONJARD%cdN.png||
+ESC_C.D. LODOSA.png|C.D. LODOSA|ESC_C.D. LODOSA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. LODOSA.png||
+ESC_C.D. LOURDES.png|C.D. LOURDES|ESC_C.D. LOURDES.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. LOURDES.png||
+ESC_C.D. MENDAVIÉS.png|C.D. MENDAVIES|ESC_C.D. MENDAVIÉS.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. MENDAVI%c9S.png||
+ESC_C.D. MENDI .png|C.D. MENDI|ESC_C.D. MENDI .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. MENDI .png||
+ESC_C.D. MURCHANTE.png|C.D. MURCHANTE|ESC_C.D. MURCHANTE.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. MURCHANTE.png||
+ESC_C.D. MURILLO.png|C.D. MURILLO|ESC_C.D. MURILLO.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. MURILLO.png||
+ESC_C.D. MUSKARIA.png|C.D. MUSKARIA|ESC_C.D. MUSKARIA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. MUSKARIA.png||
+ESC_C.D. OBERENA .png|C.D. OBERENA|ESC_C.D. OBERENA .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. OBERENA .png||
+ESC_C.D. ONDALAN.png|C.D. ONDALAN|ESC_C.D. ONDALAN.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ONDALAN.png||
+ESC_C.D. PAMPLONA.png|C.D. PAMPLONA|ESC_C.D. PAMPLONA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. PAMPLONA.png||
+ESC_C.D. PEÑA AZAGRE..>|C.D. PEÑA AZAGRESA|ESC_C.D. PEÑA AZAGRE..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. PE%d1A AZAGRESA.png||
+ESC_C.D. RADA.png|C.D. RADA|ESC_C.D. RADA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. RADA.png||
+ESC_C.D. RIBAFORADA.png|C.D. RIBOFARADA|ESC_C.D. RIBAFORADA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. RIBAFORADA.png||
+ESC_C.D. RIVER EGA .png|C.D. RIVER EGA|ESC_C.D. RIVER EGA .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. RIVER EGA .png||
+ESC_C.D. ROCHAPEANO.png|C.D. ROCHAPEANO|ESC_C.D. ROCHAPEANO.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ROCHAPEANO.png||
+ESC_C.D. SALESIANOS ..>|C.D. SALESIANOS|ESC_C.D. SALESIANOS ..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. SALESIANOS (NA).png||
+ESC_C.D. SAN ADRIAN.png|C.D. SAN ADRIAN|ESC_C.D. SAN ADRIAN.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. SAN ADRIAN.png||
+ESC_C.D. SAN FERMÍN ..>|C.D. SAN CERNIN|ESC_C.D. SAN FERMÍN ..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. SAN FERM%cdN IKASTOLA.png||
+ESC_C.D. SAN IGNACIO..>|C.D. SAN IGNACIO|ESC_C.D. SAN IGNACIO..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. SAN IGNACIO.png||
+ESC_C.D. SAN JAVIER.png|C.D. SAN JAVIER|ESC_C.D. SAN JAVIER.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. SAN JAVIER.png||
+ESC_C.D. SAN JORGE.png|C.D. SAN JORGE|ESC_C.D. SAN JORGE.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. SAN JORGE.png||
+ESC_C.D. SAN MIGUEL ..>|C.D. SAN MIGUEL|ESC_C.D. SAN MIGUEL ..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. SAN MIGUEL (NAV).png||
+ESC_C.D. SANTACARA.png|C.D. SANTACARA|ESC_C.D. SANTACARA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. SANTACARA.png||
+ESC_C.D. SESMA.png|C.D. SESMA|ESC_C.D. SESMA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. SESMA.png||
+ESC_C.D. SOTO-IBARBA..>|C.D. SOTO IBARBASO|ESC_C.D. SOTO-IBARBA..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. SOTO-IBARBASO.png||
+ESC_C.D. SPORTING ME..>|C.D. SPORTING MELIDES|ESC_C.D. SPORTING ME..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. SPORTING MELID%c9S.png||
+ESC_C.D. SUBIZA.png|C.D. SUBIZA|ESC_C.D. SUBIZA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. SUBIZA.png||
+ESC_C.D. TUDELANO .png|C.D. TUDELANO|ESC_C.D. TUDELANO .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. TUDELANO .png||
+ESC_C.D. UNIVERSIDAD..>|C.D. UNIVERSIDAD DE NAVARRA|ESC_C.D. UNIVERSIDAD..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. UNIVERSIDAD DE NAVARRA.png||
+ESC_C.D. URANTZIA.png|C.D. URANTZIA|ESC_C.D. URANTZIA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. URANTZIA.png||
+ESC_C.D. URBASA.png|C.D. URBASA|ESC_C.D. URBASA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. URBASA.png||
+ESC_C.D. URROZTARRA.png|C.D. URROZTARRA|ESC_C.D. URROZTARRA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. URROZTARRA.png||
+ESC_C.D. VALLE DE EG..>|C.D. VALLE DE EGUES|ESC_C.D. VALLE DE EG..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. VALLE DE EG%dc%c9S.png||
+ESC_C.D. VIANES.png|C.D. VIANES|ESC_C.D. VIANES.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. VIANES.png||
+ESC_C.D. ZARRAMONZA.png|C.D. ZARRAMONZA|ESC_C.D. ZARRAMONZA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ZARRAMONZA.png||
+ESC_C.D. ZIRAUKI.png|C.D. ZIRAUKI|ESC_C.D. ZIRAUKI.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ZIRAUKI.png||
+ESC_C.D. ZIZUR.png|C.D. ZIZUR|ESC_C.D. ZIZUR.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ZIZUR.png||
+ESC_C.F. BERIAIN.png|C.F. BERIÁIN|ESC_C.F. BERIAIN.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.F. BERIAIN.png||
+ESC_C.F. BETI CASEDA..>|C.F. BETI CASEDANO|ESC_C.F. BETI CASEDA..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.F. BETI CASEDANO.png||
+ESC_C.F. GAZTE BERRI..>|C.F. GAZTE BERRIAK|ESC_C.F. GAZTE BERRI..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.F. GAZTE BERRIAK.png||
+ESC_C.U.D. BURLADES.png|U.C.D. BURLADES|ESC_C.U.D. BURLADES.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.U.D. BURLADES.png||
+ESC_CASTILLO F.C..png|CASTILLO F.C.|ESC_CASTILLO F.C..png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_CASTILLO F.C..png||
+ESC_DONEZTEBE F.T..png|DONEZTEBE F.T.|ESC_DONEZTEBE F.T..png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_DONEZTEBE F.T..png||
+ESC_F.C. BIDEZARRA.png|F.C. BIDEZARRA|ESC_F.C. BIDEZARRA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_F.C. BIDEZARRA.png||
+ESC_F.C. TUDELA 199..>|F.C. TUDELA 1999|ESC_F.C. TUDELA 199..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_F.C. TUDELA  1999.png||
+ESC_J.D. SAN JORGE.png|J.D. SAN JORGE|ESC_J.D. SAN JORGE.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_J.D. SAN JORGE.png||
+ESC_LAGUN ARTEA K..E..>|C.D. LAGUN ARTEA K.E.|ESC_LAGUN ARTEA K..E..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_LAGUN ARTEA K..E.png||
+ESC_MULIER FCN.png|MULIER FCN|ESC_MULIER FCN.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_MULIER FCN.png||
+ESC_PEÑA SPORT F.C...>|PEÑA SPORT F.C.|ESC_PEÑA SPORT F.C...>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_PE%d1A SPORT  F.C..png||
+ESC_ROTXAPEA C.D..png|ROTXAPEA C.D.|ESC_ROTXAPEA C.D..png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_ROTXAPEA C.D..png||
+ESC_S.D. ALSASUA.png|S.D. ALSASUA|ESC_S.D. ALSASUA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_S.D. ALSASUA.png||
+ESC_S.D.C. SAN CRIST..>|S.D.C. SAN CRISTOBAL|ESC_S.D.C. SAN CRIST..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_S.D.C. SAN CRISTOBAL.png||
+ESC_SAN ANDRES K.T..png|C.D. SAN ANDRÉS K.T.|ESC_SAN ANDRES K.T..png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_SAN ANDRES K.T..png||
+ESC_U.D.C. CHANTREA ..>|U.D.C. CHANTREA|ESC_U.D.C. CHANTREA ..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_U.D.C. CHANTREA .png||
+ESC_U.D. MUTILVERA .png|U.D. MUTILVERA|ESC_U.D. MUTILVERA .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_U.D. MUTILVERA .png||
+ESC_U.D. VALLE DE AR..>|U.D. VALLE DE ARANGUREN|ESC_U.D. VALLE DE AR..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_U.D. VALLE DE ARANGUREN.png||
+ESC_UNIÓN TUTERA.png|UNION TUTERA|ESC_UNIÓN TUTERA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_UNI%d3N TUTERA.png||
+ESC_UNIVERSIDAD DE N..>|C.D. UNIVERSIDAD DE NAVARRA|ESC_UNIVERSIDAD DE N..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_UNIVERSIDAD DE NAVARRA.png||
+ESC_VALDORBA F.C..png|VALDORBA F.C.|ESC_VALDORBA F.C..png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_VALDORBA F.C..png||
+
