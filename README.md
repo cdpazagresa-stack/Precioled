@@ -14,10 +14,9 @@ Sistema profesional de videomarcador LED diseñado específicamente para el C.D.
 
 ## 🛠️ Instalación y Despliegue
 
-### 1. Despliegue Rápido (GitHub Pages / Vercel)
-1. Sube este repositorio a GitHub.
-2. En GitHub, ve a **Settings > Pages** y activa el despliegue desde la rama `main`.
-3. ¡Listo! Tu marcador estará disponible en `https://tu-usuario.github.io/Precioled/`.
+### 1. Despliegue Rápido (GitHub Pages)
+El sistema ya está desplegado y es accesible en:
+**👉 [https://cdpazagresa-stack.github.io/Precioled/](https://cdpazagresa-stack.github.io/Precioled/)**
 
 ### 2. Configuración de Autenticación
 Por defecto, el sistema usa una contraseña maestra: `azagresa2024`.
