@@ -25,7 +25,7 @@
             }
         }
     </script>
-    <link rel="stylesheet" href="css/control.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-BCD13ohj.css">
 </head>
 <body class="bg-black min-h-screen pb-24 md:pb-0">
 
@@ -247,40 +247,16 @@
                         <button class="btn btn-sm bg-white/5 border-white/10" onclick="adjustTime(10)">+10s</button>
                         <button class="btn btn-sm bg-white/5 border-white/10" onclick="adjustTime(60)">+1m</button>
                     </div>
-                    <div class="grid grid-cols-2 gap-3 mb-6 p-1 bg-black/40 rounded-2xl border border-white/5">
-                        <button class="btn btn-sm py-3 flex flex-col items-center gap-1 rounded-xl transition-all" id="dir-up-btn" onclick="setTimerDirection('up')">
-                            <span class="text-xs font-bold">PROGRESIVO</span>
-                            <span class="text-[10px] opacity-60">00:00 → MAX</span>
-                        </button>
-                        <button class="btn btn-sm py-3 flex flex-col items-center gap-1 rounded-xl transition-all" id="dir-down-btn" onclick="setTimerDirection('down')">
-                            <span class="text-xs font-bold">REGRESIVO</span>
-                            <span class="text-[10px] opacity-60">MAX → 00:00</span>
-                        </button>
-                    </div>
-
                     <div class="grid grid-cols-2 gap-4 mb-8">
-                        <button class="btn btn-success btn-lg h-24 rounded-3xl text-2xl flex flex-col items-center justify-center gap-2" id="timer-play-btn" onclick="toggleTimer()">
-                            <span>▶️ Iniciar</span>
+                        <button class="btn btn-success btn-xl flex flex-col items-center justify-center py-6 gap-1" id="timer-play-btn" onclick="toggleTimer()">
+                            <span class="text-2xl" id="timer-icon">▶️</span>
+                            <span class="text-xs uppercase tracking-widest font-black" id="timer-text">Iniciar</span>
                         </button>
-                        <button class="btn btn-secondary btn-lg h-24 rounded-3xl text-2xl flex flex-col items-center justify-center gap-2" onclick="resetTimer()">
-                            <span>🔄 Reiniciar</span>
+                        <button class="btn btn-xl bg-white/5 border-white/10 flex flex-col items-center justify-center py-6 gap-1" onclick="resetTimer()">
+                            <span class="text-2xl">🔄</span>
+                            <span class="text-xs uppercase tracking-widest font-black">Reset</span>
                         </button>
                     </div>
-
-                    <div class="bg-black/30 p-4 rounded-3xl border border-white/5 mb-4">
-                        <label class="block text-[10px] font-bold text-cdpa-muted uppercase tracking-widest mb-3 ml-1">Tiempo de Descuento</label>
-                        <div class="flex items-center gap-3">
-                            <div class="flex-1 flex items-center gap-2 bg-white/5 p-2 rounded-2xl border border-white/5">
-                                <span class="text-2xl ml-2">+</span>
-                                <input type="number" id="added-time-input" class="bg-transparent border-none text-white text-3xl font-bold w-full focus:outline-none focus:ring-0 p-0" placeholder="0" min="0" max="20" oninput="setAddedTime(this.value)">
-                                <span class="text-xs font-bold text-cdpa-muted mr-3">MIN</span>
-                            </div>
-                            <button class="btn btn-lg px-6 py-4 rounded-2xl border-2 border-white/10 flex items-center justify-center transition-all" id="added-time-toggle" onclick="toggleAddedTime()">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
-                            </button>
-                        </div>
-                    </div>
-
                     <div class="period-selector grid grid-cols-7 gap-1.5 p-1 bg-black/50 rounded-2xl border border-white/5">
                         <button class="period-btn btn active text-[10px] px-0 h-12" data-period="1ª PARTE" onclick="setPeriod(this)">1ª P</button>
                         <button class="period-btn btn text-[10px] px-0 h-12" data-period="2ª PARTE" onclick="setPeriod(this)">2ª P</button>

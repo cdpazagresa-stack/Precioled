@@ -144,7 +144,16 @@ function renderDualMatch() {
         setText(`${p}-away-score`, f.awayScore);
         
         const elapsed = matchTimer.getElapsed(fn);
-        setText(`${p}-timer`, `${matchTimer.format(elapsed)} — ${f.period || '1ª PARTE'}`);
+        const direction = f.timerDirection || 'up';
+        const dirIcon = direction === 'down' ? ' ▼' : '';
+        setText(`${p}-timer`, `${matchTimer.format(elapsed)}${dirIcon} — ${f.period || '1ª PARTE'}`);
+        
+        // Toggle running/overtime classes on dual timer
+        const dualTimerEl = document.getElementById(`${p}-timer`);
+        if (dualTimerEl) {
+            dualTimerEl.classList.toggle('timer-running', !!f.timerRunning);
+            dualTimerEl.classList.toggle('timer-overtime', matchTimer.isInAddedTime(fn));
+        }
         
         renderMainScorers(`${p}-home-scorers`, f.homeScorers, 'right');
         renderMainScorers(`${p}-away-scorers`, f.awayScorers, 'left');
@@ -156,19 +165,80 @@ function renderDualMatch() {
 // ── Timer Render ────────────────────────────────────────────
 function renderTimers() {
     if (matchState.mode === 'single') {
-        const elapsed = matchTimer.getElapsed(1);
-        const el = document.getElementById('timer-display');
-        if (el) {
-            el.textContent = matchTimer.format(elapsed);
-            el.classList.toggle('running', matchState.fields[1].timerRunning);
-            el.classList.toggle('paused', !matchState.fields[1].timerRunning && elapsed > 0);
-        }
+        _renderSingleTimer();
     } else {
-        [1, 2].forEach(fn => {
-            const elapsed = matchTimer.getElapsed(fn);
-            const f = matchState.fields[fn];
-            setText(`f${fn}-timer`, `${matchTimer.format(elapsed)} — ${f.period || '1ª PARTE'}`);
-        });
+        [1, 2].forEach(fn => _renderDualTimer(fn));
+    }
+}
+
+function _renderSingleTimer() {
+    const elapsed = matchTimer.getElapsed(1);
+    const f = matchState.fields[1];
+    const el = document.getElementById('timer-display');
+    const addedEl = document.getElementById('added-time-display');
+    const direction = f.timerDirection || 'up';
+    const isOvertime = matchTimer.isInAddedTime(1);
+    
+    if (el) {
+        el.textContent = matchTimer.format(elapsed);
+        el.classList.toggle('running', !!f.timerRunning);
+        el.classList.toggle('paused', !f.timerRunning && elapsed > 0);
+        el.classList.toggle('timer-regressive', direction === 'down');
+        el.classList.toggle('timer-overtime', isOvertime);
+    }
+    
+    // Added time display
+    if (addedEl) {
+        const addedMinutes = f.addedTime || f.addedTimeMinutes || 0;
+        const shouldShow = addedMinutes > 0 || f.showAddedTime;
+        
+        if (shouldShow && addedMinutes > 0) {
+            const newText = `+${addedMinutes}`;
+            if (addedEl.textContent !== newText) {
+                addedEl.textContent = newText;
+                // Re-trigger entrance animation
+                addedEl.classList.remove('animate-in');
+                addedEl.offsetHeight; // force reflow
+                addedEl.classList.add('animate-in');
+            }
+            addedEl.style.display = 'flex';
+        } else {
+            addedEl.style.display = 'none';
+        }
+    }
+}
+
+function _renderDualTimer(fn) {
+    const elapsed = matchTimer.getElapsed(fn);
+    const f = matchState.fields[fn];
+    const direction = f.timerDirection || 'up';
+    const dirIcon = direction === 'down' ? ' ▼' : '';
+    const timerText = `${matchTimer.format(elapsed)}${dirIcon} — ${f.period || '1ª PARTE'}`;
+    setText(`f${fn}-timer`, timerText);
+    
+    // Toggle state classes
+    const timerEl = document.getElementById(`f${fn}-timer`);
+    if (timerEl) {
+        timerEl.classList.toggle('timer-running', !!f.timerRunning);
+        timerEl.classList.toggle('timer-overtime', matchTimer.isInAddedTime(fn));
+    }
+    
+    // Added time badge
+    const addedEl = document.getElementById(`f${fn}-added-time`);
+    if (addedEl) {
+        const addedMinutes = f.addedTime || f.addedTimeMinutes || 0;
+        if (addedMinutes > 0) {
+            const newText = `+${addedMinutes}`;
+            if (addedEl.textContent !== newText) {
+                addedEl.textContent = newText;
+                addedEl.classList.remove('animate-in');
+                addedEl.offsetHeight;
+                addedEl.classList.add('animate-in');
+            }
+            addedEl.style.display = 'inline-block';
+        } else {
+            addedEl.style.display = 'none';
+        }
     }
 }
 

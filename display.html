@@ -125,7 +125,10 @@
             <!-- TIMER + PERIOD ROW (below scores) -->
             <div class="timer-row">
                 <div class="timer-container">
-                    <div class="timer-display" id="timer-display">00:00</div>
+                    <div class="flex items-center">
+                        <div class="timer-display" id="timer-display">00:00</div>
+                        <div class="added-time-display" id="added-time-display" style="display:none">+0</div>
+                    </div>
                     <div class="period-badge" id="period-badge">1ª PARTE</div>
                 </div>
             </div>
@@ -197,7 +200,10 @@
                         <img class="dual-badge" id="f1-away-badge" src="assets/escudos/default.svg" alt="">
                     </div>
                 </div>
-                <div class="dual-timer" id="f1-timer">00:00 — 1ª PARTE</div>
+                <div class="flex items-center justify-center gap-2">
+                    <div class="dual-timer" id="f1-timer">00:00 — 1ª PARTE</div>
+                    <div class="added-time-dual" id="f1-added-time" style="display:none">+0</div>
+                </div>
                 <div class="dual-scorers">
                     <div class="dual-scorers-col" id="f1-home-scorers"></div>
                     <div class="dual-scorers-col" id="f1-away-scorers"></div>
@@ -229,7 +235,10 @@
                         <img class="dual-badge" id="f2-away-badge" src="assets/escudos/default.svg" alt="">
                     </div>
                 </div>
-                <div class="dual-timer" id="f2-timer">00:00 — 1ª PARTE</div>
+                <div class="flex items-center justify-center gap-2">
+                    <div class="dual-timer" id="f2-timer">00:00 — 1ª PARTE</div>
+                    <div class="added-time-dual" id="f2-added-time" style="display:none">+0</div>
+                </div>
                 <div class="dual-scorers">
                     <div class="dual-scorers-col" id="f2-home-scorers"></div>
                     <div class="dual-scorers-col" id="f2-away-scorers"></div>

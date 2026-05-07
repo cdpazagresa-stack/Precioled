@@ -142,18 +142,58 @@ function updateTimerUI() {
 
 function setPeriod(el) {
     const period = el.dataset.period;
-    F().period = period;
+    const f = F();
+    f.period = period;
     document.querySelectorAll('.period-btn').forEach(b => b.classList.toggle('active', b.dataset.period === period));
     
+    // Period accumulation via matchTimer API
+    if (period === '2ª PARTE' && f.timerBaseSeconds === 0) {
+        // Accumulate: base = maxSeconds of the 1st half (e.g., 2400s = 40min)
+        matchTimer.setBaseForPeriod(f.timerMaxSeconds || 2400, activeField);
+    } else if (period === '1ª PARTE') {
+        matchTimer.setBaseForPeriod(0, activeField);
+    }
+
     if (period === 'DESCANSO' || period === 'FINAL') {
         matchTimer.pause(activeField);
-        F().status = period === 'FINAL' ? 'finished' : 'halftime';
+        f.status = period === 'FINAL' ? 'finished' : 'halftime';
     } else {
-        F().status = F().timerRunning ? 'live' : 'pre_match';
+        f.status = f.timerRunning ? 'live' : 'pre_match';
     }
+    
     hapticFeedback(25);
     broadcastState();
     updateStatusBadge();
+    updateTimerUI();
+}
+
+function setTimerDirection(direction) {
+    const f = F();
+    f.timerDirection = direction;
+    hapticFeedback(20);
+    broadcastState();
+    updateControlUI();
+}
+
+function setAddedTime(minutes) {
+    const f = F();
+    const val = parseInt(minutes) || 0;
+    f.addedTimeMinutes = val;
+    f.addedTime = val; // Sync both fields for display compatibility
+    broadcastState();
+}
+
+function toggleAddedTime() {
+    const f = F();
+    f.showAddedTime = !f.showAddedTime;
+    // If hiding, also clear the added time value
+    if (!f.showAddedTime) {
+        f.addedTime = 0;
+        f.addedTimeMinutes = 0;
+    }
+    hapticFeedback(30);
+    broadcastState();
+    updateControlUI();
 }
 
 function updateStatusBadge() {

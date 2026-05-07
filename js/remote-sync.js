@@ -30,6 +30,11 @@ const DEFAULT_MATCH_STATE = {
             timerRunning: false,
             timerStartTimestamp: null,
             timerMaxSeconds: 2400, // 40 min default
+            timerDirection: 'up', // 'up' or 'down'
+            timerBaseSeconds: 0,
+            addedTimeMinutes: 0,
+            addedTime: 0,
+            showAddedTime: false,
             status: 'pre_match',
             extraMessage: '',
             showGoalAnimation: false,
@@ -62,6 +67,11 @@ const DEFAULT_MATCH_STATE = {
             timerRunning: false,
             timerStartTimestamp: null,
             timerMaxSeconds: 2400,
+            timerDirection: 'up',
+            timerBaseSeconds: 0,
+            addedTimeMinutes: 0,
+            addedTime: 0,
+            showAddedTime: false,
             status: 'pre_match',
             extraMessage: '',
             showGoalAnimation: false,
