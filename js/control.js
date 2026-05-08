@@ -70,7 +70,25 @@ function setMode(mode) {
     document.getElementById('mode-single').classList.toggle('active', mode === 'single');
     document.getElementById('mode-dual').classList.toggle('active', mode === 'dual');
     document.getElementById('field-tabs-container').style.display = mode === 'dual' ? 'block' : 'none';
+    
+    const tournamentBtn = document.getElementById('mode-tournament');
+    if (tournamentBtn) {
+        tournamentBtn.style.display = mode === 'dual' ? 'inline-flex' : 'none';
+    }
+    
     broadcastState();
+}
+
+function startTournamentCountdown() {
+    matchState.showTournamentCountdown = true;
+    broadcastState();
+    showToast('Iniciando cuenta regresiva de Torneo', 'success');
+    
+    // Auto-hide after 6.5 seconds (allowing 5s countdown + animation)
+    setTimeout(() => {
+        matchState.showTournamentCountdown = false;
+        broadcastState();
+    }, 6500);
 }
 
 function switchField(num) {

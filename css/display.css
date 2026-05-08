@@ -1941,3 +1941,297 @@ html, body {
     animation: scoreFlash 0.5s ease 3;
 }
 
+/* ── Dual Match Mode (2 Fields F8) ────────────────────────────── */
+#dual-match {
+    width: 100vw;
+    height: 100vh;
+    display: none; /* Toggled by JS */
+    background: transparent;
+}
+
+.dual-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.dual-field {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 2vw;
+    position: relative;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.02) 0%, transparent 70%);
+}
+
+.dual-divider {
+    width: 2px;
+    height: 70%;
+    background: linear-gradient(to bottom, transparent, var(--primary), transparent);
+    align-self: center;
+    box-shadow: 0 0 20px var(--primary-glow);
+    z-index: 10;
+    opacity: 0.6;
+}
+
+.dual-header {
+    font-family: 'Lexend', sans-serif;
+    font-size: clamp(1rem, 2.5vh, 1.8rem);
+    font-weight: 800;
+    color: var(--primary);
+    letter-spacing: 0.6em;
+    text-transform: uppercase;
+    margin-bottom: 4vh;
+    opacity: 0.7;
+    text-shadow: 0 0 10px var(--primary-glow);
+}
+
+.dual-main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+    width: 100%;
+    animation: fadeInScale 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dual-team-block {
+    display: flex;
+    align-items: center;
+    gap: 1.2vw;
+}
+
+.dual-badge {
+    width: clamp(120px, 20vh, 260px);
+    height: clamp(120px, 20vh, 260px);
+    object-fit: contain;
+    filter: drop-shadow(0 15px 30px rgba(0,0,0,0.6));
+    transition: transform 0.3s ease;
+}
+
+.dual-badge:hover { transform: scale(1.05); }
+
+.dual-score-box {
+    background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 1vh 1.5vw;
+    min-width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+.dual-score {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(8rem, 24vh, 16rem);
+    color: #fff;
+    line-height: 0.9;
+    text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    font-variant-numeric: tabular-nums;
+}
+
+.dual-center-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    min-width: 120px;
+}
+
+.dual-separator {
+    font-family: 'Anton', sans-serif;
+    font-size: 5rem;
+    color: var(--primary);
+    opacity: 0.4;
+    line-height: 1;
+}
+
+.dual-timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0.5vw;
+}
+
+.dual-timer {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(3rem, 7vh, 5.5rem);
+    font-weight: 800;
+    color: var(--primary);
+    text-shadow: 0 0 25px var(--primary-glow);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.05em;
+}
+
+.dual-timer.timer-running {
+    animation: digitalBlink 2s infinite;
+}
+
+.dual-timer.timer-overtime {
+    color: var(--danger);
+    text-shadow: 0 0 25px rgba(255, 62, 62, 0.5);
+}
+
+.dual-footer-info {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2vh;
+    animation: fadeIn 1s ease 0.3s both;
+}
+
+.dual-period-label {
+    font-size: clamp(0.9rem, 1.8vh, 1.4rem);
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    padding: 0.4vh 1.5vw;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 100px;
+}
+
+.dual-names-row {
+    display: flex;
+    align-items: center;
+    gap: 1.2vw;
+    font-weight: 800;
+    font-size: clamp(1.2rem, 2.2vh, 2rem);
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.dual-team-name-small {
+    max-width: 15vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dual-name-sep {
+    color: var(--primary);
+    font-size: 0.7em;
+    opacity: 0.5;
+    font-weight: 400;
+}
+
+/* ── Dual Bottom Timer (Shared) ──────────────────────────────── */
+.dual-bottom-timer-container {
+    position: absolute;
+    bottom: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8vh;
+    background: linear-gradient(135deg, rgba(15, 15, 15, 0.95), rgba(5, 5, 5, 0.98));
+    padding: 1.5vh 3vw;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.8), inset 0 0 15px rgba(255,255,255,0.02);
+    z-index: 20;
+    backdrop-filter: blur(10px);
+}
+
+.dual-bottom-timer-container .dual-timer {
+    font-size: clamp(4rem, 8vh, 6rem);
+    text-shadow: 0 0 30px var(--primary-glow);
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+/* ── Tournament Countdown Overlay ────────────────────────────── */
+.countdown-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(20px);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+.countdown-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.countdown-circle {
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+    border: 8px solid rgba(246, 238, 54, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 50px rgba(246, 238, 54, 0.1);
+    margin-bottom: 5vh;
+}
+
+.countdown-circle::before {
+    content: '';
+    position: absolute;
+    inset: -8px;
+    border-radius: 50%;
+    border: 8px solid var(--primary);
+    border-color: var(--primary) transparent transparent transparent;
+    animation: countdownSpin 1s linear infinite;
+}
+
+.countdown-overlay.active .countdown-circle::before {
+    animation: countdownSpin 1s linear infinite;
+}
+
+#countdown-number {
+    font-family: 'Anton', sans-serif;
+    font-size: 25vh;
+    color: #fff;
+    text-shadow: 0 0 40px var(--primary-glow);
+    animation: countdownPulse 1s ease-in-out infinite;
+}
+
+.countdown-text {
+    font-family: 'Lexend', sans-serif;
+    font-size: clamp(2rem, 5vh, 4rem);
+    font-weight: 900;
+    letter-spacing: 0.3em;
+    color: var(--primary);
+    text-transform: uppercase;
+    text-shadow: 0 0 30px var(--primary-glow);
+    animation: fadeInUp 1s ease both;
+}
+
+@keyframes countdownSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes countdownPulse {
+    0% { transform: scale(0.9); opacity: 0.8; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(0.9); opacity: 0.8; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}

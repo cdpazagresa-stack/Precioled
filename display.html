@@ -51,200 +51,217 @@
     <!-- ============================================================ -->
     <div class="scoreboard-hero-frame">
         <div class="perspective-container">
+            <!-- SINGLE MATCH MODE -->
             <div id="single-match" class="match-container">
-        <!-- Top Gradient Line -->
-        <div class="top-accent"></div>
+                <!-- Top Gradient Line -->
+                <div class="top-accent"></div>
 
-        <!-- Main Scoreboard Area -->
-        <div class="scoreboard-main">
-            <div class="score-row">
-                <!-- HOME TEAM -->
-                <div class="team-section team-home">
-                    <div class="team-identity">
-                        <div class="badge-container">
-                            <img id="home-badge" src="assets/escudos/default.svg" alt="Local" class="team-badge">
-                            <div class="badge-glow"></div>
-                        </div>
-                        <div class="team-info">
-                            <span class="team-name" id="home-name">EQUIPO LOCAL</span>
-                            <div class="team-cards">
-                                <div class="team-fouls" id="home-fouls-container" style="display:none">
-                                    <span class="foul-label">FALTAS</span>
-                                    <span class="foul-count" id="home-fouls">0</span>
+                <!-- Main Scoreboard Area -->
+                <div class="scoreboard-main">
+                    <div class="score-row">
+                        <!-- HOME TEAM -->
+                        <div class="team-section team-home">
+                            <div class="team-identity">
+                                <div class="badge-container">
+                                    <img id="home-badge" src="assets/escudos/default.svg" alt="Local" class="team-badge">
+                                    <div class="badge-glow"></div>
                                 </div>
-                                <span class="card-yellow" id="home-yellows" style="display:none">
-                                    <span class="card-icon yellow"></span><span class="card-count">0</span>
-                                </span>
-                                <span class="card-red" id="home-reds" style="display:none">
-                                    <span class="card-icon red"></span><span class="card-count">0</span>
-                                </span>
+                                <div class="team-info">
+                                    <span class="team-name" id="home-name">EQUIPO LOCAL</span>
+                                    <div class="team-cards">
+                                        <div class="team-fouls" id="home-fouls-container" style="display:none">
+                                            <span class="foul-label">FALTAS</span>
+                                            <span class="foul-count" id="home-fouls">0</span>
+                                        </div>
+                                        <span class="card-yellow" id="home-yellows" style="display:none">
+                                            <span class="card-icon yellow"></span><span class="card-count">0</span>
+                                        </span>
+                                        <span class="card-red" id="home-reds" style="display:none">
+                                            <span class="card-icon red"></span><span class="card-count">0</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="score-box">
+                                <span class="score-number" id="home-score">0</span>
+                            </div>
+                        </div>
+
+                        <!-- CENTER: VS Dots -->
+                        <div class="center-divider">
+                            <div class="vs-dot"></div>
+                            <div class="vs-line"></div>
+                            <div class="vs-dot"></div>
+                        </div>
+
+                        <!-- AWAY TEAM -->
+                        <div class="team-section team-away">
+                            <div class="score-box">
+                                <span class="score-number" id="away-score">0</span>
+                            </div>
+                            <div class="team-identity">
+                                <div class="team-info team-info-away">
+                                    <span class="team-name" id="away-name">EQUIPO VISITANTE</span>
+                                    <div class="team-cards">
+                                        <div class="team-fouls" id="away-fouls-container" style="display:none">
+                                            <span class="foul-label">FALTAS</span>
+                                            <span class="foul-count" id="away-fouls">0</span>
+                                        </div>
+                                        <span class="card-yellow" id="away-yellows" style="display:none">
+                                            <span class="card-icon yellow"></span><span class="card-count">0</span>
+                                        </span>
+                                        <span class="card-red" id="away-reds" style="display:none">
+                                            <span class="card-icon red"></span><span class="card-count">0</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="badge-container">
+                                    <img id="away-badge" src="assets/escudos/default.svg" alt="Visitante" class="team-badge">
+                                    <div class="badge-glow"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="score-box">
-                        <span class="score-number" id="home-score">0</span>
+
+                    <!-- TIMER + PERIOD ROW (below scores) -->
+                    <div class="timer-row">
+                        <div class="timer-container">
+                            <div class="flex items-center">
+                                <div class="timer-display" id="timer-display">00:00</div>
+                                <div class="added-time-display" id="added-time-display" style="display:none">+0</div>
+                            </div>
+                            <div class="period-badge" id="period-badge">1ª PARTE</div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- CENTER: VS Dots -->
-                <div class="center-divider">
-                    <div class="vs-dot"></div>
-                    <div class="vs-line"></div>
-                    <div class="vs-dot"></div>
+                <!-- SCORERS SECTION -->
+                <div class="scorers-section">
+                    <div class="scorers-column scorers-home" id="home-scorers">
+                        <!-- Dynamically populated -->
+                    </div>
+                    <div class="scorers-divider"></div>
+                    <div class="scorers-column scorers-away" id="away-scorers">
+                        <!-- Dynamically populated -->
+                    </div>
                 </div>
 
-                <!-- AWAY TEAM -->
-                <div class="team-section team-away">
-                    <div class="score-box">
-                        <span class="score-number" id="away-score">0</span>
+                <!-- EXTRA INFO / MESSAGE -->
+                <div class="extra-message" id="extra-message" style="display:none">
+                    <span id="extra-text"></span>
+                </div>
+
+                <!-- HALFTIME OVERLAY -->
+                <div class="halftime-overlay" id="halftime-overlay">
+                    <div class="halftime-bg"></div>
+                    <div class="halftime-content">
+                        <div class="halftime-badge-row">
+                            <img class="halftime-badge" id="halftime-home-badge" src="assets/escudos/default.svg" alt="">
+                            <div class="halftime-score-mini">
+                                <span id="halftime-home-score">0</span>
+                                <span class="halftime-dash">—</span>
+                                <span id="halftime-away-score">0</span>
+                            </div>
+                            <img class="halftime-badge" id="halftime-away-badge" src="assets/escudos/default.svg" alt="">
+                        </div>
+                        <div class="halftime-title" id="halftime-title">DESCANSO</div>
+                        <div class="halftime-subtitle" id="halftime-subtitle"></div>
+                        <div class="halftime-line"></div>
                     </div>
-                    <div class="team-identity">
-                        <div class="team-info team-info-away">
-                            <span class="team-name" id="away-name">EQUIPO VISITANTE</span>
-                            <div class="team-cards">
-                                <div class="team-fouls" id="away-fouls-container" style="display:none">
-                                    <span class="foul-label">FALTAS</span>
-                                    <span class="foul-count" id="away-fouls">0</span>
+                </div>
+            </div>
+
+            <!-- DUAL MATCH MODE (2 fields F8) -->
+            <div id="dual-match" class="match-container" style="display:none">
+                <div class="dual-wrapper">
+                    <!-- FIELD 1 (Left Half) -->
+                    <div class="dual-field" id="field-1">
+                        <div class="dual-header">CAMPO 1</div>
+                        <div class="dual-main-content">
+                            <!-- Team Local -->
+                            <div class="dual-team-block">
+                                <img class="dual-badge" id="f1-home-badge" src="assets/escudos/default.svg" alt="">
+                                <div class="dual-score-box">
+                                    <span class="dual-score" id="f1-home-score">0</span>
                                 </div>
-                                <span class="card-yellow" id="away-yellows" style="display:none">
-                                    <span class="card-icon yellow"></span><span class="card-count">0</span>
-                                </span>
-                                <span class="card-red" id="away-reds" style="display:none">
-                                    <span class="card-icon red"></span><span class="card-count">0</span>
-                                </span>
+                            </div>
+                            
+                            <div class="dual-center-block">
+                                <span class="dual-separator">:</span>
+                            </div>
+
+                            <!-- Team Away -->
+                            <div class="dual-team-block">
+                                <div class="dual-score-box">
+                                    <span class="dual-score" id="f1-away-score">0</span>
+                                </div>
+                                <img class="dual-badge" id="f1-away-badge" src="assets/escudos/default.svg" alt="">
                             </div>
                         </div>
-                        <div class="badge-container">
-                            <img id="away-badge" src="assets/escudos/default.svg" alt="Visitante" class="team-badge">
-                            <div class="badge-glow"></div>
+                        <div class="dual-footer-info">
+                            <div class="dual-names-row">
+                                <span class="dual-team-name-small" id="f1-home-name">LOCAL</span>
+                                <span class="dual-name-sep">vs</span>
+                                <span class="dual-team-name-small" id="f1-away-name">VISITANTE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vertical Divider -->
+                    <div class="dual-divider"></div>
+
+                    <!-- FIELD 2 (Right Half) -->
+                    <div class="dual-field" id="field-2">
+                        <div class="dual-header">CAMPO 2</div>
+                        <div class="dual-main-content">
+                            <!-- Team Local -->
+                            <div class="dual-team-block">
+                                <img class="dual-badge" id="f2-home-badge" src="assets/escudos/default.svg" alt="">
+                                <div class="dual-score-box">
+                                    <span class="dual-score" id="f2-home-score">0</span>
+                                </div>
+                            </div>
+                            
+                            <div class="dual-center-block">
+                                <span class="dual-separator">:</span>
+                            </div>
+
+                            <!-- Team Away -->
+                            <div class="dual-team-block">
+                                <div class="dual-score-box">
+                                    <span class="dual-score" id="f2-away-score">0</span>
+                                </div>
+                                <img class="dual-badge" id="f2-away-badge" src="assets/escudos/default.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="dual-footer-info">
+                            <div class="dual-names-row">
+                                <span class="dual-team-name-small" id="f2-home-name">LOCAL</span>
+                                <span class="dual-name-sep">vs</span>
+                                <span class="dual-team-name-small" id="f2-away-name">VISITANTE</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- TIMER + PERIOD ROW (below scores) -->
-            <div class="timer-row">
-                <div class="timer-container">
-                    <div class="flex items-center">
-                        <div class="timer-display" id="timer-display">00:00</div>
-                        <div class="added-time-display" id="added-time-display" style="display:none">+0</div>
-                    </div>
-                    <div class="period-badge" id="period-badge">1ª PARTE</div>
+                <!-- DUAL BOTTOM TIMER -->
+                <div class="dual-bottom-timer-container">
+                    <span class="dual-period-label" id="dual-shared-period">1ª PARTE</span>
+                    <div class="dual-timer" id="dual-shared-timer">00:00</div>
+                    <div class="added-time-dual" id="dual-shared-added-time" style="display:none">+0</div>
                 </div>
-            </div>
-        </div>
-
-        <!-- SCORERS SECTION -->
-        <div class="scorers-section">
-            <div class="scorers-column scorers-home" id="home-scorers">
-                <!-- Dynamically populated: <div class="scorer-entry">⚽ 12' — Jugador A</div> -->
-            </div>
-            <div class="scorers-divider"></div>
-            <div class="scorers-column scorers-away" id="away-scorers">
-                <!-- Dynamically populated -->
-            </div>
-        </div>
-
-        <!-- EXTRA INFO / MESSAGE -->
-        <div class="extra-message" id="extra-message" style="display:none">
-            <span id="extra-text"></span>
-        </div>
-
-        <!-- HALFTIME / DESCANSO OVERLAY (full-screen cinematic) -->
-        <!-- HALFTIME / DESCANSO OVERLAY (full-screen cinematic) -->
-        <div class="halftime-overlay" id="halftime-overlay">
-            <div class="halftime-bg"></div>
-            <div class="halftime-content">
-                <div class="halftime-badge-row">
-                    <img class="halftime-badge" id="halftime-home-badge" src="assets/escudos/default.svg" alt="">
-                    <div class="halftime-score-mini">
-                        <span id="halftime-home-score">0</span>
-                        <span class="halftime-dash">—</span>
-                        <span id="halftime-away-score">0</span>
-                    </div>
-                    <img class="halftime-badge" id="halftime-away-badge" src="assets/escudos/default.svg" alt="">
-                </div>
-                <div class="halftime-title" id="halftime-title">DESCANSO</div>
-                <div class="halftime-subtitle" id="halftime-subtitle"></div>
-                <div class="halftime-line"></div>
             </div>
         </div>
     </div>
 </div>
-</div>
+    </div>
 
-    <!-- ============================================================ -->
-    <!-- DUAL MATCH MODE (2 fields F8) -->
-    <!-- ============================================================ -->
-    <div id="dual-match" class="match-container" style="display:none">
-        <div class="dual-wrapper">
-            <!-- FIELD 1 -->
-            <div class="dual-field" id="field-1">
-                <div class="dual-header">CAMPO 1</div>
-                <div class="dual-scoreboard">
-                    <div class="dual-team">
-                        <img class="dual-badge" id="f1-home-badge" src="assets/escudos/default.svg" alt="">
-                        <span class="dual-team-name" id="f1-home-name">LOCAL</span>
-                    </div>
-                    <div class="dual-scores">
-                        <span class="dual-score" id="f1-home-score">0</span>
-                        <span class="dual-separator">:</span>
-                        <span class="dual-score" id="f1-away-score">0</span>
-                    </div>
-                    <div class="dual-fouls-row">
-                        <span class="dual-foul-badge">F: <span id="f1-home-fouls">0</span></span>
-                        <span class="dual-foul-badge">F: <span id="f1-away-fouls">0</span></span>
-                    </div>
-                    <div class="dual-team">
-                        <span class="dual-team-name" id="f1-away-name">VISITANTE</span>
-                        <img class="dual-badge" id="f1-away-badge" src="assets/escudos/default.svg" alt="">
-                    </div>
-                </div>
-                <div class="flex items-center justify-center gap-2">
-                    <div class="dual-timer" id="f1-timer">00:00 — 1ª PARTE</div>
-                    <div class="added-time-dual" id="f1-added-time" style="display:none">+0</div>
-                </div>
-                <div class="dual-scorers">
-                    <div class="dual-scorers-col" id="f1-home-scorers"></div>
-                    <div class="dual-scorers-col" id="f1-away-scorers"></div>
-                </div>
-            </div>
-
-            <!-- Vertical Divider -->
-            <div class="dual-divider"></div>
-
-            <!-- FIELD 2 -->
-            <div class="dual-field" id="field-2">
-                <div class="dual-header">CAMPO 2</div>
-                <div class="dual-scoreboard">
-                    <div class="dual-team">
-                        <img class="dual-badge" id="f2-home-badge" src="assets/escudos/default.svg" alt="">
-                        <span class="dual-team-name" id="f2-home-name">LOCAL</span>
-                    </div>
-                    <div class="dual-scores">
-                        <span class="dual-score" id="f2-home-score">0</span>
-                        <span class="dual-separator">:</span>
-                        <span class="dual-score" id="f2-away-score">0</span>
-                    </div>
-                    <div class="dual-fouls-row">
-                        <span class="dual-foul-badge">F: <span id="f2-home-fouls">0</span></span>
-                        <span class="dual-foul-badge">F: <span id="f2-away-fouls">0</span></span>
-                    </div>
-                    <div class="dual-team">
-                        <span class="dual-team-name" id="f2-away-name">VISITANTE</span>
-                        <img class="dual-badge" id="f2-away-badge" src="assets/escudos/default.svg" alt="">
-                    </div>
-                </div>
-                <div class="flex items-center justify-center gap-2">
-                    <div class="dual-timer" id="f2-timer">00:00 — 1ª PARTE</div>
-                    <div class="added-time-dual" id="f2-added-time" style="display:none">+0</div>
-                </div>
-                <div class="dual-scorers">
-                    <div class="dual-scorers-col" id="f2-home-scorers"></div>
-                    <div class="dual-scorers-col" id="f2-away-scorers"></div>
-                </div>
-            </div>
+    <!-- TOURNAMENT COUNTDOWN OVERLAY -->
+    <div id="tournament-countdown-overlay" class="countdown-overlay" style="display: none;">
+        <div class="countdown-circle">
+            <span id="countdown-number">5</span>
         </div>
+        <div class="countdown-text">¡EMPIEZA EL TORNEO!</div>
     </div>
 
     <!-- SPONSOR OVERLAY (rotating logos) -->

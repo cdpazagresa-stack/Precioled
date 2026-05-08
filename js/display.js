@@ -79,6 +79,7 @@ function renderDisplay() {
         renderDualMatch();
     }
     
+    renderTournamentCountdown();
     renderSponsorOverlay();
     renderGraphics();
     renderHalftimeOverlay();
@@ -143,18 +144,6 @@ function renderDualMatch() {
         setText(`${p}-home-score`, f.homeScore);
         setText(`${p}-away-score`, f.awayScore);
         
-        const elapsed = matchTimer.getElapsed(fn);
-        const direction = f.timerDirection || 'up';
-        const dirIcon = direction === 'down' ? ' ▼' : '';
-        setText(`${p}-timer`, `${matchTimer.format(elapsed)}${dirIcon} — ${f.period || '1ª PARTE'}`);
-        
-        // Toggle running/overtime classes on dual timer
-        const dualTimerEl = document.getElementById(`${p}-timer`);
-        if (dualTimerEl) {
-            dualTimerEl.classList.toggle('timer-running', !!f.timerRunning);
-            dualTimerEl.classList.toggle('timer-overtime', matchTimer.isInAddedTime(fn));
-        }
-        
         renderMainScorers(`${p}-home-scorers`, f.homeScorers, 'right');
         renderMainScorers(`${p}-away-scorers`, f.awayScorers, 'left');
         
@@ -209,22 +198,23 @@ function _renderSingleTimer() {
 }
 
 function _renderDualTimer(fn) {
-    const elapsed = matchTimer.getElapsed(fn);
-    const f = matchState.fields[fn];
-    const direction = f.timerDirection || 'up';
-    const dirIcon = direction === 'down' ? ' ▼' : '';
-    const timerText = `${matchTimer.format(elapsed)}${dirIcon} — ${f.period || '1ª PARTE'}`;
-    setText(`f${fn}-timer`, timerText);
+    if (fn !== 1) return; // Master clock for dual match is Field 1
+
+    const elapsed = matchTimer.getElapsed(1);
+    const f = matchState.fields[1];
+    
+    setText('dual-shared-timer', matchTimer.format(elapsed));
+    setText('dual-shared-period', f.period || '1ª PARTE');
     
     // Toggle state classes
-    const timerEl = document.getElementById(`f${fn}-timer`);
+    const timerEl = document.getElementById('dual-shared-timer');
     if (timerEl) {
         timerEl.classList.toggle('timer-running', !!f.timerRunning);
-        timerEl.classList.toggle('timer-overtime', matchTimer.isInAddedTime(fn));
+        timerEl.classList.toggle('timer-overtime', matchTimer.isInAddedTime(1));
     }
     
     // Added time badge
-    const addedEl = document.getElementById(`f${fn}-added-time`);
+    const addedEl = document.getElementById('dual-shared-added-time');
     if (addedEl) {
         const addedMinutes = f.addedTime || f.addedTimeMinutes || 0;
         if (addedMinutes > 0) {
@@ -302,6 +292,54 @@ function renderTournamentLabel() {
         labelEl.style.display = 'block';
     } else {
         labelEl.style.display = 'none';
+    }
+}
+
+// ── Tournament Countdown Overlay Render ──────────────────────
+let _tournamentCountdownInterval = null;
+
+function renderTournamentCountdown() {
+    const overlay = document.getElementById('tournament-countdown-overlay');
+    const numberEl = document.getElementById('countdown-number');
+    if (!overlay || !numberEl) return;
+    
+    if (matchState.showTournamentCountdown) {
+        if (!overlay.classList.contains('active')) {
+            overlay.style.display = 'flex';
+            // Force reflow
+            overlay.offsetHeight;
+            overlay.classList.add('active');
+            
+            // Start countdown from 5 to 1
+            let count = 5;
+            numberEl.textContent = count;
+            numberEl.style.fontSize = ''; // Reset in case GO! changed it
+            
+            if (_tournamentCountdownInterval) clearInterval(_tournamentCountdownInterval);
+            _tournamentCountdownInterval = setInterval(() => {
+                count--;
+                if (count > 0) {
+                    numberEl.textContent = count;
+                    // Retrigger animation
+                    numberEl.style.animation = 'none';
+                    numberEl.offsetHeight; // force reflow
+                    numberEl.style.animation = 'countdownPulse 1s ease-in-out infinite';
+                } else if (count === 0) {
+                    numberEl.textContent = "GO!";
+                    numberEl.style.fontSize = 'clamp(4rem, 10vh, 8rem)';
+                } else {
+                    clearInterval(_tournamentCountdownInterval);
+                }
+            }, 1000);
+        }
+    } else {
+        if (overlay.classList.contains('active')) {
+            overlay.classList.remove('active');
+            if (_tournamentCountdownInterval) clearInterval(_tournamentCountdownInterval);
+            setTimeout(() => {
+                overlay.style.display = 'none';
+            }, 600); // Wait for transition
+        }
     }
 }
 
