@@ -16,12 +16,14 @@ function initDisplay() {
             if (data.type === 'FULL_STATE') {
                 matchState = data.payload;
                 matchTimer.syncFromState();
+                renderTimers(); // Force immediate timer render
                 renderDisplay();
             } else if (data.type === 'state-update') {
                 const prevGoal1 = matchState.fields[1].showGoalAnimation;
                 const prevGoal2 = matchState.fields[2].showGoalAnimation;
                 matchState = data.state;
                 matchTimer.syncFromState();
+                renderTimers(); // Force immediate timer render
                 renderDisplay();
                 // Check for new goal animations
                 if (!prevGoal1 && matchState.fields[1].showGoalAnimation) showGoalOverlay(1);
@@ -79,6 +81,8 @@ function renderDisplay() {
         renderDualMatch();
     }
     
+    renderTimers();
+    renderTournamentLabel();
     renderTournamentCountdown();
     renderSponsorOverlay();
     renderGraphics();
@@ -126,9 +130,6 @@ function renderSingleMatch() {
 
     // Fouls
     renderFouls(1);
-
-    // Tournament label
-    renderTournamentLabel();
 }
 
 // ── Dual Match Render ───────────────────────────────────────
