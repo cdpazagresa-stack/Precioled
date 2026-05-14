@@ -150,8 +150,8 @@
                             </div>
                             <div id="home-team-selected" class="mt-3 flex items-center justify-between p-3 bg-white/5 rounded-xl border border-white/10" style="display:none">
                                 <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 rounded-lg bg-black/50 flex items-center justify-center border border-white/5">
-                                        <img id="ctrl-home-badge" src="" class="w-7 h-7 object-contain">
+                                    <div class="w-7 h-7 rounded-lg bg-black/50 flex items-center justify-center border border-white/5">
+                                        <img id="ctrl-home-badge" src="" class="w-5 h-5 object-contain">
                                     </div>
                                     <span id="ctrl-home-name" class="text-sm font-bold tracking-tight"></span>
                                 </div>
@@ -173,8 +173,8 @@
                             </div>
                             <div id="away-team-selected" class="mt-3 flex items-center justify-between p-3 bg-white/5 rounded-xl border border-white/10" style="display:none">
                                 <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 rounded-lg bg-black/50 flex items-center justify-center border border-white/5">
-                                        <img id="ctrl-away-badge" src="" class="w-7 h-7 object-contain">
+                                    <div class="w-7 h-7 rounded-lg bg-black/50 flex items-center justify-center border border-white/5">
+                                        <img id="ctrl-away-badge" src="" class="w-5 h-5 object-contain">
                                     </div>
                                     <span id="ctrl-away-name" class="text-sm font-bold tracking-tight"></span>
                                 </div>
@@ -340,6 +340,9 @@
                                 <div class="flex gap-2">
                                     <input type="number" id="roster-dorsal" class="form-input w-16 text-center" placeholder="#">
                                     <input type="text" id="roster-player-name" class="form-input flex-1" placeholder="Nombre Jugador">
+                                </div>
+                                <div class="flex gap-2">
+                                    <input type="text" id="roster-player-photo" class="form-input flex-1 text-xs" placeholder="URL Foto (Opcional)">
                                     <button class="btn btn-success" onclick="addRosterPlayer()">+</button>
                                 </div>
                                 <div id="roster-players" class="max-h-40 overflow-y-auto space-y-1 bg-black/20 p-2 rounded-xl"></div>

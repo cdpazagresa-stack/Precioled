@@ -1,4 +1,4 @@
-const fs = require('fs');
+import fs from 'fs';
 
 const data = fs.readFileSync('excel_data.txt', 'utf8');
 const lines = data.split('\n');

@@ -440,6 +440,12 @@ function showGoalOverlay(fieldNum) {
         scorerEl.textContent = f.goalScorerName;
     }
     
+    const photoEl = document.getElementById('goal-scorer-photo');
+    if (photoEl) {
+        photoEl.src = f.goalScorerPhoto || 'assets/escudos/default_avatar.svg';
+        photoEl.style.display = 'block';
+    }
+    
     overlay.classList.add('active');
     
     // Score flash animation
@@ -490,8 +496,11 @@ function renderGraphics() {
             // Updated with new classes and staggered animation delays
             playersContainer.innerHTML = data.players.map((p, index) => `
                 <div class="lineup-player" style="animation-delay: ${index * 0.08}s">
-                    <span class="lineup-num">${p.number}</span>
-                    <span class="lineup-name">${p.name}</span>
+                    <img src="${p.photo || 'assets/escudos/default_avatar.svg'}" class="lineup-player-photo">
+                    <div class="lineup-player-info">
+                        <span class="lineup-num">${p.number}</span>
+                        <span class="lineup-name">${p.name}</span>
+                    </div>
                 </div>
             `).join('');
             
@@ -501,11 +510,29 @@ function renderGraphics() {
         setText('graphic-sub-out', data.subOut);
         setText('graphic-sub-in', data.subIn);
         setBadge('graphic-sub-badge', data.badge, data.team);
+        
+        const outPhoto = document.getElementById('graphic-sub-out-photo');
+        if (outPhoto) {
+            outPhoto.src = data.subOutPhoto || 'assets/escudos/default_avatar.svg';
+            outPhoto.style.display = 'block';
+        }
+        
+        const inPhoto = document.getElementById('graphic-sub-in-photo');
+        if (inPhoto) {
+            inPhoto.src = data.subInPhoto || 'assets/escudos/default_avatar.svg';
+            inPhoto.style.display = 'block';
+        }
     }
     else if (active === 'card') {
         setText('graphic-card-type', data.color === 'yellow' ? 'TARJETA AMARILLA' : 'TARJETA ROJA');
         setText('graphic-card-player', data.player);
         setBadge('graphic-card-badge', data.badge, data.team);
+        
+        const cardPhoto = document.getElementById('graphic-card-photo');
+        if (cardPhoto) {
+            cardPhoto.src = data.playerPhoto || 'assets/escudos/default_avatar.svg';
+            cardPhoto.style.display = 'block';
+        }
         
         const cardBg = document.getElementById('graphic-card-bg');
         if (cardBg) {

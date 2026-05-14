@@ -457,6 +457,10 @@ function confirmGoalScorer(playerName) {
     if (!team) return;
     
     const f = F();
+    const roster = team === 'home' ? f.homeRoster : f.awayRoster;
+    const player = roster && roster.find(p => p.name === playerName);
+    const photo = player ? player.photo : '';
+
     const key = team === 'home' ? 'homeScore' : 'awayScore';
     f[key]++;
     
@@ -469,6 +473,7 @@ function confirmGoalScorer(playerName) {
     f.showGoalAnimation = true;
     f.goalTeam = team;
     f.goalScorerName = playerName;
+    f.goalScorerPhoto = photo;
     
     logMatchEvent('GOAL_DETAIL', { team, player: playerName, minute });
     
@@ -501,6 +506,7 @@ function confirmGoalWithoutPlayer() {
     f.showGoalAnimation = true;
     f.goalTeam = team;
     f.goalScorerName = '';
+    f.goalScorerPhoto = '';
     
     logMatchEvent('GOAL', { team });
     
@@ -520,6 +526,7 @@ function triggerGoalAnimation(team) {
     F().showGoalAnimation = true;
     F().goalTeam = team;
     F().goalScorerName = '';
+    F().goalScorerPhoto = '';
     broadcastState();
     setTimeout(() => { F().showGoalAnimation = false; broadcastState(); }, 3500);
 }
@@ -561,10 +568,12 @@ let currentRoster = [];
 function addRosterPlayer() {
     const dorsal = document.getElementById('roster-dorsal').value;
     const name = document.getElementById('roster-player-name').value.trim();
+    const photo = document.getElementById('roster-player-photo').value.trim();
     if (!name) { showToast('Introduce el nombre', 'error'); return; }
-    currentRoster.push({ number: dorsal || '-', name });
+    currentRoster.push({ number: dorsal || '-', name, photo });
     document.getElementById('roster-dorsal').value = '';
     document.getElementById('roster-player-name').value = '';
+    document.getElementById('roster-player-photo').value = '';
     renderRosterPlayers();
 }
 
@@ -574,8 +583,9 @@ function renderRosterPlayers() {
     const grid = document.getElementById('roster-players');
     if (!grid) return;
     grid.innerHTML = currentRoster.map((p, i) => `
-        <div class="roster-player">
+        <div class="roster-player flex items-center gap-2">
             <span class="player-number">${p.number}</span>
+            ${p.photo ? `<img src="${p.photo}" class="w-6 h-6 object-cover rounded-full" alt="foto">` : ''}
             <span style="flex:1">${p.name}</span>
             <button class="scorer-remove" onclick="removeRosterPlayer(${i})">✕</button>
         </div>
@@ -607,6 +617,7 @@ function importRosterFromFile(event) {
             // Identify column mapping
             let nameCol = -1;
             let numCol = -1;
+            let photoCol = -1;
             let startRow = 0;
 
             // Try to find header row in the first 5 rows
@@ -619,6 +630,7 @@ function importRosterFromFile(event) {
                     const val = cell.toString().toLowerCase();
                     if (val.includes('nombre') || val.includes('jugador') || val.includes('player')) nameCol = idx;
                     if (val.includes('dorsal') || val.includes('nº') || val.includes('number') || val.includes('#')) numCol = idx;
+                    if (val.includes('foto') || val.includes('photo') || val.includes('imagen')) photoCol = idx;
                 });
 
                 if (nameCol !== -1) {
@@ -631,6 +643,7 @@ function importRosterFromFile(event) {
             if (nameCol === -1) {
                 nameCol = 1; // Assume 2nd column
                 numCol = 0;  // Assume 1st column
+                photoCol = 2; // Assume 3rd column
                 startRow = 0;
             }
 
@@ -647,10 +660,12 @@ function importRosterFromFile(event) {
 
                 let name = row[nameCol] || '';
                 let dorsal = row[numCol] !== undefined ? row[numCol] : '-';
+                let foto = photoCol !== -1 && row[photoCol] ? row[photoCol] : '';
 
                 // Data cleaning
                 name = name.toString().trim();
                 dorsal = dorsal.toString().trim();
+                foto = foto.toString().trim();
 
                 if (name && name !== '') {
                     // Avoid exact duplicates
@@ -658,7 +673,8 @@ function importRosterFromFile(event) {
                     if (!exists) {
                         newPlayers.push({
                             number: dorsal || '-',
-                            name: name
+                            name: name,
+                            photo: foto
                         });
                     }
                 }
@@ -849,12 +865,25 @@ function triggerGraphic(type, side) {
         data.badge = side === 'home' ? F().homeBadge : F().awayBadge;
         data.subOut = document.getElementById('sub-out-name').value || 'Sale';
         data.subIn = document.getElementById('sub-in-name').value || 'Entra';
+        
+        const roster = side === 'home' ? F().homeRoster : F().awayRoster;
+        const getPhoto = (val) => {
+            if (!val) return '';
+            const p = roster.find(p => val.includes(p.name) || (p.name && p.name.includes(val)));
+            return p ? p.photo : '';
+        };
+        data.subOutPhoto = getPhoto(data.subOut);
+        data.subInPhoto = getPhoto(data.subIn);
     } else if (type === 'card') {
         data.side = side;
         data.team = side === 'home' ? F().homeName : F().awayName;
         data.badge = side === 'home' ? F().homeBadge : F().awayBadge;
         data.player = document.getElementById('card-player-name').value || 'Jugador';
         data.color = document.getElementById('card-color').value || 'yellow';
+        
+        const roster = side === 'home' ? F().homeRoster : F().awayRoster;
+        const pCard = roster.find(p => data.player.includes(p.name) || (p.name && p.name.includes(data.player)));
+        data.playerPhoto = pCard ? pCard.photo : '';
     } else if (type === 'summary') {
         // Summary uses matchState directly
     }
@@ -982,14 +1011,25 @@ function updateControlUI() {
     if (af) af.textContent = f.awayFouls;
     
     // Team badges
-    if (f.homeBadge) updateTeamDisplay('home', f.homeName, f.homeBadge);
-    if (f.awayBadge) updateTeamDisplay('away', f.awayName, f.awayBadge);
+    if (f.homeName && f.homeName !== 'EQUIPO LOCAL') {
+        updateTeamDisplay('home', f.homeName, f.homeBadge);
+    } else {
+        const sel = document.getElementById('home-team-selected');
+        if (sel) sel.style.display = 'none';
+    }
+    
+    if (f.awayName && f.awayName !== 'EQUIPO VISITANTE') {
+        updateTeamDisplay('away', f.awayName, f.awayBadge);
+    } else {
+        const sel = document.getElementById('away-team-selected');
+        if (sel) sel.style.display = 'none';
+    }
     
     // Coaches
     const hc = document.getElementById('home-coach-input');
     const ac = document.getElementById('away-coach-input');
-    if (hc && f.homeCoach) hc.value = f.homeCoach;
-    if (ac && f.awayCoach) ac.value = f.awayCoach;
+    if (hc) hc.value = f.homeCoach || '';
+    if (ac) ac.value = f.awayCoach || '';
 
     // Badges for assigned rosters
     const hb = document.getElementById('home-roster-assigned-badge');
