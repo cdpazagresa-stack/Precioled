@@ -105,7 +105,8 @@ function startTournamentCountdown() {
 
     // Iniciar temporizador automáticamente a los 5 segundos (cuando la cuenta atrás llegue a 0 / "GO!")
     setTimeout(() => {
-        if (!matchTimer.isRunning(activeField)) {
+        const field = matchState.fields[activeField];
+        if (field && !field.timerRunning) {
             matchTimer.start(activeField);
             updateTimerUI();
         }

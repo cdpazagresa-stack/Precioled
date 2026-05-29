@@ -473,6 +473,41 @@ function showGoalOverlay(fieldNum) {
         photoEl.src = photoSrc;
         photoEl.style.display = 'block';
     }
+
+    // ── Dynamic Goal Text Generation ─────────────────────────
+    const goalTextContainer = overlay.querySelector('.goal-text');
+    if (goalTextContainer) {
+        goalTextContainer.innerHTML = '';
+        
+        let textToShow = '¡¡GOOOOOLL!!';
+        if (f.goalTeam === 'away') {
+            const teamName = (f.awayName || 'VISITANTE').toUpperCase();
+            textToShow = `¡GOL ${teamName}!`;
+        }
+        
+        // Ajustar el tamaño de la fuente dinámicamente según la longitud
+        let fontSize = 'clamp(20vh, 32vh, 40vh)'; // Por defecto para textos cortos
+        if (textToShow.length > 18) {
+            fontSize = 'clamp(8vh, 12vh, 15vh)';
+        } else if (textToShow.length > 12) {
+            fontSize = 'clamp(12vh, 18vh, 22vh)';
+        }
+        
+        // Crear spans dinámicos para la animación letra a letra
+        for (let i = 0; i < textToShow.length; i++) {
+            const char = textToShow[i];
+            const span = document.createElement('span');
+            span.className = 'goal-word';
+            span.textContent = char === ' ' ? '\u00A0' : char; // Espacio duro para que no colapse
+            span.style.fontSize = fontSize;
+            
+            // Forzar animación inline con delay progresivo
+            span.style.animation = 'goalLetterIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards';
+            span.style.animationDelay = `${0.1 + (i * 0.05)}s`;
+            
+            goalTextContainer.appendChild(span);
+        }
+    }
     
     overlay.classList.add('active');
     
