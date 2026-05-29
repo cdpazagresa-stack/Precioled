@@ -193,69 +193,57 @@ class SyncManager {
     connectToHost(roomId) {
         this._targetRoomId = roomId;
 
-        // Si el peer existe pero está roto/desconectado, lo destruimos y recreamos
-        if (this.peer) {
-            try {
-                if (this.peer.destroyed || this.peer.disconnected) {
-                    this.peer.destroy();
-                    this.peer = null;
-                    this.conn = null;
-                }
-            } catch(e) {
-                this.peer = null;
-                this.conn = null;
-            }
-        }
-
         const setStatus = (text, cls) => {
             const el = document.getElementById('remote-status');
             if (el) { el.textContent = text; el.className = cls; }
         };
 
-        if (!this.peer) {
-            setStatus('⏳ Iniciando conexión...', 'badge bg-yellow-100 text-yellow-800');
-
-            // Usar servidor PeerJS público con config explícita
-            this.peer = new Peer(undefined, {
-                host: '0.peerjs.com',
-                port: 443,
-                path: '/',
-                secure: true,
-                debug: 1,
-                config: {
-                    iceServers: [
-                        { urls: 'stun:stun.l.google.com:19302' },
-                        { urls: 'stun:stun1.l.google.com:19302' }
-                    ]
-                }
-            });
-
-            this.peer.on('open', () => {
-                this._connectToPeer(roomId, setStatus);
-            });
-
-            this.peer.on('error', (err) => {
-                console.error('PeerJS Client Error:', err.type, err.message);
-                setStatus('❌ Error: ' + (err.message || err.type), 'badge bg-red-100 text-red-800');
-                // Destruir para que el próximo intento empiece limpio
-                try { this.peer.destroy(); } catch(e) {}
-                this.peer = null;
-                this.conn = null;
-            });
-
-            this.peer.on('disconnected', () => {
-                console.warn('PeerJS desconectado del servidor de señalización');
-                setStatus('⚠️ Señalización perdida — reintentando...', 'badge bg-yellow-100 text-yellow-800');
-                // Intentar reconectar al servidor de señalización
-                try { this.peer.reconnect(); } catch(e) {
-                    try { this.peer.destroy(); } catch(e2) {}
-                    this.peer = null;
-                }
-            });
-        } else {
-            // Peer ya existe y está abierto → conectar directamente
-            this._connectToPeer(roomId, setStatus);
+        // Forzar recreación del Peer para evitar el error "disconnected from server"
+        if (this.peer) {
+            try {
+                this.peer.destroy();
+            } catch(e) {}
+            this.peer = null;
+            this.conn = null;
         }
+
+        setStatus('⏳ Iniciando conexión...', 'badge bg-yellow-100 text-yellow-800');
+
+        // Usar servidor PeerJS público con config explícita
+        this.peer = new Peer(undefined, {
+            host: '0.peerjs.com',
+            port: 443,
+            path: '/',
+            secure: true,
+            debug: 1,
+            config: {
+                iceServers: [
+                    { urls: 'stun:stun.l.google.com:19302' },
+                    { urls: 'stun:stun1.l.google.com:19302' }
+                ]
+            }
+        });
+
+        this.peer.on('open', () => {
+            this._connectToPeer(roomId, setStatus);
+        });
+
+        this.peer.on('error', (err) => {
+            console.error('PeerJS Client Error:', err.type, err.message);
+            setStatus('❌ Error: ' + (err.message || err.type), 'badge bg-red-100 text-red-800');
+            try { this.peer.destroy(); } catch(e) {}
+            this.peer = null;
+            this.conn = null;
+        });
+
+        this.peer.on('disconnected', () => {
+            console.warn('PeerJS desconectado del servidor de señalización');
+            setStatus('⚠️ Señalización perdida — reintentando...', 'badge bg-yellow-100 text-yellow-800');
+            try { this.peer.reconnect(); } catch(e) {
+                try { this.peer.destroy(); } catch(e2) {}
+                this.peer = null;
+            }
+        });
     }
 
     _connectToPeer(roomId, setStatus) {
