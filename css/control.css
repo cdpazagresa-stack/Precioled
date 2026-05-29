@@ -613,3 +613,41 @@ html, body {
     margin-top: 1rem;
 }
 
+/* ── Tabs (Field Selector) ──────────────────────────────────── */
+.tabs {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+.tab {
+    background: transparent;
+    border: 1px solid transparent;
+    color: var(--text-secondary);
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all var(--transition);
+    cursor: pointer;
+}
+
+.tab:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+}
+
+.tab.active {
+    background: var(--primary) !important;
+    color: #000 !important;
+    font-weight: 800;
+    box-shadow: 0 0 15px var(--primary-glow);
+}
+
+/* ── Mode Active Button ─────────────────────────────────────── */
+.mode-btn.active {
+    background: var(--primary) !important;
+    color: #000 !important;
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 15px var(--primary-glow);
+}
+
+

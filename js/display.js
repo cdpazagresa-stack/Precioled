@@ -302,6 +302,7 @@ let _tournamentCountdownInterval = null;
 function renderTournamentCountdown() {
     const overlay = document.getElementById('tournament-countdown-overlay');
     const numberEl = document.getElementById('countdown-number');
+    const textEl = document.getElementById('countdown-text');
     if (!overlay || !numberEl) return;
     
     if (matchState.showTournamentCountdown) {
@@ -310,6 +311,18 @@ function renderTournamentCountdown() {
             // Force reflow
             overlay.offsetHeight;
             overlay.classList.add('active');
+
+            // ── Dynamic message ───────────────────────────
+            if (textEl) {
+                const hasTournament = matchState.tournamentName && matchState.tournamentName.trim();
+                if (hasTournament) {
+                    textEl.textContent = `¡EMPIEZA ${matchState.tournamentName.toUpperCase()}!`;
+                } else if (matchState.mode === 'tournament') {
+                    textEl.textContent = '¡EMPIEZA EL TORNEO!';
+                } else {
+                    textEl.textContent = '¡PREPARADOS PARA EL PARTIDO!';
+                }
+            }
             
             // Start countdown from 5 to 1
             let count = 5;

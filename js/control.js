@@ -49,6 +49,19 @@ function initControlPanel() {
             document.querySelectorAll('.team-results').forEach(el => el.classList.remove('visible'));
         }
     });
+
+    // Auto-connect if room parameter is present in URL query
+    const urlParams = new URLSearchParams(window.location.search);
+    const roomParam = urlParams.get('room');
+    if (roomParam) {
+        const peerInput = document.getElementById('peer-id-input');
+        if (peerInput) {
+            peerInput.value = roomParam;
+        }
+        setTimeout(() => {
+            connectRemote();
+        }, 1000);
+    }
 }
 
 // ── PeerJS Conexión ──────────────────────────────────────────
@@ -73,7 +86,7 @@ function setMode(mode) {
     
     const tournamentBtn = document.getElementById('mode-tournament');
     if (tournamentBtn) {
-        tournamentBtn.style.display = mode === 'dual' ? 'inline-flex' : 'none';
+        tournamentBtn.style.display = 'inline-flex';
     }
     
     broadcastState();
@@ -1011,18 +1024,24 @@ function updateControlUI() {
     if (af) af.textContent = f.awayFouls;
     
     // Team badges
+    const homeSearchContainer = document.getElementById('home-team-search-container');
     if (f.homeName && f.homeName !== 'EQUIPO LOCAL') {
         updateTeamDisplay('home', f.homeName, f.homeBadge);
+        if (homeSearchContainer) homeSearchContainer.style.display = 'none';
     } else {
         const sel = document.getElementById('home-team-selected');
         if (sel) sel.style.display = 'none';
+        if (homeSearchContainer) homeSearchContainer.style.display = 'block';
     }
     
+    const awaySearchContainer = document.getElementById('away-team-search-container');
     if (f.awayName && f.awayName !== 'EQUIPO VISITANTE') {
         updateTeamDisplay('away', f.awayName, f.awayBadge);
+        if (awaySearchContainer) awaySearchContainer.style.display = 'none';
     } else {
         const sel = document.getElementById('away-team-selected');
         if (sel) sel.style.display = 'none';
+        if (awaySearchContainer) awaySearchContainer.style.display = 'block';
     }
     
     // Coaches
@@ -1036,6 +1055,19 @@ function updateControlUI() {
     const ab = document.getElementById('away-roster-assigned-badge');
     if (hb) hb.classList.toggle('hidden', f.homeRoster.length === 0);
     if (ab) ab.classList.toggle('hidden', f.awayRoster.length === 0);
+
+    // Active field indicators for dual mode
+    ['teams-card-field-indicator', 'score-card-field-indicator', 'squads-card-field-indicator'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+            if (matchState.mode === 'dual') {
+                el.textContent = `Campo ${activeField}`;
+                el.classList.remove('hidden');
+            } else {
+                el.classList.add('hidden');
+            }
+        }
+    });
 
     // Scorers
     renderScorers();
