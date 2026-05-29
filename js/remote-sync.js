@@ -141,7 +141,17 @@ class SyncManager {
         this.roomId = `${roomIdPrefix}${randomId}`;
 
         this.peer = new Peer(this.roomId, {
-            debug: 2
+            host: '0.peerjs.com',
+            port: 443,
+            path: '/',
+            secure: true,
+            debug: 1,
+            config: {
+                iceServers: [
+                    { urls: 'stun:stun.l.google.com:19302' },
+                    { urls: 'stun:stun1.l.google.com:19302' }
+                ]
+            }
         });
 
         this.peer.on('open', (id) => {
@@ -181,49 +191,111 @@ class SyncManager {
 
     // Funciones específicas para Control (Cliente)
     connectToHost(roomId) {
+        this._targetRoomId = roomId;
+
+        // Si el peer existe pero está roto/desconectado, lo destruimos y recreamos
+        if (this.peer) {
+            try {
+                if (this.peer.destroyed || this.peer.disconnected) {
+                    this.peer.destroy();
+                    this.peer = null;
+                    this.conn = null;
+                }
+            } catch(e) {
+                this.peer = null;
+                this.conn = null;
+            }
+        }
+
+        const setStatus = (text, cls) => {
+            const el = document.getElementById('remote-status');
+            if (el) { el.textContent = text; el.className = cls; }
+        };
+
         if (!this.peer) {
-            this.peer = new Peer({ debug: 2 });
-            
-            this.peer.on('open', () => {
-                this._connect(roomId);
+            setStatus('⏳ Iniciando conexión...', 'badge bg-yellow-100 text-yellow-800');
+
+            // Usar servidor PeerJS público con config explícita
+            this.peer = new Peer(undefined, {
+                host: '0.peerjs.com',
+                port: 443,
+                path: '/',
+                secure: true,
+                debug: 1,
+                config: {
+                    iceServers: [
+                        { urls: 'stun:stun.l.google.com:19302' },
+                        { urls: 'stun:stun1.l.google.com:19302' }
+                    ]
+                }
             });
-            
+
+            this.peer.on('open', () => {
+                this._connectToPeer(roomId, setStatus);
+            });
+
             this.peer.on('error', (err) => {
-                console.error('PeerJS Client Error:', err);
-                alert('Error de conexión remota: ' + err.message);
-                document.getElementById('remote-status').textContent = '❌ Desconectado';
-                document.getElementById('remote-status').className = 'badge bg-red-100 text-red-800';
+                console.error('PeerJS Client Error:', err.type, err.message);
+                setStatus('❌ Error: ' + (err.message || err.type), 'badge bg-red-100 text-red-800');
+                // Destruir para que el próximo intento empiece limpio
+                try { this.peer.destroy(); } catch(e) {}
+                this.peer = null;
+                this.conn = null;
+            });
+
+            this.peer.on('disconnected', () => {
+                console.warn('PeerJS desconectado del servidor de señalización');
+                setStatus('⚠️ Señalización perdida — reintentando...', 'badge bg-yellow-100 text-yellow-800');
+                // Intentar reconectar al servidor de señalización
+                try { this.peer.reconnect(); } catch(e) {
+                    try { this.peer.destroy(); } catch(e2) {}
+                    this.peer = null;
+                }
             });
         } else {
-            this._connect(roomId);
+            // Peer ya existe y está abierto → conectar directamente
+            this._connectToPeer(roomId, setStatus);
         }
     }
 
-    _connect(roomId) {
-        console.log('Conectando a:', roomId);
-        document.getElementById('remote-status').textContent = '⏳ Conectando...';
-        this.conn = this.peer.connect(roomId, { reliable: true });
+    _connectToPeer(roomId, setStatus) {
+        console.log('Conectando a sala:', roomId);
+        setStatus('⏳ Conectando...', 'badge bg-yellow-100 text-yellow-800');
+
+        if (this.conn) {
+            try { this.conn.close(); } catch(e) {}
+            this.conn = null;
+        }
+
+        this.conn = this.peer.connect(roomId, { reliable: true, serialization: 'json' });
 
         this.conn.on('open', () => {
-            console.log('Conectado remotamente con éxito a:', roomId);
-            const statusEl = document.getElementById('remote-status');
-            statusEl.textContent = '✅ Conectado a ' + roomId;
-            statusEl.className = 'badge bg-green-100 text-green-800';
-            
+            console.log('✅ Conectado remotamente a:', roomId);
+            setStatus('✅ Conectado a ' + roomId, 'badge bg-green-100 text-green-800');
+
             this.conn.on('data', (data) => {
-                console.log('Datos recibidos del Host:', data);
-                if (this.onMessageCallback) {
-                    this.onMessageCallback(data);
-                }
+                if (this.onMessageCallback) this.onMessageCallback(data);
             });
         });
 
         this.conn.on('close', () => {
-            console.log('Conexión con Host cerrada');
-            const statusEl = document.getElementById('remote-status');
-            statusEl.textContent = '❌ Desconectado';
-            statusEl.className = 'badge bg-red-100 text-red-800';
+            console.log('Conexión cerrada con:', roomId);
+            setStatus('❌ Desconectado', 'badge bg-red-100 text-red-800');
         });
+
+        this.conn.on('error', (err) => {
+            console.error('Error en conexión:', err);
+            setStatus('❌ Error de conexión', 'badge bg-red-100 text-red-800');
+        });
+    }
+
+    // Alias para compatibilidad con código antiguo
+    _connect(roomId) {
+        const setStatus = (text, cls) => {
+            const el = document.getElementById('remote-status');
+            if (el) { el.textContent = text; el.className = cls; }
+        };
+        this._connectToPeer(roomId, setStatus);
     }
 
     showRoomIdOnScreen(id) {
