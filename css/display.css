@@ -856,9 +856,12 @@ html, body {
 }
 
 .goal-text {
+    position: absolute;
+    top: 8vh;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     gap: 1vw;
-    margin-bottom: 4vh;
     perspective: 1500px;
     z-index: 5;
 }
@@ -912,15 +915,19 @@ html, body {
 .goal-overlay.active .goal-word:nth-child(6) { animation-delay: 0.5s; }
 
 .goal-scorer {
-    font-size: clamp(4vh, 8vh, 10vh);
+    position: absolute;
+    bottom: 8vh;
+    left: 50%;
+    transform: translateX(-50%) translateY(50px);
+    font-size: clamp(4vh, 7vh, 9vh);
     font-weight: 900;
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.5em;
     opacity: 0;
-    transform: translateY(50px);
     z-index: 5;
     text-shadow: 0 10px 40px rgba(0,0,0,0.8);
+    white-space: nowrap;
 }
 
 .goal-overlay.active .goal-scorer {
@@ -928,7 +935,7 @@ html, body {
 }
 
 @keyframes goalScorerIn {
-    to { opacity: 1; transform: translateY(0); }
+    to { opacity: 1; transform: translateX(-50%) translateY(0); }
 }
 
 
