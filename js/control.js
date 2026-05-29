@@ -102,6 +102,14 @@ function startTournamentCountdown() {
         matchState.showTournamentCountdown = false;
         broadcastState();
     }, 6500);
+
+    // Iniciar temporizador automáticamente a los 5 segundos (cuando la cuenta atrás llegue a 0 / "GO!")
+    setTimeout(() => {
+        if (!matchTimer.isRunning(activeField)) {
+            matchTimer.start(activeField);
+            updateTimerUI();
+        }
+    }, 5000);
 }
 
 function switchField(num) {
@@ -119,8 +127,7 @@ function changeScore(team, delta) {
         // Open modal to select player
         openGoalModal(team);
     } else {
-        f[key] = Math.max(0, f[key] - delta); // Wait, delta is -1 here
-        // Correct logic for delta < 0
+        // Simplificado y corregido para restar gol correctamente
         f[key] = Math.max(0, f[key] + delta);
         hapticFeedback(20);
         broadcastState();

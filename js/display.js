@@ -22,6 +22,12 @@ function initDisplay() {
                 const prevGoal1 = matchState.fields[1].showGoalAnimation;
                 const prevGoal2 = matchState.fields[2].showGoalAnimation;
                 matchState = data.state;
+                
+                // Persist locally to sync with 500ms fallback interval
+                try {
+                    localStorage.setItem('marcador-led-state', JSON.stringify(matchState));
+                } catch(e) {}
+                
                 matchTimer.syncFromState();
                 renderTimers(); // Force immediate timer render
                 renderDisplay();
@@ -455,7 +461,16 @@ function showGoalOverlay(fieldNum) {
     
     const photoEl = document.getElementById('goal-scorer-photo');
     if (photoEl) {
-        photoEl.src = f.goalScorerPhoto || 'assets/escudos/default_avatar.svg';
+        let photoSrc = f.goalScorerPhoto;
+        if (!photoSrc || photoSrc.trim() === '') {
+            // Obtener escudo del equipo goleador
+            photoSrc = f.goalTeam === 'home' ? f.homeBadge : f.awayBadge;
+        }
+        if (!photoSrc || photoSrc.trim() === '') {
+            // Si tampoco hay escudo, usar el genérico/por defecto
+            photoSrc = 'assets/escudos/default.svg';
+        }
+        photoEl.src = photoSrc;
         photoEl.style.display = 'block';
     }
     
