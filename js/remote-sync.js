@@ -260,6 +260,12 @@ class SyncManager {
         this.conn.on('open', () => {
             console.log('✅ Conectado remotamente a:', roomId);
             setStatus('✅ Conectado a ' + roomId, 'badge bg-green-100 text-green-800');
+            
+            // Limpiar reintentos si conecta con éxito
+            if (this._reconnectTimeout) {
+                clearTimeout(this._reconnectTimeout);
+                this._reconnectTimeout = null;
+            }
 
             this.conn.on('data', (data) => {
                 if (this.onMessageCallback) this.onMessageCallback(data);
@@ -268,13 +274,24 @@ class SyncManager {
 
         this.conn.on('close', () => {
             console.log('Conexión cerrada con:', roomId);
-            setStatus('❌ Desconectado', 'badge bg-red-100 text-red-800');
+            setStatus('⚠️ Desconectado. Reconectando...', 'badge bg-yellow-100 text-yellow-800');
+            this._scheduleReconnect(roomId);
         });
 
         this.conn.on('error', (err) => {
             console.error('Error en conexión:', err);
-            setStatus('❌ Error de conexión', 'badge bg-red-100 text-red-800');
+            setStatus('⚠️ Error de conexión. Reconectando...', 'badge bg-yellow-100 text-yellow-800');
+            this._scheduleReconnect(roomId);
         });
+    }
+
+    _scheduleReconnect(roomId) {
+        if (this._reconnectTimeout) return;
+        this._reconnectTimeout = setTimeout(() => {
+            this._reconnectTimeout = null;
+            console.log('Intentando reconexión automática a sala:', roomId);
+            this.connectToHost(roomId);
+        }, 3000);
     }
 
     // Alias para compatibilidad con código antiguo

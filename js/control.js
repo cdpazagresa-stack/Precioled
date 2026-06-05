@@ -152,6 +152,13 @@ function resetTimer() {
 function updateTimerDuration() {
     const mins = parseInt(document.getElementById('timer-duration').value) || 40;
     matchTimer.setDuration(mins, activeField);
+    showToast(`Duración de parte fijada a ${mins} min`, 'info');
+}
+
+function adjustTime(seconds) {
+    matchTimer.adjust(seconds, activeField);
+    hapticFeedback(20);
+    updateTimerUI();
 }
 
 function setManualTime() {
@@ -187,7 +194,7 @@ function setPeriod(el) {
     
     // Period accumulation via matchTimer API
     if (period === '2ª PARTE' && f.timerBaseSeconds === 0) {
-        // Accumulate: base = maxSeconds of the 1st half (e.g., 2400s = 40min)
+        // Accumulate using the configured maximum seconds (e.g. 20 min = 1200s, 40 min = 2400s)
         matchTimer.setBaseForPeriod(f.timerMaxSeconds || 2400, activeField);
     } else if (period === '1ª PARTE') {
         matchTimer.setBaseForPeriod(0, activeField);
@@ -1092,6 +1099,11 @@ function updateControlUI() {
     
     const si = document.getElementById('sponsor-interval-input');
     if (si) si.value = matchState.sponsorRotationInterval || 8;
+
+    const td = document.getElementById('timer-duration');
+    if (td && f.timerMaxSeconds) {
+        td.value = Math.floor(f.timerMaxSeconds / 60);
+    }
     
     renderSponsorLogosList();
 }

@@ -184,8 +184,8 @@ html, body {
 /* Badge styling */
 .badge-container {
     position: relative;
-    width: clamp(250px, 42vh, 550px);
-    height: clamp(250px, 42vh, 550px);
+    width: clamp(280px, 48vh, 600px);
+    height: clamp(280px, 48vh, 600px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -366,13 +366,13 @@ html, body {
 
 .timer-display {
     font-family: 'Orbitron', sans-serif;
-    font-size: clamp(4rem, 10vh, 8rem);
+    font-size: clamp(6rem, 15vh, 12rem);
     font-weight: 800;
     color: var(--primary);
     letter-spacing: 0.1em;
     text-shadow: 0 0 30px var(--primary-glow);
     font-variant-numeric: tabular-nums;
-    min-width: 350px;
+    min-width: 525px;
     text-align: center;
 }
 
@@ -2283,8 +2283,8 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 30vh;
-    height: 30vh;
+    width: 45vh;
+    height: 45vh;
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid var(--primary);

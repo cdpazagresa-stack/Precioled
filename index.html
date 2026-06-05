@@ -234,6 +234,19 @@
                 <div class="timer-ctrl p-4">
                     <div class="timer-value font-orbitron text-8xl mb-2 tracking-tighter" id="ctrl-timer">00:00</div>
                     
+                    <!-- Duración del periodo -->
+                    <div class="flex justify-between items-center gap-2 mb-4 bg-black/30 p-3 rounded-xl border border-white/5">
+                        <span class="text-xs font-bold text-cdpa-muted uppercase">Duración Parte:</span>
+                        <select id="timer-duration" class="form-input text-center w-28 !p-1 text-sm bg-black/50 text-white border border-white/10" onchange="updateTimerDuration()">
+                            <option value="20">20 min</option>
+                            <option value="25">25 min</option>
+                            <option value="30">30 min</option>
+                            <option value="35">35 min</option>
+                            <option value="40" selected>40 min</option>
+                            <option value="45">45 min</option>
+                        </select>
+                    </div>
+
                     <!-- Ajuste manual de tiempo -->
                     <div class="flex justify-center items-center gap-2 mb-4 bg-black/30 p-2 rounded-xl border border-white/5">
                         <input type="number" id="manual-min" class="form-input text-center w-16 !p-1 text-lg" placeholder="Min" min="0" max="99">
@@ -242,11 +255,13 @@
                         <button class="btn btn-primary btn-sm px-4" onclick="setManualTime()">FIJAR</button>
                     </div>
 
-                    <div class="flex justify-center gap-2 mb-8">
-                        <button class="btn btn-sm bg-white/5 border-white/10" onclick="adjustTime(-60)">-1m</button>
-                        <button class="btn btn-sm bg-white/5 border-white/10" onclick="adjustTime(-10)">-10s</button>
-                        <button class="btn btn-sm bg-white/5 border-white/10" onclick="adjustTime(10)">+10s</button>
-                        <button class="btn btn-sm bg-white/5 border-white/10" onclick="adjustTime(60)">+1m</button>
+                    <div class="flex flex-wrap justify-center gap-2 mb-8">
+                        <button class="btn btn-sm bg-white/5 border-white/10 px-3" onclick="adjustTime(-60)">-1m</button>
+                        <button class="btn btn-sm bg-white/5 border-white/10 px-3" onclick="adjustTime(-5)">-5s</button>
+                        <button class="btn btn-sm bg-white/5 border-white/10 px-3" onclick="adjustTime(-1)">-1s</button>
+                        <button class="btn btn-sm bg-white/5 border-white/10 px-3" onclick="adjustTime(1)">+1s</button>
+                        <button class="btn btn-sm bg-white/5 border-white/10 px-3" onclick="adjustTime(5)">+5s</button>
+                        <button class="btn btn-sm bg-white/5 border-white/10 px-3" onclick="adjustTime(60)">+1m</button>
                     </div>
                     <div class="grid grid-cols-2 gap-3 mb-6 p-1 bg-black/40 rounded-2xl border border-white/5">
                         <button class="btn btn-sm py-3 flex flex-col items-center gap-1 rounded-xl transition-all" id="dir-up-btn" onclick="setTimerDirection('up')">
