@@ -650,4 +650,61 @@ html, body {
     box-shadow: 0 0 15px var(--primary-glow);
 }
 
+/* ── Team Search Results Dropdown ────────────────────────────── */
+.team-results {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    background: rgba(26, 26, 26, 0.98);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    max-height: 250px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    display: none;
+}
+
+.team-results.visible {
+    display: block;
+}
+
+.team-result-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+    padding: 0.6rem 1rem !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+    cursor: pointer;
+    transition: background 0.2s ease !important;
+    transform: none !important;
+    text-align: left;
+}
+
+.team-result-item:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+    transform: none !important;
+}
+
+.team-result-item img {
+    width: 32px !important;
+    height: 32px !important;
+    object-fit: contain !important;
+    border-radius: 6px !important;
+    background: rgba(0, 0, 0, 0.3) !important;
+    padding: 2px !important;
+    flex-shrink: 0;
+}
+
+.team-result-item span {
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    color: var(--text-primary) !important;
+}
+
 

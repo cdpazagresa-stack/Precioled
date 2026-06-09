@@ -640,6 +640,21 @@ const NAVARRA_TEAMS = [
         "name": "VALDORBA F.C.",
         "short": "VALDORBA F.C.",
         "badgeUrl": "https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_VALDORBA F.C..png"
+    },
+    {
+        "name": "DANOK BAT",
+        "short": "DANOK BAT",
+        "badgeUrl": "https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%CDS%20VASCO/plantillas/ESCUDO-C.D.%20DANOK%20BAT-ES.png"
+    },
+    {
+        "name": "BILLABONA F.K.E.",
+        "short": "BILLABONA F.K.E.",
+        "badgeUrl": "https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%CDS%20VASCO/plantillas/ESCUDO-BILLABONA%20K.E.-1-ES.png"
+    },
+    {
+        "name": "DANENA K.E.",
+        "short": "DANENA K.E.",
+        "badgeUrl": "https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%CDS%20VASCO/plantillas/ESCUDO-DANENA%20K.E.-ES.png"
     }
 ];
 

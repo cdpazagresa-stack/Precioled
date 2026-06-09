@@ -1,4 +1,4 @@
-﻿Rows: 128, Cols: 5
+﻿Rows: 131, Cols: 5
 Nombre archivo|Equipo|Nombre archivo|url||
 ESC_A.D. CABANILLAS.png|A.D. CABANILLAS|ESC_A.D. CABANILLAS.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_A.D. CABANILLAS.png||
 ESC_A.D. MENDILLORRI..>|A.D. MENDILLORRI|ESC_A.D. MENDILLORRI..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_A.D. MENDILLORRI.png||
@@ -127,4 +127,7 @@ ESC_U.D. VALLE DE AR..>|U.D. VALLE DE ARANGUREN|ESC_U.D. VALLE DE AR..>|https://
 ESC_UNIÓN TUTERA.png|UNION TUTERA|ESC_UNIÓN TUTERA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_UNI%d3N TUTERA.png||
 ESC_UNIVERSIDAD DE N..>|C.D. UNIVERSIDAD DE NAVARRA|ESC_UNIVERSIDAD DE N..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_UNIVERSIDAD DE NAVARRA.png||
 ESC_VALDORBA F.C..png|VALDORBA F.C.|ESC_VALDORBA F.C..png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_VALDORBA F.C..png||
+ESC_DANOK BAT|DANOK BAT |ESC_DANOK BAT|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%CDS%20VASCO/plantillas/ESCUDO-C.D.%20DANOK%20BAT-ES.png||
+ESC_BILLABONA FKE|BILLABONA F.K.E.|ESC_BILLABONA FKE|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%CDS%20VASCO/plantillas/ESCUDO-BILLABONA%20K.E.-1-ES.png||
+ESC_DANENA KE|DANENA K.E.|ESC_DANENA KE|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%CDS%20VASCO/plantillas/ESCUDO-DANENA%20K.E.-ES.png||
 
