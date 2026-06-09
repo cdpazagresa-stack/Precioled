@@ -644,17 +644,17 @@ const NAVARRA_TEAMS = [
     {
         "name": "DANOK BAT",
         "short": "DANOK BAT",
-        "badgeUrl": "https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%CDS%20VASCO/plantillas/ESCUDO-C.D.%20DANOK%20BAT-ES.png"
+        "badgeUrl": "https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20DANOK%20BAT.png"
     },
     {
         "name": "BILLABONA F.K.E.",
         "short": "BILLABONA F.K.E.",
-        "badgeUrl": "https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%CDS%20VASCO/plantillas/ESCUDO-BILLABONA%20K.E.-1-ES.png"
+        "badgeUrl": "https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_BILLABONA%20K.E.-1.png"
     },
     {
         "name": "DANENA K.E.",
         "short": "DANENA K.E.",
-        "badgeUrl": "https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%CDS%20VASCO/plantillas/ESCUDO-DANENA%20K.E.-ES.png"
+        "badgeUrl": "https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_DANENA%20K.E..png"
     }
 ];
 
