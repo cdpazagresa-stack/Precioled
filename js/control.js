@@ -215,9 +215,17 @@ function setPeriod(el) {
 
 function setTimerDirection(direction) {
     const f = F();
+    // Detener el cronómetro si está corriendo antes de cambiar dirección
+    if (f.timerRunning) {
+        matchTimer.pause(activeField);
+    }
     f.timerDirection = direction;
+    // Resetear segundos acumulados para evitar estados residuales del modo anterior
+    f.timerSeconds = 0;
+    f.timerStartTimestamp = null;
     hapticFeedback(20);
     broadcastState();
+    updateTimerUI();
     updateControlUI();
 }
 

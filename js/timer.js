@@ -18,7 +18,16 @@ class MatchTimer {
         if (field.timerRunning) return;
         
         field.timerRunning = true;
-        field.timerStartTimestamp = Date.now() - (field.timerSeconds * 1000);
+        const direction = field.timerDirection || 'up';
+        if (direction === 'down') {
+            // Regresivo: timerSeconds guarda los segundos YA consumidos (rawSeconds)
+            // Al arrancar, descontamos esos segundos consumidos del timestamp para
+            // que getElapsed() devuelva: maxSeconds - rawSeconds correctamente
+            field.timerStartTimestamp = Date.now() - (field.timerSeconds * 1000);
+        } else {
+            // Progresivo: timerSeconds guarda segundos transcurridos
+            field.timerStartTimestamp = Date.now() - (field.timerSeconds * 1000);
+        }
         field.status = 'live';
         broadcastState();
         this._ensureTicking();
@@ -32,7 +41,15 @@ class MatchTimer {
         if (!field.timerRunning) return;
         
         field.timerRunning = false;
-        field.timerSeconds = this.getElapsed(fieldNum);
+        const direction = field.timerDirection || 'up';
+        if (direction === 'down') {
+            // Regresivo: guardamos los segundos CONSUMIDOS (rawSeconds) para
+            // poder reanudar desde el punto correcto
+            field.timerSeconds = this._getRawSeconds(fieldNum);
+        } else {
+            // Progresivo: guardamos los segundos transcurridos (elapsed)
+            field.timerSeconds = this.getElapsed(fieldNum);
+        }
         field.timerStartTimestamp = null;
         broadcastState();
     }
@@ -55,7 +72,7 @@ class MatchTimer {
     reset(fieldNum = 1) {
         const field = matchState.fields[fieldNum];
         field.timerRunning = false;
-        field.timerSeconds = 0;
+        field.timerSeconds = 0;  // siempre 0 al resetear (rawSeconds = 0)
         field.timerStartTimestamp = null;
         field.timerBaseSeconds = 0;
         field.addedTime = 0;
@@ -98,9 +115,22 @@ class MatchTimer {
      */
     setManualTime(seconds, fieldNum = 1) {
         const field = matchState.fields[fieldNum];
-        field.timerSeconds = seconds;
-        if (field.timerRunning) {
-            field.timerStartTimestamp = Date.now() - (seconds * 1000);
+        const direction = field.timerDirection || 'up';
+        
+        if (direction === 'down') {
+            // En regresivo, el usuario introduce el tiempo RESTANTE.
+            // Internamente guardamos los segundos YA CONSUMIDOS = maxSeconds - restante
+            const maxSecs = field.timerMaxSeconds || 0;
+            const consumed = Math.max(0, maxSecs - seconds);
+            field.timerSeconds = consumed;
+            if (field.timerRunning) {
+                field.timerStartTimestamp = Date.now() - (consumed * 1000);
+            }
+        } else {
+            field.timerSeconds = seconds;
+            if (field.timerRunning) {
+                field.timerStartTimestamp = Date.now() - (seconds * 1000);
+            }
         }
         broadcastState();
     }
