@@ -655,6 +655,11 @@ const NAVARRA_TEAMS = [
         "name": "DANENA K.E.",
         "short": "DANENA K.E.",
         "badgeUrl": "https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_DANENA%20K.E..png"
+    },
+    {
+        "name": "C.D. ALFARO",
+        "short": "C.D. ALFARO",
+        "badgeUrl": "https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/plantillas/ESCUDO-C.D.%20ALFARO-ES.png"
     }
 ];
 
