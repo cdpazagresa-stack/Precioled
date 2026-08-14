@@ -667,5 +667,81 @@ function getDefaultBadgeSVG(name) {
     `)}`;
 }
 
+// ── Fullscreen Support ──────────────────────────────────────
+function enterFullscreen() {
+    const elem = document.documentElement;
+    const rfs = elem.requestFullscreen || elem.webkitRequestFullscreen || 
+                elem.mozRequestFullScreen || elem.msRequestFullscreen;
+    if (rfs) {
+        rfs.call(elem).catch(() => {
+            // Silently fail — browser may block without user gesture
+        });
+    }
+}
+
+function exitFullscreen() {
+    const efs = document.exitFullscreen || document.webkitExitFullscreen || 
+                document.mozCancelFullScreen || document.msExitFullscreen;
+    if (efs && (document.fullscreenElement || document.webkitFullscreenElement)) {
+        efs.call(document).catch(() => {});
+    }
+}
+
+function toggleFullscreen() {
+    if (document.fullscreenElement || document.webkitFullscreenElement) {
+        exitFullscreen();
+    } else {
+        enterFullscreen();
+    }
+}
+
+function updateFullscreenButton() {
+    const btn = document.getElementById('fullscreen-btn');
+    if (!btn) return;
+    const isFS = !!(document.fullscreenElement || document.webkitFullscreenElement);
+    btn.innerHTML = isFS ? '⛶' : '⛶';
+    btn.title = isFS ? 'Salir de pantalla completa (Esc)' : 'Pantalla completa';
+    btn.style.opacity = isFS ? '0' : '0.3';
+}
+
 // ── Init on Load ────────────────────────────────────────────
-document.addEventListener('DOMContentLoaded', initDisplay);
+document.addEventListener('DOMContentLoaded', () => {
+    initDisplay();
+    
+    // Create fullscreen button
+    const fsBtn = document.createElement('button');
+    fsBtn.id = 'fullscreen-btn';
+    fsBtn.innerHTML = '⛶';
+    fsBtn.title = 'Pantalla completa';
+    fsBtn.style.cssText = `
+        position: fixed; top: 10px; right: 10px; z-index: 99999;
+        background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+        color: white; font-size: 24px; width: 44px; height: 44px;
+        border-radius: 8px; cursor: pointer; opacity: 0.3;
+        transition: opacity 0.3s ease;
+        display: flex; align-items: center; justify-content: center;
+    `;
+    fsBtn.addEventListener('mouseenter', () => fsBtn.style.opacity = '1');
+    fsBtn.addEventListener('mouseleave', () => {
+        const isFS = !!(document.fullscreenElement || document.webkitFullscreenElement);
+        fsBtn.style.opacity = isFS ? '0' : '0.3';
+    });
+    fsBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleFullscreen();
+    });
+    document.body.appendChild(fsBtn);
+    
+    // First click anywhere on the display → go fullscreen automatically
+    let firstClickDone = false;
+    document.body.addEventListener('click', () => {
+        if (!firstClickDone && !document.fullscreenElement && !document.webkitFullscreenElement) {
+            firstClickDone = true;
+            enterFullscreen();
+        }
+    }, { once: false });
+    
+    // Update button state on fullscreen change
+    document.addEventListener('fullscreenchange', updateFullscreenButton);
+    document.addEventListener('webkitfullscreenchange', updateFullscreenButton);
+});

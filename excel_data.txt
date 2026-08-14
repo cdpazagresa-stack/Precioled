@@ -1,4 +1,4 @@
-﻿Rows: 132, Cols: 5
+﻿Rows: 134, Cols: 5
 Nombre archivo|Equipo|Nombre archivo|url||
 ESC_A.D. CABANILLAS.png|A.D. CABANILLAS|ESC_A.D. CABANILLAS.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_A.D. CABANILLAS.png||
 ESC_A.D. MENDILLORRI..>|A.D. MENDILLORRI|ESC_A.D. MENDILLORRI..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_A.D. MENDILLORRI.png||
@@ -131,4 +131,6 @@ ESC_DANOK BAT|DANOK BAT |ESC_DANOK BAT|https://escudosdefutbolyequipaciones.com/
 ESC_BILLABONA FKE|BILLABONA F.K.E.|ESC_BILLABONA FKE|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_BILLABONA%20K.E.-1.png||
 ESC_DANENA KE|DANENA K.E.|ESC_DANENA KE|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_DANENA%20K.E..png||
 ESC_CDALFARO|C.D. ALFARO|ESC_CDALFARO|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/plantillas/ESCUDO-C.D.%20ALFARO-ES.png||
+ESC_CDVIANES|C.D. VIANES|ESC_CDVIANES|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/NAVARRA/escudos_min/MIN_ESC_C.D.%20VIANES.png||
+ESC_CDAGONCILLO|C.D. AGONCILLO|ESC_CDAGONCILLO|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos_min/MIN_ESC_C.D.%20AGONCILLO.png||
 

@@ -660,6 +660,16 @@ const NAVARRA_TEAMS = [
         "name": "C.D. ALFARO",
         "short": "C.D. ALFARO",
         "badgeUrl": "https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/plantillas/ESCUDO-C.D.%20ALFARO-ES.png"
+    },
+    {
+        "name": "C.D. VIANES",
+        "short": "C.D. VIANES",
+        "badgeUrl": "https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/NAVARRA/escudos_min/MIN_ESC_C.D.%20VIANES.png"
+    },
+    {
+        "name": "C.D. AGONCILLO",
+        "short": "C.D. AGONCILLO",
+        "badgeUrl": "https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos_min/MIN_ESC_C.D.%20AGONCILLO.png"
     }
 ];
 

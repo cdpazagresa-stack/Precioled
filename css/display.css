@@ -51,6 +51,32 @@ html, body {
     -webkit-font-smoothing: antialiased;
 }
 
+/* ── Fullscreen Mode ─────────────────────────────────────────── */
+:fullscreen {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: var(--bg) !important;
+}
+:-webkit-full-screen {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: var(--bg) !important;
+}
+:fullscreen .match-container,
+:-webkit-full-screen .match-container {
+    width: 100vw !important;
+    height: 100vh !important;
+}
+:fullscreen #fullscreen-btn,
+:-webkit-full-screen #fullscreen-btn {
+    opacity: 0 !important;
+    pointer-events: none;
+}
+
 /* ── Layout Framework ─────────────────────────────────────────── */
 .match-container {
     width: 100vw;
