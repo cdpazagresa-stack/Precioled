@@ -507,7 +507,12 @@ function renderSponsorFullscreenOverlay() {
             }
         }
         if (title) {
-            title.textContent = fs.name || '';
+            if (fs.logoUrl) {
+                title.style.display = 'none';
+            } else {
+                title.textContent = fs.name || '';
+                title.style.display = 'block';
+            }
         }
         if (fill) {
             fill.style.transition = 'none';
