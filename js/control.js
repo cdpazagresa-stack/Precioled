@@ -43,6 +43,17 @@ function initControlPanel() {
     });
     matchTimer.syncFromState();
     
+    // Inicializar patrocinadores representativos si la lista está vacía
+    if (!matchState.sponsorLogos || matchState.sponsorLogos.length === 0) {
+        matchState.sponsorLogos = [
+            { id: '1', name: 'CAJA RURAL DE NAVARRA', logoUrl: '' },
+            { id: '2', name: 'CONSERVAS AZAGRA', logoUrl: '' },
+            { id: '3', name: 'BODEGAS MANZANOS', logoUrl: '' },
+            { id: '4', name: 'AYUNTAMIENTO DE AZAGRA', logoUrl: '' }
+        ];
+    }
+    renderSponsorLogosList();
+    
     // Close team search on outside click
     document.addEventListener('click', (e) => {
         if (!e.target.closest('.team-selector')) {
@@ -198,6 +209,11 @@ function updateTimerUI() {
         btn.innerHTML = running ? '⏸ Pausar' : '▶️ Iniciar';
         btn.classList.toggle('btn-success', !running);
         btn.classList.toggle('btn-danger', running);
+    }
+    
+    // Chequear disparo automático de patrocinadores con el tiempo de juego
+    if (F().timerRunning) {
+        checkSponsorAutoTrigger(elapsed);
     }
 }
 
@@ -1129,6 +1145,8 @@ function updateControlUI() {
     }
     
     renderSponsorLogosList();
+    updateSponsorConfigUI();
+    updateLiveBroadcastUI();
 }
 
 // ── Toast ───────────────────────────────────────────────────
@@ -1169,7 +1187,102 @@ function updateHalftimeTeamName() {
     broadcastState();
 }
 
-// ── Sponsor Logos Management ────────────────────────────────
+// ── Sponsor Logos & Fullscreen Management ───────────────────
+function checkSponsorAutoTrigger(elapsed) {
+    if (!matchState.sponsorConfig || !matchState.sponsorConfig.autoSync) return;
+    const logos = matchState.sponsorLogos || [];
+    if (logos.length === 0) return;
+    
+    const intervalMins = matchState.sponsorConfig.intervalMinutes || 5;
+    const intervalSecs = intervalMins * 60;
+    const currentBlock = Math.floor(elapsed / intervalSecs);
+    
+    // Disparar cada intervalSecs cuando el cronómetro esté corriendo
+    if (elapsed >= 60 && currentBlock > 0 && currentBlock !== matchState.sponsorConfig.lastBlock) {
+        matchState.sponsorConfig.lastBlock = currentBlock;
+        triggerNextSponsorFullscreen();
+    }
+}
+
+function toggleSponsorAutoSync() {
+    if (!matchState.sponsorConfig) {
+        matchState.sponsorConfig = { autoSync: false, intervalMinutes: 5, exposureSeconds: 6, currentIndex: 0, lastBlock: 0 };
+    }
+    matchState.sponsorConfig.autoSync = !matchState.sponsorConfig.autoSync;
+    updateSponsorConfigUI();
+    broadcastState();
+    showToast(matchState.sponsorConfig.autoSync ? '🟢 Auto-patrocinadores activado' : '⚪ Auto-patrocinadores desactivado', 'info');
+}
+
+function updateSponsorConfig() {
+    if (!matchState.sponsorConfig) {
+        matchState.sponsorConfig = { autoSync: false, intervalMinutes: 5, exposureSeconds: 6, currentIndex: 0, lastBlock: 0 };
+    }
+    const intInput = document.getElementById('sponsor-interval-mins');
+    const durInput = document.getElementById('sponsor-duration-secs');
+    if (intInput) matchState.sponsorConfig.intervalMinutes = Math.max(1, parseInt(intInput.value) || 5);
+    if (durInput) matchState.sponsorConfig.exposureSeconds = Math.max(2, parseInt(durInput.value) || 6);
+    broadcastState();
+}
+
+function updateSponsorConfigUI() {
+    const btn = document.getElementById('sponsor-sync-btn');
+    const autoSync = matchState.sponsorConfig && matchState.sponsorConfig.autoSync;
+    if (btn) {
+        btn.textContent = autoSync ? '🟢 Auto: Activo' : '⚪ Auto: Inactivo';
+        btn.className = autoSync 
+            ? 'px-2 py-0.5 text-[10px] font-bold rounded-full border border-green-500/40 bg-green-500/20 text-green-400'
+            : 'px-2 py-0.5 text-[10px] font-bold rounded-full border border-white/10 bg-white/5 text-gray-400';
+    }
+    const intInput = document.getElementById('sponsor-interval-mins');
+    const durInput = document.getElementById('sponsor-duration-secs');
+    if (intInput && matchState.sponsorConfig?.intervalMinutes) intInput.value = matchState.sponsorConfig.intervalMinutes;
+    if (durInput && matchState.sponsorConfig?.exposureSeconds) durInput.value = matchState.sponsorConfig.exposureSeconds;
+}
+
+function triggerNextSponsorFullscreen(sponsorId = null) {
+    const logos = matchState.sponsorLogos || [];
+    if (logos.length === 0) {
+        showToast('Añade al menos un patrocinador a la lista', 'warning');
+        return;
+    }
+    
+    let sponsor = null;
+    if (sponsorId) {
+        sponsor = logos.find(s => s.id === sponsorId);
+    }
+    if (!sponsor) {
+        if (!matchState.sponsorConfig) matchState.sponsorConfig = { currentIndex: 0 };
+        const idx = (matchState.sponsorConfig.currentIndex || 0) % logos.length;
+        sponsor = logos[idx];
+        matchState.sponsorConfig.currentIndex = (idx + 1) % logos.length;
+    }
+    
+    const duration = matchState.sponsorConfig?.exposureSeconds || 6;
+    matchState.sponsorFullscreen = {
+        active: true,
+        name: sponsor.name,
+        logoUrl: sponsor.logoUrl,
+        duration: duration,
+        timestamp: Date.now()
+    };
+    
+    broadcastState();
+    showToast(`Mostrando patrocinador: ${sponsor.name} (${duration}s)`, 'success');
+    
+    clearTimeout(window._sponsorTimerTimeout);
+    window._sponsorTimerTimeout = setTimeout(() => {
+        hideSponsorFullscreen();
+    }, duration * 1000);
+}
+
+function hideSponsorFullscreen() {
+    clearTimeout(window._sponsorTimerTimeout);
+    if (!matchState.sponsorFullscreen) matchState.sponsorFullscreen = {};
+    matchState.sponsorFullscreen.active = false;
+    broadcastState();
+}
+
 function addSponsorLogo() {
     const nameInput = document.getElementById('sponsor-name-input');
     const logoInput = document.getElementById('sponsor-logo-input');
@@ -1177,13 +1290,13 @@ function addSponsorLogo() {
     const name = nameInput.value.trim();
     const logoUrl = logoInput.value.trim();
     
-    if (!name && !logoUrl) return; // Need at least something
+    if (!name && !logoUrl) return;
     
     if (!matchState.sponsorLogos) matchState.sponsorLogos = [];
     
     matchState.sponsorLogos.push({
         id: Date.now().toString(),
-        name: name,
+        name: name || 'Patrocinador',
         logoUrl: logoUrl
     });
     
@@ -1192,6 +1305,7 @@ function addSponsorLogo() {
     
     broadcastState();
     renderSponsorLogosList();
+    showToast('Patrocinador añadido', 'info');
 }
 
 function removeSponsorLogo(id) {
@@ -1201,32 +1315,85 @@ function removeSponsorLogo(id) {
     renderSponsorLogosList();
 }
 
-function updateSponsorInterval() {
-    const el = document.getElementById('sponsor-interval-input');
-    if (!el) return;
-    matchState.sponsorRotationInterval = parseInt(el.value) || 8;
-    broadcastState();
-}
-
 function renderSponsorLogosList() {
     const container = document.getElementById('sponsor-logos-list');
     if (!container) return;
     
     const logos = matchState.sponsorLogos || [];
     if (logos.length === 0) {
-        container.innerHTML = '<p class="text-xs text-gray-500 text-center italic py-2">No hay patrocinadores configurados.</p>';
+        container.innerHTML = '<p class="text-[10px] text-gray-500 text-center italic py-2">No hay patrocinadores configurados.</p>';
         return;
     }
     
     container.innerHTML = logos.map(s => `
         <div class="flex items-center justify-between bg-black/40 p-2 rounded border border-white/5 mb-1">
-            <div class="flex items-center gap-2 overflow-hidden">
-                ${s.logoUrl ? `<img src="${s.logoUrl}" class="w-6 h-6 object-contain rounded bg-white/10" onerror="this.style.display='none'">` : `<div class="w-6 h-6 rounded bg-cdpa-yellow/20 flex items-center justify-center text-[10px] font-bold text-cdpa-yellow">${s.name.charAt(0)}</div>`}
-                <span class="text-xs text-white truncate">${s.name || 'Logo sin nombre'}</span>
+            <div class="flex items-center gap-2 overflow-hidden flex-1 cursor-pointer" onclick="triggerNextSponsorFullscreen('${s.id}')" title="Clic para proyectar a pantalla completa">
+                ${s.logoUrl ? `<img src="${s.logoUrl}" class="w-6 h-6 object-contain rounded bg-white/10" onerror="this.style.display='none'">` : `<div class="w-6 h-6 rounded bg-cdpa-yellow/20 flex items-center justify-center text-[10px] font-bold text-cdpa-yellow">${(s.name || '?').charAt(0)}</div>`}
+                <span class="text-xs text-white truncate font-medium">${s.name || 'Logo sin nombre'}</span>
             </div>
-            <button class="text-red-500 hover:bg-red-500/20 p-1 rounded" onclick="removeSponsorLogo('${s.id}')">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
-            </button>
+            <div class="flex items-center gap-1">
+                <button class="text-yellow-400 hover:bg-yellow-400/20 px-2 py-1 rounded text-[10px] font-bold" onclick="triggerNextSponsorFullscreen('${s.id}')" title="Proyectar a pantalla completa">
+                    ▶️
+                </button>
+                <button class="text-red-500 hover:bg-red-500/20 p-1 rounded" onclick="removeSponsorLogo('${s.id}')" title="Eliminar">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+                </button>
+            </div>
         </div>
     `).join('');
+}
+
+// ── Live Broadcast Management (Pinchar Directo con Ticker) ───
+function startLiveBroadcast() {
+    const urlInput = document.getElementById('live-url-input');
+    const url = urlInput ? urlInput.value.trim() : '';
+    if (!url) {
+        showToast('Introduce la URL de emisión en directo', 'error');
+        return;
+    }
+    const showTicker = document.getElementById('live-ticker-toggle')?.checked ?? true;
+    
+    matchState.liveBroadcast = {
+        active: true,
+        url: url,
+        showTicker: showTicker
+    };
+    
+    broadcastState();
+    updateLiveBroadcastUI();
+    showToast('🔴 Emisión en directo proyectada en el marcador', 'success');
+}
+
+function stopLiveBroadcast() {
+    if (!matchState.liveBroadcast) matchState.liveBroadcast = {};
+    matchState.liveBroadcast.active = false;
+    broadcastState();
+    updateLiveBroadcastUI();
+    showToast('Emisión en directo detenida', 'info');
+}
+
+function toggleLiveTicker() {
+    if (!matchState.liveBroadcast) return;
+    matchState.liveBroadcast.showTicker = document.getElementById('live-ticker-toggle')?.checked ?? true;
+    broadcastState();
+}
+
+function updateLiveBroadcastUI() {
+    const badge = document.getElementById('live-status-badge');
+    const urlInput = document.getElementById('live-url-input');
+    const tickerToggle = document.getElementById('live-ticker-toggle');
+    const isLive = !!(matchState.liveBroadcast && matchState.liveBroadcast.active);
+    
+    if (badge) {
+        badge.textContent = isLive ? '🔴 EN DIRECTO' : 'Inactivo';
+        badge.className = isLive 
+            ? 'px-2 py-0.5 text-[9px] font-bold rounded-full bg-red-600 text-white animate-pulse'
+            : 'px-2 py-0.5 text-[9px] font-bold rounded-full bg-black/40 text-gray-400 border border-white/5';
+    }
+    if (urlInput && matchState.liveBroadcast?.url && !urlInput.value) {
+        urlInput.value = matchState.liveBroadcast.url;
+    }
+    if (tickerToggle && matchState.liveBroadcast) {
+        tickerToggle.checked = matchState.liveBroadcast.showTicker !== false;
+    }
 }

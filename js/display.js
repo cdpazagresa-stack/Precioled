@@ -91,6 +91,8 @@ function renderDisplay() {
     renderTournamentLabel();
     renderTournamentCountdown();
     renderSponsorOverlay();
+    renderSponsorFullscreenOverlay();
+    renderLiveBroadcastOverlay();
     renderGraphics();
     renderHalftimeOverlay();
 }
@@ -239,23 +241,54 @@ function _renderDualTimer(fn) {
     }
 }
 
+// ── Helper: Agrupar goles por jugador con balones y minutos ────────
+function groupScorersByPlayer(scorers) {
+    if (!scorers || scorers.length === 0) return [];
+    const map = new Map();
+    for (const s of scorers) {
+        const name = (s.name || '').trim();
+        if (!name) continue;
+        const normKey = name.toUpperCase();
+        if (!map.has(normKey)) {
+            map.set(normKey, { name, minutes: [] });
+        }
+        if (s.minute !== undefined && s.minute !== null) {
+            map.get(normKey).minutes.push(s.minute);
+        }
+    }
+    return Array.from(map.values()).map(p => {
+        p.minutes.sort((a, b) => a - b);
+        return p;
+    }).sort((a, b) => {
+        const minA = a.minutes.length > 0 ? a.minutes[0] : 0;
+        const minB = b.minutes.length > 0 ? b.minutes[0] : 0;
+        return minA - minB;
+    });
+}
+
 // ── Scorers Render (Main Board) ──────────────────────────────
 function renderMainScorers(containerId, scorers, align) {
     const el = document.getElementById(containerId);
     if (!el) return;
     
-    if (!scorers || scorers.length === 0) {
+    const grouped = groupScorersByPlayer(scorers);
+    if (grouped.length === 0) {
         el.innerHTML = '';
         return;
     }
     
-    el.innerHTML = scorers.map(s => `
-        <div class="scorer-entry" style="justify-content: center">
-            <span class="scorer-icon">⚽</span>
-            <span class="scorer-minute">${s.minute}'</span>
-            <span>${s.name}</span>
-        </div>
-    `).join('');
+    el.innerHTML = grouped.map(g => {
+        const count = Math.max(1, g.minutes.length);
+        const balls = '⚽'.repeat(count);
+        const minutesFormatted = g.minutes.map(m => m + "'").join(', ');
+        return `
+            <div class="scorer-entry">
+                <span class="scorer-icon">${balls}</span>
+                <span class="scorer-minute">${minutesFormatted}</span>
+                <span class="scorer-name">${g.name}</span>
+            </div>
+        `;
+    }).join('');
 }
 
 // ── Cards Render ────────────────────────────────────────────
@@ -453,6 +486,121 @@ function showSponsorAtIndex(container, logos, idx) {
     }, 400);
 }
 
+// ── Fullscreen Sponsor Overlay ──────────────────────────────
+function renderSponsorFullscreenOverlay() {
+    const overlay = document.getElementById('sponsor-fullscreen-overlay');
+    if (!overlay) return;
+    
+    const fs = matchState.sponsorFullscreen;
+    if (fs && fs.active) {
+        overlay.style.display = 'flex';
+        const img = document.getElementById('sponsor-fullscreen-logo');
+        const title = document.getElementById('sponsor-fullscreen-title');
+        const fill = document.getElementById('sponsor-progress-fill');
+        
+        if (img) {
+            if (fs.logoUrl) {
+                img.src = fs.logoUrl;
+                img.style.display = 'block';
+            } else {
+                img.style.display = 'none';
+            }
+        }
+        if (title) {
+            title.textContent = fs.name || '';
+        }
+        if (fill) {
+            fill.style.transition = 'none';
+            fill.style.width = '0%';
+            setTimeout(() => {
+                const dur = fs.duration || 6;
+                fill.style.transition = `width ${dur}s linear`;
+                fill.style.width = '100%';
+            }, 50);
+        }
+    } else {
+        overlay.style.display = 'none';
+    }
+}
+
+// ── Live Broadcast with Sponsor Ticker ───────────────────────
+let _currentLiveMediaUrl = '';
+
+function renderLiveBroadcastOverlay() {
+    const overlay = document.getElementById('live-broadcast-overlay');
+    const container = document.getElementById('live-media-container');
+    const tickerBar = document.getElementById('live-ticker-bar');
+    const track = document.getElementById('ticker-track');
+    if (!overlay || !container) return;
+    
+    const live = matchState.liveBroadcast;
+    if (live && live.active && live.url) {
+        overlay.style.display = 'flex';
+        
+        if (live.url !== _currentLiveMediaUrl) {
+            _currentLiveMediaUrl = live.url;
+            container.innerHTML = createLiveMediaElement(live.url);
+        }
+        
+        if (tickerBar) {
+            tickerBar.style.display = live.showTicker !== false ? 'flex' : 'none';
+        }
+        
+        if (track) {
+            renderTickerLogos(track);
+        }
+    } else {
+        overlay.style.display = 'none';
+        if (_currentLiveMediaUrl) {
+            _currentLiveMediaUrl = '';
+            container.innerHTML = '';
+        }
+    }
+}
+
+function createLiveMediaElement(url) {
+    const trimmed = url.trim();
+    // YouTube detect
+    const ytMatch = trimmed.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|live\/|watch\?.+&v=))([\w-]{11})/);
+    if (ytMatch) {
+        const videoId = ytMatch[1];
+        return `<iframe src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&mute=0&controls=1&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    }
+    // Twitch detect
+    const twitchMatch = trimmed.match(/twitch\.tv\/([a-zA-Z0-9_]+)/);
+    if (twitchMatch) {
+        const channel = twitchMatch[1];
+        return `<iframe src="https://player.twitch.tv/?channel=${channel}&parent=${window.location.hostname}&autoplay=true" allowfullscreen></iframe>`;
+    }
+    // Direct Video files (.mp4, .webm, .m3u8, .ogg)
+    if (/\.(mp4|webm|m3u8|ogg)($|\?)/i.test(trimmed)) {
+        return `<video src="${trimmed}" autoplay playsinline controls style="width:100%;height:100%;object-fit:contain;"></video>`;
+    }
+    // Direct Image files
+    if (/\.(jpeg|jpg|png|gif|webp|svg)($|\?)/i.test(trimmed)) {
+        return `<img src="${trimmed}" alt="Emisión en Directo" style="width:100%;height:100%;object-fit:contain;">`;
+    }
+    // Generic web page / iframe
+    return `<iframe src="${trimmed}" allow="camera; microphone; display-capture; autoplay; encrypted-media" allowfullscreen></iframe>`;
+}
+
+function renderTickerLogos(trackEl) {
+    const logos = matchState.sponsorLogos || [];
+    if (logos.length === 0) {
+        trackEl.innerHTML = '<div class="ticker-item"><span class="ticker-name">C.D. PEÑA AZAGRESA</span></div>';
+        return;
+    }
+    const itemsHtml = logos.map(s => `
+        <div class="ticker-item">
+            ${s.logoUrl ? `<img src="${s.logoUrl}" alt="${s.name}" class="ticker-logo" onerror="this.style.display='none'">` : ''}
+            <span class="ticker-name">${s.name}</span>
+        </div>
+    `).join('');
+    
+    // Duplicar para conseguir el efecto continuo suave infinito
+    trackEl.innerHTML = itemsHtml + itemsHtml;
+}
+
 // ── Goal Overlay ────────────────────────────────────────────
 function showGoalOverlay(fieldNum) {
     const overlay = document.getElementById('goal-overlay');
@@ -633,16 +781,22 @@ function renderSummaryScorers(id, scorers, align) {
     // Add team class for animation direction
     el.classList.add(align === 'right' ? 'team-a' : 'team-b');
     
-    if (!scorers || scorers.length === 0) {
+    const grouped = groupScorersByPlayer(scorers);
+    if (grouped.length === 0) {
         el.innerHTML = '';
         return;
     }
-    el.innerHTML = scorers.map(s => `
-        <div class="summary-scorer-row" style="justify-content: ${align === 'right' ? 'flex-end' : 'flex-start'}">
-            <span class="summary-scorer-name">${s.name}</span>
-            <span class="summary-scorer-time">${s.minute}'</span>
-        </div>
-    `).join('');
+    el.innerHTML = grouped.map(g => {
+        const count = Math.max(1, g.minutes.length);
+        const balls = '⚽'.repeat(count);
+        const minutesFormatted = g.minutes.map(m => m + "'").join(', ');
+        return `
+            <div class="summary-scorer-row" style="justify-content: ${align === 'right' ? 'flex-end' : 'flex-start'}">
+                <span class="summary-scorer-name">${balls} ${g.name}</span>
+                <span class="summary-scorer-time">${minutesFormatted}</span>
+            </div>
+        `;
+    }).join('');
 }
 
 // ── Helpers ─────────────────────────────────────────────────

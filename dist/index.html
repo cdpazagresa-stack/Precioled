@@ -320,20 +320,88 @@
                         <p class="text-[9px] text-gray-600 italic">El nombre aparece arriba del marcador. El subtítulo se muestra en la pantalla de DESCANSO.</p>
                     </div>
 
-                    <!-- Sponsor Logos Management -->
+                    <!-- Sponsor Fullscreen & Ads Management -->
                     <div class="mt-4 space-y-3 p-3 bg-black/30 rounded-2xl border border-white/5">
-                        <h3 class="text-[10px] font-black text-cdpa-yellow uppercase tracking-[0.2em]">📢 Patrocinadores (Logos Rotativos)</h3>
-                        <div class="flex gap-2">
-                            <input type="text" id="sponsor-name-input" class="form-input text-xs flex-1" placeholder="Nombre Patrocinador">
-                            <input type="text" id="sponsor-logo-input" class="form-input text-xs flex-1" placeholder="URL del Logo (opcional)">
-                            <button class="btn btn-success text-xs" onclick="addSponsorLogo()">+</button>
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-[10px] font-black text-cdpa-yellow uppercase tracking-[0.2em]">📢 Patrocinadores a Pantalla Completa</h3>
+                            <button id="sponsor-sync-btn" class="px-2 py-0.5 text-[10px] font-bold rounded-full border border-white/10 bg-white/5 text-gray-400" onclick="toggleSponsorAutoSync()">
+                                ⚪ Auto: Inactivo
+                            </button>
                         </div>
-                        <div class="flex gap-2 items-center">
-                            <label class="text-[9px] text-gray-500 font-bold">Rotación (seg):</label>
-                            <input type="number" id="sponsor-interval-input" class="form-input w-16 text-center text-xs" value="8" min="3" max="60" onchange="updateSponsorInterval()">
+                        
+                        <!-- Configuración de Tiempos -->
+                        <div class="grid grid-cols-2 gap-2 bg-black/20 p-2 rounded-xl border border-white/5">
+                            <div>
+                                <label class="block text-[9px] text-gray-400 font-bold mb-1">Cada cuántos min:</label>
+                                <div class="flex items-center gap-1">
+                                    <input type="number" id="sponsor-interval-mins" class="form-input text-center text-xs py-1" value="5" min="1" max="45" onchange="updateSponsorConfig()">
+                                    <span class="text-[10px] text-gray-500">min</span>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-[9px] text-gray-400 font-bold mb-1">Duración en pantalla:</label>
+                                <div class="flex items-center gap-1">
+                                    <input type="number" id="sponsor-duration-secs" class="form-input text-center text-xs py-1" value="6" min="2" max="30" onchange="updateSponsorConfig()">
+                                    <span class="text-[10px] text-gray-500">seg</span>
+                                </div>
+                            </div>
                         </div>
+
+                        <!-- Botones de Acción Inmediata -->
+                        <div class="grid grid-cols-2 gap-2">
+                            <button class="btn btn-warning text-xs font-bold py-2 flex items-center justify-center gap-1 shadow" onclick="triggerNextSponsorFullscreen()">
+                                <span>▶️ Proyectar Ahora</span>
+                            </button>
+                            <button class="btn btn-secondary text-xs font-bold py-2 flex items-center justify-center gap-1" onclick="hideSponsorFullscreen()">
+                                <span>✕ Ocultar</span>
+                            </button>
+                        </div>
+
+                        <!-- Añadir nuevo patrocinador -->
+                        <div class="space-y-1">
+                            <label class="block text-[9px] text-gray-500 font-bold">Añadir patrocinador:</label>
+                            <div class="flex gap-1">
+                                <input type="text" id="sponsor-name-input" class="form-input text-xs flex-1" placeholder="Nombre (Ej: Bodega...)">
+                                <input type="text" id="sponsor-logo-input" class="form-input text-xs flex-1" placeholder="URL del Logo">
+                                <button class="btn btn-success text-xs px-3 font-bold" onclick="addSponsorLogo()">+</button>
+                            </div>
+                        </div>
+
+                        <!-- Lista de Patrocinadores -->
                         <div id="sponsor-logos-list" class="max-h-32 overflow-y-auto space-y-1 bg-black/20 p-2 rounded-xl"></div>
-                        <p class="text-[9px] text-gray-600 italic">Los logos rotan automáticamente en la parte inferior del marcador.</p>
+                    </div>
+
+                    <!-- Live Stream / Pinchar Vídeo en Pantalla -->
+                    <div class="mt-4 space-y-3 p-3 bg-red-950/20 rounded-2xl border border-red-500/20">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-[10px] font-black text-red-400 uppercase tracking-[0.2em] flex items-center gap-1">
+                                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                                📺 Emisión en Directo (Live)
+                            </h3>
+                            <span id="live-status-badge" class="px-2 py-0.5 text-[9px] font-bold rounded-full bg-black/40 text-gray-400 border border-white/5">
+                                Inactivo
+                            </span>
+                        </div>
+                        
+                        <div class="space-y-2">
+                            <input type="text" id="live-url-input" class="form-input text-xs w-full" placeholder="URL directa: YouTube, stream de cámara o web..." value="">
+                            
+                            <div class="flex items-center justify-between px-1">
+                                <label class="flex items-center gap-2 text-[10px] text-gray-300 cursor-pointer">
+                                    <input type="checkbox" id="live-ticker-toggle" checked onchange="toggleLiveTicker()" class="rounded bg-black border-white/20 text-cdpa-yellow">
+                                    <span>Mostrar carrusel inferior de patrocinadores</span>
+                                </label>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-2 pt-1">
+                                <button id="live-start-btn" class="btn btn-danger text-xs font-bold py-2 flex items-center justify-center gap-1 shadow-lg shadow-red-900/40" onclick="startLiveBroadcast()">
+                                    <span>🔴 Pinchar en Pantalla</span>
+                                </button>
+                                <button id="live-stop-btn" class="btn btn-secondary text-xs font-bold py-2 flex items-center justify-center gap-1" onclick="stopLiveBroadcast()">
+                                    <span>⏹️ Quitar Directo</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

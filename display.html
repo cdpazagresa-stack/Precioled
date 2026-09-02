@@ -401,6 +401,42 @@
         <div class="goal-scorer" id="goal-scorer-name"></div>
     </div>
 
+    <!-- SPONSOR FULLSCREEN OVERLAY -->
+    <div id="sponsor-fullscreen-overlay" class="sponsor-fullscreen-overlay" style="display:none;">
+        <div class="sponsor-overlay-bg"></div>
+        <div class="sponsor-overlay-header">
+            <span class="sponsor-tag">PATROCINADOR OFICIAL</span>
+            <span class="sponsor-club-name">C.D. PEÑA AZAGRESA</span>
+        </div>
+        <div class="sponsor-overlay-content">
+            <img id="sponsor-fullscreen-logo" src="" alt="Patrocinador" class="sponsor-fullscreen-img">
+            <h2 id="sponsor-fullscreen-title" class="sponsor-fullscreen-title"></h2>
+        </div>
+        <div class="sponsor-progress-bar"><div id="sponsor-progress-fill" class="sponsor-progress-fill"></div></div>
+    </div>
+
+    <!-- LIVE BROADCAST OVERLAY WITH SPONSOR TICKER -->
+    <div id="live-broadcast-overlay" class="live-broadcast-overlay" style="display:none;">
+        <div class="live-media-container" id="live-media-container">
+            <!-- Iframe, Video or Image dynamically loaded -->
+        </div>
+        <!-- Live indicator badge -->
+        <div class="live-badge">
+            <span class="live-dot"></span> EN DIRECTO
+        </div>
+        <!-- Bottom Sponsor Ticker Bar -->
+        <div class="live-ticker-bar" id="live-ticker-bar">
+            <div class="ticker-label">
+                <span class="ticker-star">★</span> PATROCINADORES OFICIALES
+            </div>
+            <div class="ticker-track-wrapper">
+                <div class="ticker-track" id="ticker-track">
+                    <!-- Logos duplicated dynamically for infinite loop -->
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- HOST ID FOR REMOTE CONTROL -->
     <div id="debug-host-id" style="position:fixed; bottom:5px; left:5px; font-size:10px; color:rgba(255,255,255,0.2); font-family:monospace; z-index:9999;"></div>
 
