@@ -143,10 +143,25 @@ function toggleTimer() {
     updateTimerUI();
 }
 
-function resetTimer() {
+function resetClockToZero() {
     matchTimer.reset(activeField);
-    hapticFeedback([20, 20, 20]);
+    hapticFeedback(20);
     updateTimerUI();
+    broadcastState();
+    showToast('Tiempo restablecido a 00:00', 'info');
+}
+
+function resetTimer() {
+    if (!confirm('¿Reiniciar tiempo y borrar la lista de goleadores?')) return;
+    matchTimer.reset(activeField);
+    const f = F();
+    f.homeScorers = [];
+    f.awayScorers = [];
+    hapticFeedback([20, 20, 20]);
+    broadcastState();
+    updateTimerUI();
+    renderScorers();
+    showToast('Tiempo y goleadores reiniciados', 'success');
 }
 
 function updateTimerDuration() {

@@ -18,38 +18,23 @@ class MatchTimer {
         if (field.timerRunning) return;
         
         field.timerRunning = true;
-        const direction = field.timerDirection || 'up';
-        if (direction === 'down') {
-            // Regresivo: timerSeconds guarda los segundos YA consumidos (rawSeconds)
-            // Al arrancar, descontamos esos segundos consumidos del timestamp para
-            // que getElapsed() devuelva: maxSeconds - rawSeconds correctamente
-            field.timerStartTimestamp = Date.now() - (field.timerSeconds * 1000);
-        } else {
-            // Progresivo: timerSeconds guarda segundos transcurridos
-            field.timerStartTimestamp = Date.now() - (field.timerSeconds * 1000);
-        }
+        field.timerStartTimestamp = Date.now() - ((field.timerSeconds || 0) * 1000);
         field.status = 'live';
         broadcastState();
         this._ensureTicking();
     }
 
     /**
-     * Pause the timer
+     * Pause the timer - freezes at the current minute and second
      */
     pause(fieldNum = 1) {
         const field = matchState.fields[fieldNum];
         if (!field.timerRunning) return;
         
+        // Calcular los segundos transcurridos ANTES de desactivar timerRunning
+        const raw = this._getRawSeconds(fieldNum);
         field.timerRunning = false;
-        const direction = field.timerDirection || 'up';
-        if (direction === 'down') {
-            // Regresivo: guardamos los segundos CONSUMIDOS (rawSeconds) para
-            // poder reanudar desde el punto correcto
-            field.timerSeconds = this._getRawSeconds(fieldNum);
-        } else {
-            // Progresivo: guardamos los segundos transcurridos (elapsed)
-            field.timerSeconds = this.getElapsed(fieldNum);
-        }
+        field.timerSeconds = Math.max(0, raw);
         field.timerStartTimestamp = null;
         broadcastState();
     }

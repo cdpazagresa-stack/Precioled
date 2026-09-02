@@ -274,13 +274,18 @@
                         </button>
                     </div>
 
-                    <div class="grid grid-cols-2 gap-4 mb-8">
-                        <button class="btn btn-success btn-lg h-24 rounded-3xl text-2xl flex flex-col items-center justify-center gap-2" id="timer-play-btn" onclick="toggleTimer()">
+                    <div class="space-y-3 mb-8">
+                        <button class="btn btn-success btn-lg w-full h-20 rounded-3xl text-2xl flex items-center justify-center gap-3 shadow-lg" id="timer-play-btn" onclick="toggleTimer()">
                             <span>▶️ Iniciar</span>
                         </button>
-                        <button class="btn btn-secondary btn-lg h-24 rounded-3xl text-2xl flex flex-col items-center justify-center gap-2" onclick="resetTimer()">
-                            <span>🔄 Reiniciar</span>
-                        </button>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button class="btn btn-warning btn-lg h-16 rounded-2xl text-base font-bold flex items-center justify-center gap-2 bg-yellow-500/20 text-yellow-300 border border-yellow-500/30 hover:bg-yellow-500/30" onclick="resetClockToZero()" title="Pone el reloj en 00:00 sin borrar goles">
+                                <span>⏱️ Volver a 0</span>
+                            </button>
+                            <button class="btn btn-secondary btn-lg h-16 rounded-2xl text-base font-bold flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white" onclick="resetTimer()" title="Reinicia el tiempo y borra los goleadores">
+                                <span>🔄 Reiniciar Todo</span>
+                            </button>
+                        </div>
                     </div>
 
                     <div class="bg-black/30 p-4 rounded-3xl border border-white/5 mb-4">

@@ -199,29 +199,55 @@ html, body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 1vw;
+    gap: 1.5vw;
     flex: 1;
 }
 
-.team-home { flex-direction: row; }
-.team-away { flex-direction: row; }
+/* Desplazar escudos hacia el centro (hacia el número de goles) para evitar cortes en pantalla completa */
+.team-home {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-left: 1vw;
+}
 
-/* Badge styling */
+.team-away {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-right: 1vw;
+}
+
+/* Contenedor del marcador y sus anotadores debajo */
+.score-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Badge styling con tamaño equilibrado para pantalla completa */
 .badge-container {
     position: relative;
-    width: clamp(280px, 48vh, 600px);
-    height: clamp(280px, 48vh, 600px);
+    width: clamp(200px, 38vh, 460px);
+    height: clamp(200px, 38vh, 460px);
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
+}
+
+.team-home .badge-container {
+    margin-right: 0.5vw;
+}
+
+.team-away .badge-container {
+    margin-left: 0.5vw;
 }
 
 .team-badge {
-    width: 90%;
-    height: 90%;
+    width: 95%;
+    height: 95%;
     object-fit: contain;
-    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.1));
+    filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.15));
     z-index: 2;
     transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
@@ -392,13 +418,15 @@ html, body {
 
 .timer-display {
     font-family: 'Orbitron', sans-serif;
-    font-size: clamp(6rem, 15vh, 12rem);
+    /* Aumentado un 50% el tamaño del tiempo de juego */
+    font-size: clamp(9rem, 22.5vh, 18rem);
     font-weight: 800;
+    line-height: 1;
     color: var(--primary);
-    letter-spacing: 0.1em;
-    text-shadow: 0 0 30px var(--primary-glow);
+    letter-spacing: 0.08em;
+    text-shadow: 0 0 40px var(--primary-glow);
     font-variant-numeric: tabular-nums;
-    min-width: 525px;
+    min-width: 720px;
     text-align: center;
 }
 
@@ -408,13 +436,13 @@ html, body {
 
 .timer-display.timer-regressive {
     color: #ff6b6b;
-    text-shadow: 0 0 30px rgba(255, 107, 107, 0.4);
+    text-shadow: 0 0 40px rgba(255, 107, 107, 0.5);
 }
 
 .timer-display.timer-overtime {
     animation: overtimePulse 1s ease-in-out infinite !important;
     color: #ff3e3e;
-    text-shadow: 0 0 40px rgba(255, 62, 62, 0.6);
+    text-shadow: 0 0 50px rgba(255, 62, 62, 0.7);
 }
 
 @keyframes overtimePulse {
@@ -428,8 +456,8 @@ html, body {
 }
 
 .period-badge {
-    font-size: clamp(1rem, 2.2vh, 1.6rem);
-    font-weight: 600;
+    font-size: clamp(1.2rem, 2.8vh, 2rem);
+    font-weight: 700;
     letter-spacing: 0.4em;
     color: var(--text-muted);
     text-transform: uppercase;
@@ -464,36 +492,52 @@ html, body {
     backdrop-filter: blur(10px);
 }
 
-/* ── Scorers List (Main) ──────────────────────────────────────── */
-.scorers-section {
-    width: 90%;
-    display: flex;
-    gap: 5vw;
-    margin-top: 3vh;
-}
-
-.scorers-column {
-    flex: 1;
+/* ── Scorers List Under Scores (Aumentados un 100%) ───────────── */
+.scorers-under-score {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 0.8vh;
+    margin-top: 1.5vh;
+    z-index: 10;
 }
 
+.scorers-home {
+    align-items: center;
+}
+
+.scorers-away {
+    align-items: center;
+}
+
+/* Tamaño de anotadores aumentado un 100% */
 .scorer-entry {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
-    font-size: clamp(1.2rem, 2.8vh, 2rem);
-    color: var(--text-secondary);
+    gap: 1rem;
+    font-size: clamp(2.4rem, 5.6vh, 4rem);
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.9), 0 0 20px rgba(255, 255, 255, 0.15);
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0.4vh 1.2vw;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.scorer-icon {
+    font-size: 1.1em;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
 }
 
 .scorer-minute {
     font-family: 'Orbitron', sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     color: var(--primary);
-    width: 3.5ch;
+    min-width: 3.5ch;
     text-align: center;
-    font-size: 0.9em;
+    font-size: 0.95em;
+    text-shadow: 0 0 15px var(--primary-glow);
 }
 
 /* ── Graphics Overlays (Lineup, Referees, etc.) ────────────────── */

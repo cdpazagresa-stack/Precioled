@@ -1,138 +1,869 @@
-Rows: 135, Cols: 5
+Rows: 868, Cols: 5
 Nombre archivo|Equipo|Nombre archivo|url||
+ESC_A. JUVENTUS ESPAÑA LA TORRICCELLI.png|A. JUVENTUS ESPAÑA LA TORRICCELLI|ESC_A. JUVENTUS ESPAÑA LA TORRICCELLI.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_A.%20JUVENTUS%20ESPA%d1A%20LA%20TORRICCELLI.png||
+ESC_A.C.D. SAN MARCIAL.png|A.C.D. SAN MARCIAL|ESC_A.C.D. SAN MARCIAL.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_A.C.D.%20SAN%20MARCIAL.png||
+ESC_A.D. AJAX VETERANOS.png|A.D. AJAX VETERANOS|ESC_A.D. AJAX VETERANOS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_A.D.%20AJAX%20VETERANOS.png||
+ESC_A.D. ALFINDEN.png|A.D. ALFINDEN|ESC_A.D. ALFINDEN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_A.D.%20ALFINDEN.png||
+ESC_A.D. ALMUDEVAR.png|A.D. ALMUDEVAR|ESC_A.D. ALMUDEVAR.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_A.D.%20ALMUDEVAR.png||
+ESC_A.D. ALTO ÉSERA.png|A.D. ALTO ÉSERA|ESC_A.D. ALTO ÉSERA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_A.D.%20ALTO%20%c9SERA.png||
+ESC_A.D. ATLÉTICO BINÉFAR-1.png|A.D. ATLÉTICO BINÉFAR|ESC_A.D. ATLÉTICO BINÉFAR-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_A.D.%20ATL%c9TICO%20BIN%c9FAR-1.png||
+ESC_A.D. BATZARRE FUTBOL-5.png|A.D. BATZARRE FUTBOL|ESC_A.D. BATZARRE FUTBOL-5.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_A.D.%20BATZARRE%20FUTBOL-5.png||
 ESC_A.D. CABANILLAS.png|A.D. CABANILLAS|ESC_A.D. CABANILLAS.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_A.D. CABANILLAS.png||
+ESC_A.D. ESCOLAPIOS DE BILBAO.png|A.D. ESCOLAPIOS DE BILBAO|ESC_A.D. ESCOLAPIOS DE BILBAO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_A.D.%20ESCOLAPIOS%20DE%20BILBAO.png||
+ESC_A.D. FRULA.png|A.D. FRULA|ESC_A.D. FRULA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_A.D.%20FRULA.png||
+ESC_A.D. FUNDACIÓN LOGRONÉS.png|A.D. FUNDACIÓN LOGRONÉS|ESC_A.D. FUNDACIÓN LOGRONÉS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_A.D.%20FUNDACI%d3N%20LOGRON%c9S.png||
+ESC_A.D. LANAJA-1.png|A.D. LANAJA|ESC_A.D. LANAJA-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_A.D.%20LANAJA-1.png||
+ESC_A.D. MAGALLÓN.png|A.D. MAGALLÓN|ESC_A.D. MAGALLÓN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_A.D.%20MAGALL%d3N.png||
 ESC_A.D. MENDILLORRI..>|A.D. MENDILLORRI|ESC_A.D. MENDILLORRI..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_A.D. MENDILLORRI.png||
+ESC_A.D. MERCEDARIAS K.E..png|A.D. MERCEDARIAS K.E.|ESC_A.D. MERCEDARIAS K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_A.D.%20MERCEDARIAS%20K.E..png||
+ESC_A.D. MONTAÑANA.png|A.D. MONTAÑANA|ESC_A.D. MONTAÑANA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_A.D.%20MONTA%d1ANA.png||
+ESC_A.D. PEÑAFLOR.png|A.D. PEÑAFLOR|ESC_A.D. PEÑAFLOR.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_A.D.%20PE%d1AFLOR.png||
+ESC_A.D. RIVAS.png|A.D. RIVAS|ESC_A.D. RIVAS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_A.D.%20RIVAS.png||
+ESC_A.D. SABIÑANIGO  .png|A.D. SABIÑANIGO|ESC_A.D. SABIÑANIGO  .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_A.D.%20SABI%d1ANIGO%20%20.png||
 ESC_A.D. SAN JUAN.png|A.D. SAN JUAN|ESC_A.D. SAN JUAN.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_A.D. SAN JUAN.png||
+ESC_A.D. SANTA ENGRACIA.png|A.D. SANTA ENGRACIA|ESC_A.D. SANTA ENGRACIA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_A.D.%20SANTA%20ENGRACIA.png||
+ESC_A.D. URRETXINDORRA-1.png|A.D. URRETXINDORRA|ESC_A.D. URRETXINDORRA-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_A.D.%20URRETXINDORRA-1.png||
+ESC_A.D. VADORREY.png|A.D. VADORREY|ESC_A.D. VADORREY.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_A.D.%20VADORREY.png||
+ESC_A.D. WEN K.png|A.D. WEN K|ESC_A.D. WEN K.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_A.D.%20WEN%20K.png||
+ESC_A.D. ZUIA.png|A.D. ZUIA|ESC_A.D. ZUIA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_A.D.%20ZUIA.png||
+ESC_A.D. ZUIA DE FÚTBOL.png|A.D. ZUIA DE FÚTBOL|ESC_A.D. ZUIA DE FÚTBOL.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_A.D.%20ZUIA%20DE%20F%daTBOL.png||
+ESC_A.D.C. ABETXUKO.png|A.D.C. ABETXUKO|ESC_A.D.C. ABETXUKO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_A.D.C.%20ABETXUKO.png||
+ESC_A.D.F. ADREBOL.png|A.D.F. ADREBOL|ESC_A.D.F. ADREBOL.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_A.D.F.%20ADREBOL.png||
+ESC_A.D.FUNDACION LOGROÑES .png|A.D.FUNDACION LOGROÑES|ESC_A.D.FUNDACION LOGROÑES .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_A.D.FUNDACION%20LOGRO%d1ES%20.png||
+ESC_A.F. CALAHORRA  .png|A.F. CALAHORRA|ESC_A.F. CALAHORRA  .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_A.F.%20CALAHORRA%20%20.png||
+ESC_A.F. NEXT LEVEL TERUEL F..png|A.F. NEXT LEVEL TERUEL F.|ESC_A.F. NEXT LEVEL TERUEL F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_A.F.%20NEXT%20LEVEL%20TERUEL%20F..png||
+ESC_A.F. SAN ANDRÉS.png|A.F. SAN ANDRÉS|ESC_A.F. SAN ANDRÉS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_A.F.%20SAN%20ANDR%c9S.png||
+ESC_A.F.K. ARRONTEGI F.K..png|A.F.K. ARRONTEGI F.K.|ESC_A.F.K. ARRONTEGI F.K..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_A.F.K.%20ARRONTEGI%20F.K..png||
+ESC_A.S.C. PRO ROMANIA.png|A.S.C. PRO ROMANIA|ESC_A.S.C. PRO ROMANIA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_A.S.C.%20PRO%20ROMANIA.png||
+ESC_ABADIÑO K.E..png|ABADIÑO K.E.|ESC_ABADIÑO K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ABADI%d1O%20K.E..png||
+ESC_ABANTO CLUB.png|ABANTO CLUB|ESC_ABANTO CLUB.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ABANTO%20CLUB.png||
+ESC_ACERO CLUB.png|ACERO CLUB|ESC_ACERO CLUB.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ACERO%20CLUB.png||
+ESC_ADURTZABAL C.F..png|ADURTZABAL C.F.|ESC_ADURTZABAL C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ADURTZABAL%20C.F..png||
+ESC_AGRUPACIÓN PEÑAS SARIÑENA-1.png|AGRUPACIÓN PEÑAS SARIÑENA|ESC_AGRUPACIÓN PEÑAS SARIÑENA-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_AGRUPACI%d3N%20PE%d1AS%20SARI%d1ENA-1.png||
+ESC_ALAGÓN C.D..png|ALAGÓN C.D.|ESC_ALAGÓN C.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ALAG%d3N%20C.D..png||
+ESC_ALCAÑIZ CF.png|ALCAÑIZ CF|ESC_ALCAÑIZ CF.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ALCA%d1IZ%20CF.png||
+ESC_ALCOLEA C.F..png|ALCOLEA C.F.|ESC_ALCOLEA C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ALCOLEA%20C.F..png||
+ESC_ALERA C.D..png|ALERA C.D.|ESC_ALERA C.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ALERA%20C.D..png||
+ESC_ALLERU K.E..png|ALLERU K.E.|ESC_ALLERU K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ALLERU%20K.E..png||
+ESC_ALOÑA MENDI K.E..png|ALOÑA MENDI K.E.|ESC_ALOÑA MENDI K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ALO%d1A%20MENDI%20K.E..png||
+ESC_ALTO LA MUELA C.F..png|ALTO LA MUELA C.F.|ESC_ALTO LA MUELA C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ALTO%20LA%20MUELA%20C.F..png||
+ESC_AMARA BERII K.E..png|AMARA BERII K.E.|ESC_AMARA BERII K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_AMARA%20BERII%20K.E..png||
+ESC_AMARA BERRI K.E..png|AMARA BERRI K.E.|ESC_AMARA BERRI K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_AMARA%20BERRI%20K.E..png||
+ESC_AMURRIO C..png|AMURRIO C.|ESC_AMURRIO C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_AMURRIO%20C..png||
+ESC_AMURRIO CLUB.png|AMURRIO CLUB|ESC_AMURRIO CLUB.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_AMURRIO%20CLUB.png||
+ESC_ANAITASUNA F.C..png|ANAITASUNA F.C.|ESC_ANAITASUNA F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ANAITASUNA%20F.C..png||
+ESC_ANDORRA C.F..png|ANDORRA C.F.|ESC_ANDORRA C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ANDORRA%20C.F..png||
+ESC_ANDORRA CF.png|ANDORRA CF|ESC_ANDORRA CF.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ANDORRA%20CF.png||
+ESC_ANENTO F.C..png|ANENTO F.C.|ESC_ANENTO F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ANENTO%20F.C..png||
+ESC_ANSIO C.F..png|ANSIO C.F.|ESC_ANSIO C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ANSIO%20C.F..png||
+ESC_ANTIGUA LUBERRI K.E..png|ANTIGUA LUBERRI K.E.|ESC_ANTIGUA LUBERRI K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ANTIGUA%20LUBERRI%20K.E..png||
+ESC_ANTIGUOKO K.E..png|ANTIGUOKO K.E.|ESC_ANTIGUOKO K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ANTIGUOKO%20K.E..png||
+ESC_ANTZUOLA K.E..png|ANTZUOLA K.E.|ESC_ANTZUOLA K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ANTZUOLA%20K.E..png||
+ESC_AÑORGA K.K.E..png|AÑORGA K.K.E.|ESC_AÑORGA K.K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_A%d1ORGA%20K.K.E..png||
+ESC_APURTUARTE C..png|APURTUARTE C.|ESC_APURTUARTE C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_APURTUARTE%20C..png||
+ESC_APURTUARTE CLUB.png|APURTUARTE CLUB|ESC_APURTUARTE CLUB.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_APURTUARTE%20CLUB.png||
+ESC_ARENAS C.F..png|ARENAS C.F.|ESC_ARENAS C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ARENAS%20C.F..png||
+ESC_ARENAS CLUB DE GETXO.png|ARENAS CLUB DE GETXO|ESC_ARENAS CLUB DE GETXO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ARENAS%20CLUB%20DE%20GETXO.png||
+ESC_ARENAS S.D..png|ARENAS S.D.|ESC_ARENAS S.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ARENAS%20S.D..png||
 ESC_ARGA IBAIA K.E..png|ARGA IBAI K.E.|ESC_ARGA IBAIA K.E..png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_ARGA IBAIA K.E..png||
+ESC_ARIZMENDI K.E..png|ARIZMENDI K.E.|ESC_ARIZMENDI K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ARIZMENDI%20K.E..png||
+ESC_ARIZNABARRA C.D..png|ARIZNABARRA C.D.|ESC_ARIZNABARRA C.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ARIZNABARRA%20C.D..png||
+ESC_ARRAIZ F.T..png|ARRAIZ F.T.|ESC_ARRAIZ F.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ARRAIZ%20F.T..png||
+ESC_ARRAULTZALDEON FT.png|ARRAULTZALDEON FT|ESC_ARRAULTZALDEON FT.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ARRAULTZALDEON%20FT.png||
+ESC_ARTIBAI F.T..png|ARTIBAI F.T.|ESC_ARTIBAI F.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ARTIBAI%20F.T..png||
+ESC_ASKARTZA CLARET F.C..png|ASKARTZA CLARET F.C.|ESC_ASKARTZA CLARET F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ASKARTZA%20CLARET%20F.C..png||
+ESC_ASOLEUS C.F..png|ASOLEUS C.F.|ESC_ASOLEUS C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ASOLEUS%20C.F..png||
+ESC_ASTIGARRAGAKO MUNDARRO F.K.E..png|ASTIGARRAGAKO MUNDARRO F.K.E.|ESC_ASTIGARRAGAKO MUNDARRO F.K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ASTIGARRAGAKO%20MUNDARRO%20F.K.E..png||
+ESC_ASTIGARRAKO MUNDARRO.png|ASTIGARRAKO MUNDARRO|ESC_ASTIGARRAKO MUNDARRO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ASTIGARRAKO%20MUNDARRO.png||
+ESC_ASTILEKU CLUB.png|ASTILEKU CLUB|ESC_ASTILEKU CLUB.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ASTILEKU%20CLUB.png||
+ESC_ASTRABUDUAKO F.T..png|ASTRABUDUAKO F.T.|ESC_ASTRABUDUAKO F.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ASTRABUDUAKO%20F.T..png||
+ESC_ATHLETIC C. BILBAO.png|ATHLETIC C. BILBAO|ESC_ATHLETIC C. BILBAO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ATHLETIC%20C.%20BILBAO.png||
+ESC_ATLÉTICO ALBALATE.png|ATLÉTICO ALBALATE|ESC_ATLÉTICO ALBALATE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ATL%c9TICO%20ALBALATE.png||
+ESC_ATLÉTICO ARAGÓN-2.png|ATLÉTICO ARAGÓN|ESC_ATLÉTICO ARAGÓN-2.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ATL%c9TICO%20ARAG%d3N-2.png||
+ESC_ATLETICO CALATAYUD.png|ATLETICO CALATAYUD|ESC_ATLETICO CALATAYUD.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ATLETICO%20CALATAYUD.png||
+ESC_ATLÉTICO CARIÑENA.png|ATLÉTICO CARIÑENA|ESC_ATLÉTICO CARIÑENA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ATL%c9TICO%20CARI%d1ENA.png||
+ESC_ATLÉTICO CUBEROS.png|ATLÉTICO CUBEROS|ESC_ATLÉTICO CUBEROS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ATL%c9TICO%20CUBEROS.png||
+ESC_ATLÉTICO DELICIAS C.F..png|ATLÉTICO DELICIAS C.F.|ESC_ATLÉTICO DELICIAS C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ATL%c9TICO%20DELICIAS%20C.F..png||
+ESC_ATLÉTICO ESCALERILLAS C.F..png|ATLÉTICO ESCALERILLAS C.F.|ESC_ATLÉTICO ESCALERILLAS C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ATL%c9TICO%20ESCALERILLAS%20C.F..png||
+ESC_ATLÉTICO JUVENTUD ALMUDÉVAR.png|ATLÉTICO JUVENTUD ALMUDÉVAR|ESC_ATLÉTICO JUVENTUD ALMUDÉVAR.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ATL%c9TICO%20JUVENTUD%20ALMUD%c9VAR.png||
+ESC_ATLÉTICO LURIPENSE.png|ATLÉTICO LURIPENSE|ESC_ATLÉTICO LURIPENSE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ATL%c9TICO%20LURIPENSE.png||
+ESC_ATLÉTICO MIRALBUENO.png|ATLÉTICO MIRALBUENO|ESC_ATLÉTICO MIRALBUENO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ATL%c9TICO%20MIRALBUENO.png||
+ESC_ATLÉTICO MONEGRILLO-1.png|ATLÉTICO MONEGRILLO|ESC_ATLÉTICO MONEGRILLO-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ATL%c9TICO%20MONEGRILLO-1.png||
+ESC_ATLETICO MONZON .png|ATLETICO MONZON|ESC_ATLETICO MONZON .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ATLETICO%20MONZON%20.png||
+ESC_ATLÉTICO MOWLINS.png|ATLÉTICO MOWLINS|ESC_ATLÉTICO MOWLINS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ATL%c9TICO%20MOWLINS.png||
+ESC_ATLÉTICO RANILLAS.png|ATLÉTICO RANILLAS|ESC_ATLÉTICO RANILLAS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ATL%c9TICO%20RANILLAS.png||
+ESC_ATLÉTICO SOMONTANO.png|ATLÉTICO SOMONTANO|ESC_ATLÉTICO SOMONTANO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ATL%c9TICO%20SOMONTANO.png||
+ESC_ATLÉTICO TERUEL C.F..png|ATLÉTICO TERUEL C.F.|ESC_ATLÉTICO TERUEL C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ATL%c9TICO%20TERUEL%20C.F..png||
+ESC_ATLÉTICO VALDESPARTERA.png|ATLÉTICO VALDESPARTERA|ESC_ATLÉTICO VALDESPARTERA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ATL%c9TICO%20VALDESPARTERA.png||
+ESC_ATOTXA RIVER F.C..png|ATOTXA RIVER F.C.|ESC_ATOTXA RIVER F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ATOTXA%20RIVER%20F.C..png||
+ESC_ATXULAUR K.E..png|ATXULAUR K.E.|ESC_ATXULAUR K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ATXULAUR%20K.E..png||
+ESC_AURRERA C.D..png|AURRERA C.D.|ESC_AURRERA C.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_AURRERA%20C.D..png||
+ESC_AXULAR K.K.E..png|AXULAR K.K.E.|ESC_AXULAR K.K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_AXULAR%20K.K.E..png||
+ESC_BAKIO K.T..png|BAKIO K.T.|ESC_BAKIO K.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_BAKIO%20K.T..png||
+ESC_BALMASEDA F.C..png|BALMASEDA F.C.|ESC_BALMASEDA F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_BALMASEDA%20F.C..png||
+ESC_BARAKALDO CF..png|BARAKALDO CF.|ESC_BARAKALDO CF..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_BARAKALDO%20CF..png||
+ESC_BASAMORTU LAGUN TALDEA.png|BASAMORTU LAGUN TALDEA|ESC_BASAMORTU LAGUN TALDEA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_BASAMORTU%20LAGUN%20TALDEA.png||
+ESC_BASCONIA CD.png|BASCONIA CD|ESC_BASCONIA CD.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_BASCONIA%20CD.png||
+ESC_BERANGO F.T..png|BERANGO F.T.|ESC_BERANGO F.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_BERANGO%20F.T..png||
+ESC_BERGARA K.E..png|BERGARA K.E.|ESC_BERGARA K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_BERGARA%20K.E..png||
+ESC_BERIO F.C..png|BERIO F.C.|ESC_BERIO F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_BERIO%20F.C..png||
+ESC_BERIO F.T..png|BERIO F.T.|ESC_BERIO F.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_BERIO%20F.T..png||
+ESC_BERMEO C..png|BERMEO C.|ESC_BERMEO C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_BERMEO%20C..png||
+ESC_BERMEO F.T..png|BERMEO F.T.|ESC_BERMEO F.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_BERMEO%20F.T..png||
+ESC_BERRIATUKO F.T..png|BERRIATUKO F.T.|ESC_BERRIATUKO F.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_BERRIATUKO%20F.T..png||
 ESC_BERRIOZAR C.F..png|BERRIOZAR C.F.|ESC_BERRIOZAR C.F..png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_BERRIOZAR C.F..png||
 ESC_BETI GASTE KULTU..>|BETI GASTE KULTU|ESC_BETI GASTE KULTU..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_BETI GASTE KULTUR JOLAS K.E..png||
 ESC_BETI GAZTE K.J.K..>|BETI GAZTE K.J.K.|ESC_BETI GAZTE K.J.K..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_BETI GAZTE K.J.K.E..png||
 ESC_BETI KOZKOR K.E...>|BETI KOZKOR K.E.|ESC_BETI KOZKOR K.E...>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_BETI KOZKOR K.E..png||
+ESC_BETI ONA K.E..png|BETI ONA K.E.|ESC_BETI ONA K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_BETI%20ONA%20K.E..png||
 ESC_BETI ONAK C.D..png|BETI ONAL C.D.|ESC_BETI ONAK C.D..png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_BETI ONAK C.D..png||
-ESC_C. AMIGO.png|C. AMIGO|ESC_C. AMIGO.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C. AMIGO.png||
-ESC_C. ATLÉTICO AURO..>|C.A. AURORA MARCILLA|ESC_C. ATLÉTICO AURO..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C. ATL%c9TICO AURORA.png||
+ESC_BETOLATZA C.D..png|BETOLATZA C.D.|ESC_BETOLATZA C.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_BETOLATZA%20C.D..png||
+ESC_BILBAO ARTIZARRAK F.K..png|BILBAO ARTIZARRAK F.K.|ESC_BILBAO ARTIZARRAK F.K..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_BILBAO%20ARTIZARRAK%20F.K..png||
+ESC_BILLABONA FKE|BILLABONA F.K.E.|ESC_BILLABONA FKE|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_BILLABONA%20K.E.-1.png||
+ESC_BILLABONA K.E.-1.png|BILLABONA K.E.|ESC_BILLABONA K.E.-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_BILLABONA%20K.E.-1.png||
+ESC_BOCA HÍJAR F.C..png|BOCA HÍJAR F.C.|ESC_BOCA HÍJAR F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_BOCA%20H%cdJAR%20F.C..png||
+ESC_BOLEA F.C.-2.png|BOLEA F.C.|ESC_BOLEA F.C.-2.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_BOLEA%20F.C.-2.png||
+ESC_BORUSSIA DE ZARAGOZA.png|BORUSSIA DE ZARAGOZA|ESC_BORUSSIA DE ZARAGOZA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_BORUSSIA%20DE%20ZARAGOZA.png||
+ESC_BRUNO VILLAREAL SD.png|BRUNO VILLAREAL SD|ESC_BRUNO VILLAREAL SD.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_BRUNO%20VILLAREAL%20SD.png||
+ESC_BRUNO VILLARREAL SD.png|BRUNO VILLARREAL SD|ESC_BRUNO VILLARREAL SD.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_BRUNO%20VILLARREAL%20SD.png||
 ESC_C. ATLÉTICO HURA..>|C. A. HURACAN|ESC_C. ATLÉTICO HURA..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C. ATL%c9TICO HURAC%c1N.png||
-ESC_C. ATLÉTICO MARC..>|C.A. MARCILLA AURORA|ESC_C. ATLÉTICO MARC..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C. ATL%c9TICO MARCILLA AURORA.png||
-ESC_C. ATLÉTICO MONT..>|C.A. MONTEAGUDO|ESC_C. ATLÉTICO MONT..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C. ATL%c9TICO MONTEAGUDO.png||
+ESC_C. AMIGO.png|C. AMIGO|ESC_C. AMIGO.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C. AMIGO.png||
+ESC_C. ATLÉTICO ALBELDA.png|C. ATLÉTICO ALBELDA|ESC_C. ATLÉTICO ALBELDA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.%20ATL%c9TICO%20ALBELDA.png||
+ESC_C. ATLÉTICO ARANGUREN.png|C. ATLÉTICO ARANGUREN|ESC_C. ATLÉTICO ARANGUREN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.%20ATL%c9TICO%20ARANGUREN.png||
+ESC_C. ATLÉTICO BORJA.png|C. ATLÉTICO BORJA|ESC_C. ATLÉTICO BORJA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.%20ATL%c9TICO%20BORJA.png||
+ESC_C. ATLÉTICO MONZALBARBA.png|C. ATLÉTICO MONZALBARBA|ESC_C. ATLÉTICO MONZALBARBA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.%20ATL%c9TICO%20MONZALBARBA.png||
+ESC_C. ATLÉTICO MONZÓN-1.png|C. ATLÉTICO MONZÓN|ESC_C. ATLÉTICO MONZÓN-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.%20ATL%c9TICO%20MONZ%d3N-1.png||
+ESC_C. ATLÉTICO MONZÓN F.B..png|C. ATLÉTICO MONZÓN F.B.|ESC_C. ATLÉTICO MONZÓN F.B..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.%20ATL%c9TICO%20MONZ%d3N%20F.B..png||
+ESC_C. ATLÉTICO PERÚ.png|C. ATLÉTICO PERÚ|ESC_C. ATLÉTICO PERÚ.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.%20ATL%c9TICO%20PER%da.png||
+ESC_C. ATLETICO RIVER EBRO..png|C. ATLETICO RIVER EBRO.|ESC_C. ATLETICO RIVER EBRO..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.%20ATLETICO%20RIVER%20EBRO..png||
+ESC_C. ATLÉTICO UNIVERSITARIO(ARAGÓN).png|C. ATLÉTICO UNIVERSITARIO(ARAGÓN)|ESC_C. ATLÉTICO UNIVERSITARIO(ARAGÓN).png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.%20ATL%c9TICO%20UNIVERSITARIO(ARAG%d3N).png||
+ESC_C. CAMPING BOHALAR.png|C. CAMPING BOHALAR|ESC_C. CAMPING BOHALAR.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.%20CAMPING%20BOHALAR.png||
+ESC_C. DEPORTIVO LA CALZADA.png|C. DEPORTIVO LA CALZADA|ESC_C. DEPORTIVO LA CALZADA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.%20DEPORTIVO%20LA%20CALZADA.png||
+ESC_C. HARO DEPORTIVO.png|C. HARO DEPORTIVO|ESC_C. HARO DEPORTIVO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.%20HARO%20DEPORTIVO.png||
+ESC_C. RECREATIVO VILLAMEDIANA.png|C. RECREATIVO VILLAMEDIANA|ESC_C. RECREATIVO VILLAMEDIANA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.%20RECREATIVO%20VILLAMEDIANA.png||
+ESC_C. SAN IGNACIO .png|C. SAN IGNACIO|ESC_C. SAN IGNACIO .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.%20SAN%20IGNACIO%20.png||
 ESC_C. ATLETICO ARTA..>|C.A. ARTAJONES|ESC_C. ATLETICO ARTA..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C. ATLETICO ARTAJONES.png||
+ESC_C. ATLÉTICO AURO..>|C.A. AURORA MARCILLA|ESC_C. ATLÉTICO AURO..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C. ATL%c9TICO AURORA.png||
 ESC_C.ATLETICO CIRBO..>|C.A. CIRBONERO|ESC_C.ATLETICO CIRBO..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.ATLETICO CIRBONERO .png||
 ESC_C.ATLETICO CIRBO..>|C.A. CIRBONERO|ESC_C.ATLETICO CIRBO..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.ATLETICO CIRBONERO.png||
+ESC_C. ATLÉTICO MARC..>|C.A. MARCILLA AURORA|ESC_C. ATLÉTICO MARC..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C. ATL%c9TICO MARCILLA AURORA.png||
+ESC_C.D.F. MILAGRÉS.png|C.A. MILAGRES|ESC_C.D.F. MILAGRÉS.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D.F. MILAGR%c9S.png||
+ESC_C. ATLÉTICO MONT..>|C.A. MONTEAGUDO|ESC_C. ATLÉTICO MONT..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C. ATL%c9TICO MONTEAGUDO.png||
 ESC_C.ATLETICO OSASU..>|C.A. OSASUNA|ESC_C.ATLETICO OSASU..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.ATLETICO OSASUNA.png||
+ESC_C.A. RIVER HUERVA.png|C.A. RIVER HUERVA|ESC_C.A. RIVER HUERVA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.A.%20RIVER%20HUERVA.png||
 ESC_C.ATLETICO VALTI..>|C.A. VALTIERRANO|ESC_C.ATLETICO VALTI..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.ATLETICO VALTIERRANO.png||
+ESC_C.C.D. ALBERITE .png|C.C.D. ALBERITE|ESC_C.C.D. ALBERITE .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.C.D.%20ALBERITE%20.png||
 ESC_C.D. ABLITENSE.png|C.D. ABLITENSE|ESC_C.D. ABLITENSE.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ABLITENSE.png||
+ESC_C.D. ACTUR PABLO IGLESIAS.png|C.D. ACTUR PABLO IGLESIAS|ESC_C.D. ACTUR PABLO IGLESIAS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20ACTUR%20PABLO%20IGLESIAS.png||
+ESC_CDAGONCILLO|C.D. AGONCILLO|ESC_CDAGONCILLO|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos_min/MIN_ESC_C.D.%20AGONCILLO.png||
 ESC_C.D. AIBARÉS-1.png|C.D. AIBARES|ESC_C.D. AIBARÉS-1.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. AIBAR%c9S-1.png||
+ESC_C.D. ALBALATE.png|C.D. ALBALATE|ESC_C.D. ALBALATE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20ALBALATE.png||
+ESC_C.D. ALCORISA.png|C.D. ALCORISA|ESC_C.D. ALCORISA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20ALCORISA.png||
+ESC_C.D. ALDEANO.png|C.D. ALDEANO|ESC_C.D. ALDEANO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.D.%20ALDEANO.png||
+ESC_C.D. ALDEANO RIVER.png|C.D. ALDEANO RIVER|ESC_C.D. ALDEANO RIVER.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.D.%20ALDEANO%20RIVER.png||
+ESC_C.D. ALEGRIA.png|C.D. ALEGRIA|ESC_C.D. ALEGRIA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20ALEGRIA.png||
 ESC_C.D. ALESVES.png|C.D. ALESVES|ESC_C.D. ALESVES.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ALESVES.png||
+ESC_CDALFARO|C.D. ALFARO|ESC_CDALFARO|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/plantillas/ESCUDO-C.D.%20ALFARO-ES.png||
+ESC_C.D. ALIPENDI.png|C.D. ALIPENDI|ESC_C.D. ALIPENDI.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20ALIPENDI.png||
+ESC_C.D. ALMUNIA DE SAN JUAN.png|C.D. ALMUNIA DE SAN JUAN|ESC_C.D. ALMUNIA DE SAN JUAN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20ALMUNIA%20DE%20SAN%20JUAN.png||
+ESC_C.D. ALOÑA-MENDI.png|C.D. ALOÑA-MENDI|ESC_C.D. ALOÑA-MENDI.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20ALO%d1A-MENDI.png||
+ESC_C.D. ALTO ARA.png|C.D. ALTO ARA|ESC_C.D. ALTO ARA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20ALTO%20ARA.png||
+ESC_C.D. ALTORRICON.png|C.D. ALTORRICON|ESC_C.D. ALTORRICON.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20ALTORRICON.png||
 ESC_C.D. ALUVION .png|C.D. ALUVION|ESC_C.D. ALUVION .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ALUVION .png||
+ESC_C.D. AMAIKAK-BAT.png|C.D. AMAIKAK-BAT|ESC_C.D. AMAIKAK-BAT.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20AMAIKAK-BAT.png||
 ESC_C.D. AMAYA .png|C.D. AMAYA|ESC_C.D. AMAYA .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. AMAYA .png||
+ESC_C.D. AMESA PUESTA.png|C.D. AMESA PUESTA|ESC_C.D. AMESA PUESTA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20AMESA%20PUESTA.png||
 ESC_C.D. AMIGÓ.png|C.D. AMIGÓ|ESC_C.D. AMIGÓ.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. AMIG%d3.png||
+ESC_C.D. ANAITASUNA.png|C.D. ANAITASUNA|ESC_C.D. ANAITASUNA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20ANAITASUNA.png||
+ESC_C.D. ANGUIANO .png|C.D. ANGUIANO|ESC_C.D. ANGUIANO .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.D.%20ANGUIANO%20.png||
+ESC_C.D. ANIÑÓN.png|C.D. ANIÑÓN|ESC_C.D. ANIÑÓN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20ANI%d1%d3N.png||
+ESC_C.D. ANSARES.png|C.D. ANSARES|ESC_C.D. ANSARES.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20ANSARES.png||
 ESC_C.D. AOIZ.png|C.D. AOIZ|ESC_C.D. AOIZ.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. AOIZ.png||
 ESC_C.D. ARDOI .png|C.D. ARDOI|ESC_C.D. ARDOI .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ARDOI  .png||
 ESC_C.D. ARENAS.png|C.D. ARENAS|ESC_C.D. ARENAS.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ARENAS.png||
+ESC_C.D. ARIZNABARRA.png|C.D. ARIZNABARRA|ESC_C.D. ARIZNABARRA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20ARIZNABARRA.png||
+ESC_C.D. ARNEDO .png|C.D. ARNEDO|ESC_C.D. ARNEDO .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.D.%20ARNEDO%20.png||
+ESC_C.D. ARRATIA.png|C.D. ARRATIA|ESC_C.D. ARRATIA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20ARRATIA.png||
+ESC_C.D. ARRUPE CHAMINADE.png|C.D. ARRUPE CHAMINADE|ESC_C.D. ARRUPE CHAMINADE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20ARRUPE%20CHAMINADE.png||
 ESC_C.D. ASDEFOR.png|C.D. ASDEFOR|ESC_C.D. ASDEFOR.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ASDEFOR.png||
+ESC_C.D. ATLÉTICO MOZARRIFAR.png|C.D. ATLÉTICO MOZARRIFAR|ESC_C.D. ATLÉTICO MOZARRIFAR.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20ATL%c9TICO%20MOZARRIFAR.png||
 ESC_C.D. AURRERÁ DE ..>|C.D. AURRERÁ DE LIEDENA|ESC_C.D. AURRERÁ DE ..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. AURRER%c1 DE LI%c9DENA.png||
+ESC_C.D. AURRERA DE VITORIA.png|C.D. AURRERA DE VITORIA|ESC_C.D. AURRERA DE VITORIA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20AURRERA%20DE%20VITORIA.png||
 ESC_C.D. AURRERA K.E..>|C.D. AURRERÁ K.E.|ESC_C.D. AURRERA K.E..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. AURRERA K.E..png||
+ESC_C.D. AURRERA ONDÁRROA.png|C.D. AURRERA ONDÁRROA|ESC_C.D. AURRERA ONDÁRROA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20AURRERA%20OND%c1RROA.png||
+ESC_C.D. AURRERA VITORIA.png|C.D. AURRERA VITORIA|ESC_C.D. AURRERA VITORIA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20AURRERA%20VITORIA.png||
+ESC_C.D. AUTOL.png|C.D. AUTOL|ESC_C.D. AUTOL.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.D.%20AUTOL.png||
 ESC_C.D. AVANCE E..png|C.D. AVANCE EZKABARTE|ESC_C.D. AVANCE E..png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. AVANCE E..png||
 ESC_C.D. AZKARRENA.png|C.D. AZKARRENA|ESC_C.D. AZKARRENA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. AZKARRENA.png||
 ESC_C.D. AZKOYEN.png|C.D. AZKOYEN|ESC_C.D. AZKOYEN.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. AZKOYEN.png||
+ESC_C.D. BAÑUELOS.png|C.D. BAÑUELOS|ESC_C.D. BAÑUELOS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.D.%20BA%d1UELOS.png||
+ESC_C.D. BASAURI-B.E.A..png|C.D. BASAURI-B.E.A.|ESC_C.D. BASAURI-B.E.A..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20BASAURI-B.E.A..png||
+ESC_C.D. BASCONIA.png|C.D. BASCONIA|ESC_C.D. BASCONIA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20BASCONIA.png||
+ESC_C.D. BASCONIA (ALA).png|C.D. BASCONIA (ALA)|ESC_C.D. BASCONIA (ALA).png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20BASCONIA%20(ALA).png||
+ESC_C.D. BASCONIA (VIZ).png|C.D. BASCONIA (VIZ)|ESC_C.D. BASCONIA (VIZ).png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20BASCONIA%20(VIZ).png||
 ESC_C.D. BAZTAN.png|C.D. BAZTÁN|ESC_C.D. BAZTAN.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. BAZTAN.png||
+ESC_C.D. BEGOÑAKO ARTEAGABE.png|C.D. BEGOÑAKO ARTEAGABE|ESC_C.D. BEGOÑAKO ARTEAGABE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20BEGO%d1AKO%20ARTEAGABE.png||
+ESC_C.D. BEHOBIA.png|C.D. BEHOBIA|ESC_C.D. BEHOBIA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20BEHOBIA.png||
+ESC_C.D. BELCHITE.png|C.D. BELCHITE|ESC_C.D. BELCHITE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20BELCHITE.png||
+ESC_C.D. BELVER.png|C.D. BELVER|ESC_C.D. BELVER.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20BELVER.png||
+ESC_C.D. BERCEO-1.png|C.D. BERCEO|ESC_C.D. BERCEO-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.D.%20BERCEO-1.png||
+ESC_C.D. BERRIZ.png|C.D. BERRIZ|ESC_C.D. BERRIZ.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20BERRIZ.png||
 ESC_C.D. BETI-ONAK.png|C.D. BETI ONAK|ESC_C.D. BETI-ONAK.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. BETI-ONAK.png||
+ESC_C.D. BETOÑO-EL GORRIAGA.png|C.D. BETOÑO-EL GORRIAGA|ESC_C.D. BETOÑO-EL GORRIAGA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20BETO%d1O-EL%20GORRIAGA.png||
+ESC_C.D. BETOÑO-ELGORRIAGA.png|C.D. BETOÑO-ELGORRIAGA|ESC_C.D. BETOÑO-ELGORRIAGA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20BETO%d1O-ELGORRIAGA.png||
+ESC_C.D. BINEFAR .png|C.D. BINEFAR|ESC_C.D. BINEFAR .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20BINEFAR%20.png||
+ESC_C.D. BOLTAÑA.png|C.D. BOLTAÑA|ESC_C.D. BOLTAÑA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20BOLTA%d1A.png||
+ESC_C.D. BOQUIÑENI.png|C.D. BOQUIÑENI|ESC_C.D. BOQUIÑENI.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20BOQUI%d1ENI.png||
+ESC_C.D. BORJA.png|C.D. BORJA|ESC_C.D. BORJA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20BORJA.png||
+ESC_C.D. BOTORRITA.png|C.D. BOTORRITA|ESC_C.D. BOTORRITA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20BOTORRITA.png||
+ESC_C.D. BREA-1.png|C.D. BREA|ESC_C.D. BREA-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20BREA-1.png||
+ESC_C.D. BUJARALOZ.png|C.D. BUJARALOZ|ESC_C.D. BUJARALOZ.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20BUJARALOZ.png||
 ESC_C.D. BUÑUEL.png|C.D. BUÑUEL|ESC_C.D. BUÑUEL.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. BU%d1UEL.png||
-ESC_C.D. CÁRCAR.png|C.D. CARCAR|ESC_C.D. CÁRCAR.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. C%c1RCAR.png||
+ESC_C.D. C.F. COMILLAS.png|C.D. C.F. COMILLAS|ESC_C.D. C.F. COMILLAS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.D.%20C.F.%20COMILLAS.png||
 ESC_C.D. CADREITA.png|C.D. CADREITA|ESC_C.D. CADREITA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. CADREITA.png||
+ESC_C.D. CALACEITE.png|C.D. CALACEITE|ESC_C.D. CALACEITE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20CALACEITE.png||
+ESC_C.D. CALAHORRA .png|C.D. CALAHORRA|ESC_C.D. CALAHORRA .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.D.%20CALAHORRA%20.png||
+ESC_C.D. CALANDA.png|C.D. CALANDA|ESC_C.D. CALANDA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20CALANDA.png||
+ESC_C.D. CALATAYUD.png|C.D. CALATAYUD|ESC_C.D. CALATAYUD.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20CALATAYUD.png||
+ESC_C.D. CALATORAO.png|C.D. CALATORAO|ESC_C.D. CALATORAO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20CALATORAO.png||
 ESC_C.D. CALATRAVA.png|C.D. CALATRAVA|ESC_C.D. CALATRAVA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. CALATRAVA.png||
+ESC_C.D. CAMPEZO F.R..png|C.D. CAMPEZO F.R.|ESC_C.D. CAMPEZO F.R..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20CAMPEZO%20F.R..png||
 ESC_C.D. CANTOLAGUA ..>|C.D. CANTOLAGUA|ESC_C.D. CANTOLAGUA ..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. CANTOLAGUA .png||
+ESC_C.D. CÁRCAR.png|C.D. CARCAR|ESC_C.D. CÁRCAR.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. C%c1RCAR.png||
+ESC_C.D. CARIÑENA MONTE DUCAY.png|C.D. CARIÑENA MONTE DUCAY|ESC_C.D. CARIÑENA MONTE DUCAY.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20CARI%d1ENA%20MONTE%20DUCAY.png||
+ESC_C.D. CASPE.png|C.D. CASPE|ESC_C.D. CASPE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20CASPE.png||
 ESC_C.D. CASTEJÓN-1.png|C.D. CASTEJÓN|ESC_C.D. CASTEJÓN-1.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. CASTEJ%d3N-1.png||
 ESC_C.D. CASTILLO DE..>|C.D. CASTILLO DE TIEBAS|ESC_C.D. CASTILLO DE..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. CASTILLO DE TIEBAS.png||
+ESC_C.D. CELTA(ARAGON).png|C.D. CELTA(ARAGON)|ESC_C.D. CELTA(ARAGON).png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20CELTA(ARAGON).png||
+ESC_C.D. CENICERO.png|C.D. CENICERO|ESC_C.D. CENICERO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.D.%20CENICERO.png||
 ESC_C.D. CORELLANO.png|C.D. CORELLANO|ESC_C.D. CORELLANO.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. CORELLANO.png||
 ESC_C.D. CORTES.png|C.D. CORTES|ESC_C.D. CORTES.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. CORTES.png||
+ESC_C.D. CUARTE IND..png|C.D. CUARTE IND.|ESC_C.D. CUARTE IND..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20CUARTE%20IND..png||
+ESC_C.D. DANOK BAT.png|C.D. DANOK BAT|ESC_C.D. DANOK BAT.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20DANOK%20BAT.png||
+ESC_C.D. DAROCA.png|C.D. DAROCA|ESC_C.D. DAROCA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20DAROCA.png||
+ESC_C.D. DE ATECA.png|C.D. DE ATECA|ESC_C.D. DE ATECA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20DE%20ATECA.png||
+ESC_C.D. DELICIAS.png|C.D. DELICIAS|ESC_C.D. DELICIAS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20DELICIAS.png||
+ESC_C.D. DERIO.png|C.D. DERIO|ESC_C.D. DERIO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20DERIO.png||
+ESC_C.D. DISCÓBOLO(ARAGON).png|C.D. DISCÓBOLO(ARAGON)|ESC_C.D. DISCÓBOLO(ARAGON).png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20DISC%d3BOLO(ARAGON).png||
+ESC_C.D. DUNBOA EGUZKI.png|C.D. DUNBOA EGUZKI|ESC_C.D. DUNBOA EGUZKI.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20DUNBOA%20EGUZKI.png||
+ESC_C.D. DUNBOA-EGUZKI.png|C.D. DUNBOA-EGUZKI|ESC_C.D. DUNBOA-EGUZKI.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20DUNBOA-EGUZKI.png||
+ESC_C.D. EBRO.png|C.D. EBRO|ESC_C.D. EBRO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20EBRO.png||
+ESC_C.D. EDER.png|C.D. EDER|ESC_C.D. EDER.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20EDER.png||
+ESC_C.D. EL BAYO.png|C.D. EL BAYO|ESC_C.D. EL BAYO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20EL%20BAYO.png||
+ESC_C.D. EL BURGO DE EBRO.png|C.D. EL BURGO DE EBRO|ESC_C.D. EL BURGO DE EBRO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20EL%20BURGO%20DE%20EBRO.png||
+ESC_C.D. EL PILAR-MARIANISTAS.png|C.D. EL PILAR-MARIANISTAS|ESC_C.D. EL PILAR-MARIANISTAS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20EL%20PILAR-MARIANISTAS.png||
+ESC_C.D. EL RETORNO.png|C.D. EL RETORNO|ESC_C.D. EL RETORNO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20EL%20RETORNO.png||
+ESC_C.D. ELGOIBAR.png|C.D. ELGOIBAR|ESC_C.D. ELGOIBAR.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20ELGOIBAR.png||
+ESC_C.D. ELORRIO.png|C.D. ELORRIO|ESC_C.D. ELORRIO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20ELORRIO.png||
 ESC_C.D. ERRI-BERRI.png|C.D. ERRIBERRI|ESC_C.D. ERRI-BERRI.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ERRI-BERRI.png||
+ESC_C.D. ESPERANZA.png|C.D. ESPERANZA|ESC_C.D. ESPERANZA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20ESPERANZA.png||
+ESC_C.D. ESPLÚS.png|C.D. ESPLÚS|ESC_C.D. ESPLÚS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20ESPL%daS.png||
+ESC_C.D. ESTADILLA.png|C.D. ESTADILLA|ESC_C.D. ESTADILLA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20ESTADILLA.png||
 ESC_C.D. ETXARRI ARA..>|C.D. ETXARRI ARANAZ|ESC_C.D. ETXARRI ARA..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ETXARRI ARANATZ K.E..png||
-ESC_C.D.F. MILAGRÉS.png|C.A. MILAGRES|ESC_C.D.F. MILAGRÉS.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D.F. MILAGR%c9S.png||
+ESC_C.D. EUREKA.png|C.D. EUREKA|ESC_C.D. EUREKA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20EUREKA.png||
 ESC_C.D. FALCESINO.png|C.D. FALCESINO|ESC_C.D. FALCESINO.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. FALCESINO.png||
+ESC_C.D. FARLETE.png|C.D. FARLETE|ESC_C.D. FARLETE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20FARLETE.png||
+ESC_C.D. FIGUERUELAS.png|C.D. FIGUERUELAS|ESC_C.D. FIGUERUELAS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20FIGUERUELAS.png||
+ESC_C.D. FLETA.png|C.D. FLETA|ESC_C.D. FLETA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20FLETA.png||
 ESC_C.D. FONTELLAS.png|C.D. FONTELLAS|ESC_C.D. FONTELLAS.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. FONTELLAS.png||
+ESC_C.D. FUENSPORT.png|C.D. FUENSPORT|ESC_C.D. FUENSPORT.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20FUENSPORT.png||
+ESC_C.D. FUENTES.png|C.D. FUENTES|ESC_C.D. FUENTES.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20FUENTES.png||
 ESC_C.D. FUNES.png|C.D. FUNES|ESC_C.D. FUNES.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. FUNES.png||
+ESC_C.D. FÚTBOL SAN MARTIN.png|C.D. FÚTBOL SAN MARTIN|ESC_C.D. FÚTBOL SAN MARTIN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20F%daTBOL%20SAN%20MARTIN.png||
+ESC_C.D. FÚTBOL TORPEDO.png|C.D. FÚTBOL TORPEDO|ESC_C.D. FÚTBOL TORPEDO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20F%daTBOL%20TORPEDO.png||
+ESC_C.D. GALDAKAO.png|C.D. GALDAKAO|ESC_C.D. GALDAKAO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20GALDAKAO.png||
+ESC_C.D. GALEA.png|C.D. GALEA|ESC_C.D. GALEA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20GALEA.png||
+ESC_C.D. GALLARTA.png|C.D. GALLARTA|ESC_C.D. GALLARTA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20GALLARTA.png||
+ESC_C.D. GALLUR.png|C.D. GALLUR|ESC_C.D. GALLUR.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20GALLUR.png||
 ESC_C.D. GARES.png|C.D. GARES|ESC_C.D. GARES.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. GARES.png||
+ESC_C.D. GARRAPINILLOS.png|C.D. GARRAPINILLOS|ESC_C.D. GARRAPINILLOS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20GARRAPINILLOS.png||
 ESC_C.D. GAZTE BERRI..>|C.D. GAZTE BERRIAK|ESC_C.D. GAZTE BERRI..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. GAZTE BERRIAK.png||
+ESC_C.D. GAZTELUZARRA.png|C.D. GAZTELUZARRA|ESC_C.D. GAZTELUZARRA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20GAZTELUZARRA.png||
+ESC_C.D. GETXO.png|C.D. GETXO|ESC_C.D. GETXO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20GETXO.png||
+ESC_C.D. GILTZARRAPO F.T..png|C.D. GILTZARRAPO F.T.|ESC_C.D. GILTZARRAPO F.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20GILTZARRAPO%20F.T..png||
+ESC_C.D. GINER.png|C.D. GINER|ESC_C.D. GINER.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20GINER.png||
+ESC_C.D. GORDEXOLA-1.png|C.D. GORDEXOLA|ESC_C.D. GORDEXOLA-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20GORDEXOLA-1.png||
+ESC_C.D. GRAÑEN.png|C.D. GRAÑEN|ESC_C.D. GRAÑEN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20GRA%d1EN.png||
+ESC_C.D. HAMAR KIDE.png|C.D. HAMAR KIDE|ESC_C.D. HAMAR KIDE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20HAMAR%20KIDE.png||
+ESC_C.D. HERNANI-1.png|C.D. HERNANI|ESC_C.D. HERNANI-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20HERNANI-1.png||
+ESC_C.D. HERNANI DESDE 2020.png|C.D. HERNANI DESDE 2020|ESC_C.D. HERNANI DESDE 2020.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20HERNANI%20DESDE%202020.png||
+ESC_C.D. HERRERA.png|C.D. HERRERA|ESC_C.D. HERRERA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20HERRERA.png||
+ESC_C.D. HISPANIDAD.png|C.D. HISPANIDAD|ESC_C.D. HISPANIDAD.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20HISPANIDAD.png||
 ESC_C.D. HUARTE .png|C.D. HUARTE|ESC_C.D. HUARTE .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. HUARTE .png||
+ESC_C.D. HUESCA.png|C.D. HUESCA|ESC_C.D. HUESCA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20HUESCA.png||
+ESC_C.D. HURACÁN (ZAR).png|C.D. HURACÁN (ZAR)|ESC_C.D. HURACÁN (ZAR).png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20HURAC%c1N%20(ZAR).png||
+ESC_C.D. IBARSUSI.png|C.D. IBARSUSI|ESC_C.D. IBARSUSI.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20IBARSUSI.png||
+ESC_C.D. IBERLANDA K.E..png|C.D. IBERLANDA K.E.|ESC_C.D. IBERLANDA K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20IBERLANDA%20K.E..png||
 ESC_C.D. IDOYA .png|C.D. IDOYA|ESC_C.D. IDOYA .png|https://www.google.com/url?sa=i&url=https%3A%2F%2Fclubshop.macron.com%2Fnavarra_nafarroa%2Fcd-idoya%2Fother&psig=AOvVaw2iMSignTfQ3MXVZrBP-2uO&ust=1771525740398000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKCH0OXV45IDFQAAAAAdAAAAABAE||
 ESC_C.D. ILUMBERRI.png|C.D. ILUMBERRI|ESC_C.D. ILUMBERRI.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ILUMBERRI.png||
 ESC_C.D. INFANTONES.png|C.D. INFANZONES|ESC_C.D. INFANTONES.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. INFANTONES.png||
 ESC_C.D. INJERTO.png|C.D. INJERTO|ESC_C.D. INJERTO.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. INJERTO.png||
-ESC_C.D. IRUÑA .png|C.D. IRUÑA|ESC_C.D. IRUÑA .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. IRU%d1A .png||
+ESC_C.D. INTERNACIONAL DE LOGROÑO.png|C.D. INTERNACIONAL DE LOGROÑO|ESC_C.D. INTERNACIONAL DE LOGROÑO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.D.%20INTERNACIONAL%20DE%20LOGRO%d1O.png||
+ESC_C.D. IPAR ARRIAGA.png|C.D. IPAR ARRIAGA|ESC_C.D. IPAR ARRIAGA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20IPAR%20ARRIAGA.png||
 ESC_C.D. IRUNTXIKI.png|C.D. IRUNTXIKI|ESC_C.D. IRUNTXIKI.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. IRUNTXIKI.png||
+ESC_C.D. IRUÑA .png|C.D. IRUÑA|ESC_C.D. IRUÑA .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. IRU%d1A .png||
+ESC_C.D. ISABENA CAPELLA.png|C.D. ISABENA CAPELLA|ESC_C.D. ISABENA CAPELLA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20ISABENA%20CAPELLA.png||
+ESC_C.D. ITUGARPE.png|C.D. ITUGARPE|ESC_C.D. ITUGARPE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20ITUGARPE.png||
 ESC_C.D. IZARRA .png|C.D. IZARRA|ESC_C.D. IZARRA .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. IZARRA .png||
+ESC_C.D. IZARRA GORRI.png|C.D. IZARRA GORRI|ESC_C.D. IZARRA GORRI.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20IZARRA%20GORRI.png||
+ESC_C.D. JUVENTUD.png|C.D. JUVENTUD|ESC_C.D. JUVENTUD.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20JUVENTUD.png||
+ESC_C.D. KARRANTZA.png|C.D. KARRANTZA|ESC_C.D. KARRANTZA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20KARRANTZA.png||
+ESC_C.D. KASTRE ETXETXUA.png|C.D. KASTRE ETXETXUA|ESC_C.D. KASTRE ETXETXUA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20KASTRE%20ETXETXUA.png||
+ESC_C.D. KASTREXANA GANA.png|C.D. KASTREXANA GANA|ESC_C.D. KASTREXANA GANA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20KASTREXANA%20GANA.png||
 ESC_C.D. KIROL SPORT..>|C.D. KIROL SPORT|ESC_C.D. KIROL SPORT..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. KIROL SPORT.png||
-ESC_C.D. LAGUNAK .png|C.D. LAGUNAK|ESC_C.D. LAGUNAK .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. LAGUNAK .png||
+ESC_C.D. LA ALMUNIA.png|C.D. LA ALMUNIA|ESC_C.D. LA ALMUNIA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20LA%20ALMUNIA.png||
+ESC_C.D. LA ARBOLEDA.png|C.D. LA ARBOLEDA|ESC_C.D. LA ARBOLEDA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20LA%20ARBOLEDA.png||
+ESC_C.D. LA MUELA.png|C.D. LA MUELA|ESC_C.D. LA MUELA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20LA%20MUELA.png||
+ESC_C.D. LA MUELA..png|C.D. LA MUELA.|ESC_C.D. LA MUELA..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20LA%20MUELA..png||
 ESC_C.D. LA PEÑA.png|C.D. LA PEÑA FUSTIÑANA|ESC_C.D. LA PEÑA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. LA PE%d1A.png||
+ESC_C.D. LA PUEBLA DE HÍJAR.png|C.D. LA PUEBLA DE HÍJAR|ESC_C.D. LA PUEBLA DE HÍJAR.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20LA%20PUEBLA%20DE%20H%cdJAR.png||
+ESC_C.D. LA SALLE (VIZ).png|C.D. LA SALLE (VIZ)|ESC_C.D. LA SALLE (VIZ).png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20LA%20SALLE%20(VIZ).png||
+ESC_LAGUN ARTEA K..E..>|C.D. LAGUN ARTEA K.E.|ESC_LAGUN ARTEA K..E..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_LAGUN ARTEA K..E.png||
+ESC_C.D. LAGUN ONAK-1.png|C.D. LAGUN ONAK|ESC_C.D. LAGUN ONAK-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20LAGUN%20ONAK-1.png||
+ESC_C.D. LAGUNAK .png|C.D. LAGUNAK|ESC_C.D. LAGUNAK .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. LAGUNAK .png||
+ESC_C.D. LAKUA .png|C.D. LAKUA|ESC_C.D. LAKUA .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20LAKUA%20.png||
+ESC_C.D. LAKUA ARRIAGA-1.png|C.D. LAKUA ARRIAGA|ESC_C.D. LAKUA ARRIAGA-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20LAKUA%20ARRIAGA-1.png||
+ESC_C.D. LARRAMENDI-1.png|C.D. LARRAMENDI|ESC_C.D. LARRAMENDI-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20LARRAMENDI-1.png||
 ESC_C.D. LARRATE.png|C.D. LARRATE|ESC_C.D. LARRATE.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. LARRATE.png||
+ESC_C.D. LAUDIO.png|C.D. LAUDIO|ESC_C.D. LAUDIO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20LAUDIO.png||
+ESC_C.D. LEMOABERRI.png|C.D. LEMOABERRI|ESC_C.D. LEMOABERRI.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20LEMOABERRI.png||
 ESC_C.D. LERINÉS.png|C.D. LERINES|ESC_C.D. LERINÉS.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. LERIN%c9S.png||
+ESC_C.D. LEZAMA SPORT.png|C.D. LEZAMA SPORT|ESC_C.D. LEZAMA SPORT.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20LEZAMA%20SPORT.png||
 ESC_C.D. LEZKAIRU.png|C.D. LEZKAIRU|ESC_C.D. LEZKAIRU.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. LEZKAIRU.png||
 ESC_C.D. LICEO MONJA..>|C.D. LICEO MONJARDIN|ESC_C.D. LICEO MONJA..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. LICEO MONJARD%cdN.png||
 ESC_C.D. LODOSA.png|C.D. LODOSA|ESC_C.D. LODOSA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. LODOSA.png||
+ESC_C.D. LOGROÑES.png|C.D. LOGROÑES|ESC_C.D. LOGROÑES.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.D.%20LOGRO%d1ES.png||
+ESC_C.D. LOGROÑO.png|C.D. LOGROÑO|ESC_C.D. LOGROÑO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.D.%20LOGRO%d1O.png||
+ESC_C.D. LOIU.png|C.D. LOIU|ESC_C.D. LOIU.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20LOIU.png||
 ESC_C.D. LOURDES.png|C.D. LOURDES|ESC_C.D. LOURDES.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. LOURDES.png||
+ESC_C.D. LUNA.png|C.D. LUNA|ESC_C.D. LUNA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20LUNA.png||
+ESC_C.D. MAELLA.png|C.D. MAELLA|ESC_C.D. MAELLA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20MAELLA.png||
+ESC_C.D. MALLEN.png|C.D. MALLEN|ESC_C.D. MALLEN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20MALLEN.png||
+ESC_C.D. MARIÑO.png|C.D. MARIÑO|ESC_C.D. MARIÑO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20MARI%d1O.png||
 ESC_C.D. MENDAVIÉS.png|C.D. MENDAVIES|ESC_C.D. MENDAVIÉS.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. MENDAVI%c9S.png||
 ESC_C.D. MENDI .png|C.D. MENDI|ESC_C.D. MENDI .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. MENDI .png||
+ESC_C.D. MEQUINENZA.png|C.D. MEQUINENZA|ESC_C.D. MEQUINENZA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20MEQUINENZA.png||
+ESC_C.D. MONTEARATZ.png|C.D. MONTEARATZ|ESC_C.D. MONTEARATZ.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20MONTEARATZ.png||
+ESC_C.D. MONTEFUERTE.png|C.D. MONTEFUERTE|ESC_C.D. MONTEFUERTE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20MONTEFUERTE.png||
+ESC_C.D. MORATA.png|C.D. MORATA|ESC_C.D. MORATA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20MORATA.png||
+ESC_C.D. MORÉS.png|C.D. MORÉS|ESC_C.D. MORÉS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20MOR%c9S.png||
+ESC_C.D. MOVERA.png|C.D. MOVERA|ESC_C.D. MOVERA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20MOVERA.png||
+ESC_C.D. MUNGIA.png|C.D. MUNGIA|ESC_C.D. MUNGIA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20MUNGIA.png||
 ESC_C.D. MURCHANTE.png|C.D. MURCHANTE|ESC_C.D. MURCHANTE.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. MURCHANTE.png||
 ESC_C.D. MURILLO.png|C.D. MURILLO|ESC_C.D. MURILLO.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. MURILLO.png||
 ESC_C.D. MUSKARIA.png|C.D. MUSKARIA|ESC_C.D. MUSKARIA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. MUSKARIA.png||
+ESC_C.D. MUTRIKO.png|C.D. MUTRIKO|ESC_C.D. MUTRIKO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20MUTRIKO.png||
+ESC_C.D. NANCLARES.png|C.D. NANCLARES|ESC_C.D. NANCLARES.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20NANCLARES.png||
+ESC_C.D. NOVALLAS.png|C.D. NOVALLAS|ESC_C.D. NOVALLAS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20NOVALLAS.png||
 ESC_C.D. OBERENA .png|C.D. OBERENA|ESC_C.D. OBERENA .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. OBERENA .png||
+ESC_C.D. OLIVER.png|C.D. OLIVER|ESC_C.D. OLIVER.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20OLIVER.png||
 ESC_C.D. ONDALAN.png|C.D. ONDALAN|ESC_C.D. ONDALAN.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ONDALAN.png||
+ESC_C.D. ONTINAR.png|C.D. ONTINAR|ESC_C.D. ONTINAR.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20ONTINAR.png||
+ESC_C.D. ORDUÑA.png|C.D. ORDUÑA|ESC_C.D. ORDUÑA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20ORDU%d1A.png||
+ESC_C.D. ORTUELLA.png|C.D. ORTUELLA|ESC_C.D. ORTUELLA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20ORTUELLA.png||
+ESC_C.D. OTXARKOAGA.png|C.D. OTXARKOAGA|ESC_C.D. OTXARKOAGA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20OTXARKOAGA.png||
+ESC_C.D. PADURA.png|C.D. PADURA|ESC_C.D. PADURA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20PADURA.png||
 ESC_C.D. PAMPLONA.png|C.D. PAMPLONA|ESC_C.D. PAMPLONA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. PAMPLONA.png||
+ESC_C.D. PARACUELLOS.png|C.D. PARACUELLOS|ESC_C.D. PARACUELLOS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20PARACUELLOS.png||
+ESC_C.D. PASAJES.png|C.D. PASAJES|ESC_C.D. PASAJES.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20PASAJES.png||
+ESC_C.D. PASTRIZ.png|C.D. PASTRIZ|ESC_C.D. PASTRIZ.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20PASTRIZ.png||
+ESC_C.D. PATRIA ARAGÓN.png|C.D. PATRIA ARAGÓN|ESC_C.D. PATRIA ARAGÓN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20PATRIA%20ARAG%d3N.png||
+ESC_C.D. PEÑA.png|C.D. PEÑA|ESC_C.D. PEÑA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20PE%d1A.png||
 ESC_C.D. PEÑA AZAGRE..>|C.D. PEÑA AZAGRESA|ESC_C.D. PEÑA AZAGRE..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. PE%d1A AZAGRESA.png||
+ESC_C.D. PEÑAS OSCENSES.png|C.D. PEÑAS OSCENSES|ESC_C.D. PEÑAS OSCENSES.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20PE%d1AS%20OSCENSES.png||
+ESC_C.D. PEÑAS OSCENSES(2).png|C.D. PEÑAS OSCENSES(2)|ESC_C.D. PEÑAS OSCENSES(2).png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20PE%d1AS%20OSCENSES(2).png||
+ESC_C.D. PINA.png|C.D. PINA|ESC_C.D. PINA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20PINA.png||
+ESC_C.D. PINSORO..png|C.D. PINSORO.|ESC_C.D. PINSORO..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20PINSORO..png||
+ESC_C.D. PRADEJON-1.png|C.D. PRADEJON|ESC_C.D. PRADEJON-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.D.%20PRADEJON-1.png||
+ESC_C.D. PROMESAS E.D.F..png|C.D. PROMESAS E.D.F.|ESC_C.D. PROMESAS E.D.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.D.%20PROMESAS%20E.D.F..png||
+ESC_C.D. QUINTO.png|C.D. QUINTO|ESC_C.D. QUINTO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20QUINTO.png||
 ESC_C.D. RADA.png|C.D. RADA|ESC_C.D. RADA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. RADA.png||
+ESC_C.D. RAYO BREANO.png|C.D. RAYO BREANO|ESC_C.D. RAYO BREANO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20RAYO%20BREANO.png||
+ESC_C.D. REAL PEÑÓN.png|C.D. REAL PEÑÓN|ESC_C.D. REAL PEÑÓN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20REAL%20PE%d1%d3N.png||
+ESC_C.D. REAL PERDIGUERA.png|C.D. REAL PERDIGUERA|ESC_C.D. REAL PERDIGUERA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20REAL%20PERDIGUERA.png||
+ESC_C.D. RECREATIVO PECOSA.png|C.D. RECREATIVO PECOSA|ESC_C.D. RECREATIVO PECOSA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20RECREATIVO%20PECOSA.png||
+ESC_C.D. REMOLINOS.png|C.D. REMOLINOS|ESC_C.D. REMOLINOS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20REMOLINOS.png||
 ESC_C.D. RIBAFORADA.png|C.D. RIBOFARADA|ESC_C.D. RIBAFORADA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. RIBAFORADA.png||
+ESC_C.D. RICLA.png|C.D. RICLA|ESC_C.D. RICLA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20RICLA.png||
+ESC_C.D. RIOJA ALAVESA.png|C.D. RIOJA ALAVESA|ESC_C.D. RIOJA ALAVESA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20RIOJA%20ALAVESA.png||
 ESC_C.D. RIVER EGA .png|C.D. RIVER EGA|ESC_C.D. RIVER EGA .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. RIVER EGA .png||
+ESC_C.D. ROBRES.png|C.D. ROBRES|ESC_C.D. ROBRES.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20ROBRES.png||
 ESC_C.D. ROCHAPEANO.png|C.D. ROCHAPEANO|ESC_C.D. ROCHAPEANO.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ROCHAPEANO.png||
+ESC_C.D. ROTETA.png|C.D. ROTETA|ESC_C.D. ROTETA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20ROTETA.png||
+ESC_C.D. RTVO. LECIÑENA.png|C.D. RTVO. LECIÑENA|ESC_C.D. RTVO. LECIÑENA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20RTVO.%20LECI%d1ENA.png||
+ESC_C.D. SADABENSE.png|C.D. SADABENSE|ESC_C.D. SADABENSE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20SADABENSE.png||
 ESC_C.D. SALESIANOS ..>|C.D. SALESIANOS|ESC_C.D. SALESIANOS ..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. SALESIANOS (NA).png||
+ESC_C.D. SALESIANOS DOMINGO SAVIO.png|C.D. SALESIANOS DOMINGO SAVIO|ESC_C.D. SALESIANOS DOMINGO SAVIO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.D.%20SALESIANOS%20DOMINGO%20SAVIO.png||
 ESC_C.D. SAN ADRIAN.png|C.D. SAN ADRIAN|ESC_C.D. SAN ADRIAN.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. SAN ADRIAN.png||
+ESC_C.D. SAN AGUSTÍN.png|C.D. SAN AGUSTÍN|ESC_C.D. SAN AGUSTÍN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20SAN%20AGUST%cdN.png||
+ESC_SAN ANDRES K.T..png|C.D. SAN ANDRÉS K.T.|ESC_SAN ANDRES K.T..png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_SAN ANDRES K.T..png||
+ESC_C.D. SAN ANTONIO.png|C.D. SAN ANTONIO|ESC_C.D. SAN ANTONIO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20SAN%20ANTONIO.png||
 ESC_C.D. SAN FERMÍN ..>|C.D. SAN CERNIN|ESC_C.D. SAN FERMÍN ..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. SAN FERM%cdN IKASTOLA.png||
+ESC_C.D. SAN FERNANDO AMESA PUESTA.png|C.D. SAN FERNANDO AMESA PUESTA|ESC_C.D. SAN FERNANDO AMESA PUESTA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20SAN%20FERNANDO%20AMESA%20PUESTA.png||
+ESC_C.D. SAN GREGORIO.png|C.D. SAN GREGORIO|ESC_C.D. SAN GREGORIO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20SAN%20GREGORIO.png||
 ESC_C.D. SAN IGNACIO..>|C.D. SAN IGNACIO|ESC_C.D. SAN IGNACIO..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. SAN IGNACIO.png||
+ESC_C.D. SAN IGNACIO (ALA).png|C.D. SAN IGNACIO (ALA)|ESC_C.D. SAN IGNACIO (ALA).png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20SAN%20IGNACIO%20(ALA).png||
 ESC_C.D. SAN JAVIER.png|C.D. SAN JAVIER|ESC_C.D. SAN JAVIER.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. SAN JAVIER.png||
 ESC_C.D. SAN JORGE.png|C.D. SAN JORGE|ESC_C.D. SAN JORGE.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. SAN JORGE.png||
+C.D. SAN JOSE|C.D. SAN JOSE|C.D. SAN JOSE|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/CASTILLA%20Y%20LE%D3N/escudos_min/MIN_ESC_C.D.%20SAN%20JOS%C9.png||
+ESC_C.D. SAN JOSÉ.png|C.D. SAN JOSÉ (SORIA)|ESC_C.D. SAN JOSÉ.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/CASTILLA%20Y%20LE%d3N/escudos/ESC_C.D.%20SAN%20JOS%c9.png||
+ESC_C.D. SAN LORENZO.png|C.D. SAN LORENZO|ESC_C.D. SAN LORENZO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.D.%20SAN%20LORENZO.png||
+ESC_C.D. SAN MARCIAL IRUN.png|C.D. SAN MARCIAL IRUN|ESC_C.D. SAN MARCIAL IRUN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20SAN%20MARCIAL%20IRUN.png||
+ESC_C.D. SAN MATEO.png|C.D. SAN MATEO|ESC_C.D. SAN MATEO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20SAN%20MATEO.png||
 ESC_C.D. SAN MIGUEL ..>|C.D. SAN MIGUEL|ESC_C.D. SAN MIGUEL ..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. SAN MIGUEL (NAV).png||
+ESC_C.D. SAN PRUDENCIO.png|C.D. SAN PRUDENCIO|ESC_C.D. SAN PRUDENCIO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20SAN%20PRUDENCIO.png||
+ESC_C.D. SAN VIATOR.png|C.D. SAN VIATOR|ESC_C.D. SAN VIATOR.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20SAN%20VIATOR.png||
 ESC_C.D. SANTACARA.png|C.D. SANTACARA|ESC_C.D. SANTACARA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. SANTACARA.png||
+ESC_C.D. SANTURTZI .png|C.D. SANTURTZI|ESC_C.D. SANTURTZI .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20SANTURTZI%20.png||
+ESC_C.D. SARIÑENA .png|C.D. SARIÑENA|ESC_C.D. SARIÑENA .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20SARI%d1ENA%20.png||
+ESC_C.D. SENA.png|C.D. SENA|ESC_C.D. SENA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20SENA.png||
+ESC_C.D. SENDEJA DE SOPELA.png|C.D. SENDEJA DE SOPELA|ESC_C.D. SENDEJA DE SOPELA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20SENDEJA%20DE%20SOPELA.png||
 ESC_C.D. SESMA.png|C.D. SESMA|ESC_C.D. SESMA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. SESMA.png||
+ESC_C.D. SESTRICA.png|C.D. SESTRICA|ESC_C.D. SESTRICA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20SESTRICA.png||
+ESC_C.D. SIÉTAMO.png|C.D. SIÉTAMO|ESC_C.D. SIÉTAMO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20SI%c9TAMO.png||
+ESC_C.D. SOLOKOETXE-1.png|C.D. SOLOKOETXE|ESC_C.D. SOLOKOETXE-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20SOLOKOETXE-1.png||
+ESC_C.D. SONDIKA.png|C.D. SONDIKA|ESC_C.D. SONDIKA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20SONDIKA.png||
 ESC_C.D. SOTO-IBARBA..>|C.D. SOTO IBARBASO|ESC_C.D. SOTO-IBARBA..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. SOTO-IBARBASO.png||
+ESC_C.D. SPORTING CASCAJOS.png|C.D. SPORTING CASCAJOS|ESC_C.D. SPORTING CASCAJOS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.D.%20SPORTING%20CASCAJOS.png||
 ESC_C.D. SPORTING ME..>|C.D. SPORTING MELIDES|ESC_C.D. SPORTING ME..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. SPORTING MELID%c9S.png||
+ESC_C.D. STADIUM CASABLANCA..png|C.D. STADIUM CASABLANCA.|ESC_C.D. STADIUM CASABLANCA..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20STADIUM%20CASABLANCA..png||
 ESC_C.D. SUBIZA.png|C.D. SUBIZA|ESC_C.D. SUBIZA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. SUBIZA.png||
+ESC_C.D. TAMARITE.png|C.D. TAMARITE|ESC_C.D. TAMARITE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20TAMARITE.png||
+ESC_C.D. TARAZONA(ARAGON).png|C.D. TARAZONA(ARAGON)|ESC_C.D. TARAZONA(ARAGON).png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20TARAZONA(ARAGON).png||
+ESC_C.D. TAUSTE.png|C.D. TAUSTE|ESC_C.D. TAUSTE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20TAUSTE.png||
+ESC_C.D. TEDEON .png|C.D. TEDEON|ESC_C.D. TEDEON .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.D.%20TEDEON%20.png||
+ESC_C.D. TERRER.png|C.D. TERRER|ESC_C.D. TERRER.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20TERRER.png||
+ESC_C.D. TERUEL .png|C.D. TERUEL|ESC_C.D. TERUEL .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20TERUEL%20.png||
+ESC_C.D. TORRES.png|C.D. TORRES|ESC_C.D. TORRES.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20TORRES.png||
+ESC_C.D. TOURING.png|C.D. TOURING|ESC_C.D. TOURING.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20TOURING.png||
+ESC_C.D. TRINTXERPE.png|C.D. TRINTXERPE|ESC_C.D. TRINTXERPE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20TRINTXERPE.png||
 ESC_C.D. TUDELANO .png|C.D. TUDELANO|ESC_C.D. TUDELANO .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. TUDELANO .png||
+ESC_C.D. TXURDINAGA.png|C.D. TXURDINAGA|ESC_C.D. TXURDINAGA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20TXURDINAGA.png||
+ESC_C.D. UGAO.png|C.D. UGAO|ESC_C.D. UGAO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20UGAO.png||
+ESC_C.D. UNIÓN LA JOTA VADORREY.png|C.D. UNIÓN LA JOTA VADORREY|ESC_C.D. UNIÓN LA JOTA VADORREY.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20UNI%d3N%20LA%20JOTA%20VADORREY.png||
 ESC_C.D. UNIVERSIDAD..>|C.D. UNIVERSIDAD DE NAVARRA|ESC_C.D. UNIVERSIDAD..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. UNIVERSIDAD DE NAVARRA.png||
+ESC_UNIVERSIDAD DE N..>|C.D. UNIVERSIDAD DE NAVARRA|ESC_UNIVERSIDAD DE N..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_UNIVERSIDAD DE NAVARRA.png||
+ESC_C.D. UNIVERSIDAD DE ZARAGOZA.png|C.D. UNIVERSIDAD DE ZARAGOZA|ESC_C.D. UNIVERSIDAD DE ZARAGOZA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20UNIVERSIDAD%20DE%20ZARAGOZA.png||
 ESC_C.D. URANTZIA.png|C.D. URANTZIA|ESC_C.D. URANTZIA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. URANTZIA.png||
 ESC_C.D. URBASA.png|C.D. URBASA|ESC_C.D. URBASA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. URBASA.png||
+ESC_C.D. URKI.png|C.D. URKI|ESC_C.D. URKI.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20URKI.png||
 ESC_C.D. URROZTARRA.png|C.D. URROZTARRA|ESC_C.D. URROZTARRA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. URROZTARRA.png||
+ESC_C.D. UTRILLAS.png|C.D. UTRILLAS|ESC_C.D. UTRILLAS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20UTRILLAS.png||
+ESC_C.D. VALDEFIERRO.png|C.D. VALDEFIERRO|ESC_C.D. VALDEFIERRO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20VALDEFIERRO.png||
+ESC_C.D. VALFONDA.png|C.D. VALFONDA|ESC_C.D. VALFONDA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20VALFONDA.png||
 ESC_C.D. VALLE DE EG..>|C.D. VALLE DE EGUES|ESC_C.D. VALLE DE EG..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. VALLE DE EG%dc%c9S.png||
+ESC_C.D. VAREA .png|C.D. VAREA|ESC_C.D. VAREA .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.D.%20VAREA%20.png||
+ESC_C.D. VASCONIA.png|C.D. VASCONIA|ESC_C.D. VASCONIA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20VASCONIA.png||
+ESC_C.D. VATOS LOCOS.png|C.D. VATOS LOCOS|ESC_C.D. VATOS LOCOS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20VATOS%20LOCOS.png||
+ESC_C.D. VEDRUNA.png|C.D. VEDRUNA|ESC_C.D. VEDRUNA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20VEDRUNA.png||
 ESC_C.D. VIANES.png|C.D. VIANES|ESC_C.D. VIANES.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. VIANES.png||
+ESC_CDVIANES|C.D. VIANES|ESC_CDVIANES|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/NAVARRA/escudos_min/MIN_ESC_C.D.%20VIANES.png||
+ESC_C.D. VILLAMATOR.png|C.D. VILLAMATOR|ESC_C.D. VILLAMATOR.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20VILLAMATOR.png||
+ESC_C.D. VILLAMAYOR.png|C.D. VILLAMAYOR|ESC_C.D. VILLAMAYOR.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20VILLAMAYOR.png||
+ESC_C.D. VILLEGAS.png|C.D. VILLEGAS|ESC_C.D. VILLEGAS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.D.%20VILLEGAS.png||
+ESC_C.D. VITORIA .png|C.D. VITORIA|ESC_C.D. VITORIA .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20VITORIA%20.png||
+ESC_C.D. VULCANO.png|C.D. VULCANO|ESC_C.D. VULCANO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20VULCANO.png||
+ESC_C.D. VULCANO K.E..png|C.D. VULCANO K.E.|ESC_C.D. VULCANO K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20VULCANO%20K.E..png||
+ESC_C.D. ZAIDÍN.png|C.D. ZAIDÍN|ESC_C.D. ZAIDÍN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20ZAID%cdN.png||
 ESC_C.D. ZARRAMONZA.png|C.D. ZARRAMONZA|ESC_C.D. ZARRAMONZA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ZARRAMONZA.png||
 ESC_C.D. ZIRAUKI.png|C.D. ZIRAUKI|ESC_C.D. ZIRAUKI.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ZIRAUKI.png||
 ESC_C.D. ZIZUR.png|C.D. ZIZUR|ESC_C.D. ZIZUR.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.D. ZIZUR.png||
+ESC_C.D. ZORRONTZAKO.png|C.D. ZORRONTZAKO|ESC_C.D. ZORRONTZAKO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20ZORRONTZAKO.png||
+ESC_C.D. ZUERA.png|C.D. ZUERA|ESC_C.D. ZUERA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.%20ZUERA.png||
+ESC_C.D.DERIO.png|C.D.DERIO|ESC_C.D.DERIO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.DERIO.png||
+ESC_C.D.E. BIOTA.png|C.D.E. BIOTA|ESC_C.D.E. BIOTA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.E.%20BIOTA.png||
+ESC_C.D.J. TAMARITE.png|C.D.J. TAMARITE|ESC_C.D.J. TAMARITE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.J.%20TAMARITE.png||
+ESC_C.D.J. UNCASTILLO.png|C.D.J. UNCASTILLO|ESC_C.D.J. UNCASTILLO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.D.J.%20UNCASTILLO.png||
+ESC_C.F ILLUECA.png|C.F ILLUECA|ESC_C.F ILLUECA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F%20ILLUECA.png||
+ESC_C.F. ALFAJARÍN.png|C.F. ALFAJARÍN|ESC_C.F. ALFAJARÍN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20ALFAJAR%cdN.png||
+ESC_C.F. ARANBIZKARRA.png|C.F. ARANBIZKARRA|ESC_C.F. ARANBIZKARRA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.F.%20ARANBIZKARRA.png||
+ESC_C.F. AYERBE.png|C.F. AYERBE|ESC_C.F. AYERBE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20AYERBE.png||
+ESC_C.F. BARDENA.png|C.F. BARDENA|ESC_C.F. BARDENA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20BARDENA.png||
+ESC_C.F. BAYERN DE TRAPAGA.png|C.F. BAYERN DE TRAPAGA|ESC_C.F. BAYERN DE TRAPAGA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.F.%20BAYERN%20DE%20TRAPAGA.png||
 ESC_C.F. BERIAIN.png|C.F. BERIÁIN|ESC_C.F. BERIAIN.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.F. BERIAIN.png||
 ESC_C.F. BETI CASEDA..>|C.F. BETI CASEDANO|ESC_C.F. BETI CASEDA..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.F. BETI CASEDANO.png||
+ESC_C.F. BIZKERRE.png|C.F. BIZKERRE|ESC_C.F. BIZKERRE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.F.%20BIZKERRE.png||
+ESC_C.F. BOLTAÑA-1.png|C.F. BOLTAÑA|ESC_C.F. BOLTAÑA-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20BOLTA%d1A-1.png||
+ESC_C.F. CARTUJA DE MONEGROS.png|C.F. CARTUJA DE MONEGROS|ESC_C.F. CARTUJA DE MONEGROS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20CARTUJA%20DE%20MONEGROS.png||
+ESC_C.F. CIUDAD DE ALFARO.png|C.F. CIUDAD DE ALFARO|ESC_C.F. CIUDAD DE ALFARO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.F.%20CIUDAD%20DE%20ALFARO.png||
+ESC_C.F. DELTA DUO BILBAO.png|C.F. DELTA DUO BILBAO|ESC_C.F. DELTA DUO BILBAO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.F.%20DELTA%20DUO%20BILBAO.png||
+ESC_C.F. DURANGOKO.png|C.F. DURANGOKO|ESC_C.F. DURANGOKO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.F.%20DURANGOKO.png||
+ESC_C.F. EMBID.png|C.F. EMBID|ESC_C.F. EMBID.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20EMBID.png||
+ESC_C.F. ÉPILA A.D..png|C.F. ÉPILA A.D.|ESC_C.F. ÉPILA A.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20%c9PILA%20A.D..png||
+ESC_C.F. ESCATRÓN.png|C.F. ESCATRÓN|ESC_C.F. ESCATRÓN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20ESCATR%d3N.png||
+ESC_C.F. FLETANOL.png|C.F. FLETANOL|ESC_C.F. FLETANOL.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20FLETANOL.png||
 ESC_C.F. GAZTE BERRI..>|C.F. GAZTE BERRIAK|ESC_C.F. GAZTE BERRI..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.F. GAZTE BERRIAK.png||
-ESC_C.U.D. BURLADES.png|U.C.D. BURLADES|ESC_C.U.D. BURLADES.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.U.D. BURLADES.png||
+ESC_C.F. GRAÑÉN.png|C.F. GRAÑÉN|ESC_C.F. GRAÑÉN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20GRA%d1%c9N.png||
+ESC_C.F. GRAUS.png|C.F. GRAUS|ESC_C.F. GRAUS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20GRAUS.png||
+ESC_C.F. HERNÁN CORTÉS JUNQUERA.png|C.F. HERNÁN CORTÉS JUNQUERA|ESC_C.F. HERNÁN CORTÉS JUNQUERA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20HERN%c1N%20CORT%c9S%20JUNQUERA.png||
+ESC_C.F. INMORTALEM-1.png|C.F. INMORTALEM|ESC_C.F. INMORTALEM-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20INMORTALEM-1.png||
+ESC_C.F. JACETANO.png|C.F. JACETANO|ESC_C.F. JACETANO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20JACETANO.png||
+ESC_C.F. JUVENTUD DE CASTILISCAR.png|C.F. JUVENTUD DE CASTILISCAR|ESC_C.F. JUVENTUD DE CASTILISCAR.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20JUVENTUD%20DE%20CASTILISCAR.png||
+ESC_C.F. MAZALEÓN.png|C.F. MAZALEÓN|ESC_C.F. MAZALEÓN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20MAZALE%d3N.png||
+ESC_C.F. MONREAL.png|C.F. MONREAL|ESC_C.F. MONREAL.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20MONREAL.png||
+ESC_C.F. OSSO DE CINCA.png|C.F. OSSO DE CINCA|ESC_C.F. OSSO DE CINCA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20OSSO%20DE%20CINCA.png||
+ESC_C.F. PENA-ROJA.png|C.F. PENA-ROJA|ESC_C.F. PENA-ROJA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20PENA-ROJA.png||
+ESC_C.F. RAPID MURILLO.png|C.F. RAPID MURILLO|ESC_C.F. RAPID MURILLO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.F.%20RAPID%20MURILLO.png||
+ESC_C.F. REGIONES DEVASTADAS.png|C.F. REGIONES DEVASTADAS|ESC_C.F. REGIONES DEVASTADAS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20REGIONES%20DEVASTADAS.png||
+ESC_C.F. RENFE ZARAGOZA.png|C.F. RENFE ZARAGOZA|ESC_C.F. RENFE ZARAGOZA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20RENFE%20ZARAGOZA.png||
+ESC_C.F. RIOJA ALAVESA LUCERNA.png|C.F. RIOJA ALAVESA LUCERNA|ESC_C.F. RIOJA ALAVESA LUCERNA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.F.%20RIOJA%20ALAVESA%20LUCERNA.png||
+ESC_C.F. SAN JORGE (ARAGÓN).png|C.F. SAN JORGE (ARAGÓN)|ESC_C.F. SAN JORGE (ARAGÓN).png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20SAN%20JORGE%20(ARAG%d3N).png||
+ESC_C.F. SANTA ANASTASIA.png|C.F. SANTA ANASTASIA|ESC_C.F. SANTA ANASTASIA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20SANTA%20ANASTASIA.png||
+ESC_C.F. SANTO DOMINGO JUVENTUD.png|C.F. SANTO DOMINGO JUVENTUD|ESC_C.F. SANTO DOMINGO JUVENTUD.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20SANTO%20DOMINGO%20JUVENTUD.png||
+ESC_C.F. TEXAS LASARTEARRA.png|C.F. TEXAS LASARTEARRA|ESC_C.F. TEXAS LASARTEARRA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.F.%20TEXAS%20LASARTEARRA.png||
+ESC_C.F. TRAPAGARAN.png|C.F. TRAPAGARAN|ESC_C.F. TRAPAGARAN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.F.%20TRAPAGARAN.png||
+ESC_C.F. VALDERROBRES.png|C.F. VALDERROBRES|ESC_C.F. VALDERROBRES.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20VALDERROBRES.png||
+ESC_C.F. VILLA DE ALAGÓN.png|C.F. VILLA DE ALAGÓN|ESC_C.F. VILLA DE ALAGÓN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20VILLA%20DE%20ALAG%d3N.png||
+ESC_C.F. ZALUX ALHAMA.png|C.F. ZALUX ALHAMA|ESC_C.F. ZALUX ALHAMA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.F.%20ZALUX%20ALHAMA.png||
+ESC_C.F. ZARAMAGA.png|C.F. ZARAMAGA|ESC_C.F. ZARAMAGA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.F.%20ZARAMAGA.png||
+ESC_C.F. ZUAZO.png|C.F. ZUAZO|ESC_C.F. ZUAZO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.F.%20ZUAZO.png||
+ESC_C.P. CALASANCIO .png|C.P. CALASANCIO|ESC_C.P. CALASANCIO .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.P.%20CALASANCIO%20.png||
+ESC_C.P. MONTALBÁN.png|C.P. MONTALBÁN|ESC_C.P. MONTALBÁN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_C.P.%20MONTALB%c1N.png||
+ESC_C.P. SAN COSME.png|C.P. SAN COSME|ESC_C.P. SAN COSME.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_C.P.%20SAN%20COSME.png||
+ESC_CAFETEROS F.C..png|CAFETEROS F.C.|ESC_CAFETEROS F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_CAFETEROS%20F.C..png||
+ESC_CALAMAOCHA C.F..png|CALAMAOCHA C.F.|ESC_CALAMAOCHA C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_CALAMAOCHA%20C.F..png||
+ESC_CALAMOCHA C.F..png|CALAMOCHA C.F.|ESC_CALAMOCHA C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_CALAMOCHA%20C.F..png||
+ESC_CASALARREINA C.F.-1.png|CASALARREINA C.F.|ESC_CASALARREINA C.F.-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_CASALARREINA%20C.F.-1.png||
+ESC_CASALARREINA C.F. DESDE 2020.png|CASALARREINA C.F. DESDE 2020|ESC_CASALARREINA C.F. DESDE 2020.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_CASALARREINA%20C.F.%20DESDE%202020.png||
+ESC_CASTELSERAS C.F..png|CASTELSERAS C.F.|ESC_CASTELSERAS C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_CASTELSERAS%20C.F..png||
 ESC_CASTILLO F.C..png|CASTILLO F.C.|ESC_CASTILLO F.C..png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_CASTILLO F.C..png||
-ESC_DONEZTEBE F.T..png|DONEZTEBE F.T.|ESC_DONEZTEBE F.T..png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_DONEZTEBE F.T..png||
-ESC_F.C. BIDEZARRA.png|F.C. BIDEZARRA|ESC_F.C. BIDEZARRA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_F.C. BIDEZARRA.png||
-ESC_F.C. TUDELA 199..>|F.C. TUDELA 1999|ESC_F.C. TUDELA 199..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_F.C. TUDELA  1999.png||
-ESC_J.D. SAN JORGE.png|J.D. SAN JORGE|ESC_J.D. SAN JORGE.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_J.D. SAN JORGE.png||
-ESC_LAGUN ARTEA K..E..>|C.D. LAGUN ARTEA K.E.|ESC_LAGUN ARTEA K..E..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_LAGUN ARTEA K..E.png||
-ESC_MULIER FCN.png|MULIER FCN|ESC_MULIER FCN.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_MULIER FCN.png||
-ESC_PEÑA SPORT F.C...>|PEÑA SPORT F.C.|ESC_PEÑA SPORT F.C...>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_PE%d1A SPORT  F.C..png||
-ESC_ROTXAPEA C.D..png|ROTXAPEA C.D.|ESC_ROTXAPEA C.D..png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_ROTXAPEA C.D..png||
-ESC_S.D. ALSASUA.png|S.D. ALSASUA|ESC_S.D. ALSASUA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_S.D. ALSASUA.png||
-ESC_S.D.C. SAN CRIST..>|S.D.C. SAN CRISTOBAL|ESC_S.D.C. SAN CRIST..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_S.D.C. SAN CRISTOBAL.png||
-ESC_SAN ANDRES K.T..png|C.D. SAN ANDRÉS K.T.|ESC_SAN ANDRES K.T..png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_SAN ANDRES K.T..png||
-ESC_U.D.C. CHANTREA ..>|U.D.C. CHANTREA|ESC_U.D.C. CHANTREA ..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_U.D.C. CHANTREA .png||
-ESC_U.D. MUTILVERA .png|U.D. MUTILVERA|ESC_U.D. MUTILVERA .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_U.D. MUTILVERA .png||
-ESC_U.D. VALLE DE AR..>|U.D. VALLE DE ARANGUREN|ESC_U.D. VALLE DE AR..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_U.D. VALLE DE ARANGUREN.png||
-ESC_UNIÓN TUTERA.png|UNION TUTERA|ESC_UNIÓN TUTERA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_UNI%d3N TUTERA.png||
-ESC_UNIVERSIDAD DE N..>|C.D. UNIVERSIDAD DE NAVARRA|ESC_UNIVERSIDAD DE N..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_UNIVERSIDAD DE NAVARRA.png||
-ESC_VALDORBA F.C..png|VALDORBA F.C.|ESC_VALDORBA F.C..png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_VALDORBA F.C..png||
-ESC_DANOK BAT|DANOK BAT |ESC_DANOK BAT|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20DANOK%20BAT.png||
-ESC_BILLABONA FKE|BILLABONA F.K.E.|ESC_BILLABONA FKE|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_BILLABONA%20K.E.-1.png||
+ESC_CELLA C.F..png|CELLA C.F.|ESC_CELLA C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_CELLA%20C.F..png||
+ESC_CERVERA DE LA CAÑADA F.C..png|CERVERA DE LA CAÑADA F.C.|ESC_CERVERA DE LA CAÑADA F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_CERVERA%20DE%20LA%20CA%d1ADA%20F.C..png||
+ESC_CHINANDEGA C.D..png|CHINANDEGA C.D.|ESC_CHINANDEGA C.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_CHINANDEGA%20C.D..png||
+ESC_CHIPRANA C.F..png|CHIPRANA C.F.|ESC_CHIPRANA C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_CHIPRANA%20C.F..png||
+ESC_CIUDAD DE HUESCA.png|CIUDAD DE HUESCA|ESC_CIUDAD DE HUESCA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_CIUDAD%20DE%20HUESCA.png||
+ESC_CLUB PORTUGALETE.png|CLUB PORTUGALETE|ESC_CLUB PORTUGALETE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_CLUB%20PORTUGALETE.png||
+ESC_COSMOS ARAGÓN.png|COSMOS ARAGÓN|ESC_COSMOS ARAGÓN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_COSMOS%20ARAG%d3N.png||
+ESC_CULTURAL DEPORTIVA LANTARON.png|CULTURAL DEPORTIVA LANTARON|ESC_CULTURAL DEPORTIVA LANTARON.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_CULTURAL%20DEPORTIVA%20LANTARON.png||
 ESC_DANENA KE|DANENA K.E.|ESC_DANENA KE|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_DANENA%20K.E..png||
-ESC_CDALFARO|C.D. ALFARO|ESC_CDALFARO|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/plantillas/ESCUDO-C.D.%20ALFARO-ES.png||
-ESC_CDVIANES|C.D. VIANES|ESC_CDVIANES|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/NAVARRA/escudos_min/MIN_ESC_C.D.%20VIANES.png||
-ESC_CDAGONCILLO|C.D. AGONCILLO|ESC_CDAGONCILLO|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos_min/MIN_ESC_C.D.%20AGONCILLO.png||
-C.D. SAN JOSE|C.D. SAN JOSE|C.D. SAN JOSE|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/CASTILLA%20Y%20LE%D3N/escudos_min/MIN_ESC_C.D.%20SAN%20JOS%C9.png||
-
-
+ESC_DANOK BAT|DANOK BAT|ESC_DANOK BAT|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_C.D.%20DANOK%20BAT.png||
+ESC_DEPORTE PEDROLA.png|DEPORTE PEDROLA|ESC_DEPORTE PEDROLA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_DEPORTE%20PEDROLA.png||
+ESC_DEPORTIVO ALAVÉS-2.png|DEPORTIVO ALAVÉS|ESC_DEPORTIVO ALAVÉS-2.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_DEPORTIVO%20ALAV%c9S-2.png||
+ESC_DEPORTIVO MAESTRANZA AÉREA.png|DEPORTIVO MAESTRANZA AÉREA|ESC_DEPORTIVO MAESTRANZA AÉREA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_DEPORTIVO%20MAESTRANZA%20A%c9REA.png||
+ESC_DEPORTIVO SOBRARBE.png|DEPORTIVO SOBRARBE|ESC_DEPORTIVO SOBRARBE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_DEPORTIVO%20SOBRARBE.png||
+ESC_DEPORTIVO VIRREYES.png|DEPORTIVO VIRREYES|ESC_DEPORTIVO VIRREYES.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_DEPORTIVO%20VIRREYES.png||
+ESC_DEUSTO DONOSTIA K.E..png|DEUSTO DONOSTIA K.E.|ESC_DEUSTO DONOSTIA K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_DEUSTO%20DONOSTIA%20K.E..png||
+ESC_DINAMO DE SAN JUAN C.F..png|DINAMO DE SAN JUAN C.F.|ESC_DINAMO DE SAN JUAN C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_DINAMO%20DE%20SAN%20JUAN%20C.F..png||
+ESC_DONEZTEBE F.T..png|DONEZTEBE F.T.|ESC_DONEZTEBE F.T..png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_DONEZTEBE F.T..png||
+ESC_DONOSTIAKO KALEREN LAGUNAK.png|DONOSTIAKO KALEREN LAGUNAK|ESC_DONOSTIAKO KALEREN LAGUNAK.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_DONOSTIAKO%20KALEREN%20LAGUNAK.png||
+ESC_DUX LOGROÑO.png|DUX LOGROÑO|ESC_DUX LOGROÑO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_DUX%20LOGRO%d1O.png||
+ESC_E.D.F. LOGROÑO.png|E.D.F. LOGROÑO|ESC_E.D.F. LOGROÑO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_E.D.F.%20LOGRO%d1O.png||
+ESC_E.F. HUESCA.png|E.F. HUESCA|ESC_E.F. HUESCA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_E.F.%20HUESCA.png||
+ESC_E.F.B. ALFINDÉN.png|E.F.B. ALFINDÉN|ESC_E.F.B. ALFINDÉN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_E.F.B.%20ALFIND%c9N.png||
+ESC_E.M.F. LA MUELA-1.png|E.M.F. LA MUELA|ESC_E.M.F. LA MUELA-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_E.M.F.%20LA%20MUELA-1.png||
+ESC_EAS'08.png|EAS'08|ESC_EAS'08.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_EAS'08.png||
+ESC_EGBA KIROLAK C.F..png|EGBA KIROLAK C.F.|ESC_EGBA KIROLAK C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_EGBA%20KIROLAK%20C.F..png||
+ESC_EIBARTARRAK F.T..png|EIBARTARRAK F.T.|ESC_EIBARTARRAK F.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_EIBARTARRAK%20F.T..png||
+ESC_EL GANCHO C.F..png|EL GANCHO C.F.|ESC_EL GANCHO C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_EL%20GANCHO%20C.F..png||
+ESC_EL GOIBAR C.D..png|EL GOIBAR C.D.|ESC_EL GOIBAR C.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_EL%20GOIBAR%20C.D..png||
+ESC_ERMUA C.D..png|ERMUA C.D.|ESC_ERMUA C.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ERMUA%20C.D..png||
+ESC_ESPAÑOL DE ARRABAL U.D..png|ESPAÑOL DE ARRABAL U.D.|ESC_ESPAÑOL DE ARRABAL U.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ESPA%d1OL%20DE%20ARRABAL%20U.D..png||
+ESC_ESPAÑOL DE MONTAÑANA.png|ESPAÑOL DE MONTAÑANA|ESC_ESPAÑOL DE MONTAÑANA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ESPA%d1OL%20DE%20MONTA%d1ANA.png||
+ESC_ESTADIO MIRALBUENO EL OLIVAR.png|ESTADIO MIRALBUENO EL OLIVAR|ESC_ESTADIO MIRALBUENO EL OLIVAR.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ESTADIO%20MIRALBUENO%20EL%20OLIVAR.png||
+ESC_EUSKALDUNA C.D..png|EUSKALDUNA C.D.|ESC_EUSKALDUNA C.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_EUSKALDUNA%20C.D..png||
+ESC_EZKURDI K.T..png|EZKURDI K.T.|ESC_EZKURDI K.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_EZKURDI%20K.T..png||
+ESC_F.C. BIDEZARRA.png|F.C. BIDEZARRA|ESC_F.C. BIDEZARRA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_F.C. BIDEZARRA.png||
+ESC_F.C. CENTENIAL.png|F.C. CENTENIAL|ESC_F.C. CENTENIAL.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_F.C.%20CENTENIAL.png||
+ESC_F.C. DEUX.png|F.C. DEUX|ESC_F.C. DEUX.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_F.C.%20DEUX.png||
+ESC_F.C. EL TEMPLE.png|F.C. EL TEMPLE|ESC_F.C. EL TEMPLE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_F.C.%20EL%20TEMPLE.png||
+ESC_F.C. LA CALZADA-1.png|F.C. LA CALZADA|ESC_F.C. LA CALZADA-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_F.C.%20LA%20CALZADA-1.png||
+ESC_F.C. LA MURALLA.png|F.C. LA MURALLA|ESC_F.C. LA MURALLA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_F.C.%20LA%20MURALLA.png||
+ESC_F.C. LALUEZA.png|F.C. LALUEZA|ESC_F.C. LALUEZA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_F.C.%20LALUEZA.png||
+ESC_F.C. PEGASO.png|F.C. PEGASO|ESC_F.C. PEGASO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_F.C.%20PEGASO.png||
+ESC_F.C. POCHOLOS.png|F.C. POCHOLOS|ESC_F.C. POCHOLOS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_F.C.%20POCHOLOS.png||
+ESC_F.C. SHOTOKAI.png|F.C. SHOTOKAI|ESC_F.C. SHOTOKAI.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_F.C.%20SHOTOKAI.png||
+ESC_F.C. TUDELA 199..>|F.C. TUDELA 1999|ESC_F.C. TUDELA 199..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_F.C. TUDELA  1999.png||
+ESC_F.C. VADORREY.png|F.C. VADORREY|ESC_F.C. VADORREY.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_F.C.%20VADORREY.png||
+ESC_F.C. ZARAGOZA CITY.png|F.C. ZARAGOZA CITY|ESC_F.C. ZARAGOZA CITY.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_F.C.%20ZARAGOZA%20CITY.png||
+ESC_F.F. BARBASTRO.png|F.F. BARBASTRO|ESC_F.F. BARBASTRO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_F.F.%20BARBASTRO.png||
+ESC_FRUIZ K.T..png|FRUIZ K.T.|ESC_FRUIZ K.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_FRUIZ%20K.T..png||
+ESC_GASTEAK C.F..png|GASTEAK C.F.|ESC_GASTEAK C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_GASTEAK%20C.F..png||
+ESC_GATIKA.png|GATIKA|ESC_GATIKA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_GATIKA.png||
+ESC_GATIKA K.T..png|GATIKA K.T.|ESC_GATIKA K.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_GATIKA%20K.T..png||
+ESC_GAZTEAK C.F..png|GAZTEAK C.F.|ESC_GAZTEAK C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_GAZTEAK%20C.F..png||
+ESC_GELSA C.F..png|GELSA C.F.|ESC_GELSA C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_GELSA%20C.F..png||
+ESC_GERNIKA CF.png|GERNIKA CF|ESC_GERNIKA CF.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_GERNIKA%20CF.png||
+ESC_GERNIKA CLUB.png|GERNIKA CLUB|ESC_GERNIKA CLUB.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_GERNIKA%20CLUB.png||
+ESC_GERNIKA SPORTING F.T..png|GERNIKA SPORTING F.T.|ESC_GERNIKA SPORTING F.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_GERNIKA%20SPORTING%20F.T..png||
+ESC_GETARIAKO KETA K.T..png|GETARIAKO KETA K.T.|ESC_GETARIAKO KETA K.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_GETARIAKO%20KETA%20K.T..png||
+ESC_GOTOR F.C..png|GOTOR F.C.|ESC_GOTOR F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_GOTOR%20F.C..png||
+ESC_GURE TXOKOA K.K.E..png|GURE TXOKOA K.K.E.|ESC_GURE TXOKOA K.K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_GURE%20TXOKOA%20K.K.E..png||
+ESC_GURUTZETA F.K.T..png|GURUTZETA F.K.T.|ESC_GURUTZETA F.K.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_GURUTZETA%20F.K.T..png||
+ESC_GURUTZETA FÚTBOL K.T..png|GURUTZETA FÚTBOL K.T.|ESC_GURUTZETA FÚTBOL K.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_GURUTZETA%20F%daTBOL%20K.T..png||
+ESC_HAMABI F.K..png|HAMABI F.K.|ESC_HAMABI F.K..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_HAMABI%20F.K..png||
+ESC_HARO SPORT CLUB.png|HARO SPORT CLUB|ESC_HARO SPORT CLUB.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_HARO%20SPORT%20CLUB.png||
+ESC_HAUSKAITZ K.K.-1.png|HAUSKAITZ K.K.|ESC_HAUSKAITZ K.K.-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_HAUSKAITZ%20K.K.-1.png||
+ESC_HIJAR F.C..png|HIJAR F.C.|ESC_HIJAR F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_HIJAR%20F.C..png||
+ESC_HONDARRIBIA F.C..png|HONDARRIBIA F.C.|ESC_HONDARRIBIA F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_HONDARRIBIA%20F.C..png||
+ESC_HONDARRIBIA F.E..png|HONDARRIBIA F.E.|ESC_HONDARRIBIA F.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_HONDARRIBIA%20F.E..png||
+ESC_HORMOTEC GIN TEAM.png|HORMOTEC GIN TEAM|ESC_HORMOTEC GIN TEAM.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_HORMOTEC%20GIN%20TEAM.png||
+ESC_IBAIONDO NERBIOI ERREKA F.K..png|IBAIONDO NERBIOI ERREKA F.K.|ESC_IBAIONDO NERBIOI ERREKA F.K..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_IBAIONDO%20NERBIOI%20ERREKA%20F.K..png||
+ESC_IBERIA S.C.(ARAGON).png|IBERIA S.C.(ARAGON)|ESC_IBERIA S.C.(ARAGON).png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_IBERIA%20S.C.(ARAGON).png||
+ESC_IDIAZABAL C.F..png|IDIAZABAL C.F.|ESC_IDIAZABAL C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_IDIAZABAL%20C.F..png||
+ESC_IDIAZABAL K.E..png|IDIAZABAL K.E.|ESC_IDIAZABAL K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_IDIAZABAL%20K.E..png||
+ESC_IKASBERRI K.E..png|IKASBERRI K.E.|ESC_IKASBERRI K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_IKASBERRI%20K.E..png||
+ESC_IKHOBA KIROL KLUBA.png|IKHOBA KIROL KLUBA|ESC_IKHOBA KIROL KLUBA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_IKHOBA%20KIROL%20KLUBA.png||
+ESC_ILUARI F.K..png|ILUARI F.K.|ESC_ILUARI F.K..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ILUARI%20F.K..png||
+ESC_INDARRA C.D..png|INDARRA C.D.|ESC_INDARRA C.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_INDARRA%20C.D..png||
+ESC_INTER AZUARA F.C..png|INTER AZUARA F.C.|ESC_INTER AZUARA F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_INTER%20AZUARA%20F.C..png||
+ESC_INTER DE TORRERO F.C..png|INTER DE TORRERO F.C.|ESC_INTER DE TORRERO F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_INTER%20DE%20TORRERO%20F.C..png||
+ESC_INTER NADA F.C..png|INTER NADA F.C.|ESC_INTER NADA F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_INTER%20NADA%20F.C..png||
+ESC_INTER ZOGORRI C.D..png|INTER ZOGORRI C.D.|ESC_INTER ZOGORRI C.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_INTER%20ZOGORRI%20C.D..png||
+ESC_INTERNACIONAL HUESCA.png|INTERNACIONAL HUESCA|ESC_INTERNACIONAL HUESCA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_INTERNACIONAL%20HUESCA.png||
+ESC_INTXURRE K.K.E.png|INTXURRE K.K.E|ESC_INTXURRE K.K.E.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_INTXURRE%20K.K.E.png||
+ESC_IRAULI BOSTEKO K.K..png|IRAULI BOSTEKO K.K.|ESC_IRAULI BOSTEKO K.K..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_IRAULI%20BOSTEKO%20K.K..png||
+ESC_IRAULTZA F.T..png|IRAULTZA F.T.|ESC_IRAULTZA F.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_IRAULTZA%20F.T..png||
+ESC_IRÚN C.F. 1902.png|IRÚN C.F. 1902|ESC_IRÚN C.F. 1902.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_IR%daN%20C.F.%201902.png||
+ESC_ITURGITXI F.C..png|ITURGITXI F.C.|ESC_ITURGITXI F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ITURGITXI%20F.C..png||
+ESC_ITURRIAGAKO F.K..png|ITURRIAGAKO F.K.|ESC_ITURRIAGAKO F.K..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ITURRIAGAKO%20F.K..png||
+ESC_IURRETAKO K.T..png|IURRETAKO K.T.|ESC_IURRETAKO K.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_IURRETAKO%20K.T..png||
+ESC_J.D. MONDRAGÓN.png|J.D. MONDRAGÓN|ESC_J.D. MONDRAGÓN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_J.D.%20MONDRAG%d3N.png||
+ESC_J.D. SAN JORGE.png|J.D. SAN JORGE|ESC_J.D. SAN JORGE.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_J.D. SAN JORGE.png||
+ESC_J.D. SOMORROSTRO.png|J.D. SOMORROSTRO|ESC_J.D. SOMORROSTRO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_J.D.%20SOMORROSTRO.png||
+ESC_JUVENTUD C.F.(ARAGON).png|JUVENTUD C.F.(ARAGON)|ESC_JUVENTUD C.F.(ARAGON).png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_JUVENTUD%20C.F.(ARAGON).png||
+ESC_JUVENTUD DEP. SOMORROSTRO.png|JUVENTUD DEP. SOMORROSTRO|ESC_JUVENTUD DEP. SOMORROSTRO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_JUVENTUD%20DEP.%20SOMORROSTRO.png||
+ESC_KOSTKAS K.E..png|KOSTKAS K.E.|ESC_KOSTKAS K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_KOSTKAS%20K.E..png||
+ESC_LA CARTUJA F.C..png|LA CARTUJA F.C.|ESC_LA CARTUJA F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_LA%20CARTUJA%20F.C..png||
+ESC_LAGUN ONAK.png|LAGUN ONAK|ESC_LAGUN ONAK.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_LAGUN%20ONAK.png||
+ESC_LANDETXA K.T..png|LANDETXA K.T.|ESC_LANDETXA K.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_LANDETXA%20K.T..png||
+ESC_LANTARON CD.png|LANTARON CD|ESC_LANTARON CD.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_LANTARON%20CD.png||
+ESC_LARRAMENDI IKASTOLA F.T..png|LARRAMENDI IKASTOLA F.T.|ESC_LARRAMENDI IKASTOLA F.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_LARRAMENDI%20IKASTOLA%20F.T..png||
+ESC_LASARTEKO OLABIDE I.K.E..png|LASARTEKO OLABIDE I.K.E.|ESC_LASARTEKO OLABIDE I.K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_LASARTEKO%20OLABIDE%20I.K.E..png||
+ESC_LAZKAO K.E..png|LAZKAO K.E.|ESC_LAZKAO K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_LAZKAO%20K.E..png||
+ESC_LÉCERA C.F..png|LÉCERA C.F.|ESC_LÉCERA C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_L%c9CERA%20C.F..png||
+ESC_LEIOA S.D..png|LEIOA S.D.|ESC_LEIOA S.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_LEIOA%20S.D..png||
+ESC_LEKEITIO F.T..png|LEKEITIO F.T.|ESC_LEKEITIO F.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_LEKEITIO%20F.T..png||
+ESC_LEMOAKO HARROBI F.K..png|LEMOAKO HARROBI F.K.|ESC_LEMOAKO HARROBI F.K..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_LEMOAKO%20HARROBI%20F.K..png||
+ESC_LEMONA S.D..png|LEMONA S.D.|ESC_LEMONA S.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_LEMONA%20S.D..png||
+ESC_LEVIATHAN A.D..png|LEVIATHAN A.D.|ESC_LEVIATHAN A.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_LEVIATHAN%20A.D..png||
+ESC_LOGROÑES C.F..png|LOGROÑES C.F.|ESC_LOGROÑES C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_LOGRO%d1ES%20C.F..png||
+ESC_LOGROÑES CF.png|LOGROÑES CF|ESC_LOGROÑES CF.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_LOGRO%d1ES%20CF.png||
+ESC_LOGROÑO UNITED.png|LOGROÑO UNITED|ESC_LOGROÑO UNITED.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_LOGRO%d1O%20UNITED.png||
+ESC_LONGARES C.F..png|LONGARES C.F.|ESC_LONGARES C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_LONGARES%20C.F..png||
+ESC_LOS BANCOS F.C..png|LOS BANCOS F.C.|ESC_LOS BANCOS F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_LOS%20BANCOS%20F.C..png||
+ESC_LOS ESPARTANOS DE ALFINDEN F.C..png|LOS ESPARTANOS DE ALFINDEN F.C.|ESC_LOS ESPARTANOS DE ALFINDEN F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_LOS%20ESPARTANOS%20DE%20ALFINDEN%20F.C..png||
+ESC_LOS SUAVES F.C.F.C.F.png|LOS SUAVES F.C.F.C.F|ESC_LOS SUAVES F.C.F.C.F.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_LOS%20SUAVES%20F.C.F.C.F.png||
+ESC_LOS SUAVES F.C.F.C.F..png|LOS SUAVES F.C.F.C.F.|ESC_LOS SUAVES F.C.F.C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_LOS%20SUAVES%20F.C.F.C.F..png||
+ESC_LOYOLA INDAUTXU C..png|LOYOLA INDAUTXU C.|ESC_LOYOLA INDAUTXU C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_LOYOLA%20INDAUTXU%20C..png||
+ESC_LUCENI C.F..png|LUCENI C.F.|ESC_LUCENI C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_LUCENI%20C.F..png||
+ESC_LUMO K.E.A.D..png|LUMO K.E.A.D.|ESC_LUMO K.E.A.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_LUMO%20K.E.A.D..png||
+ESC_MARTUTENE K.E..png|MARTUTENE K.E.|ESC_MARTUTENE K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_MARTUTENE%20K.E..png||
+ESC_MILAN SCUOLA CALCIO BUTRONE K.K..png|MILAN SCUOLA CALCIO BUTRONE K.K.|ESC_MILAN SCUOLA CALCIO BUTRONE K.K..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_MILAN%20SCUOLA%20CALCIO%20BUTRONE%20K.K..png||
+ESC_MIRALBUENO C.D.-1.png|MIRALBUENO C.D.|ESC_MIRALBUENO C.D.-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_MIRALBUENO%20C.D.-1.png||
+ESC_MONDRAGON C.F..png|MONDRAGON C.F.|ESC_MONDRAGON C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_MONDRAGON%20C.F..png||
+ESC_MULIER FCN.png|MULIER FCN|ESC_MULIER FCN.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_MULIER FCN.png||
+ESC_MUNIBE K.T..png|MUNIBE K.T.|ESC_MUNIBE K.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_MUNIBE%20K.T..png||
+ESC_MUTRIKU F.T..png|MUTRIKU F.T.|ESC_MUTRIKU F.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_MUTRIKU%20F.T..png||
+ESC_NAXARA CD.png|NAXARA CD|ESC_NAXARA CD.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_NAXARA%20CD.png||
+ESC_NEW TEAM LEGENDS.png|NEW TEAM LEGENDS|ESC_NEW TEAM LEGENDS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_NEW%20TEAM%20LEGENDS.png||
+ESC_NICARAGUA S.D..png|NICARAGUA S.D.|ESC_NICARAGUA S.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_NICARAGUA%20S.D..png||
+ESC_NUEZ DE EBRO C.D..png|NUEZ DE EBRO C.D.|ESC_NUEZ DE EBRO C.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_NUEZ%20DE%20EBRO%20C.D..png||
+ESC_O.D. SANTO DOMINGO DE SILOS.png|O.D. SANTO DOMINGO DE SILOS|ESC_O.D. SANTO DOMINGO DE SILOS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_O.D.%20SANTO%20DOMINGO%20DE%20SILOS.png||
+ESC_OIARTZUN K.E..png|OIARTZUN K.E.|ESC_OIARTZUN K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_OIARTZUN%20K.E..png||
+ESC_OIN BALOIA F.T..png|OIN BALOIA F.T.|ESC_OIN BALOIA F.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_OIN%20BALOIA%20F.T..png||
+ESC_OLÍMPICO ZARAGOZA.png|OLÍMPICO ZARAGOZA|ESC_OLÍMPICO ZARAGOZA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_OL%cdMPICO%20ZARAGOZA.png||
+ESC_ONCE AMIGOS F.C.A. ANTOJITOS.png|ONCE AMIGOS F.C.A. ANTOJITOS|ESC_ONCE AMIGOS F.C.A. ANTOJITOS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ONCE%20AMIGOS%20F.C.A.%20ANTOJITOS.png||
+ESC_ONCE ANTOJITOS F.C..png|ONCE ANTOJITOS F.C.|ESC_ONCE ANTOJITOS F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ONCE%20ANTOJITOS%20F.C..png||
+ESC_ONTIÑENA C.F.-1.png|ONTIÑENA C.F.|ESC_ONTIÑENA C.F.-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ONTI%d1ENA%20C.F.-1.png||
+ESC_ONTIÑENA-CARBE.png|ONTIÑENA-CARBE|ESC_ONTIÑENA-CARBE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ONTI%d1ENA-CARBE.png||
+ESC_ORDIZIA K.E..png|ORDIZIA K.E.|ESC_ORDIZIA K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ORDIZIA%20K.E..png||
+ESC_ORERETA K.F.C..png|ORERETA K.F.C.|ESC_ORERETA K.F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ORERETA%20K.F.C..png||
+ESC_ORIOKO F.T..png|ORIOKO F.T.|ESC_ORIOKO F.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ORIOKO%20F.T..png||
+ESC_ORTUELLAKO F.T..png|ORTUELLAKO F.T.|ESC_ORTUELLAKO F.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ORTUELLAKO%20F.T..png||
+ESC_OSTADAR SAIARRE K.E..png|OSTADAR SAIARRE K.E.|ESC_OSTADAR SAIARRE K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_OSTADAR%20SAIARRE%20K.E..png||
+ESC_OTXARTABA DUBDINEZKO ZAINA C.D..png|OTXARTABA DUBDINEZKO ZAINA C.D.|ESC_OTXARTABA DUBDINEZKO ZAINA C.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_OTXARTABA%20DUBDINEZKO%20ZAINA%20C.D..png||
+ESC_PASAIA K.E..png|PASAIA K.E.|ESC_PASAIA K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_PASAIA%20K.E..png||
+ESC_PAULDARRAK E.F. K.T..png|PAULDARRAK E.F. K.T.|ESC_PAULDARRAK E.F. K.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_PAULDARRAK%20E.F.%20K.T..png||
+ESC_PAULINOS F.C..png|PAULINOS F.C.|ESC_PAULINOS F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_PAULINOS%20F.C..png||
+ESC_PEÑA ATLÉTICA LA MUELA.png|PEÑA ATLÉTICA LA MUELA|ESC_PEÑA ATLÉTICA LA MUELA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_PE%d1A%20ATL%c9TICA%20LA%20MUELA.png||
+ESC_PEÑA BALSAMAISO CF.png|PEÑA BALSAMAISO CF|ESC_PEÑA BALSAMAISO CF.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_PE%d1A%20BALSAMAISO%20CF.png||
+ESC_PEÑA FERRANCA-1.png|PEÑA FERRANCA|ESC_PEÑA FERRANCA-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_PE%d1A%20FERRANCA-1.png||
+ESC_PEÑA FERRANCA FEMENINO.png|PEÑA FERRANCA FEMENINO|ESC_PEÑA FERRANCA FEMENINO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_PE%d1A%20FERRANCA%20FEMENINO.png||
+ESC_PEÑA FRAGATINA.png|PEÑA FRAGATINA|ESC_PEÑA FRAGATINA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_PE%d1A%20FRAGATINA.png||
+ESC_PEÑA SPORT F.C...>|PEÑA SPORT F.C.|ESC_PEÑA SPORT F.C...>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_PE%d1A SPORT  F.C..png||
+ESC_PEÑALBA ATLÉTICO.png|PEÑALBA ATLÉTICO|ESC_PEÑALBA ATLÉTICO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_PE%d1ALBA%20ATL%c9TICO.png||
+ESC_POLIDEPORTIVO LA SALLE.png|POLIDEPORTIVO LA SALLE|ESC_POLIDEPORTIVO LA SALLE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_POLIDEPORTIVO%20LA%20SALLE.png||
+ESC_PORTUGALETE CF.png|PORTUGALETE CF|ESC_PORTUGALETE CF.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_PORTUGALETE%20CF.png||
+ESC_PUYAL C.F..png|PUYAL C.F.|ESC_PUYAL C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_PUYAL%20C.F..png||
+ESC_QUARTE ATLÉTICO.png|QUARTE ATLÉTICO|ESC_QUARTE ATLÉTICO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_QUARTE%20ATL%c9TICO.png||
+ESC_R.S.D. SANTA ISABEL.png|R.S.D. SANTA ISABEL|ESC_R.S.D. SANTA ISABEL.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_R.S.D.%20SANTA%20ISABEL.png||
+ESC_RACING HISPANIDAD.png|RACING HISPANIDAD|ESC_RACING HISPANIDAD.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_RACING%20HISPANIDAD.png||
+ESC_RACING RIOJA C.F..png|RACING RIOJA C.F.|ESC_RACING RIOJA C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_RACING%20RIOJA%20C.F..png||
+ESC_REAL ACADEMIA.png|REAL ACADEMIA|ESC_REAL ACADEMIA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_REAL%20ACADEMIA.png||
+ESC_REAL BETHLEHEM C.F..png|REAL BETHLEHEM C.F.|ESC_REAL BETHLEHEM C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_REAL%20BETHLEHEM%20C.F..png||
+ESC_REAL CHILE F.C..png|REAL CHILE F.C.|ESC_REAL CHILE F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_REAL%20CHILE%20F.C..png||
+ESC_REAL NICARAGÜENSE.png|REAL NICARAGÜENSE|ESC_REAL NICARAGÜENSE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_REAL%20NICARAG%dcENSE.png||
+ESC_REAL  SOCIEDAD S.S..png|REAL SOCIEDAD S.S.|ESC_REAL  SOCIEDAD S.S..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_REAL%20%20SOCIEDAD%20S.S..png||
+ESC_REAL UNIÓN CLUB DE IRÚN.png|REAL UNIÓN CLUB DE IRÚN|ESC_REAL UNIÓN CLUB DE IRÚN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_REAL%20UNI%d3N%20CLUB%20DE%20IR%daN.png||
+ESC_REAL  UNION DE IRUN.png|REAL UNION DE IRUN|ESC_REAL  UNION DE IRUN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_REAL%20%20UNION%20DE%20IRUN.png||
+ESC_REAL  ZARAGOZA.png|REAL ZARAGOZA|ESC_REAL  ZARAGOZA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_REAL%20%20ZARAGOZA.png||
+ESC_REY FERNANDO DE ARAGÓN C.F..png|REY FERNANDO DE ARAGÓN C.F.|ESC_REY FERNANDO DE ARAGÓN C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_REY%20FERNANDO%20DE%20ARAG%d3N%20C.F..png||
+ESC_ROBRES C.D..png|ROBRES C.D.|ESC_ROBRES C.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ROBRES%20C.D..png||
+ESC_ROTXAPEA C.D..png|ROTXAPEA C.D.|ESC_ROTXAPEA C.D..png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_ROTXAPEA C.D..png||
+ESC_ROZZANO A.C..png|ROZZANO A.C.|ESC_ROZZANO A.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ROZZANO%20A.C..png||
+ESC_S-D- ITURRIGORRI.png|S-D- ITURRIGORRI|ESC_S-D- ITURRIGORRI.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S-D-%20ITURRIGORRI.png||
+ESC_S..D. LEMONA.png|S..D. LEMONA|ESC_S..D. LEMONA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S..D.%20LEMONA.png||
+ESC_S.C.D. COMUNIDAD DE CALATAYUD COMUNEROS.png|S.C.D. COMUNIDAD DE CALATAYUD COMUNEROS|ESC_S.C.D. COMUNIDAD DE CALATAYUD COMUNEROS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_S.C.D.%20COMUNIDAD%20DE%20CALATAYUD%20COMUNEROS.png||
+ESC_S.C.D. DE DURANGO.png|S.C.D. DE DURANGO|ESC_S.C.D. DE DURANGO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.C.D.%20DE%20DURANGO.png||
+ESC_S.C.D. SASTAGO.png|S.C.D. SASTAGO|ESC_S.C.D. SASTAGO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_S.C.D.%20SASTAGO.png||
+ESC_S.D. ALSASUA.png|S.D. ALSASUA|ESC_S.D. ALSASUA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_S.D. ALSASUA.png||
+ESC_S.D. AMOREBIETA .png|S.D. AMOREBIETA|ESC_S.D. AMOREBIETA .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20AMOREBIETA%20.png||
+ESC_S.D. ARBUYO.png|S.D. ARBUYO|ESC_S.D. ARBUYO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20ARBUYO.png||
+ESC_S.D. ARIZ.png|S.D. ARIZ|ESC_S.D. ARIZ.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20ARIZ.png||
+ESC_S.D. ATLÉTICO HIBERUS.png|S.D. ATLÉTICO HIBERUS|ESC_S.D. ATLÉTICO HIBERUS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_S.D.%20ATL%c9TICO%20HIBERUS.png||
+ESC_S.D. AZUCARERA.png|S.D. AZUCARERA|ESC_S.D. AZUCARERA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_S.D.%20AZUCARERA.png||
+ESC_S.D. BALMASEDA F.C..png|S.D. BALMASEDA F.C.|ESC_S.D. BALMASEDA F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20BALMASEDA%20F.C..png||
+ESC_S.D. BASURTO.png|S.D. BASURTO|ESC_S.D. BASURTO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20BASURTO.png||
+ESC_S.D. BEASAIN .png|S.D. BEASAIN|ESC_S.D. BEASAIN .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20BEASAIN%20.png||
+ESC_S.D. BEASAIN K.E..png|S.D. BEASAIN K.E.|ESC_S.D. BEASAIN K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20BEASAIN%20K.E..png||
+ESC_S.D. BEGOÑA.png|S.D. BEGOÑA|ESC_S.D. BEGOÑA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20BEGO%d1A.png||
+ESC_S.D. BORJA.png|S.D. BORJA|ESC_S.D. BORJA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_S.D.%20BORJA.png||
+ESC_S.D. DEUSTO.png|S.D. DEUSTO|ESC_S.D. DEUSTO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20DEUSTO.png||
+ESC_S.D. EIBAR .png|S.D. EIBAR|ESC_S.D. EIBAR .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20EIBAR%20.png||
+ESC_S.D. EJEA .png|S.D. EJEA|ESC_S.D. EJEA .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_S.D.%20EJEA%20.png||
+ESC_S.D. EL SALVADOR.png|S.D. EL SALVADOR|ESC_S.D. EL SALVADOR.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_S.D.%20EL%20SALVADOR.png||
+ESC_S.D. ERANDIO CLUB.png|S.D. ERANDIO CLUB|ESC_S.D. ERANDIO CLUB.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20ERANDIO%20CLUB.png||
+ESC_S.D. ESCORIAZA.png|S.D. ESCORIAZA|ESC_S.D. ESCORIAZA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_S.D.%20ESCORIAZA.png||
+ESC_S.D. ETXEBARRI.png|S.D. ETXEBARRI|ESC_S.D. ETXEBARRI.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20ETXEBARRI.png||
+ESC_S.D. EUSKALDUNA.png|S.D. EUSKALDUNA|ESC_S.D. EUSKALDUNA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20EUSKALDUNA.png||
+ESC_S.D. GORLIZ.png|S.D. GORLIZ|ESC_S.D. GORLIZ.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20GORLIZ.png||
+ESC_S.D. GURREA.png|S.D. GURREA|ESC_S.D. GURREA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_S.D.%20GURREA.png||
+ESC_S.D. HUESCA.png|S.D. HUESCA|ESC_S.D. HUESCA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_S.D.%20HUESCA.png||
+ESC_S.D. ILINTXA.png|S.D. ILINTXA|ESC_S.D. ILINTXA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20ILINTXA.png||
+ESC_S.D. INDAUTXU.png|S.D. INDAUTXU|ESC_S.D. INDAUTXU.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20INDAUTXU.png||
+ESC_S.D. IRU-BAT SANTA LUCÍA.png|S.D. IRU-BAT SANTA LUCÍA|ESC_S.D. IRU-BAT SANTA LUCÍA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20IRU-BAT%20SANTA%20LUC%cdA.png||
+ESC_S.D. IRUBAT.png|S.D. IRUBAT|ESC_S.D. IRUBAT.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20IRUBAT.png||
+ESC_S.D. IZARRA.png|S.D. IZARRA|ESC_S.D. IZARRA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20IZARRA.png||
+ESC_S.D. LEIOA.png|S.D. LEIOA|ESC_S.D. LEIOA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20LEIOA.png||
+ESC_S.D. LENGOKOAK K.E..png|S.D. LENGOKOAK K.E.|ESC_S.D. LENGOKOAK K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20LENGOKOAK%20K.E..png||
+ESC_S.D. LOGROÑES.png|S.D. LOGROÑES|ESC_S.D. LOGROÑES.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_S.D.%20LOGRO%d1ES.png||
+ESC_S.D. LOYOLA.png|S.D. LOYOLA|ESC_S.D. LOYOLA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_S.D.%20LOYOLA.png||
+ESC_S.D. MONTAÑANESA.png|S.D. MONTAÑANESA|ESC_S.D. MONTAÑANESA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_S.D.%20MONTA%d1ANESA.png||
+ESC_S.D. MORAZA.png|S.D. MORAZA|ESC_S.D. MORAZA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20MORAZA.png||
+ESC_S.D. NEGURI.png|S.D. NEGURI|ESC_S.D. NEGURI.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20NEGURI.png||
+ESC_S.D. OYONESA .png|S.D. OYONESA|ESC_S.D. OYONESA .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20OYONESA%20.png||
+ESC_S.D. PLENTZIA.png|S.D. PLENTZIA|ESC_S.D. PLENTZIA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20PLENTZIA.png||
+ESC_S.D. RETUERTO.png|S.D. RETUERTO|ESC_S.D. RETUERTO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20RETUERTO.png||
+ESC_S.D. RETUERTO SPORT.png|S.D. RETUERTO SPORT|ESC_S.D. RETUERTO SPORT.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20RETUERTO%20SPORT.png||
+ESC_S.D. SALVATIERRA .png|S.D. SALVATIERRA|ESC_S.D. SALVATIERRA .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20SALVATIERRA%20.png||
+ESC_S.D. SAN IGNACIO.png|S.D. SAN IGNACIO|ESC_S.D. SAN IGNACIO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20SAN%20IGNACIO.png||
+ESC_S.D. SAN PEDRO .png|S.D. SAN PEDRO|ESC_S.D. SAN PEDRO .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20SAN%20PEDRO%20.png||
+ESC_S.D. SODETO.png|S.D. SODETO|ESC_S.D. SODETO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_S.D.%20SODETO.png||
+ESC_S.D. TARAZONA.png|S.D. TARAZONA|ESC_S.D. TARAZONA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_S.D.%20TARAZONA.png||
+ESC_S.D. UGERAGA.png|S.D. UGERAGA|ESC_S.D. UGERAGA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20UGERAGA.png||
+ESC_S.D. UMORE ONA.png|S.D. UMORE ONA|ESC_S.D. UMORE ONA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20UMORE%20ONA.png||
+ESC_S.D. UROLA K.E..png|S.D. UROLA K.E.|ESC_S.D. UROLA K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20UROLA%20K.E..png||
+ESC_S.D. ZAMUDIO.png|S.D. ZAMUDIO|ESC_S.D. ZAMUDIO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.%20ZAMUDIO.png||
+ESC_S.D.C. MICHELIN.png|S.D.C. MICHELIN|ESC_S.D.C. MICHELIN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.C.%20MICHELIN.png||
+ESC_S.D.C. MICHELIN-VITORIA.png|S.D.C. MICHELIN-VITORIA|ESC_S.D.C. MICHELIN-VITORIA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_S.D.C.%20MICHELIN-VITORIA.png||
+ESC_S.D.C. SAN CRIST..>|S.D.C. SAN CRISTOBAL|ESC_S.D.C. SAN CRIST..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_S.D.C. SAN CRISTOBAL.png||
+ESC_S.D.M. DE PEDROLA.png|S.D.M. DE PEDROLA|ESC_S.D.M. DE PEDROLA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_S.D.M.%20DE%20PEDROLA.png||
+ESC_S.R. CANTABRIA.png|S.R. CANTABRIA|ESC_S.R. CANTABRIA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_S.R.%20CANTABRIA.png||
+ESC_SABIÑÁN C.F..png|SABIÑÁN C.F.|ESC_SABIÑÁN C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_SABI%d1%c1N%20C.F..png||
+ESC_SAMPER C.F..png|SAMPER C.F.|ESC_SAMPER C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_SAMPER%20C.F..png||
+ESC_SAN PRUDENCIO C.D..png|SAN PRUDENCIO C.D.|ESC_SAN PRUDENCIO C.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_SAN%20PRUDENCIO%20C.D..png||
+ESC_SANAN K.K..png|SANAN K.K.|ESC_SANAN K.K..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_SANAN%20K.K..png||
+ESC_SANPEDROTARA F.E..png|SANPEDROTARA F.E.|ESC_SANPEDROTARA F.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_SANPEDROTARA%20F.E..png||
+ESC_SANPEDROTARRA F.E..png|SANPEDROTARRA F.E.|ESC_SANPEDROTARRA F.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_SANPEDROTARRA%20F.E..png||
+ESC_SANTO TOMÁS LIZEOA.png|SANTO TOMÁS LIZEOA|ESC_SANTO TOMÁS LIZEOA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_SANTO%20TOM%c1S%20LIZEOA.png||
+ESC_SANTUTXU F.C..png|SANTUTXU F.C.|ESC_SANTUTXU F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_SANTUTXU%20F.C..png||
+ESC_SARAKOSTA PROFF.png|SARAKOSTA PROFF|ESC_SARAKOSTA PROFF.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_SARAKOSTA%20PROFF.png||
+ESC_SEGURA K.E..png|SEGURA K.E.|ESC_SEGURA K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_SEGURA%20K.E..png||
+ESC_SESTAO RIVER.png|SESTAO RIVER|ESC_SESTAO RIVER.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_SESTAO%20RIVER.png||
+ESC_SESTAO RIVER CLUB.png|SESTAO RIVER CLUB|ESC_SESTAO RIVER CLUB.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_SESTAO%20RIVER%20CLUB.png||
+ESC_SESTAO SPORT CLUB.png|SESTAO SPORT CLUB|ESC_SESTAO SPORT CLUB.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_SESTAO%20SPORT%20CLUB.png||
+ESC_SIMA CORAZONISTAS.png|SIMA CORAZONISTAS|ESC_SIMA CORAZONISTAS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_SIMA%20CORAZONISTAS.png||
+ESC_SIROCO C.F..png|SIROCO C.F.|ESC_SIROCO C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_SIROCO%20C.F..png||
+ESC_SODUPE UNION C..png|SODUPE UNION C.|ESC_SODUPE UNION C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_SODUPE%20UNION%20C..png||
+ESC_SODUPE UNIÓN CLUB.png|SODUPE UNIÓN CLUB|ESC_SODUPE UNIÓN CLUB.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_SODUPE%20UNI%d3N%20CLUB.png||
+ESC_SOLARUZE F.T..png|SOLARUZE F.T.|ESC_SOLARUZE F.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_SOLARUZE%20F.T..png||
+ESC_SOPUERTA SPORT CLUB.png|SOPUERTA SPORT CLUB|ESC_SOPUERTA SPORT CLUB.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_SOPUERTA%20SPORT%20CLUB.png||
+ESC_SORALUZE F.T..png|SORALUZE F.T.|ESC_SORALUZE F.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_SORALUZE%20F.T..png||
+ESC_SPORTIN ALCAÑIZ.png|SPORTIN ALCAÑIZ|ESC_SPORTIN ALCAÑIZ.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_SPORTIN%20ALCA%d1IZ.png||
+ESC_SPORTIN ALCAÑIZ C.F..png|SPORTIN ALCAÑIZ C.F.|ESC_SPORTIN ALCAÑIZ C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_SPORTIN%20ALCA%d1IZ%20C.F..png||
+ESC_SPORTING CAESARAUGUSTA.png|SPORTING CAESARAUGUSTA|ESC_SPORTING CAESARAUGUSTA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_SPORTING%20CAESARAUGUSTA.png||
+ESC_SPORTING DE HERRERA.png|SPORTING DE HERRERA|ESC_SPORTING DE HERRERA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_SPORTING%20DE%20HERRERA.png||
+ESC_SPORTING DE LUTXANA.png|SPORTING DE LUTXANA|ESC_SPORTING DE LUTXANA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_SPORTING%20DE%20LUTXANA.png||
+ESC_SPORTING LÉCERA C.D..png|SPORTING LÉCERA C.D.|ESC_SPORTING LÉCERA C.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_SPORTING%20L%c9CERA%20C.D..png||
+ESC_SPORTING PRADILLANO.png|SPORTING PRADILLANO|ESC_SPORTING PRADILLANO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_SPORTING%20PRADILLANO.png||
+ESC_SPORTING ZARAGOZA.png|SPORTING ZARAGOZA|ESC_SPORTING ZARAGOZA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_SPORTING%20ZARAGOZA.png||
+ESC_SUBMARINO C.F..png|SUBMARINO C.F.|ESC_SUBMARINO C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_SUBMARINO%20C.F..png||
+ESC_TARDIENTA C.F..png|TARDIENTA C.F.|ESC_TARDIENTA C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_TARDIENTA%20C.F..png||
+ESC_TOLOSA C.F..png|TOLOSA C.F.|ESC_TOLOSA C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_TOLOSA%20C.F..png||
+ESC_TORRECILLA C.F..png|TORRECILLA C.F.|ESC_TORRECILLA C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_TORRECILLA%20C.F..png||
+ESC_TOURING K.E..png|TOURING K.E.|ESC_TOURING K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_TOURING%20K.E..png||
+ESC_C.U.D. BURLADES.png|U.C.D. BURLADES|ESC_C.U.D. BURLADES.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_C.U.D. BURLADES.png||
+ESC_U.D. ALCALÁ DE GURREA.png|U.D. ALCALÁ DE GURREA|ESC_U.D. ALCALÁ DE GURREA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20ALCAL%c1%20DE%20GURREA.png||
+ESC_U.D. ALCAMPELL.png|U.D. ALCAMPELL|ESC_U.D. ALCAMPELL.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20ALCAMPELL.png||
+ESC_U.D. ALFAMEN.png|U.D. ALFAMEN|ESC_U.D. ALFAMEN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20ALFAMEN.png||
+ESC_U.D. AMISTAD(ARAGON).png|U.D. AMISTAD(ARAGON)|ESC_U.D. AMISTAD(ARAGON).png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20AMISTAD(ARAGON).png||
+ESC_U.D. ARETXABALETA.png|U.D. ARETXABALETA|ESC_U.D. ARETXABALETA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_U.D.%20ARETXABALETA.png||
+ESC_U.D. ARETXABALETA K.E.-1.png|U.D. ARETXABALETA K.E.|ESC_U.D. ARETXABALETA K.E.-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_U.D.%20ARETXABALETA%20K.E.-1.png||
+ESC_U.D. ARIZA.png|U.D. ARIZA|ESC_U.D. ARIZA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20ARIZA.png||
+ESC_U.D. BARBASTRO-1.png|U.D. BARBASTRO|ESC_U.D. BARBASTRO-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20BARBASTRO-1.png||
+ESC_U.D. BENABARRE.png|U.D. BENABARRE|ESC_U.D. BENABARRE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20BENABARRE.png||
+ESC_U.D. BIESCAS.png|U.D. BIESCAS|ESC_U.D. BIESCAS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20BIESCAS.png||
+ESC_U.D. BINACED.png|U.D. BINACED|ESC_U.D. BINACED.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20BINACED.png||
+ESC_U.D. BURTZEÑA.png|U.D. BURTZEÑA|ESC_U.D. BURTZEÑA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_U.D.%20BURTZE%d1A.png||
+ESC_U.D. CASETAS.png|U.D. CASETAS|ESC_U.D. CASETAS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20CASETAS.png||
+ESC_U.D. DELICIAS.png|U.D. DELICIAS|ESC_U.D. DELICIAS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20DELICIAS.png||
+ESC_U.D. FRAGA .png|U.D. FRAGA|ESC_U.D. FRAGA .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20FRAGA%20.png||
+ESC_U.D. HUESCA.png|U.D. HUESCA|ESC_U.D. HUESCA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20HUESCA.png||
+ESC_U.D. JACA.png|U.D. JACA|ESC_U.D. JACA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20JACA.png||
+ESC_U.D. LA FUEVA.png|U.D. LA FUEVA|ESC_U.D. LA FUEVA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20LA%20FUEVA.png||
+ESC_U.D. LA MERCED.png|U.D. LA MERCED|ESC_U.D. LA MERCED.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_U.D.%20LA%20MERCED.png||
+ESC_U.D. LOGROÑES.png|U.D. LOGROÑES|ESC_U.D. LOGROÑES.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_U.D.%20LOGRO%d1ES.png||
+ESC_U.D. LOS MOLINOS.png|U.D. LOS MOLINOS|ESC_U.D. LOS MOLINOS.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20LOS%20MOLINOS.png||
+ESC_U.D. MONTAÑESA.png|U.D. MONTAÑESA|ESC_U.D. MONTAÑESA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20MONTA%d1ESA.png||
+ESC_U.D. MONTECARLO.png|U.D. MONTECARLO|ESC_U.D. MONTECARLO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20MONTECARLO.png||
+ESC_U.D. MUTILVERA .png|U.D. MUTILVERA|ESC_U.D. MUTILVERA .png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_U.D. MUTILVERA .png||
+ESC_U.D. POMAR.png|U.D. POMAR|ESC_U.D. POMAR.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20POMAR.png||
+ESC_U.D. PUEYO DE SANTA CRUZ.png|U.D. PUEYO DE SANTA CRUZ|ESC_U.D. PUEYO DE SANTA CRUZ.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20PUEYO%20DE%20SANTA%20CRUZ.png||
+ESC_U.D. PUEYO HINACO.png|U.D. PUEYO HINACO|ESC_U.D. PUEYO HINACO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20PUEYO%20HINACO.png||
+ESC_U.D. SAN ESTEBAN.png|U.D. SAN ESTEBAN|ESC_U.D. SAN ESTEBAN.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20SAN%20ESTEBAN.png||
+ESC_U.D. SAN JOSE.png|U.D. SAN JOSE|ESC_U.D. SAN JOSE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20SAN%20JOSE.png||
+ESC_U.D. SAN LORENZO .png|U.D. SAN LORENZO|ESC_U.D. SAN LORENZO .png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20SAN%20LORENZO%20.png||
+ESC_U.D. SAN MIGUEL.png|U.D. SAN MIGUEL|ESC_U.D. SAN MIGUEL.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_U.D.%20SAN%20MIGUEL.png||
+ESC_U.D. SANTALECINA.png|U.D. SANTALECINA|ESC_U.D. SANTALECINA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20SANTALECINA.png||
+ESC_U.D. TERUEL.png|U.D. TERUEL|ESC_U.D. TERUEL.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_U.D.%20TERUEL.png||
+ESC_U.D. VALLE DE AR..>|U.D. VALLE DE ARANGUREN|ESC_U.D. VALLE DE AR..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_U.D. VALLE DE ARANGUREN.png||
+ESC_U.D.C. CHANTREA ..>|U.D.C. CHANTREA|ESC_U.D.C. CHANTREA ..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_U.D.C. CHANTREA .png||
+ESC_U.F. RIOJA F.C..png|U.F. RIOJA F.C.|ESC_U.F. RIOJA F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_U.F.%20RIOJA%20F.C..png||
+ESC_UDONDO F.K..png|UDONDO F.K.|ESC_UDONDO F.K..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_UDONDO%20F.K..png||
+ESC_ULTIMATE VALDEFIERRO.png|ULTIMATE VALDEFIERRO|ESC_ULTIMATE VALDEFIERRO.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ULTIMATE%20VALDEFIERRO.png||
+ESC_UNIFICACIÓN ALTO CINCA.png|UNIFICACIÓN ALTO CINCA|ESC_UNIFICACIÓN ALTO CINCA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_UNIFICACI%d3N%20ALTO%20CINCA.png||
+ESC_UNIÓN EBRO C.F..png|UNIÓN EBRO C.F.|ESC_UNIÓN EBRO C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_UNI%d3N%20EBRO%20C.F..png||
+ESC_UNIÓN SPORT SAN VICENTE.png|UNIÓN SPORT SAN VICENTE|ESC_UNIÓN SPORT SAN VICENTE.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_UNI%d3N%20SPORT%20SAN%20VICENTE.png||
+ESC_UNIÓN TUTERA.png|UNION TUTERA|ESC_UNIÓN TUTERA.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_UNI%d3N TUTERA.png||
+ESC_UNIVERSAL FUTBOLISTICA RIOJA FC.png|UNIVERSAL FUTBOLISTICA RIOJA FC|ESC_UNIVERSAL FUTBOLISTICA RIOJA FC.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_UNIVERSAL%20FUTBOLISTICA%20RIOJA%20FC.png||
+ESC_UNIVERSIDAD DE ZARAGOZA.png|UNIVERSIDAD DE ZARAGOZA|ESC_UNIVERSIDAD DE ZARAGOZA.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_UNIVERSIDAD%20DE%20ZARAGOZA.png||
+ESC_URDAIBAI C.F..png|URDAIBAI C.F.|ESC_URDAIBAI C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_URDAIBAI%20C.F..png||
+ESC_URDULIZ F.T..png|URDULIZ F.T.|ESC_URDULIZ F.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_URDULIZ%20F.T..png||
+ESC_URGATZI K.K..png|URGATZI K.K.|ESC_URGATZI K.K..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_URGATZI%20K.K..png||
+ESC_URITARRA K.T..png|URITARRA K.T.|ESC_URITARRA K.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_URITARRA%20K.T..png||
+ESC_URNIETA K.E..png|URNIETA K.E.|ESC_URNIETA K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_URNIETA%20K.E..png||
+ESC_USURBIL F.T..png|USURBIL F.T.|ESC_USURBIL F.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_USURBIL%20F.T..png||
+ESC_UTEBO C.F..png|UTEBO C.F.|ESC_UTEBO C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_UTEBO%20C.F..png||
+ESC_VALDEALGORFA C.F..png|VALDEALGORFA C.F.|ESC_VALDEALGORFA C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_VALDEALGORFA%20C.F..png||
+ESC_VALDORBA F.C..png|VALDORBA F.C.|ESC_VALDORBA F.C..png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_VALDORBA F.C..png||
+ESC_VALPALMAS F.C..png|VALPALMAS F.C.|ESC_VALPALMAS F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_VALPALMAS%20F.C..png||
+ESC_VALVANERA C.D..png|VALVANERA C.D.|ESC_VALVANERA C.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_VALVANERA%20C.D..png||
+ESC_VILLANUA U.D..png|VILLANUA U.D.|ESC_VILLANUA U.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_VILLANUA%20U.D..png||
+ESC_VILLANUEVA C.F..png|VILLANUEVA C.F.|ESC_VILLANUEVA C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_VILLANUEVA%20C.F..png||
+ESC_YAGÜE C.F..png|YAGÜE C.F.|ESC_YAGÜE C.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos/ESC_YAG%dcE%20C.F..png||
+ESC_ZALDUA K.E..png|ZALDUA K.E.|ESC_ZALDUA K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ZALDUA%20K.E..png||
+ESC_ZALLA UC.png|ZALLA UC|ESC_ZALLA UC.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ZALLA%20UC.png||
+ESC_ZAMUDIO S.D..png|ZAMUDIO S.D.|ESC_ZAMUDIO S.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ZAMUDIO%20S.D..png||
+ESC_ZARAGOZA ASOCIADOS F.C..png|ZARAGOZA ASOCIADOS F.C.|ESC_ZARAGOZA ASOCIADOS F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ZARAGOZA%20ASOCIADOS%20F.C..png||
+ESC_ZARAGOZA C.D..png|ZARAGOZA C.D.|ESC_ZARAGOZA C.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ZARAGOZA%20C.D..png||
+ESC_ZARAGOZA C.F.F..png|ZARAGOZA C.F.F.|ESC_ZARAGOZA C.F.F..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ZARAGOZA%20C.F.F..png||
+ESC_ZARAGOZA F.C. 2014.png|ZARAGOZA F.C. 2014|ESC_ZARAGOZA F.C. 2014.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ZARAGOZA%20F.C.%202014.png||
+ESC_ZARAGUAYOS C.D..png|ZARAGUAYOS C.D.|ESC_ZARAGUAYOS C.D..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ZARAGUAYOS%20C.D..png||
+ESC_ZARAJOTA F.C..png|ZARAJOTA F.C.|ESC_ZARAJOTA F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/ARAG%d3N/escudos/ESC_ZARAJOTA%20F.C..png||
+ESC_ZARAUTZ CD.png|ZARAUTZ CD|ESC_ZARAUTZ CD.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ZARAUTZ%20CD.png||
+ESC_ZARAUTZ K.E..png|ZARAUTZ K.E.|ESC_ZARAUTZ K.E..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ZARAUTZ%20K.E..png||
+ESC_ZAZPI LANDA K.T..png|ZAZPI LANDA K.T.|ESC_ZAZPI LANDA K.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ZAZPI%20LANDA%20K.T..png||
+ESC_ZESTOA K.B..png|ZESTOA K.B.|ESC_ZESTOA K.B..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ZESTOA%20K.B..png||
+ESC_ZORROTZA F.C.-1.png|ZORROTZA F.C.|ESC_ZORROTZA F.C.-1.png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ZORROTZA%20F.C.-1.png||
+ESC_ZUMAIAKO F.C..png|ZUMAIAKO F.C.|ESC_ZUMAIAKO F.C..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ZUMAIAKO%20F.C..png||
+ESC_ZUMAIAKO F.T..png|ZUMAIAKO F.T.|ESC_ZUMAIAKO F.T..png|https://www.escudosdefutbolyequipaciones.com/images_esc3/ESPA/PA%cdS%20VASCO/escudos/ESC_ZUMAIAKO%20F.T..png||

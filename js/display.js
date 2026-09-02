@@ -244,8 +244,13 @@ function renderMainScorers(containerId, scorers, align) {
     const el = document.getElementById(containerId);
     if (!el) return;
     
-    el.innerHTML = (scorers || []).map(s => `
-        <div class="scorer-entry" style="justify-content:${align === 'right' ? 'flex-end' : 'flex-start'}">
+    if (!scorers || scorers.length === 0) {
+        el.innerHTML = '';
+        return;
+    }
+    
+    el.innerHTML = scorers.map(s => `
+        <div class="scorer-entry" style="justify-content: center">
             <span class="scorer-icon">⚽</span>
             <span class="scorer-minute">${s.minute}'</span>
             <span>${s.name}</span>
