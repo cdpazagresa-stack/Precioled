@@ -1,4 +1,4 @@
-﻿Rows: 134, Cols: 5
+Rows: 135, Cols: 5
 Nombre archivo|Equipo|Nombre archivo|url||
 ESC_A.D. CABANILLAS.png|A.D. CABANILLAS|ESC_A.D. CABANILLAS.png|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_A.D. CABANILLAS.png||
 ESC_A.D. MENDILLORRI..>|A.D. MENDILLORRI|ESC_A.D. MENDILLORRI..>|https://www.footballlogosandkits.com/images_esc3/ESPA/NAVARRA/escudos/ESC_A.D. MENDILLORRI.png||
@@ -133,4 +133,6 @@ ESC_DANENA KE|DANENA K.E.|ESC_DANENA KE|https://escudosdefutbolyequipaciones.com
 ESC_CDALFARO|C.D. ALFARO|ESC_CDALFARO|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/plantillas/ESCUDO-C.D.%20ALFARO-ES.png||
 ESC_CDVIANES|C.D. VIANES|ESC_CDVIANES|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/NAVARRA/escudos_min/MIN_ESC_C.D.%20VIANES.png||
 ESC_CDAGONCILLO|C.D. AGONCILLO|ESC_CDAGONCILLO|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos_min/MIN_ESC_C.D.%20AGONCILLO.png||
+C.D. SAN JOSE|C.D. SAN JOSE|C.D. SAN JOSE|https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/CASTILLA%20Y%20LE%D3N/escudos_min/MIN_ESC_C.D.%20SAN%20JOS%C9.png||
+
 

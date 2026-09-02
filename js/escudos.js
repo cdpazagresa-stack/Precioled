@@ -670,6 +670,11 @@ const NAVARRA_TEAMS = [
         "name": "C.D. AGONCILLO",
         "short": "C.D. AGONCILLO",
         "badgeUrl": "https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/LA%20RIOJA/escudos_min/MIN_ESC_C.D.%20AGONCILLO.png"
+    },
+    {
+        "name": "C.D. SAN JOSE",
+        "short": "C.D. SAN JOSE",
+        "badgeUrl": "https://escudosdefutbolyequipaciones.com/images_esc3/ESPA/CASTILLA%20Y%20LE%D3N/escudos_min/MIN_ESC_C.D.%20SAN%20JOS%C9.png"
     }
 ];
 
