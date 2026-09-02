@@ -82,12 +82,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="score-column score-column-home">
-                                <div class="score-box">
-                                    <span class="score-number" id="home-score">0</span>
-                                </div>
-                                <!-- Anotadores debajo del número de goles local -->
-                                <div class="scorers-under-score scorers-home" id="home-scorers"></div>
+                            <div class="score-box">
+                                <span class="score-number" id="home-score">0</span>
                             </div>
                         </div>
 
@@ -100,12 +96,8 @@
 
                         <!-- AWAY TEAM -->
                         <div class="team-section team-away">
-                            <div class="score-column score-column-away">
-                                <div class="score-box">
-                                    <span class="score-number" id="away-score">0</span>
-                                </div>
-                                <!-- Anotadores debajo del número de goles visitante -->
-                                <div class="scorers-under-score scorers-away" id="away-scorers"></div>
+                            <div class="score-box">
+                                <span class="score-number" id="away-score">0</span>
                             </div>
                             <div class="team-identity">
                                 <div class="team-info team-info-away">
@@ -131,15 +123,22 @@
                         </div>
                     </div>
 
-                    <!-- TIMER + PERIOD ROW (below scores) -->
-                    <div class="timer-row">
+                    <!-- BOTTOM BAR: ANOTADORES LOCALES + TIEMPO CENTRAL + ANOTADORES VISITANTES -->
+                    <div class="bottom-info-row">
+                        <!-- Goleadores locales a la izquierda del tiempo (bajo el escudo local) -->
+                        <div class="side-scorers side-scorers-home" id="home-scorers"></div>
+
+                        <!-- Centro: Tiempo y Periodo -->
                         <div class="timer-container">
-                            <div class="flex items-center">
+                            <div class="flex items-center justify-center">
                                 <div class="timer-display" id="timer-display">00:00</div>
                                 <div class="added-time-display" id="added-time-display" style="display:none">+0</div>
                             </div>
                             <div class="period-badge" id="period-badge">1ª PARTE</div>
                         </div>
+
+                        <!-- Goleadores visitantes a la derecha del tiempo (bajo el escudo visitante) -->
+                        <div class="side-scorers side-scorers-away" id="away-scorers"></div>
                     </div>
                 </div>
 
