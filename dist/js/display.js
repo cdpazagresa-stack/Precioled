@@ -719,7 +719,7 @@ function showGoalOverlay(fieldNum) {
 
 // ── Special Graphics ────────────────────────────────────────
 function renderGraphics() {
-    const overlays = ['referees', 'lineup', 'substitution', 'card', 'summary', 'coach'];
+    const overlays = ['referees', 'lineup', 'substitution', 'card', 'summary', 'coach', 'addedTime'];
     overlays.forEach(id => {
         const el = document.getElementById(`graphic-overlay-${id}`);
         if (el) el.classList.remove('active');
@@ -810,6 +810,15 @@ function renderGraphics() {
         setBadge('summary-away-badge', f.awayBadge, f.awayName);
         renderSummaryScorers('summary-home-scorers', f.homeScorers, 'right');
         renderSummaryScorers('summary-away-scorers', f.awayScorers, 'left');
+    }
+    else if (active === 'addedTime') {
+        const f = matchState.fields[1];
+        const mins = data.minutes !== undefined ? data.minutes : (f.addedTime || f.addedTimeMinutes || 3);
+        setText('graphic-added-number', mins);
+        setText('graphic-added-period', data.period || f.period || '1ª PARTE');
+        setText('graphic-added-match-names', `${data.homeName || f.homeName || 'LOCAL'} vs ${data.awayName || f.awayName || 'VISITANTE'}`);
+        setBadge('graphic-added-home-badge', data.homeBadge || f.homeBadge, data.homeName || f.homeName);
+        setBadge('graphic-added-away-badge', data.awayBadge || f.awayBadge, data.awayName || f.awayName);
     }
 }
 

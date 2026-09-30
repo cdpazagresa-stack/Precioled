@@ -251,7 +251,47 @@
                         </button>
                     </div>
 
-                    <!-- Ajustes finos: +-1m, manual y descuento en una sola barra -->
+                    <!-- SECCIÓN DESTACADA: TIEMPO DE DESCUENTO / AÑADIDO -->
+                    <div class="p-3 bg-black/60 rounded-2xl border border-cdpa-yellow/30 shadow-lg space-y-2.5">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-black uppercase tracking-wider text-cdpa-yellow flex items-center gap-1.5">
+                                <span>⏱️</span> TIEMPO DE DESCUENTO
+                            </span>
+                            <div class="flex items-center gap-1.5">
+                                <span class="text-[9px] text-gray-400 font-bold">En Marcador:</span>
+                                <button id="added-time-toggle-btn" class="px-2 py-0.5 rounded text-[10px] font-black border transition-all bg-white/5 text-gray-400 border-white/10" onclick="toggleAddedTime()">
+                                    👁️ Oculto
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Botonera de acceso rápido y selector -->
+                        <div class="flex flex-wrap items-center gap-1.5">
+                            <button class="added-preset-btn px-2.5 py-1.5 rounded-xl bg-white/10 hover:bg-cdpa-yellow hover:text-black font-black text-xs text-white border border-white/10" onclick="quickSetAddedTime(1)">+1'</button>
+                            <button class="added-preset-btn px-2.5 py-1.5 rounded-xl bg-white/10 hover:bg-cdpa-yellow hover:text-black font-black text-xs text-white border border-white/10" onclick="quickSetAddedTime(2)">+2'</button>
+                            <button class="added-preset-btn px-2.5 py-1.5 rounded-xl bg-white/10 hover:bg-cdpa-yellow hover:text-black font-black text-xs text-white border border-white/10" onclick="quickSetAddedTime(3)">+3'</button>
+                            <button class="added-preset-btn px-2.5 py-1.5 rounded-xl bg-white/10 hover:bg-cdpa-yellow hover:text-black font-black text-xs text-white border border-white/10" onclick="quickSetAddedTime(4)">+4'</button>
+                            <button class="added-preset-btn px-2.5 py-1.5 rounded-xl bg-white/10 hover:bg-cdpa-yellow hover:text-black font-black text-xs text-white border border-white/10" onclick="quickSetAddedTime(5)">+5'</button>
+                            <button class="added-preset-btn px-2 py-1.5 rounded-xl bg-white/5 hover:bg-white/20 font-bold text-xs text-gray-300 border border-white/10" onclick="quickSetAddedTime(6)">+6'</button>
+                            <button class="added-preset-btn px-2 py-1.5 rounded-xl bg-white/5 hover:bg-white/20 font-bold text-xs text-gray-300 border border-white/10" onclick="quickSetAddedTime(8)">+8'</button>
+                            <button class="px-2 py-1.5 rounded-xl bg-red-500/20 hover:bg-red-500/40 text-red-300 font-bold text-xs border border-red-500/30" onclick="quickSetAddedTime(0)" title="Quitar descuento">✕ 0'</button>
+
+                            <div class="flex items-center gap-1 ml-auto bg-black/50 px-2 py-1 rounded-xl border border-white/10">
+                                <span class="text-xs font-black text-cdpa-yellow">+</span>
+                                <input type="number" id="added-time-input" class="bg-transparent border-none text-white text-xs font-black w-8 p-0 text-center focus:outline-none" placeholder="0" min="0" max="25" oninput="setAddedTime(this.value)">
+                                <span class="text-[9px] text-gray-400 font-bold">MIN</span>
+                            </div>
+                        </div>
+
+                        <!-- Botón destacado: Lanzar a Pantalla Completa -->
+                        <div class="pt-0.5">
+                            <button class="btn w-full py-2.5 rounded-xl font-black text-xs tracking-wider uppercase flex items-center justify-center gap-2 shadow-lg bg-gradient-to-r from-yellow-500 to-amber-600 text-black hover:brightness-110 cursor-pointer" onclick="triggerGraphic('addedTime')">
+                                <span class="text-base">📺</span> LANZAR DESCUENTO A PANTALLA COMPLETA
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Ajustes finos: +-1m y manual -->
                     <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-white/5 text-xs">
                         <div class="flex items-center gap-1">
                             <button class="btn btn-sm px-2.5 py-1 text-[10px] bg-white/5 border border-white/10" onclick="adjustTime(-60)">-1m</button>
@@ -262,17 +302,6 @@
                                 <input type="number" id="manual-sec" class="form-input text-center w-12 !p-0.5 text-xs" placeholder="Seg" min="0" max="59">
                                 <button class="btn btn-primary btn-sm px-2 py-1 text-[9px]" onclick="setManualTime()">Fijar</button>
                             </div>
-                        </div>
-
-                        <!-- Descuento -->
-                        <div class="flex items-center gap-2 bg-white/5 px-2.5 py-1 rounded-xl border border-white/5">
-                            <span class="text-[9px] font-bold text-cdpa-muted">DESCUENTO:</span>
-                            <span class="text-xs font-bold">+</span>
-                            <input type="number" id="added-time-input" class="bg-transparent border-none text-white text-xs font-bold w-7 p-0 text-center focus:outline-none" placeholder="0" min="0" max="20" oninput="setAddedTime(this.value)">
-                            <span class="text-[9px] text-cdpa-muted">MIN</span>
-                            <button class="p-1 rounded bg-white/5 hover:bg-white/10 text-xs" id="added-time-toggle" onclick="toggleAddedTime()" title="Mostrar/Ocultar descuento en marcador">
-                                ⏱️
-                            </button>
                         </div>
                     </div>
                 </div>

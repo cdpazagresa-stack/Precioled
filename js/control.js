@@ -272,21 +272,45 @@ function setTimerDirection(direction) {
     updateControlUI();
 }
 
+function quickSetAddedTime(minutes) {
+    const f = F();
+    const val = parseInt(minutes) || 0;
+    f.addedTimeMinutes = val;
+    f.addedTime = val;
+    f.showAddedTime = val > 0;
+    
+    const input = document.getElementById('added-time-input');
+    if (input) input.value = val > 0 ? val : '';
+    
+    hapticFeedback(25);
+    broadcastState();
+    updateControlUI();
+    showToast(val > 0 ? `Descuento fijado a +${val} min` : 'Descuento desactivado', 'info');
+}
+
 function setAddedTime(minutes) {
     const f = F();
     const val = parseInt(minutes) || 0;
     f.addedTimeMinutes = val;
-    f.addedTime = val; // Sync both fields for display compatibility
+    f.addedTime = val;
+    f.showAddedTime = val > 0;
     broadcastState();
+    updateControlUI();
 }
 
 function toggleAddedTime() {
     const f = F();
     f.showAddedTime = !f.showAddedTime;
-    // If hiding, also clear the added time value
     if (!f.showAddedTime) {
         f.addedTime = 0;
         f.addedTimeMinutes = 0;
+        const input = document.getElementById('added-time-input');
+        if (input) input.value = '';
+    } else if (!f.addedTime && !f.addedTimeMinutes) {
+        f.addedTime = 3;
+        f.addedTimeMinutes = 3;
+        const input = document.getElementById('added-time-input');
+        if (input) input.value = '3';
     }
     hapticFeedback(30);
     broadcastState();
@@ -1200,15 +1224,31 @@ function triggerGraphic(type, side) {
         data.playerPhoto = pCard ? pCard.photo : '';
     } else if (type === 'summary') {
         // Summary uses matchState directly
+    } else if (type === 'addedTime') {
+        const f = F();
+        const mins = f.addedTimeMinutes || f.addedTime || 3;
+        f.addedTimeMinutes = mins;
+        f.addedTime = mins;
+        f.showAddedTime = true;
+        
+        data.minutes = mins;
+        data.period = f.period || '1ª PARTE';
+        data.homeName = f.homeName || 'LOCAL';
+        data.awayName = f.awayName || 'VISITANTE';
+        data.homeBadge = f.homeBadge;
+        data.awayBadge = f.awayBadge;
+        
+        showToast(`📺 Lanzando +${mins}' de descuento a pantalla completa`, 'success');
     }
 
     matchState.activeGraphic = type;
     matchState.graphicData = data;
     hapticFeedback([40, 20, 40]);
     broadcastState();
+    updateControlUI();
     
     // Auto-hide most graphics after some time
-    const timeout = (type === 'lineup' || type === 'summary') ? 15000 : 10000;
+    const timeout = (type === 'lineup' || type === 'summary') ? 15000 : (type === 'addedTime' ? 7000 : 10000);
     
     if (window.graphicTimeout) clearTimeout(window.graphicTimeout);
     window.graphicTimeout = setTimeout(() => {
@@ -1397,6 +1437,31 @@ function updateControlUI() {
     if (td && f.timerMaxSeconds) {
         td.value = Math.floor(f.timerMaxSeconds / 60);
     }
+    
+    // Added time UI sync
+    const addedToggleBtn = document.getElementById('added-time-toggle-btn');
+    const addedMinutes = f.addedTime || f.addedTimeMinutes || 0;
+    const isAddedVisible = f.showAddedTime && addedMinutes > 0;
+    if (addedToggleBtn) {
+        addedToggleBtn.textContent = isAddedVisible ? `👁️ Visible (+${addedMinutes}')` : '👁️ Oculto';
+        addedToggleBtn.className = isAddedVisible 
+            ? 'px-2 py-0.5 rounded text-[10px] font-black border transition-all bg-green-500/20 text-green-400 border-green-500/40 cursor-pointer'
+            : 'px-2 py-0.5 rounded text-[10px] font-black border transition-all bg-white/5 text-gray-400 border-white/10 cursor-pointer';
+    }
+    const addedInput = document.getElementById('added-time-input');
+    if (addedInput && document.activeElement !== addedInput) {
+        addedInput.value = addedMinutes > 0 ? addedMinutes : '';
+    }
+    document.querySelectorAll('.added-preset-btn').forEach(btn => {
+        const text = btn.textContent.replace('+', '').replace("'", '').trim();
+        const num = parseInt(text);
+        const isActive = isAddedVisible && num === addedMinutes;
+        btn.classList.toggle('bg-cdpa-yellow', isActive);
+        btn.classList.toggle('text-black', isActive);
+        btn.classList.toggle('border-cdpa-yellow', isActive);
+        btn.classList.toggle('bg-white/10', !isActive);
+        btn.classList.toggle('text-white', !isActive);
+    });
     
     renderSponsorLogosList();
     updateSponsorConfigUI();

@@ -2658,3 +2658,167 @@ html, body {
     white-space: nowrap;
 }
 
+/* ============================================================ */
+/* ADDED TIME FULLSCREEN OVERLAY (PREMIER LEAGUE / UEFA STYLE)   */
+/* ============================================================ */
+.added-time-graphic-content {
+    width: 90vw;
+    max-width: 950px;
+    text-align: center;
+    background: radial-gradient(circle at center, rgba(30, 28, 5, 0.98) 0%, rgba(8, 8, 8, 0.99) 75%);
+    border: 2px solid rgba(246, 238, 54, 0.45);
+    box-shadow: 
+        0 40px 100px rgba(0, 0, 0, 0.95),
+        0 0 60px rgba(246, 238, 54, 0.25),
+        inset 0 0 35px rgba(246, 238, 54, 0.08);
+    border-radius: 28px;
+    padding: clamp(2rem, 5vh, 4rem) clamp(2rem, 5vw, 4rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.added-time-graphic-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #f6ee36, transparent);
+}
+
+.added-time-graphic-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.added-time-tag {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(0.75rem, 1.4vh, 1rem);
+    letter-spacing: 0.35em;
+    color: var(--primary);
+    text-transform: uppercase;
+    background: rgba(246, 238, 54, 0.12);
+    padding: 0.4rem 1.4rem;
+    border-radius: 9999px;
+    border: 1px solid rgba(246, 238, 54, 0.3);
+    box-shadow: 0 0 15px rgba(246, 238, 54, 0.2);
+}
+
+.added-time-main-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(2.2rem, 5.5vh, 4.2rem);
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-shadow: 0 0 25px rgba(255, 255, 255, 0.4), 0 0 40px rgba(246, 238, 54, 0.2);
+    margin: 0;
+}
+
+.added-time-period-badge {
+    font-family: 'Lexend', sans-serif;
+    font-size: clamp(1.1rem, 2.2vh, 1.6rem);
+    font-weight: 800;
+    color: var(--primary);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.added-time-board-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.added-time-board-digital {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.8rem;
+    background: #000000;
+    border: 4px solid var(--primary);
+    border-radius: 24px;
+    padding: clamp(1.2rem, 3vh, 2.2rem) clamp(2.5rem, 6vw, 4.5rem);
+    box-shadow: 
+        0 0 50px rgba(246, 238, 54, 0.5),
+        inset 0 0 30px rgba(246, 238, 54, 0.25);
+    animation: digitalPulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes digitalPulse {
+    0% { box-shadow: 0 0 35px rgba(246, 238, 54, 0.4), inset 0 0 20px rgba(246, 238, 54, 0.2); }
+    100% { box-shadow: 0 0 65px rgba(246, 238, 54, 0.7), inset 0 0 40px rgba(246, 238, 54, 0.35); }
+}
+
+.added-time-sign {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(3.5rem, 9vh, 7rem);
+    font-weight: 900;
+    color: var(--primary);
+    text-shadow: 0 0 30px rgba(246, 238, 54, 0.9);
+    line-height: 1;
+}
+
+.added-time-digits {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(5.5rem, 15vh, 11rem);
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 0 0 40px rgba(255, 255, 255, 0.9), 0 0 80px rgba(246, 238, 54, 0.7);
+    line-height: 1;
+    margin: 0 0.2rem;
+}
+
+.added-time-minutes-label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(1.8rem, 4.5vh, 3.2rem);
+    font-weight: 800;
+    color: var(--primary);
+    letter-spacing: 0.1em;
+}
+
+.added-time-subtitle {
+    margin-top: 1.2rem;
+    font-family: 'Lexend', sans-serif;
+    font-size: clamp(0.95rem, 1.8vh, 1.4rem);
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.85);
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+
+.added-time-match-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    width: 100%;
+}
+
+.added-time-badge {
+    width: clamp(45px, 7vh, 75px);
+    height: clamp(45px, 7vh, 75px);
+    object-fit: contain;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.3));
+}
+
+.added-time-match-names {
+    font-family: 'Lexend', sans-serif;
+    font-size: clamp(1rem, 2.2vh, 1.5rem);
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+
