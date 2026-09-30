@@ -25,7 +25,7 @@
             }
         }
     </script>
-  <link rel="stylesheet" crossorigin href="/assets/index-C3bMie7S.css">
+  <link rel="stylesheet" crossorigin href="/assets/main-C3bMie7S.css">
 </head>
 <body class="bg-black min-h-screen pb-24 md:pb-0">
 
@@ -132,6 +132,12 @@
 
             <!-- 1. BLOQUE UNIFICADO DE PARTIDO: EQUIPOS, GOLES Y TIEMPO -->
             <div class="card bg-gradient-to-br from-cdpa-card to-black p-4 space-y-4 shadow-2xl col-span-12" id="match-hub-card">
+                <!-- Rótulo Superior del Marcador (Torneo, Competición o Equipo a mano) -->
+                <div class="flex items-center gap-2 p-2 bg-black/60 rounded-xl border border-white/10">
+                    <span class="text-xs text-cdpa-yellow font-black">🏆 RÓTULO:</span>
+                    <input type="text" id="tournament-name-input" class="form-input text-xs flex-1 bg-transparent border-none text-white focus:outline-none placeholder:text-gray-500 font-bold tracking-wide" placeholder="Texto encima del marcador (ej: 3ª RFEF, Liga Benjamín F8, C.D. Peña Azagresa...)" oninput="updateTournamentName()">
+                </div>
+
                 <!-- A. Selección de Equipos y Escudos -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-3 border-b border-white/5">
                     <!-- Local -->
@@ -204,6 +210,9 @@
                                     <button id="dir-down-btn" class="px-2 py-0.5 rounded font-bold opacity-50" onclick="setTimerDirection('down')">REGR</button>
                                 </div>
                                 <select id="timer-duration" class="form-input text-center text-xs py-1 px-2 bg-black/70 text-white border border-white/10 rounded-lg" onchange="updateTimerDuration()">
+                                    <option value="10">10 min (F7/F8)</option>
+                                    <option value="12">12 min (F7/F8)</option>
+                                    <option value="15">15 min (F7/F8)</option>
                                     <option value="20">20 min</option>
                                     <option value="25">25 min</option>
                                     <option value="30">30 min</option>
@@ -214,13 +223,15 @@
                             </div>
                         </div>
 
-                        <!-- Selector compacto de periodo -->
+                        <!-- Selector compacto de periodo con 4 partes para F7/F8 -->
                         <div class="period-selector flex flex-wrap gap-1 p-1 bg-black/60 rounded-xl border border-white/5">
-                            <button class="period-btn btn active text-[10px] px-2.5 py-1.5 h-auto font-bold" data-period="1ª PARTE" onclick="setPeriod(this)">1ªP</button>
-                            <button class="period-btn btn text-[10px] px-2.5 py-1.5 h-auto font-bold" data-period="2ª PARTE" onclick="setPeriod(this)">2ªP</button>
-                            <button class="period-btn btn text-[10px] px-2.5 py-1.5 h-auto font-bold" data-period="DESCANSO" onclick="setPeriod(this)">DESC</button>
-                            <button class="period-btn btn text-[10px] px-2.5 py-1.5 h-auto font-bold" data-period="PRÓRROGA" onclick="setPeriod(this)">PRÓR</button>
-                            <button class="period-btn btn text-[10px] px-2.5 py-1.5 h-auto font-bold" data-period="FINAL" onclick="setPeriod(this)">FIN</button>
+                            <button class="period-btn btn active text-[9px] px-2 py-1.5 h-auto font-bold" data-period="1ª PARTE" onclick="setPeriod(this)">1ªP</button>
+                            <button class="period-btn btn text-[9px] px-2 py-1.5 h-auto font-bold" data-period="2ª PARTE" onclick="setPeriod(this)">2ªP</button>
+                            <button class="period-btn btn text-[9px] px-2 py-1.5 h-auto font-bold" data-period="3ª PARTE" onclick="setPeriod(this)">3ªP</button>
+                            <button class="period-btn btn text-[9px] px-2 py-1.5 h-auto font-bold" data-period="4ª PARTE" onclick="setPeriod(this)">4ªP</button>
+                            <button class="period-btn btn text-[9px] px-2 py-1.5 h-auto font-bold" data-period="DESCANSO" onclick="setPeriod(this)">DESC</button>
+                            <button class="period-btn btn text-[9px] px-2 py-1.5 h-auto font-bold" data-period="PRÓRROGA" onclick="setPeriod(this)">PRÓR</button>
+                            <button class="period-btn btn text-[9px] px-2 py-1.5 h-auto font-bold" data-period="FINAL" onclick="setPeriod(this)">FIN</button>
                         </div>
                     </div>
 
@@ -295,9 +306,10 @@
                     <div id="adv-tab-squads" class="adv-tab-content space-y-4">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div class="space-y-3 bg-black/20 p-3 rounded-2xl border border-white/5">
-                                <div class="tabs p-1 bg-white/5 rounded-xl border border-white/5">
+                                <div class="tabs p-1 bg-white/5 rounded-xl border border-white/5 flex">
                                     <button class="tab active flex-1 py-1.5 text-[10px]" onclick="switchRosterTab('manage', this)">EDITOR</button>
                                     <button class="tab flex-1 py-1.5 text-[10px]" onclick="switchRosterTab('load', this)">BIBLIOTECA</button>
+                                    <button class="tab flex-1 py-1.5 text-[10px] text-cdpa-yellow font-black" onclick="switchRosterTab('cdpa', this)">⭐ BD CLUB (368)</button>
                                 </div>
                                 <div class="tab-content active" id="roster-manage">
                                     <div class="space-y-3">
@@ -326,6 +338,29 @@
                                 </div>
                                 <div class="tab-content hidden" id="roster-load">
                                     <div id="saved-rosters-list" class="space-y-2 max-h-48 overflow-y-auto"></div>
+                                </div>
+                                <div class="tab-content hidden space-y-2.5" id="roster-cdpa">
+                                    <div class="space-y-1.5">
+                                        <div class="flex gap-1.5">
+                                            <select id="cdpa-category-filter" class="form-input text-xs py-1 px-2 bg-black/60 text-cdpa-yellow border border-white/10 rounded-xl flex-1 font-bold" onchange="filterCDPAPlayersUI()">
+                                                <option value="TODOS">Todas las Categorías (368)</option>
+                                            </select>
+                                        </div>
+                                        <div class="relative">
+                                            <input type="text" id="cdpa-search-input" class="form-input text-xs w-full py-1.5 pl-2.5 pr-7 bg-black/60 text-white rounded-xl border border-white/10" placeholder="Buscar por nombre o dorsal..." oninput="filterCDPAPlayersUI()">
+                                            <span class="absolute right-2.5 top-1.5 text-xs opacity-40">🔍</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between text-[9px] text-gray-400 px-0.5">
+                                        <span id="cdpa-count-badge" class="font-bold text-gray-300">368 jugadores</span>
+                                        <div class="flex gap-1">
+                                            <button class="px-2 py-0.5 rounded bg-white/10 hover:bg-white/20 text-white text-[9px] font-bold" onclick="loadCDPACategoryToEditor()" title="Carga los jugadores filtrados al Editor">📥 A Editor</button>
+                                            <button class="px-2 py-0.5 rounded bg-cdpa-red/30 hover:bg-cdpa-red/50 text-red-200 text-[9px] font-bold" onclick="assignCDPACategoryToSide('home')" title="Asigna la categoría actual al equipo Local">🏟️ A Local</button>
+                                        </div>
+                                    </div>
+                                    <div id="cdpa-players-list" class="max-h-52 overflow-y-auto space-y-1 bg-black/40 p-1.5 rounded-xl border border-white/5">
+                                        <!-- Generado dinámicamente -->
+                                    </div>
                                 </div>
                             </div>
                             <div class="space-y-3">
@@ -415,7 +450,7 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div class="p-3 bg-black/20 rounded-2xl border border-white/5 space-y-2">
                                 <h4 class="text-[10px] font-black text-cdpa-yellow uppercase tracking-widest">Etiqueta de Competición</h4>
-                                <input type="text" id="tournament-name-input" class="form-input text-xs" placeholder="Ej: 3ª RFEF, Copa Navarra..." oninput="updateTournamentName()">
+                                <input type="text" id="adv-tournament-name-input" class="form-input text-xs" placeholder="Ej: 3ª RFEF, Copa Navarra..." oninput="updateTournamentName(this.value)">
                                 <input type="text" id="halftime-team-input" class="form-input text-xs" placeholder="Subtítulo Descanso: Ej: Juvenil, Cadete..." oninput="updateHalftimeTeamName()">
                             </div>
                             <div class="p-3 bg-black/20 rounded-2xl border border-white/5 space-y-2">
@@ -563,6 +598,7 @@
     <script src="js/remote-sync.js"></script>
     <script src="js/timer.js"></script>
     <script src="js/escudos.js"></script>
+    <script src="js/jugadores-cdpa.js"></script>
     <script src="js/auth.js"></script>
     <script src="js/control.js"></script>
     <script>

@@ -1,0 +1,945 @@
+/* ============================================================
+   DISPLAY.JS — LED Screen Rendering Logic
+   ============================================================ */
+
+let displayInitialized = false;
+
+function initDisplay() {
+    if (displayInitialized) return;
+    displayInitialized = true;
+    
+    loadState();
+    
+    // Listen for state updates from control panel (local or remote)
+    if (window.syncManager) {
+        window.syncManager.onMessage((data) => {
+            if (data.type === 'FULL_STATE') {
+                matchState = data.payload;
+                matchTimer.syncFromState();
+                renderTimers(); // Force immediate timer render
+                renderDisplay();
+            } else if (data.type === 'state-update') {
+                const prevGoal1 = matchState.fields[1].showGoalAnimation;
+                const prevGoal2 = matchState.fields[2].showGoalAnimation;
+                matchState = data.state;
+                
+                // Persist locally to sync with 500ms fallback interval
+                try {
+                    localStorage.setItem('marcador-led-state', JSON.stringify(matchState));
+                } catch(e) {}
+                
+                matchTimer.syncFromState();
+                renderTimers(); // Force immediate timer render
+                renderDisplay();
+                // Check for new goal animations
+                if (!prevGoal1 && matchState.fields[1].showGoalAnimation) showGoalOverlay(1);
+                if (!prevGoal2 && matchState.fields[2].showGoalAnimation) showGoalOverlay(2);
+            }
+        });
+        
+        // Inicializar Host de PeerJS para permitir control remoto
+        window.syncManager.initHost('AZAGRESA-');
+    }
+    
+    // Also poll localStorage for fallback
+    setInterval(() => {
+        try {
+            const saved = localStorage.getItem('marcador-led-state');
+            if (saved) {
+                const parsed = JSON.parse(saved);
+                
+                const prevGoal1 = matchState.fields[1].showGoalAnimation;
+                const prevGoal2 = matchState.fields[2].showGoalAnimation;
+                
+                matchState = parsed;
+                matchTimer.syncFromState();
+                renderDisplay();
+                
+                // Check for new goal animations on both fields
+                if (!prevGoal1 && parsed.fields[1].showGoalAnimation) showGoalOverlay(1);
+                if (!prevGoal2 && parsed.fields[2].showGoalAnimation) showGoalOverlay(2);
+            }
+        } catch(e) {}
+    }, 500);
+    
+    // Timer tick updates
+    matchTimer.onTick(() => renderTimers());
+    matchTimer.onAlarm((fieldNum) => {
+        // Flash the timer when time is up
+        const timerId = fieldNum === 1 ? 'timer-display' : `f${fieldNum}-timer`;
+        const el = document.getElementById(timerId);
+        if (el) el.classList.add('paused');
+    });
+    
+    renderDisplay();
+}
+
+// ── Main Render ─────────────────────────────────────────────
+function renderDisplay() {
+    const isSingle = matchState.mode === 'single';
+    
+    document.getElementById('single-match').style.display = isSingle ? 'flex' : 'none';
+    document.getElementById('dual-match').style.display = isSingle ? 'none' : 'flex';
+    
+    if (isSingle) {
+        renderSingleMatch();
+    } else {
+        renderDualMatch();
+    }
+    
+    renderTimers();
+    renderTournamentLabel();
+    renderTournamentCountdown();
+    renderSponsorOverlay();
+    renderSponsorFullscreenOverlay();
+    renderLiveBroadcastOverlay();
+    renderGraphics();
+    renderHalftimeOverlay();
+}
+
+// ── Single Match Render ─────────────────────────────────────
+function renderSingleMatch() {
+    const f = matchState.fields[1];
+    
+    // Team names
+    setText('home-name', f.homeName || 'EQUIPO LOCAL');
+    setText('away-name', f.awayName || 'EQUIPO VISITANTE');
+    
+    // Badges
+    setBadge('home-badge', f.homeBadge, f.homeName);
+    setBadge('away-badge', f.awayBadge, f.awayName);
+    
+    // Scores
+    setText('home-score', f.homeScore);
+    setText('away-score', f.awayScore);
+    
+    // Period
+    setText('period-badge', f.period || '1ª PARTE');
+    
+    // Cards
+    renderCards('home', f.homeYellows, f.homeReds);
+    renderCards('away', f.awayYellows, f.awayReds);
+    
+    // Scorers
+    renderMainScorers('home-scorers', f.homeScorers, 'right');
+    renderMainScorers('away-scorers', f.awayScorers, 'left');
+    
+    // Extra message
+    const msgEl = document.getElementById('extra-message');
+    const msgText = document.getElementById('extra-text');
+    if (msgEl && msgText) {
+        if (f.extraMessage) {
+            msgText.textContent = f.extraMessage;
+            msgEl.style.display = 'block';
+        } else {
+            msgEl.style.display = 'none';
+        }
+    }
+
+    // Fouls
+    renderFouls(1);
+}
+
+// ── Dual Match Render ───────────────────────────────────────
+function renderDualMatch() {
+    [1, 2].forEach(fn => {
+        const f = matchState.fields[fn];
+        const p = `f${fn}`;
+        
+        setText(`${p}-home-name`, f.homeName || 'LOCAL');
+        setText(`${p}-away-name`, f.awayName || 'VISITANTE');
+        setBadge(`${p}-home-badge`, f.homeBadge, f.homeName);
+        setBadge(`${p}-away-badge`, f.awayBadge, f.awayName);
+        setText(`${p}-home-score`, f.homeScore);
+        setText(`${p}-away-score`, f.awayScore);
+        
+        renderMainScorers(`${p}-home-scorers`, f.homeScorers, 'right');
+        renderMainScorers(`${p}-away-scorers`, f.awayScorers, 'left');
+        
+        renderFouls(fn);
+    });
+}
+
+// ── Timer Render ────────────────────────────────────────────
+function renderTimers() {
+    if (matchState.mode === 'single') {
+        _renderSingleTimer();
+    } else {
+        [1, 2].forEach(fn => _renderDualTimer(fn));
+    }
+}
+
+function _renderSingleTimer() {
+    const elapsed = matchTimer.getElapsed(1);
+    const f = matchState.fields[1];
+    const el = document.getElementById('timer-display');
+    const addedEl = document.getElementById('added-time-display');
+    const direction = f.timerDirection || 'up';
+    const isOvertime = matchTimer.isInAddedTime(1);
+    
+    if (el) {
+        el.textContent = matchTimer.format(elapsed);
+        el.classList.toggle('running', !!f.timerRunning);
+        el.classList.toggle('paused', !f.timerRunning && elapsed > 0);
+        el.classList.toggle('timer-regressive', direction === 'down');
+        el.classList.toggle('timer-overtime', isOvertime);
+    }
+    
+    // Added time display
+    if (addedEl) {
+        const addedMinutes = f.addedTime || f.addedTimeMinutes || 0;
+        const shouldShow = addedMinutes > 0 || f.showAddedTime;
+        
+        if (shouldShow && addedMinutes > 0) {
+            const newText = `+${addedMinutes}`;
+            if (addedEl.textContent !== newText) {
+                addedEl.textContent = newText;
+                // Re-trigger entrance animation
+                addedEl.classList.remove('animate-in');
+                addedEl.offsetHeight; // force reflow
+                addedEl.classList.add('animate-in');
+            }
+            addedEl.style.display = 'flex';
+        } else {
+            addedEl.style.display = 'none';
+        }
+    }
+}
+
+function _renderDualTimer(fn) {
+    if (fn !== 1) return; // Master clock for dual match is Field 1
+
+    const elapsed = matchTimer.getElapsed(1);
+    const f = matchState.fields[1];
+    
+    setText('dual-shared-timer', matchTimer.format(elapsed));
+    setText('dual-shared-period', f.period || '1ª PARTE');
+    
+    // Toggle state classes
+    const timerEl = document.getElementById('dual-shared-timer');
+    if (timerEl) {
+        timerEl.classList.toggle('timer-running', !!f.timerRunning);
+        timerEl.classList.toggle('timer-overtime', matchTimer.isInAddedTime(1));
+    }
+    
+    // Added time badge
+    const addedEl = document.getElementById('dual-shared-added-time');
+    if (addedEl) {
+        const addedMinutes = f.addedTime || f.addedTimeMinutes || 0;
+        if (addedMinutes > 0) {
+            const newText = `+${addedMinutes}`;
+            if (addedEl.textContent !== newText) {
+                addedEl.textContent = newText;
+                addedEl.classList.remove('animate-in');
+                addedEl.offsetHeight;
+                addedEl.classList.add('animate-in');
+            }
+            addedEl.style.display = 'inline-block';
+        } else {
+            addedEl.style.display = 'none';
+        }
+    }
+}
+
+// ── Helper: Agrupar goles por jugador con balones y minutos ────────
+function groupScorersByPlayer(scorers) {
+    if (!scorers || scorers.length === 0) return [];
+    const map = new Map();
+    for (const s of scorers) {
+        const name = (s.name || '').trim();
+        if (!name) continue;
+        const normKey = name.toUpperCase();
+        if (!map.has(normKey)) {
+            map.set(normKey, { name, minutes: [] });
+        }
+        if (s.minute !== undefined && s.minute !== null) {
+            map.get(normKey).minutes.push(s.minute);
+        }
+    }
+    return Array.from(map.values()).map(p => {
+        p.minutes.sort((a, b) => a - b);
+        return p;
+    }).sort((a, b) => {
+        const minA = a.minutes.length > 0 ? a.minutes[0] : 0;
+        const minB = b.minutes.length > 0 ? b.minutes[0] : 0;
+        return minA - minB;
+    });
+}
+
+// ── Scorers Render (Main Board) ──────────────────────────────
+function renderMainScorers(containerId, scorers, align) {
+    const el = document.getElementById(containerId);
+    if (!el) return;
+    
+    const grouped = groupScorersByPlayer(scorers);
+    if (grouped.length === 0) {
+        el.innerHTML = '';
+        return;
+    }
+    
+    el.innerHTML = grouped.map(g => {
+        const count = Math.max(1, g.minutes.length);
+        const balls = '⚽'.repeat(count);
+        const minutesFormatted = g.minutes.map(m => m + "'").join(', ');
+        return `
+            <div class="scorer-entry">
+                <span class="scorer-icon">${balls}</span>
+                <span class="scorer-minute">${minutesFormatted}</span>
+                <span class="scorer-name">${g.name}</span>
+            </div>
+        `;
+    }).join('');
+}
+
+// ── Cards Render ────────────────────────────────────────────
+function renderCards(team, yellows, reds) {
+    const yEl = document.getElementById(`${team}-yellows`);
+    const rEl = document.getElementById(`${team}-reds`);
+    if (yEl) {
+        yEl.style.display = yellows > 0 ? 'flex' : 'none';
+        yEl.querySelector('.card-count').textContent = yellows;
+    }
+    if (rEl) {
+        rEl.style.display = reds > 0 ? 'flex' : 'none';
+        rEl.querySelector('.card-count').textContent = reds;
+    }
+}
+
+// ── Fouls Render ────────────────────────────────────────────
+function renderFouls(fieldNum) {
+    const f = matchState.fields[fieldNum];
+    if (matchState.mode === 'single') {
+        const hCont = document.getElementById('home-fouls-container');
+        const aCont = document.getElementById('away-fouls-container');
+        if (hCont) {
+            hCont.style.display = f.homeFouls > 0 ? 'flex' : 'none';
+            setText('home-fouls', f.homeFouls);
+        }
+        if (aCont) {
+            aCont.style.display = f.awayFouls > 0 ? 'flex' : 'none';
+            setText('away-fouls', f.awayFouls);
+        }
+    } else {
+        setText(`f${fieldNum}-home-fouls`, f.homeFouls);
+        setText(`f${fieldNum}-away-fouls`, f.awayFouls);
+    }
+}
+
+// ── Tournament Label Render ─────────────────────────────────
+function renderTournamentLabel() {
+    const labelEl = document.getElementById('tournament-label');
+    const textEl = document.getElementById('tournament-text');
+    if (!labelEl || !textEl) return;
+    
+    const name = matchState.tournamentName;
+    if (name && name.trim()) {
+        textEl.textContent = name;
+        labelEl.style.display = 'block';
+    } else {
+        labelEl.style.display = 'none';
+    }
+}
+
+// ── Tournament Countdown Overlay Render ──────────────────────
+let _tournamentCountdownInterval = null;
+
+function renderTournamentCountdown() {
+    const overlay = document.getElementById('tournament-countdown-overlay');
+    const numberEl = document.getElementById('countdown-number');
+    const textEl = document.getElementById('countdown-text');
+    if (!overlay || !numberEl) return;
+    
+    if (matchState.showTournamentCountdown) {
+        if (!overlay.classList.contains('active')) {
+            overlay.style.display = 'flex';
+            // Force reflow
+            overlay.offsetHeight;
+            overlay.classList.add('active');
+
+            // ── Dynamic message ───────────────────────────
+            if (textEl) {
+                const hasTournament = matchState.tournamentName && matchState.tournamentName.trim();
+                if (hasTournament) {
+                    textEl.textContent = `¡EMPIEZA ${matchState.tournamentName.toUpperCase()}!`;
+                } else if (matchState.mode === 'tournament') {
+                    textEl.textContent = '¡EMPIEZA EL TORNEO!';
+                } else {
+                    textEl.textContent = '¡PREPARADOS PARA EL PARTIDO!';
+                }
+            }
+            
+            // Start countdown from 5 to 1
+            let count = 5;
+            numberEl.textContent = count;
+            numberEl.style.fontSize = ''; // Reset in case GO! changed it
+            
+            if (_tournamentCountdownInterval) clearInterval(_tournamentCountdownInterval);
+            _tournamentCountdownInterval = setInterval(() => {
+                count--;
+                if (count > 0) {
+                    numberEl.textContent = count;
+                    // Retrigger animation
+                    numberEl.style.animation = 'none';
+                    numberEl.offsetHeight; // force reflow
+                    numberEl.style.animation = 'countdownPulse 1s ease-in-out infinite';
+                } else if (count === 0) {
+                    numberEl.textContent = "GO!";
+                    numberEl.style.fontSize = 'clamp(4rem, 10vh, 8rem)';
+                } else {
+                    clearInterval(_tournamentCountdownInterval);
+                }
+            }, 1000);
+        }
+    } else {
+        if (overlay.classList.contains('active')) {
+            overlay.classList.remove('active');
+            if (_tournamentCountdownInterval) clearInterval(_tournamentCountdownInterval);
+            setTimeout(() => {
+                overlay.style.display = 'none';
+            }, 600); // Wait for transition
+        }
+    }
+}
+
+// ── Halftime Overlay Render ─────────────────────────────────
+function renderHalftimeOverlay() {
+    const overlay = document.getElementById('halftime-overlay');
+    if (!overlay) return;
+    
+    const f = matchState.fields[1];
+    const isHalftime = f.period === 'DESCANSO';
+    
+    if (isHalftime) {
+        // Update badges and scores
+        setBadge('halftime-home-badge', f.homeBadge, f.homeName);
+        setBadge('halftime-away-badge', f.awayBadge, f.awayName);
+        setText('halftime-home-score', f.homeScore);
+        setText('halftime-away-score', f.awayScore);
+        
+        // Set title and subtitle
+        setText('halftime-title', 'DESCANSO');
+        const subtitle = matchState.halftimeTeamName || '';
+        setText('halftime-subtitle', subtitle);
+        
+        overlay.classList.add('active');
+    } else {
+        overlay.classList.remove('active');
+    }
+}
+
+// ── Sponsor Overlay Render (Rotating Logos) ─────────────────
+let _sponsorInterval = null;
+let _sponsorIndex = 0;
+let _lastSponsorKey = '';
+
+function renderSponsorOverlay() {
+    const overlay = document.getElementById('sponsor-overlay');
+    const content = document.getElementById('sponsor-overlay-content');
+    if (!overlay || !content) return;
+    
+    const logos = matchState.sponsorLogos || [];
+    if (logos.length === 0) {
+        overlay.style.display = 'none';
+        if (_sponsorInterval) { clearInterval(_sponsorInterval); _sponsorInterval = null; }
+        return;
+    }
+    
+    // Check if sponsors changed
+    const key = logos.map(l => l.name + l.logoUrl).join('|');
+    if (key === _lastSponsorKey) return;
+    _lastSponsorKey = key;
+    
+    overlay.style.display = 'block';
+    _sponsorIndex = 0;
+    showSponsorAtIndex(content, logos, 0);
+    
+    // Clear old interval and start new
+    if (_sponsorInterval) clearInterval(_sponsorInterval);
+    const interval = (matchState.sponsorRotationInterval || 8) * 1000;
+    _sponsorInterval = setInterval(() => {
+        _sponsorIndex = (_sponsorIndex + 1) % logos.length;
+        showSponsorAtIndex(content, logos, _sponsorIndex);
+    }, interval);
+}
+
+function showSponsorAtIndex(container, logos, idx) {
+    const logo = logos[idx];
+    if (!logo) return;
+    
+    // Fade out first
+    container.style.animation = 'sponsorFadeOut 0.4s ease forwards';
+    setTimeout(() => {
+        if (logo.logoUrl) {
+            container.innerHTML = `
+                <div class="sponsor-logo-wrapper">
+                    <img class="sponsor-logo" src="${logo.logoUrl}" alt="${logo.name}" onerror="this.style.display='none'">
+                </div>
+            `;
+        } else {
+            container.innerHTML = `
+                <div class="sponsor-logo-wrapper">
+                    <span class="sponsor-name-text">${logo.name}</span>
+                </div>
+            `;
+        }
+        container.style.animation = 'sponsorFadeIn 0.6s ease forwards';
+    }, 400);
+}
+
+// ── Fullscreen Sponsor Overlay ──────────────────────────────
+function renderSponsorFullscreenOverlay() {
+    const overlay = document.getElementById('sponsor-fullscreen-overlay');
+    if (!overlay) return;
+    
+    const fs = matchState.sponsorFullscreen;
+    if (fs && fs.active) {
+        overlay.style.display = 'flex';
+        const img = document.getElementById('sponsor-fullscreen-logo');
+        const title = document.getElementById('sponsor-fullscreen-title');
+        const fill = document.getElementById('sponsor-progress-fill');
+        
+        const video = document.getElementById('sponsor-fullscreen-video');
+        const embed = document.getElementById('sponsor-fullscreen-embed');
+        
+        const isVideo = fs.mediaType === 'video' || (fs.logoUrl && /\.(mp4|webm|ogg)($|\?)/i.test(fs.logoUrl));
+        const isYouTube = fs.logoUrl && /(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|live\/|watch\?.+&v=))([\w-]{11})/.test(fs.logoUrl);
+
+        if (isYouTube) {
+            const ytMatch = fs.logoUrl.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|live\/|watch\?.+&v=))([\w-]{11})/);
+            const videoId = ytMatch ? ytMatch[1] : '';
+            if (embed) {
+                embed.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&mute=0&controls=0&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+                embed.style.display = 'block';
+            }
+            if (img) img.style.display = 'none';
+            if (video) { video.pause(); video.style.display = 'none'; video.src = ''; }
+        } else if (isVideo) {
+            if (video) {
+                if (video.src !== fs.logoUrl) {
+                    video.src = fs.logoUrl;
+                }
+                video.style.display = 'block';
+                video.play().catch(() => {});
+            }
+            if (img) img.style.display = 'none';
+            if (embed) { embed.innerHTML = ''; embed.style.display = 'none'; }
+        } else {
+            if (img) {
+                if (fs.logoUrl) {
+                    img.src = fs.logoUrl;
+                    img.style.display = 'block';
+                } else {
+                    img.style.display = 'none';
+                }
+            }
+            if (video) { video.pause(); video.style.display = 'none'; video.src = ''; }
+            if (embed) { embed.innerHTML = ''; embed.style.display = 'none'; }
+        }
+
+        if (title) {
+            if (fs.logoUrl) {
+                title.style.display = 'none';
+            } else {
+                title.textContent = fs.name || '';
+                title.style.display = 'block';
+            }
+        }
+        if (fill) {
+            fill.style.transition = 'none';
+            fill.style.width = '0%';
+            setTimeout(() => {
+                const dur = fs.duration || 6;
+                fill.style.transition = `width ${dur}s linear`;
+                fill.style.width = '100%';
+            }, 50);
+        }
+    } else {
+        overlay.style.display = 'none';
+        const video = document.getElementById('sponsor-fullscreen-video');
+        const embed = document.getElementById('sponsor-fullscreen-embed');
+        if (video) { video.pause(); video.src = ''; video.style.display = 'none'; }
+        if (embed) { embed.innerHTML = ''; embed.style.display = 'none'; }
+    }
+}
+
+// ── Live Broadcast with Sponsor Ticker ───────────────────────
+let _currentLiveMediaUrl = '';
+
+function renderLiveBroadcastOverlay() {
+    const overlay = document.getElementById('live-broadcast-overlay');
+    const container = document.getElementById('live-media-container');
+    const tickerBar = document.getElementById('live-ticker-bar');
+    const track = document.getElementById('ticker-track');
+    if (!overlay || !container) return;
+    
+    const live = matchState.liveBroadcast;
+    if (live && live.active && live.url) {
+        overlay.style.display = 'flex';
+        
+        if (live.url !== _currentLiveMediaUrl) {
+            _currentLiveMediaUrl = live.url;
+            container.innerHTML = createLiveMediaElement(live.url);
+        }
+        
+        if (tickerBar) {
+            tickerBar.style.display = live.showTicker !== false ? 'flex' : 'none';
+        }
+        
+        if (track) {
+            renderTickerLogos(track);
+        }
+    } else {
+        overlay.style.display = 'none';
+        if (_currentLiveMediaUrl) {
+            _currentLiveMediaUrl = '';
+            container.innerHTML = '';
+        }
+    }
+}
+
+function createLiveMediaElement(url) {
+    const trimmed = url.trim();
+    // YouTube detect
+    const ytMatch = trimmed.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|live\/|watch\?.+&v=))([\w-]{11})/);
+    if (ytMatch) {
+        const videoId = ytMatch[1];
+        return `<iframe src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&mute=0&controls=1&rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    }
+    // Twitch detect
+    const twitchMatch = trimmed.match(/twitch\.tv\/([a-zA-Z0-9_]+)/);
+    if (twitchMatch) {
+        const channel = twitchMatch[1];
+        return `<iframe src="https://player.twitch.tv/?channel=${channel}&parent=${window.location.hostname}&autoplay=true" allowfullscreen></iframe>`;
+    }
+    // Direct Video files (.mp4, .webm, .m3u8, .ogg)
+    if (/\.(mp4|webm|m3u8|ogg)($|\?)/i.test(trimmed)) {
+        return `<video src="${trimmed}" autoplay playsinline controls style="width:100%;height:100%;object-fit:contain;"></video>`;
+    }
+    // Direct Image files
+    if (/\.(jpeg|jpg|png|gif|webp|svg)($|\?)/i.test(trimmed)) {
+        return `<img src="${trimmed}" alt="Emisión en Directo" style="width:100%;height:100%;object-fit:contain;">`;
+    }
+    // Generic web page / iframe
+    return `<iframe src="${trimmed}" allow="camera; microphone; display-capture; autoplay; encrypted-media" allowfullscreen></iframe>`;
+}
+
+function renderTickerLogos(trackEl) {
+    const logos = matchState.sponsorLogos || [];
+    if (logos.length === 0) {
+        trackEl.innerHTML = '<div class="ticker-item"><span class="ticker-name">C.D. PEÑA AZAGRESA</span></div>';
+        return;
+    }
+    const itemsHtml = logos.map(s => `
+        <div class="ticker-item">
+            ${s.logoUrl ? `<img src="${s.logoUrl}" alt="${s.name}" class="ticker-logo" onerror="this.style.display='none'">` : ''}
+            <span class="ticker-name">${s.name}</span>
+        </div>
+    `).join('');
+    
+    // Duplicar para conseguir el efecto continuo suave infinito
+    trackEl.innerHTML = itemsHtml + itemsHtml;
+}
+
+// ── Goal Overlay ────────────────────────────────────────────
+function showGoalOverlay(fieldNum) {
+    const overlay = document.getElementById('goal-overlay');
+    const scorerEl = document.getElementById('goal-scorer-name');
+    if (!overlay) return;
+    
+    const f = matchState.fields[fieldNum];
+    if (scorerEl && f.goalScorerName) {
+        scorerEl.textContent = f.goalScorerName;
+    }
+    
+    const photoEl = document.getElementById('goal-scorer-photo');
+    if (photoEl) {
+        let photoSrc = f.goalScorerPhoto;
+        if (!photoSrc || photoSrc.trim() === '') {
+            // Obtener escudo del equipo goleador
+            photoSrc = f.goalTeam === 'home' ? f.homeBadge : f.awayBadge;
+        }
+        if (!photoSrc || photoSrc.trim() === '') {
+            // Si tampoco hay escudo, usar el genérico/por defecto
+            photoSrc = 'assets/escudos/default.svg';
+        }
+        photoEl.src = photoSrc;
+        photoEl.style.display = 'block';
+    }
+
+    // ── Dynamic Goal Text Generation ─────────────────────────
+    const goalTextContainer = overlay.querySelector('.goal-text');
+    if (goalTextContainer) {
+        goalTextContainer.innerHTML = '';
+        
+        let textToShow = '¡¡GOOOOOLL!!';
+        if (f.goalTeam === 'away') {
+            const teamName = (f.awayName || 'VISITANTE').toUpperCase();
+            textToShow = `¡GOL ${teamName}!`;
+        }
+        
+        // Ajustar el tamaño de la fuente dinámicamente según la longitud
+        let fontSize = 'clamp(20vh, 32vh, 40vh)'; // Por defecto para textos cortos
+        if (textToShow.length > 18) {
+            fontSize = 'clamp(8vh, 12vh, 15vh)';
+        } else if (textToShow.length > 12) {
+            fontSize = 'clamp(12vh, 18vh, 22vh)';
+        }
+        
+        // Crear spans dinámicos para la animación letra a letra
+        for (let i = 0; i < textToShow.length; i++) {
+            const char = textToShow[i];
+            const span = document.createElement('span');
+            span.className = 'goal-word';
+            span.textContent = char === ' ' ? '\u00A0' : char; // Espacio duro para que no colapse
+            span.style.fontSize = fontSize;
+            
+            // Forzar animación inline con delay progresivo
+            span.style.animation = 'goalLetterIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards';
+            span.style.animationDelay = `${0.1 + (i * 0.05)}s`;
+            
+            goalTextContainer.appendChild(span);
+        }
+    }
+    
+    overlay.classList.add('active');
+    
+    // Score flash animation
+    const team = f.goalTeam;
+    if (team) {
+        const scoreId = matchState.mode === 'single' 
+            ? `${team}-score` 
+            : `f${fieldNum}-${team}-score`;
+        const scoreEl = document.getElementById(scoreId);
+        if (scoreEl) scoreEl.classList.add('goal-flash');
+        setTimeout(() => { if (scoreEl) scoreEl.classList.remove('goal-flash'); }, 1000);
+    }
+    
+    setTimeout(() => overlay.classList.remove('active'), 3200);
+}
+
+// ── Special Graphics ────────────────────────────────────────
+function renderGraphics() {
+    const overlays = ['referees', 'lineup', 'substitution', 'card', 'summary', 'coach'];
+    overlays.forEach(id => {
+        const el = document.getElementById(`graphic-overlay-${id}`);
+        if (el) el.classList.remove('active');
+    });
+
+    const active = matchState.activeGraphic;
+    if (!active) return;
+    
+    const data = matchState.graphicData || {};
+    const overlay = document.getElementById(`graphic-overlay-${active}`);
+    if (!overlay) return;
+
+    // Add active class to trigger CSS transition
+    overlay.classList.add('active');
+    
+    if (active === 'referees') {
+        setText('graphic-ref-main', data.main || 'Árbitro Principal');
+        setText('graphic-ref-as1', data.as1 || 'Asistente 1');
+        setText('graphic-ref-as2', data.as2 || 'Asistente 2');
+    } 
+    else if (active === 'lineup') {
+        setText('graphic-lineup-team', data.team);
+        const f = matchState.fields[1];
+        const badgeUrl = data.side === 'home' ? f.homeBadge : f.awayBadge;
+        setBadge('graphic-lineup-badge', badgeUrl, data.team);
+        
+        const playersContainer = document.getElementById('graphic-lineup-players');
+        if (playersContainer && data.players) {
+            // Updated with new classes and staggered animation delays
+            playersContainer.innerHTML = data.players.map((p, index) => `
+                <div class="lineup-player" style="animation-delay: ${index * 0.08}s">
+                    <img src="${p.photo || 'assets/escudos/default_avatar.svg'}" class="lineup-player-photo">
+                    <div class="lineup-player-info">
+                        <span class="lineup-num">${p.number}</span>
+                        <span class="lineup-name">${p.name}</span>
+                    </div>
+                </div>
+            `).join('');
+            
+        }
+    }
+    else if (active === 'substitution') {
+        setText('graphic-sub-out', data.subOut);
+        setText('graphic-sub-in', data.subIn);
+        setBadge('graphic-sub-badge', data.badge, data.team);
+        
+        const outPhoto = document.getElementById('graphic-sub-out-photo');
+        if (outPhoto) {
+            outPhoto.src = data.subOutPhoto || 'assets/escudos/default_avatar.svg';
+            outPhoto.style.display = 'block';
+        }
+        
+        const inPhoto = document.getElementById('graphic-sub-in-photo');
+        if (inPhoto) {
+            inPhoto.src = data.subInPhoto || 'assets/escudos/default_avatar.svg';
+            inPhoto.style.display = 'block';
+        }
+    }
+    else if (active === 'card') {
+        setText('graphic-card-type', data.color === 'yellow' ? 'TARJETA AMARILLA' : 'TARJETA ROJA');
+        setText('graphic-card-player', data.player);
+        setBadge('graphic-card-badge', data.badge, data.team);
+        
+        const cardPhoto = document.getElementById('graphic-card-photo');
+        if (cardPhoto) {
+            cardPhoto.src = data.playerPhoto || 'assets/escudos/default_avatar.svg';
+            cardPhoto.style.display = 'block';
+        }
+        
+        const cardBg = document.getElementById('graphic-card-bg');
+        if (cardBg) {
+            cardBg.classList.toggle('card-yellow-bg', data.color === 'yellow');
+            cardBg.classList.toggle('card-red-bg', data.color === 'red');
+        }
+    }
+    else if (active === 'coach') {
+        setText('graphic-coach-team', data.team);
+        setText('graphic-coach-name', data.name);
+        setBadge('graphic-coach-badge', data.badge, data.team);
+    }
+    else if (active === 'summary') {
+        const f = matchState.fields[1];
+        setText('summary-home-name', f.homeName);
+        setText('summary-away-name', f.awayName);
+        setText('summary-home-score', f.homeScore);
+        setText('summary-away-score', f.awayScore);
+        setBadge('summary-home-badge', f.homeBadge, f.homeName);
+        setBadge('summary-away-badge', f.awayBadge, f.awayName);
+        renderSummaryScorers('summary-home-scorers', f.homeScorers, 'right');
+        renderSummaryScorers('summary-away-scorers', f.awayScorers, 'left');
+    }
+}
+
+function renderSummaryScorers(id, scorers, align) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    
+    // Add team class for animation direction
+    el.classList.add(align === 'right' ? 'team-a' : 'team-b');
+    
+    const grouped = groupScorersByPlayer(scorers);
+    if (grouped.length === 0) {
+        el.innerHTML = '';
+        return;
+    }
+    el.innerHTML = grouped.map(g => {
+        const count = Math.max(1, g.minutes.length);
+        const balls = '⚽'.repeat(count);
+        const minutesFormatted = g.minutes.map(m => m + "'").join(', ');
+        return `
+            <div class="summary-scorer-row" style="justify-content: ${align === 'right' ? 'flex-end' : 'flex-start'}">
+                <span class="summary-scorer-name">${balls} ${g.name}</span>
+                <span class="summary-scorer-time">${minutesFormatted}</span>
+            </div>
+        `;
+    }).join('');
+}
+
+// ── Helpers ─────────────────────────────────────────────────
+function setText(id, text) {
+    const el = document.getElementById(id);
+    if (el) el.textContent = text;
+}
+
+function setBadge(id, url, name) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    if (url) {
+        el.src = url;
+        el.onerror = function() { this.src = getDefaultBadgeSVG(name || '?'); };
+    } else {
+        el.src = getDefaultBadgeSVG(name || '?');
+    }
+}
+
+function getDefaultBadgeSVG(name) {
+    const initial = name.charAt(0).toUpperCase();
+    return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(`
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+            <rect width="100" height="100" fill="#333" />
+            <text x="50" y="65" font-family="Arial" font-size="50" fill="white" text-anchor="middle">${initial}</text>
+        </svg>
+    `)}`;
+}
+
+// ── Fullscreen Support ──────────────────────────────────────
+function enterFullscreen() {
+    const elem = document.documentElement;
+    const rfs = elem.requestFullscreen || elem.webkitRequestFullscreen || 
+                elem.mozRequestFullScreen || elem.msRequestFullscreen;
+    if (rfs) {
+        rfs.call(elem).catch(() => {
+            // Silently fail — browser may block without user gesture
+        });
+    }
+}
+
+function exitFullscreen() {
+    const efs = document.exitFullscreen || document.webkitExitFullscreen || 
+                document.mozCancelFullScreen || document.msExitFullscreen;
+    if (efs && (document.fullscreenElement || document.webkitFullscreenElement)) {
+        efs.call(document).catch(() => {});
+    }
+}
+
+function toggleFullscreen() {
+    if (document.fullscreenElement || document.webkitFullscreenElement) {
+        exitFullscreen();
+    } else {
+        enterFullscreen();
+    }
+}
+
+function updateFullscreenButton() {
+    const btn = document.getElementById('fullscreen-btn');
+    if (!btn) return;
+    const isFS = !!(document.fullscreenElement || document.webkitFullscreenElement);
+    btn.innerHTML = isFS ? '⛶' : '⛶';
+    btn.title = isFS ? 'Salir de pantalla completa (Esc)' : 'Pantalla completa';
+    btn.style.opacity = isFS ? '0' : '0.3';
+}
+
+// ── Init on Load ────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+    initDisplay();
+    
+    // Create fullscreen button
+    const fsBtn = document.createElement('button');
+    fsBtn.id = 'fullscreen-btn';
+    fsBtn.innerHTML = '⛶';
+    fsBtn.title = 'Pantalla completa';
+    fsBtn.style.cssText = `
+        position: fixed; top: 10px; right: 10px; z-index: 99999;
+        background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+        color: white; font-size: 24px; width: 44px; height: 44px;
+        border-radius: 8px; cursor: pointer; opacity: 0.3;
+        transition: opacity 0.3s ease;
+        display: flex; align-items: center; justify-content: center;
+    `;
+    fsBtn.addEventListener('mouseenter', () => fsBtn.style.opacity = '1');
+    fsBtn.addEventListener('mouseleave', () => {
+        const isFS = !!(document.fullscreenElement || document.webkitFullscreenElement);
+        fsBtn.style.opacity = isFS ? '0' : '0.3';
+    });
+    fsBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleFullscreen();
+    });
+    document.body.appendChild(fsBtn);
+    
+    // First click anywhere on the display → go fullscreen automatically
+    let firstClickDone = false;
+    document.body.addEventListener('click', () => {
+        if (!firstClickDone && !document.fullscreenElement && !document.webkitFullscreenElement) {
+            firstClickDone = true;
+            enterFullscreen();
+        }
+    }, { once: false });
+    
+    // Update button state on fullscreen change
+    document.addEventListener('fullscreenchange', updateFullscreenButton);
+    document.addEventListener('webkitfullscreenchange', updateFullscreenButton);
+});
