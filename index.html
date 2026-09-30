@@ -130,431 +130,406 @@
                 </div>
             </div>
 
-            <div class="card" id="teams-card">
-                <div class="card-header">
-                    <div class="flex items-center gap-2">
-                        <div class="w-8 h-8 rounded-lg bg-orange-500/10 flex items-center justify-center text-orange-500">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+            <!-- 1. BLOQUE UNIFICADO DE PARTIDO: EQUIPOS, GOLES Y TIEMPO -->
+            <div class="card bg-gradient-to-br from-cdpa-card to-black p-4 space-y-4 shadow-2xl col-span-12" id="match-hub-card">
+                <!-- A. Selección de Equipos y Escudos -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-3 border-b border-white/5">
+                    <!-- Local -->
+                    <div class="space-y-1.5">
+                        <label class="block text-[9px] font-bold text-cdpa-muted uppercase tracking-widest">Equipo Local</label>
+                        <div class="team-selector" id="home-team-search-container">
+                            <span class="team-search-icon">🔍</span>
+                            <input type="text" id="home-team-search" class="team-search-input text-xs !py-1.5" placeholder="Buscar equipo..." oninput="searchTeam('home', this.value)" onfocus="showTeamResults('home')" autocomplete="off">
+                            <div class="team-results" id="home-team-results"></div>
                         </div>
-                        <h2>🛡️ Equipos y Entrenadores <span id="teams-card-field-indicator" class="text-xs font-bold text-cdpa-yellow ml-2 bg-cdpa-yellow/10 px-2 py-0.5 rounded-full border border-cdpa-yellow/20 hidden">Campo 1</span></h2>
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div class="space-y-4">
-                        <div>
-                            <label class="block text-[10px] font-bold text-cdpa-muted uppercase tracking-widest mb-1.5 ml-1">Equipo Local</label>
-                            <div class="team-selector" id="home-team-search-container">
-                                <span class="team-search-icon">🔍</span>
-                                <input type="text" id="home-team-search" class="team-search-input" placeholder="Buscar equipo..." oninput="searchTeam('home', this.value)" onfocus="showTeamResults('home')" autocomplete="off">
-                                <div class="team-results" id="home-team-results"></div>
+                        <div id="home-team-selected" class="flex items-center justify-between p-2 bg-white/5 rounded-xl border border-white/10" style="display:none">
+                            <div class="flex items-center gap-2 overflow-hidden">
+                                <img id="ctrl-home-badge" src="" class="w-5 h-5 object-contain">
+                                <span id="ctrl-home-name" class="text-xs font-bold truncate"></span>
                             </div>
-                            <div id="home-team-selected" class="mt-3 flex items-center justify-between p-3 bg-white/5 rounded-xl border border-white/10" style="display:none">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-7 h-7 rounded-lg bg-black/50 flex items-center justify-center border border-white/5">
-                                        <img id="ctrl-home-badge" src="" class="w-5 h-5 object-contain">
-                                    </div>
-                                    <span id="ctrl-home-name" class="text-sm font-bold tracking-tight"></span>
-                                </div>
-                                <button class="w-8 h-8 rounded-full bg-red-500/10 text-red-500 flex items-center justify-center hover:bg-red-500/20" onclick="clearTeam('home')">✕</button>
-                            </div>
-                        </div>
-                        <div>
-                            <label class="block text-[10px] font-bold text-cdpa-muted uppercase tracking-widest mb-1.5 ml-1">Entrenador Local</label>
-                            <input type="text" id="home-coach-input" class="form-input" placeholder="Nombre del entrenador" onchange="updateCoach('home', this.value)">
+                            <button class="w-6 h-6 rounded-full bg-red-500/10 text-red-500 text-xs flex items-center justify-center hover:bg-red-500/20" onclick="clearTeam('home')">✕</button>
                         </div>
                     </div>
-                    <div class="space-y-4">
-                        <div>
-                            <label class="block text-[10px] font-bold text-cdpa-muted uppercase tracking-widest mb-1.5 ml-1">Equipo Visitante</label>
-                            <div class="team-selector" id="away-team-search-container">
-                                <span class="team-search-icon">🔍</span>
-                                <input type="text" id="away-team-search" class="team-search-input" placeholder="Buscar equipo..." oninput="searchTeam('away', this.value)" onfocus="showTeamResults('away')" autocomplete="off">
-                                <div class="team-results" id="away-team-results"></div>
-                            </div>
-                            <div id="away-team-selected" class="mt-3 flex items-center justify-between p-3 bg-white/5 rounded-xl border border-white/10" style="display:none">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-7 h-7 rounded-lg bg-black/50 flex items-center justify-center border border-white/5">
-                                        <img id="ctrl-away-badge" src="" class="w-5 h-5 object-contain">
-                                    </div>
-                                    <span id="ctrl-away-name" class="text-sm font-bold tracking-tight"></span>
-                                </div>
-                                <button class="w-8 h-8 rounded-full bg-red-500/10 text-red-500 flex items-center justify-center hover:bg-red-500/20" onclick="clearTeam('away')">✕</button>
-                            </div>
+                    <!-- Visitante -->
+                    <div class="space-y-1.5">
+                        <label class="block text-[9px] font-bold text-cdpa-muted uppercase tracking-widest">Equipo Visitante</label>
+                        <div class="team-selector" id="away-team-search-container">
+                            <span class="team-search-icon">🔍</span>
+                            <input type="text" id="away-team-search" class="team-search-input text-xs !py-1.5" placeholder="Buscar equipo..." oninput="searchTeam('away', this.value)" onfocus="showTeamResults('away')" autocomplete="off">
+                            <div class="team-results" id="away-team-results"></div>
                         </div>
-                        <div>
-                            <label class="block text-[10px] font-bold text-cdpa-muted uppercase tracking-widest mb-1.5 ml-1">Entrenador Visitante</label>
-                            <input type="text" id="away-coach-input" class="form-input" placeholder="Nombre del entrenador" onchange="updateCoach('away', this.value)">
+                        <div id="away-team-selected" class="flex items-center justify-between p-2 bg-white/5 rounded-xl border border-white/10" style="display:none">
+                            <div class="flex items-center gap-2 overflow-hidden">
+                                <img id="ctrl-away-badge" src="" class="w-5 h-5 object-contain">
+                                <span id="ctrl-away-name" class="text-xs font-bold truncate"></span>
+                            </div>
+                            <button class="w-6 h-6 rounded-full bg-red-500/10 text-red-500 text-xs flex items-center justify-center hover:bg-red-500/20" onclick="clearTeam('away')">✕</button>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card bg-gradient-to-br from-cdpa-card to-black" id="score-card">
-                <div class="card-header">
-                    <div class="flex items-center gap-2">
-                        <div class="w-8 h-8 rounded-lg bg-green-500/10 flex items-center justify-center text-green-500">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
-                        </div>
-                        <h2>📊 Marcador <span id="score-card-field-indicator" class="text-xs font-bold text-cdpa-yellow ml-2 bg-cdpa-yellow/10 px-2 py-0.5 rounded-full border border-cdpa-yellow/20 hidden">Campo 1</span></h2>
-                    </div>
-                    <span class="badge" id="match-status-badge">PRE-PARTIDO</span>
-                </div>
-                <div class="score-control">
-                    <div class="score-team-ctrl p-4 bg-white/5 rounded-3xl border border-white/5">
-                        <span class="team-label text-[10px] font-black uppercase tracking-[0.3em] opacity-40 mb-2" id="score-home-label">LOCAL</span>
-                        <div class="score-buttons flex items-center gap-4">
+                <!-- B. Marcador de Goles -->
+                <div class="score-control !py-1">
+                    <div class="score-team-ctrl p-3 bg-white/5 rounded-2xl border border-white/5 flex-1">
+                        <span class="team-label text-[9px] font-black uppercase tracking-[0.2em] opacity-40 mb-1" id="score-home-label">LOCAL</span>
+                        <div class="score-buttons flex items-center justify-center gap-4">
                             <button class="btn-score btn-minus" onclick="changeScore('home', -1)">−</button>
-                            <span class="score-value font-orbitron" id="ctrl-home-score">0</span>
+                            <span class="score-value font-orbitron text-5xl" id="ctrl-home-score">0</span>
                             <button class="btn-score btn-plus" onclick="changeScore('home', 1)">+</button>
                         </div>
                     </div>
-                    <div class="score-center-divider flex flex-col items-center">
-                        <span class="vs-text">VS</span>
+                    <div class="score-center-divider flex flex-col items-center justify-center px-2">
+                        <span class="vs-text text-sm opacity-50 font-bold">VS</span>
+                        <span class="badge text-[8px] mt-1" id="match-status-badge">PRE-PARTIDO</span>
                     </div>
-                    <div class="score-team-ctrl p-4 bg-white/5 rounded-3xl border border-white/5">
-                        <span class="team-label text-[10px] font-black uppercase tracking-[0.3em] opacity-40 mb-2" id="score-away-label">VISITANTE</span>
-                        <div class="score-buttons flex items-center gap-4">
+                    <div class="score-team-ctrl p-3 bg-white/5 rounded-2xl border border-white/5 flex-1">
+                        <span class="team-label text-[9px] font-black uppercase tracking-[0.2em] opacity-40 mb-1" id="score-away-label">VISITANTE</span>
+                        <div class="score-buttons flex items-center justify-center gap-4">
                             <button class="btn-score btn-minus" onclick="changeScore('away', -1)">−</button>
-                            <span class="score-value font-orbitron" id="ctrl-away-score">0</span>
+                            <span class="score-value font-orbitron text-5xl" id="ctrl-away-score">0</span>
                             <button class="btn-score btn-plus" onclick="changeScore('away', 1)">+</button>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card overflow-hidden" id="timer-card">
-                <div class="card-header">
-                    <div class="flex items-center gap-2">
-                        <div class="w-8 h-8 rounded-lg bg-red-500/10 flex items-center justify-center text-red-500">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <!-- C. TIEMPO DE JUEGO (Justo debajo de los goles) -->
+                <div class="bg-black/50 p-4 rounded-2xl border border-white/10 space-y-3" id="timer-box">
+                    <!-- Reloj principal, modo y selectores -->
+                    <div class="flex flex-col sm:flex-row items-center justify-between gap-3">
+                        <div class="flex items-center gap-3">
+                            <div class="timer-value font-orbitron text-5xl sm:text-6xl tracking-tight text-white font-black" id="ctrl-timer">00:00</div>
+                            <div class="flex flex-col gap-1">
+                                <div class="flex bg-white/5 p-0.5 rounded-lg border border-white/5 text-[9px]">
+                                    <button id="dir-up-btn" class="px-2 py-0.5 rounded font-bold" onclick="setTimerDirection('up')">PROG</button>
+                                    <button id="dir-down-btn" class="px-2 py-0.5 rounded font-bold opacity-50" onclick="setTimerDirection('down')">REGR</button>
+                                </div>
+                                <select id="timer-duration" class="form-input text-center text-xs py-1 px-2 bg-black/70 text-white border border-white/10 rounded-lg" onchange="updateTimerDuration()">
+                                    <option value="20">20 min</option>
+                                    <option value="25">25 min</option>
+                                    <option value="30">30 min</option>
+                                    <option value="35">35 min</option>
+                                    <option value="40">40 min</option>
+                                    <option value="45" selected>45 min</option>
+                                </select>
+                            </div>
                         </div>
-                        <h2>⏱️ Tiempo</h2>
-                    </div>
-                </div>
-                <div class="timer-ctrl p-4">
-                    <div class="timer-value font-orbitron text-8xl mb-2 tracking-tighter" id="ctrl-timer">00:00</div>
-                    
-                    <!-- Duración del periodo -->
-                    <div class="flex justify-between items-center gap-2 mb-4 bg-black/30 p-3 rounded-xl border border-white/5">
-                        <span class="text-xs font-bold text-cdpa-muted uppercase">Duración Parte:</span>
-                        <select id="timer-duration" class="form-input text-center w-28 !p-1 text-sm bg-black/50 text-white border border-white/10" onchange="updateTimerDuration()">
-                            <option value="20">20 min</option>
-                            <option value="25">25 min</option>
-                            <option value="30">30 min</option>
-                            <option value="35">35 min</option>
-                            <option value="40" selected>40 min</option>
-                            <option value="45">45 min</option>
-                        </select>
+
+                        <!-- Selector compacto de periodo -->
+                        <div class="period-selector flex flex-wrap gap-1 p-1 bg-black/60 rounded-xl border border-white/5">
+                            <button class="period-btn btn active text-[10px] px-2.5 py-1.5 h-auto font-bold" data-period="1ª PARTE" onclick="setPeriod(this)">1ªP</button>
+                            <button class="period-btn btn text-[10px] px-2.5 py-1.5 h-auto font-bold" data-period="2ª PARTE" onclick="setPeriod(this)">2ªP</button>
+                            <button class="period-btn btn text-[10px] px-2.5 py-1.5 h-auto font-bold" data-period="DESCANSO" onclick="setPeriod(this)">DESC</button>
+                            <button class="period-btn btn text-[10px] px-2.5 py-1.5 h-auto font-bold" data-period="PRÓRROGA" onclick="setPeriod(this)">PRÓR</button>
+                            <button class="period-btn btn text-[10px] px-2.5 py-1.5 h-auto font-bold" data-period="FINAL" onclick="setPeriod(this)">FIN</button>
+                        </div>
                     </div>
 
-                    <!-- Ajuste manual de tiempo -->
-                    <div class="flex justify-center items-center gap-2 mb-4 bg-black/30 p-2 rounded-xl border border-white/5">
-                        <input type="number" id="manual-min" class="form-input text-center w-16 !p-1 text-lg" placeholder="Min" min="0" max="99">
-                        <span class="text-white font-bold text-xl">:</span>
-                        <input type="number" id="manual-sec" class="form-input text-center w-16 !p-1 text-lg" placeholder="Seg" min="0" max="59">
-                        <button class="btn btn-primary btn-sm px-4" onclick="setManualTime()">FIJAR</button>
-                    </div>
-
-                    <div class="flex flex-wrap justify-center gap-2 mb-8">
-                        <button class="btn btn-sm bg-white/5 border-white/10 px-3" onclick="adjustTime(-60)">-1m</button>
-                        <button class="btn btn-sm bg-white/5 border-white/10 px-3" onclick="adjustTime(-5)">-5s</button>
-                        <button class="btn btn-sm bg-white/5 border-white/10 px-3" onclick="adjustTime(-1)">-1s</button>
-                        <button class="btn btn-sm bg-white/5 border-white/10 px-3" onclick="adjustTime(1)">+1s</button>
-                        <button class="btn btn-sm bg-white/5 border-white/10 px-3" onclick="adjustTime(5)">+5s</button>
-                        <button class="btn btn-sm bg-white/5 border-white/10 px-3" onclick="adjustTime(60)">+1m</button>
-                    </div>
-                    <div class="grid grid-cols-2 gap-3 mb-6 p-1 bg-black/40 rounded-2xl border border-white/5">
-                        <button class="btn btn-sm py-3 flex flex-col items-center gap-1 rounded-xl transition-all" id="dir-up-btn" onclick="setTimerDirection('up')">
-                            <span class="text-xs font-bold">PROGRESIVO</span>
-                            <span class="text-[10px] opacity-60">00:00 → MAX</span>
-                        </button>
-                        <button class="btn btn-sm py-3 flex flex-col items-center gap-1 rounded-xl transition-all" id="dir-down-btn" onclick="setTimerDirection('down')">
-                            <span class="text-xs font-bold">REGRESIVO</span>
-                            <span class="text-[10px] opacity-60">MAX → 00:00</span>
-                        </button>
-                    </div>
-
-                    <div class="space-y-3 mb-8">
-                        <button class="btn btn-success btn-lg w-full h-20 rounded-3xl text-2xl flex items-center justify-center gap-3 shadow-lg" id="timer-play-btn" onclick="toggleTimer()">
+                    <!-- Fila de mandos de juego inmediatos -->
+                    <div class="grid grid-cols-12 gap-2 pt-1">
+                        <!-- Iniciar / Pausar (Principal) -->
+                        <button class="btn btn-success col-span-12 sm:col-span-6 h-14 rounded-2xl text-lg font-black flex items-center justify-center gap-2 shadow-lg" id="timer-play-btn" onclick="toggleTimer()">
                             <span>▶️ Iniciar</span>
                         </button>
-                        <div class="grid grid-cols-2 gap-3">
-                            <button class="btn btn-warning btn-lg h-16 rounded-2xl text-base font-bold flex items-center justify-center gap-2 bg-yellow-500/20 text-yellow-300 border border-yellow-500/30 hover:bg-yellow-500/30" onclick="resetClockToZero()" title="Pone el reloj en 00:00 sin borrar goles">
-                                <span>⏱️ Volver a 0</span>
-                            </button>
-                            <button class="btn btn-secondary btn-lg h-16 rounded-2xl text-base font-bold flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white" onclick="resetTimer()" title="Reinicia el tiempo y borra los goleadores">
-                                <span>🔄 Reiniciar Todo</span>
-                            </button>
-                        </div>
+                        <!-- Volver a 0 -->
+                        <button class="btn btn-warning col-span-6 sm:col-span-3 h-14 rounded-2xl text-xs font-black flex items-center justify-center gap-1.5 bg-yellow-500/20 text-yellow-300 border border-yellow-500/30 hover:bg-yellow-500/30" onclick="resetClockToZero()" title="Pone el reloj en 00:00 sin borrar goles">
+                            <span>⏱️ Volver a 0</span>
+                        </button>
+                        <!-- Reiniciar Todo -->
+                        <button class="btn btn-secondary col-span-6 sm:col-span-3 h-14 rounded-2xl text-xs font-bold flex items-center justify-center gap-1 bg-white/10 hover:bg-white/20 text-white" onclick="resetTimer()" title="Reinicia el tiempo y borra los goleadores">
+                            <span>🔄 Reiniciar Todo</span>
+                        </button>
                     </div>
 
-                    <div class="bg-black/30 p-4 rounded-3xl border border-white/5 mb-4">
-                        <label class="block text-[10px] font-bold text-cdpa-muted uppercase tracking-widest mb-3 ml-1">Tiempo de Descuento</label>
-                        <div class="flex items-center gap-3">
-                            <div class="flex-1 flex items-center gap-2 bg-white/5 p-2 rounded-2xl border border-white/5">
-                                <span class="text-2xl ml-2">+</span>
-                                <input type="number" id="added-time-input" class="bg-transparent border-none text-white text-3xl font-bold w-full focus:outline-none focus:ring-0 p-0" placeholder="0" min="0" max="20" oninput="setAddedTime(this.value)">
-                                <span class="text-xs font-bold text-cdpa-muted mr-3">MIN</span>
+                    <!-- Ajustes finos: +-1m, manual y descuento en una sola barra -->
+                    <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-white/5 text-xs">
+                        <div class="flex items-center gap-1">
+                            <button class="btn btn-sm px-2.5 py-1 text-[10px] bg-white/5 border border-white/10" onclick="adjustTime(-60)">-1m</button>
+                            <button class="btn btn-sm px-2.5 py-1 text-[10px] bg-white/5 border border-white/10" onclick="adjustTime(60)">+1m</button>
+                            <div class="flex items-center gap-1 ml-2">
+                                <input type="number" id="manual-min" class="form-input text-center w-12 !p-0.5 text-xs" placeholder="Min" min="0" max="99">
+                                <span>:</span>
+                                <input type="number" id="manual-sec" class="form-input text-center w-12 !p-0.5 text-xs" placeholder="Seg" min="0" max="59">
+                                <button class="btn btn-primary btn-sm px-2 py-1 text-[9px]" onclick="setManualTime()">Fijar</button>
                             </div>
-                            <button class="btn btn-lg px-6 py-4 rounded-2xl border-2 border-white/10 flex items-center justify-center transition-all" id="added-time-toggle" onclick="toggleAddedTime()">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+                        </div>
+
+                        <!-- Descuento -->
+                        <div class="flex items-center gap-2 bg-white/5 px-2.5 py-1 rounded-xl border border-white/5">
+                            <span class="text-[9px] font-bold text-cdpa-muted">DESCUENTO:</span>
+                            <span class="text-xs font-bold">+</span>
+                            <input type="number" id="added-time-input" class="bg-transparent border-none text-white text-xs font-bold w-7 p-0 text-center focus:outline-none" placeholder="0" min="0" max="20" oninput="setAddedTime(this.value)">
+                            <span class="text-[9px] text-cdpa-muted">MIN</span>
+                            <button class="p-1 rounded bg-white/5 hover:bg-white/10 text-xs" id="added-time-toggle" onclick="toggleAddedTime()" title="Mostrar/Ocultar descuento en marcador">
+                                ⏱️
                             </button>
-                        </div>
-                    </div>
-
-                    <div class="period-selector grid grid-cols-7 gap-1.5 p-1 bg-black/50 rounded-2xl border border-white/5">
-                        <button class="period-btn btn active text-[10px] px-0 h-12" data-period="1ª PARTE" onclick="setPeriod(this)">1ª P</button>
-                        <button class="period-btn btn text-[10px] px-0 h-12" data-period="2ª PARTE" onclick="setPeriod(this)">2ª P</button>
-                        <button class="period-btn btn text-[10px] px-0 h-12" data-period="3ª PARTE" onclick="setPeriod(this)">3ª P</button>
-                        <button class="period-btn btn text-[10px] px-0 h-12" data-period="4ª PARTE" onclick="setPeriod(this)">4ª P</button>
-                        <button class="period-btn btn text-[10px] px-0 h-12" data-period="DESCANSO" onclick="setPeriod(this)">DESC</button>
-                        <button class="period-btn btn text-[10px] px-0 h-12" data-period="PRÓRROGA" onclick="setPeriod(this)">PRÓR</button>
-                        <button class="period-btn btn text-[10px] px-0 h-12" data-period="FINAL" onclick="setPeriod(this)">FIN</button>
-                    </div>
-
-                    <!-- Tournament & Halftime Config -->
-                    <div class="mt-4 space-y-3 p-3 bg-black/30 rounded-2xl border border-white/5">
-                        <h3 class="text-[10px] font-black text-cdpa-yellow uppercase tracking-[0.2em]">🏆 Etiqueta del Partido</h3>
-                        <input type="text" id="tournament-name-input" class="form-input text-xs" placeholder="Ej: Liga Intercomarcal, Copa Navarra..." oninput="updateTournamentName()">
-                        <input type="text" id="halftime-team-input" class="form-input text-xs" placeholder="Subtítulo Descanso: Ej: Infantil, Cadete..." oninput="updateHalftimeTeamName()">
-                        <p class="text-[9px] text-gray-600 italic">El nombre aparece arriba del marcador. El subtítulo se muestra en la pantalla de DESCANSO.</p>
-                    </div>
-
-                    <!-- Sponsor Fullscreen & Ads Management -->
-                    <div class="mt-4 space-y-3 p-3 bg-black/30 rounded-2xl border border-white/5">
-                        <div class="flex items-center justify-between">
-                            <h3 class="text-[10px] font-black text-cdpa-yellow uppercase tracking-[0.2em]">📢 Patrocinadores a Pantalla Completa</h3>
-                            <button id="sponsor-sync-btn" class="px-2 py-0.5 text-[10px] font-bold rounded-full border border-white/10 bg-white/5 text-gray-400" onclick="toggleSponsorAutoSync()">
-                                ⚪ Auto: Inactivo
-                            </button>
-                        </div>
-                        
-                        <!-- Configuración de Tiempos -->
-                        <div class="grid grid-cols-2 gap-2 bg-black/20 p-2 rounded-xl border border-white/5">
-                            <div>
-                                <label class="block text-[9px] text-gray-400 font-bold mb-1">Cada cuántos min:</label>
-                                <div class="flex items-center gap-1">
-                                    <input type="number" id="sponsor-interval-mins" class="form-input text-center text-xs py-1" value="5" min="1" max="45" onchange="updateSponsorConfig()">
-                                    <span class="text-[10px] text-gray-500">min</span>
-                                </div>
-                            </div>
-                            <div>
-                                <label class="block text-[9px] text-gray-400 font-bold mb-1">Duración en pantalla:</label>
-                                <div class="flex items-center gap-1">
-                                    <input type="number" id="sponsor-duration-secs" class="form-input text-center text-xs py-1" value="6" min="2" max="30" onchange="updateSponsorConfig()">
-                                    <span class="text-[10px] text-gray-500">seg</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Botones de Acción Inmediata -->
-                        <div class="grid grid-cols-2 gap-2">
-                            <button class="btn btn-warning text-xs font-bold py-2 flex items-center justify-center gap-1 shadow" onclick="triggerNextSponsorFullscreen()">
-                                <span>▶️ Proyectar Ahora</span>
-                            </button>
-                            <button class="btn btn-secondary text-xs font-bold py-2 flex items-center justify-center gap-1" onclick="hideSponsorFullscreen()">
-                                <span>✕ Ocultar</span>
-                            </button>
-                        </div>
-
-                        <!-- Añadir nuevo patrocinador -->
-                        <div class="space-y-1">
-                            <label class="block text-[9px] text-gray-500 font-bold">Añadir patrocinador:</label>
-                            <div class="flex gap-1">
-                                <input type="text" id="sponsor-name-input" class="form-input text-xs flex-1" placeholder="Nombre (Ej: Bodega...)">
-                                <input type="text" id="sponsor-logo-input" class="form-input text-xs flex-1" placeholder="URL del Logo">
-                                <button class="btn btn-success text-xs px-3 font-bold" onclick="addSponsorLogo()">+</button>
-                            </div>
-                        </div>
-
-                        <!-- Lista de Patrocinadores -->
-                        <div id="sponsor-logos-list" class="max-h-32 overflow-y-auto space-y-1 bg-black/20 p-2 rounded-xl"></div>
-                    </div>
-
-                    <!-- Live Stream / Pinchar Vídeo en Pantalla -->
-                    <div class="mt-4 space-y-3 p-3 bg-red-950/20 rounded-2xl border border-red-500/20">
-                        <div class="flex items-center justify-between">
-                            <h3 class="text-[10px] font-black text-red-400 uppercase tracking-[0.2em] flex items-center gap-1">
-                                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-                                📺 Emisión en Directo (Live)
-                            </h3>
-                            <span id="live-status-badge" class="px-2 py-0.5 text-[9px] font-bold rounded-full bg-black/40 text-gray-400 border border-white/5">
-                                Inactivo
-                            </span>
-                        </div>
-                        
-                        <div class="space-y-2">
-                            <input type="text" id="live-url-input" class="form-input text-xs w-full" placeholder="URL directa: YouTube, stream de cámara o web..." value="">
-                            
-                            <div class="flex items-center justify-between px-1">
-                                <label class="flex items-center gap-2 text-[10px] text-gray-300 cursor-pointer">
-                                    <input type="checkbox" id="live-ticker-toggle" checked onchange="toggleLiveTicker()" class="rounded bg-black border-white/20 text-cdpa-yellow">
-                                    <span>Mostrar carrusel inferior de patrocinadores</span>
-                                </label>
-                            </div>
-
-                            <div class="grid grid-cols-2 gap-2 pt-1">
-                                <button id="live-start-btn" class="btn btn-danger text-xs font-bold py-2 flex items-center justify-center gap-1 shadow-lg shadow-red-900/40" onclick="startLiveBroadcast()">
-                                    <span>🔴 Pinchar en Pantalla</span>
-                                </button>
-                                <button id="live-stop-btn" class="btn btn-secondary text-xs font-bold py-2 flex items-center justify-center gap-1" onclick="stopLiveBroadcast()">
-                                    <span>⏹️ Quitar Directo</span>
-                                </button>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card" id="squads-card">
-                <div class="card-header">
-                    <div class="flex items-center gap-2">
-                        <div class="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-500">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            <!-- 2. DESPLEGABLE DE FUNCIONES AVANZADAS (Colapsable y muy ordenado) -->
+            <div class="card p-0 overflow-hidden border border-white/10 bg-black/40 shadow-xl col-span-12" id="advanced-card">
+                <button class="w-full p-3.5 flex items-center justify-between text-left bg-gradient-to-r from-white/5 to-transparent hover:bg-white/10 transition-all cursor-pointer" onclick="toggleAdvancedPanel()">
+                    <div class="flex items-center gap-2.5">
+                        <span class="w-7 h-7 rounded-lg bg-cdpa-yellow/10 flex items-center justify-center text-cdpa-yellow font-bold text-xs">⚙️</span>
+                        <div>
+                            <h3 class="text-xs font-black uppercase tracking-[0.2em] text-white">Funciones Avanzadas</h3>
+                            <p class="text-[9px] text-gray-400">Alineaciones, Cambios, Tarjetas, Trío Arbitral y Resumen</p>
                         </div>
-                        <h2>👥 Plantillas <span id="squads-card-field-indicator" class="text-xs font-bold text-cdpa-yellow ml-2 bg-cdpa-yellow/10 px-2 py-0.5 rounded-full border border-cdpa-yellow/20 hidden">Campo 1</span></h2>
                     </div>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="space-y-4">
-                        <div class="tabs p-1 bg-white/5 rounded-xl border border-white/5">
-                            <button class="tab active flex-1 py-2 text-[10px]" onclick="switchRosterTab('manage', this)">EDITOR</button>
-                            <button class="tab flex-1 py-2 text-[10px]" onclick="switchRosterTab('load', this)">BIBLIOTECA</button>
-                        </div>
-                        <div class="tab-content active" id="roster-manage">
-                            <div class="space-y-4">
-                                <input type="text" id="roster-team-name" class="form-input" placeholder="Nombre Plantilla">
-                                <input type="text" id="roster-coach-name" class="form-input" placeholder="Entrenador">
-                                <div class="flex gap-2">
-                                    <input type="number" id="roster-dorsal" class="form-input w-16 text-center" placeholder="#">
-                                    <input type="text" id="roster-player-name" class="form-input flex-1" placeholder="Nombre Jugador">
+                    <span id="advanced-chevron" class="text-xs font-bold text-cdpa-yellow px-2.5 py-1 rounded bg-white/5 border border-white/5">▼ Desplegar</span>
+                </button>
+
+                <!-- Contenido colapsable (oculto por defecto) -->
+                <div id="advanced-panel-content" class="hidden p-4 border-t border-white/5 space-y-4">
+                    <!-- Pestañas de funciones avanzadas -->
+                    <div class="flex flex-wrap gap-1 bg-black/50 p-1 rounded-xl border border-white/5">
+                        <button class="adv-tab-btn btn active text-[10px] flex-1 py-2 font-bold" data-tab="squads" onclick="switchAdvancedTab('squads', this)">👥 Plantillas</button>
+                        <button class="adv-tab-btn btn text-[10px] flex-1 py-2 font-bold" data-tab="subs" onclick="switchAdvancedTab('subs', this)">🔄 Cambios</button>
+                        <button class="adv-tab-btn btn text-[10px] flex-1 py-2 font-bold" data-tab="cards" onclick="switchAdvancedTab('cards', this)">🟨 Tarjetas</button>
+                        <button class="adv-tab-btn btn text-[10px] flex-1 py-2 font-bold" data-tab="referees" onclick="switchAdvancedTab('referees', this)">⚖️ Árbitros</button>
+                        <button class="adv-tab-btn btn text-[10px] flex-1 py-2 font-bold" data-tab="summary" onclick="switchAdvancedTab('summary', this)">📊 Resumen & Torneo</button>
+                    </div>
+
+                    <!-- TAB 1: Plantillas y Alineaciones -->
+                    <div id="adv-tab-squads" class="adv-tab-content space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="space-y-3 bg-black/20 p-3 rounded-2xl border border-white/5">
+                                <div class="tabs p-1 bg-white/5 rounded-xl border border-white/5">
+                                    <button class="tab active flex-1 py-1.5 text-[10px]" onclick="switchRosterTab('manage', this)">EDITOR</button>
+                                    <button class="tab flex-1 py-1.5 text-[10px]" onclick="switchRosterTab('load', this)">BIBLIOTECA</button>
                                 </div>
-                                <div class="flex gap-2">
-                                    <input type="text" id="roster-player-photo" class="form-input flex-1 text-xs" placeholder="URL Foto (Opcional)">
-                                    <button class="btn btn-success" onclick="addRosterPlayer()">+</button>
-                                </div>
-                                <div id="roster-players" class="max-h-40 overflow-y-auto space-y-1 bg-black/20 p-2 rounded-xl"></div>
-                                <div class="grid grid-cols-2 gap-2">
-                                    <button class="btn btn-primary text-xs" onclick="saveRoster()">GUARDAR</button>
-                                    <button class="btn text-xs" onclick="clearRosterEditor()">LIMPIAR</button>
-                                </div>
-                                <div class="mt-4 pt-4 border-t border-white/5">
-                                    <label class="block text-[10px] font-black text-cdpa-yellow uppercase mb-2">Importación Rápida</label>
-                                    <div class="flex gap-2">
-                                        <button class="btn btn-sm bg-green-500/10 text-green-500 border-green-500/20 flex-1 py-3 text-[10px] font-bold" onclick="document.getElementById('roster-file-input').click()">
-                                            📥 IMPORTAR EXCEL / CSV
-                                        </button>
-                                        <input type="file" id="roster-file-input" class="hidden" accept=".xlsx, .xls, .csv" onchange="importRosterFromFile(event)">
+                                <div class="tab-content active" id="roster-manage">
+                                    <div class="space-y-3">
+                                        <input type="text" id="roster-team-name" class="form-input text-xs" placeholder="Nombre Plantilla">
+                                        <input type="text" id="roster-coach-name" class="form-input text-xs" placeholder="Entrenador">
+                                        <div class="flex gap-2">
+                                            <input type="number" id="roster-dorsal" class="form-input w-16 text-center text-xs" placeholder="#">
+                                            <input type="text" id="roster-player-name" class="form-input flex-1 text-xs" placeholder="Nombre Jugador">
+                                        </div>
+                                        <div class="flex gap-2">
+                                            <input type="text" id="roster-player-photo" class="form-input flex-1 text-xs" placeholder="URL Foto (Opcional)">
+                                            <button class="btn btn-success text-xs px-3" onclick="addRosterPlayer()">+</button>
+                                        </div>
+                                        <div id="roster-players" class="max-h-36 overflow-y-auto space-y-1 bg-black/30 p-2 rounded-xl"></div>
+                                        <div class="grid grid-cols-2 gap-2">
+                                            <button class="btn btn-primary text-xs py-2" onclick="saveRoster()">GUARDAR</button>
+                                            <button class="btn text-xs py-2" onclick="clearRosterEditor()">LIMPIAR</button>
+                                        </div>
+                                        <div class="pt-2 border-t border-white/5">
+                                            <button class="btn btn-sm bg-green-500/10 text-green-500 border-green-500/20 w-full py-2 text-[10px] font-bold" onclick="document.getElementById('roster-file-input').click()">
+                                                📥 IMPORTAR EXCEL / CSV
+                                            </button>
+                                            <input type="file" id="roster-file-input" class="hidden" accept=".xlsx, .xls, .csv" onchange="importRosterFromFile(event)">
+                                        </div>
                                     </div>
-                                    <p class="text-[9px] text-white/30 mt-2 text-center italic">Columnas: Dorsal, Nombre (o formato simple)</p>
+                                </div>
+                                <div class="tab-content hidden" id="roster-load">
+                                    <div id="saved-rosters-list" class="space-y-2 max-h-48 overflow-y-auto"></div>
+                                </div>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="p-3 bg-black/20 rounded-2xl border border-white/5">
+                                    <h4 class="text-[10px] font-black text-cdpa-yellow uppercase mb-2">ASIGNAR A CAMPO</h4>
+                                    <div class="grid grid-cols-2 gap-2">
+                                        <button class="btn flex flex-col items-center py-3" onclick="assignRosterToSide('home')">
+                                            <span class="text-[8px] opacity-40">A</span>
+                                            <span class="font-bold text-xs">LOCAL</span>
+                                        </button>
+                                        <button class="btn flex flex-col items-center py-3" onclick="assignRosterToSide('away')">
+                                            <span class="text-[8px] opacity-40">A</span>
+                                            <span class="font-bold text-xs">VISITANTE</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="p-3 bg-black/20 rounded-2xl border border-white/5">
+                                    <h4 class="text-[10px] font-black text-cdpa-yellow uppercase mb-2">PROYECTAR 11 INICIAL</h4>
+                                    <div class="grid grid-cols-2 gap-2">
+                                        <button class="btn text-xs font-bold py-2.5" onclick="triggerGraphic('lineup', 'home')">11 LOCAL</button>
+                                        <button class="btn text-xs font-bold py-2.5" onclick="triggerGraphic('lineup', 'away')">11 VISITANTE</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-content hidden" id="roster-load">
-                            <div id="saved-rosters-list" class="space-y-2 max-h-60 overflow-y-auto"></div>
+                    </div>
+
+                    <!-- TAB 2: Cambios / Sustituciones -->
+                    <div id="adv-tab-subs" class="adv-tab-content hidden space-y-3">
+                        <div class="p-3 bg-black/20 rounded-2xl border border-white/5 space-y-3">
+                            <h4 class="text-[10px] font-black text-green-400 uppercase tracking-widest">Lanzar Sustitución en Pantalla</h4>
+                            <div class="grid grid-cols-2 gap-2">
+                                <input type="text" id="sub-out-name" class="form-input text-xs" placeholder="🔴 Sale (Jugador)">
+                                <input type="text" id="sub-in-name" class="form-input text-xs" placeholder="🟢 Entra (Jugador)">
+                            </div>
+                            <div class="grid grid-cols-2 gap-2 pt-1">
+                                <button class="btn btn-success text-xs font-black py-2.5" onclick="triggerGraphic('substitution', 'home')">CAMBIO LOCAL</button>
+                                <button class="btn btn-success text-xs font-black py-2.5" onclick="triggerGraphic('substitution', 'away')">CAMBIO VISITANTE</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="space-y-4">
-                        <div class="p-4 bg-white/5 rounded-2xl border border-white/5">
-                            <h3 class="text-[10px] font-black text-cdpa-yellow uppercase mb-3">ASIGNAR A CAMPO</h3>
-                            <div class="grid grid-cols-2 gap-2">
-                                <button class="btn flex flex-col items-center py-4" onclick="assignRosterToSide('home')">
-                                    <span class="text-[8px] opacity-40">A</span>
-                                    <span class="font-bold">LOCAL</span>
-                                </button>
-                                <button class="btn flex flex-col items-center py-4" onclick="assignRosterToSide('away')">
-                                    <span class="text-[8px] opacity-40">A</span>
-                                    <span class="font-bold">VISITANTE</span>
-                                </button>
+
+                    <!-- TAB 3: Tarjetas Visuales -->
+                    <div id="adv-tab-cards" class="adv-tab-content hidden space-y-3">
+                        <div class="p-3 bg-black/20 rounded-2xl border border-white/5 space-y-3">
+                            <h4 class="text-[10px] font-black text-yellow-400 uppercase tracking-widest">Lanzar Tarjeta Visual</h4>
+                            <div class="flex gap-2">
+                                <input type="text" id="card-player-name" class="form-input text-xs flex-1" placeholder="Nombre del Jugador sancionado">
+                                <select id="card-color" class="form-input text-xs w-28">
+                                    <option value="yellow">🟨 Amarilla</option>
+                                    <option value="red">🟥 Roja</option>
+                                </select>
+                            </div>
+                            <div class="grid grid-cols-2 gap-2 pt-1">
+                                <button class="btn btn-primary text-xs font-black py-2.5" onclick="triggerGraphic('card', 'home')">TARJETA LOCAL</button>
+                                <button class="btn btn-primary text-xs font-black py-2.5" onclick="triggerGraphic('card', 'away')">TARJETA VISITANTE</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 4: Trío Arbitral y Entrenadores -->
+                    <div id="adv-tab-referees" class="adv-tab-content hidden space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="p-3 bg-black/20 rounded-2xl border border-white/5 space-y-2">
+                                <h4 class="text-[10px] font-black text-cdpa-yellow uppercase tracking-widest">Trío Arbitral</h4>
+                                <input type="text" id="ref-main" class="form-input text-xs" placeholder="Árbitro Principal">
+                                <div class="grid grid-cols-2 gap-2">
+                                    <input type="text" id="ref-as1" class="form-input text-xs" placeholder="Asistente 1">
+                                    <input type="text" id="ref-as2" class="form-input text-xs" placeholder="Asistente 2">
+                                </div>
+                                <button class="btn btn-primary w-full text-xs font-black py-2.5 mt-1" onclick="triggerGraphic('referees')">LANZAR ÁRBITROS</button>
+                            </div>
+                            <div class="p-3 bg-black/20 rounded-2xl border border-white/5 space-y-2">
+                                <h4 class="text-[10px] font-black text-cdpa-yellow uppercase tracking-widest">Entrenadores</h4>
+                                <input type="text" id="home-coach-input" class="form-input text-xs" placeholder="Entrenador Local" onchange="updateCoach('home', this.value)">
+                                <input type="text" id="away-coach-input" class="form-input text-xs" placeholder="Entrenador Visitante" onchange="updateCoach('away', this.value)">
+                                <div class="grid grid-cols-2 gap-2 mt-1">
+                                    <button class="btn text-xs font-bold py-2" onclick="triggerGraphic('coach', 'home')">MÍSTER LOCAL</button>
+                                    <button class="btn text-xs font-bold py-2" onclick="triggerGraphic('coach', 'away')">MÍSTER VISIT.</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 5: Resumen y Configuración de Torneo -->
+                    <div id="adv-tab-summary" class="adv-tab-content hidden space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="p-3 bg-black/20 rounded-2xl border border-white/5 space-y-2">
+                                <h4 class="text-[10px] font-black text-cdpa-yellow uppercase tracking-widest">Etiqueta de Competición</h4>
+                                <input type="text" id="tournament-name-input" class="form-input text-xs" placeholder="Ej: 3ª RFEF, Copa Navarra..." oninput="updateTournamentName()">
+                                <input type="text" id="halftime-team-input" class="form-input text-xs" placeholder="Subtítulo Descanso: Ej: Juvenil, Cadete..." oninput="updateHalftimeTeamName()">
+                            </div>
+                            <div class="p-3 bg-black/20 rounded-2xl border border-white/5 space-y-2">
+                                <h4 class="text-[10px] font-black text-cdpa-yellow uppercase tracking-widest">Acciones de Pantalla</h4>
+                                <button class="btn btn-primary w-full text-xs font-black py-2.5" onclick="triggerGraphic('summary')">MOSTRAR RESUMEN FINAL</button>
+                                <button class="btn btn-danger w-full text-xs font-black py-2" onclick="hideAllGraphics()">OCULTAR TODOS LOS GRÁFICOS</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card col-span-12" id="graphics-card">
-                <div class="card-header">
-                    <h2>🎨 Gráficos Especiales</h2>
-                    <button class="btn btn-danger py-1 px-3 text-[9px]" onclick="hideAllGraphics()">OCULTAR TODO</button>
+            <!-- 3. PUBLICIDAD Y PATROCINADORES A PANTALLA COMPLETA (FOTO Y VÍDEO) -->
+            <div class="card p-4 space-y-3 bg-black/30 rounded-2xl border border-white/5 col-span-12" id="sponsors-card">
+                <div class="flex items-center justify-between">
+                    <h3 class="text-xs font-black text-cdpa-yellow uppercase tracking-[0.2em] flex items-center gap-1.5">
+                        <span>📢</span> Publicidad a Pantalla Completa (Foto / Vídeo)
+                    </h3>
+                    <button id="sponsor-sync-btn" class="px-2.5 py-1 text-[10px] font-bold rounded-full border border-white/10 bg-white/5 text-gray-400 cursor-pointer" onclick="toggleSponsorAutoSync()">
+                        ⚪ Auto: Inactivo
+                    </button>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <!-- Referees -->
-                    <div class="bg-white/5 p-4 rounded-2xl border border-white/5 shadow-xl">
-                        <h3 class="text-[10px] font-black text-cdpa-yellow uppercase mb-3 tracking-[0.2em]">Trío Arbitral</h3>
-                        <div class="space-y-2 mb-4">
-                            <input type="text" id="ref-main" class="form-input text-xs" placeholder="Árbitro Principal">
-                            <div class="grid grid-cols-2 gap-2">
-                                <input type="text" id="ref-as1" class="form-input text-[10px]" placeholder="Asistente 1">
-                                <input type="text" id="ref-as2" class="form-input text-[10px]" placeholder="Asistente 2">
-                            </div>
-                        </div>
-                        <button class="btn btn-primary w-full text-xs font-black py-3" onclick="triggerGraphic('referees')">LANZAR ÁRBITROS</button>
-                    </div>
 
-                    <!-- Lineups -->
-                    <div class="bg-white/5 p-4 rounded-2xl border border-white/5">
-                        <h3 class="text-[10px] font-black text-gray-500 uppercase mb-3">Alineaciones</h3>
-                        <div class="grid grid-cols-2 gap-2 mb-4">
-                            <button class="btn text-xs font-bold py-3" onclick="triggerGraphic('lineup', 'home')">LOCAL</button>
-                            <button class="btn text-xs font-bold py-3" onclick="triggerGraphic('lineup', 'away')">VISITANTE</button>
-                        </div>
-                        <p class="text-[9px] text-gray-600 italic text-center">Muestra el 11 inicial completo</p>
-                    </div>
-
-                    <!-- Coaches -->
-                    <div class="bg-white/5 p-4 rounded-2xl border border-white/5">
-                        <h3 class="text-[10px] font-black text-gray-500 uppercase mb-3">Entrenadores</h3>
-                        <div class="grid grid-cols-2 gap-2 mb-4">
-                            <button class="btn text-xs font-bold py-3" onclick="triggerGraphic('coach', 'home')">MÍSTER LOCAL</button>
-                            <button class="btn text-xs font-bold py-3" onclick="triggerGraphic('coach', 'away')">MÍSTER VISI.</button>
-                        </div>
-                        <p class="text-[9px] text-gray-600 italic text-center">Lanza el gráfico individual del míster</p>
-                    </div>
-
-                    <!-- Substitution -->
-                    <div class="bg-white/5 p-4 rounded-2xl border border-white/5">
-                        <h3 class="text-[10px] font-black text-gray-500 uppercase mb-3">Sustitución</h3>
-                        <div class="grid grid-cols-2 gap-2 mb-4">
-                            <input type="text" id="sub-out-name" class="form-input text-xs" placeholder="Sale">
-                            <input type="text" id="sub-in-name" class="form-input text-xs" placeholder="Entra">
-                        </div>
-                        <div class="grid grid-cols-2 gap-2">
-                            <button class="btn btn-success text-xs font-black py-3" onclick="triggerGraphic('substitution', 'home')">CAMBIO LOC.</button>
-                            <button class="btn btn-success text-xs font-black py-3" onclick="triggerGraphic('substitution', 'away')">CAMBIO VIS.</button>
+                <!-- Configuración de Tiempos y Auto-Salto -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 bg-black/40 p-2.5 rounded-xl border border-white/5">
+                    <div>
+                        <label class="block text-[9px] text-gray-400 font-bold mb-1">Cada cuántos min de juego:</label>
+                        <div class="flex items-center gap-1">
+                            <input type="number" id="sponsor-interval-mins" class="form-input text-center text-xs py-1" value="5" min="1" max="45" onchange="updateSponsorConfig()">
+                            <span class="text-[10px] text-gray-500">min</span>
                         </div>
                     </div>
-
-                    <!-- Card -->
-                    <div class="bg-white/5 p-4 rounded-2xl border border-white/5">
-                        <h3 class="text-[10px] font-black text-gray-500 uppercase mb-3">Tarjeta Visual</h3>
-                        <div class="flex gap-2 mb-4">
-                            <input type="text" id="card-player-name" class="form-input text-xs flex-1" placeholder="Jugador">
-                            <select id="card-color" class="form-input text-xs w-24">
-                                <option value="yellow">Amarilla</option>
-                                <option value="red">Roja</option>
-                            </select>
-                        </div>
-                        <div class="grid grid-cols-2 gap-2">
-                            <button class="btn btn-primary text-xs font-black py-3" onclick="triggerGraphic('card', 'home')">TARJETA LOC.</button>
-                            <button class="btn btn-primary text-xs font-black py-3" onclick="triggerGraphic('card', 'away')">TARJETA VIS.</button>
+                    <div>
+                        <label class="block text-[9px] text-gray-400 font-bold mb-1">Duración en pantalla:</label>
+                        <div class="flex items-center gap-1">
+                            <input type="number" id="sponsor-duration-secs" class="form-input text-center text-xs py-1" value="6" min="2" max="30" onchange="updateSponsorConfig()">
+                            <span class="text-[10px] text-gray-500">seg</span>
                         </div>
                     </div>
-
-                    <!-- Summary -->
-                    <div class="bg-gradient-to-br from-cdpa-yellow/10 to-transparent p-4 rounded-2xl border border-cdpa-yellow/10">
-                        <h3 class="text-[10px] font-black text-cdpa-yellow uppercase mb-3">Resumen Final</h3>
-                        <button class="btn btn-primary w-full text-xs font-black py-3 shadow-lg shadow-cdpa-yellow/10" onclick="triggerGraphic('summary')">MOSTRAR RESUMEN</button>
+                    <div class="flex flex-col justify-center">
+                        <label class="flex items-center gap-2 text-[10px] text-gray-300 cursor-pointer mt-2">
+                            <input type="checkbox" id="sponsor-halftime-toggle" checked onchange="updateSponsorConfig()" class="rounded bg-black border-white/20 text-cdpa-yellow">
+                            <span>Auto-salto en Descanso y Final</span>
+                        </label>
                     </div>
                 </div>
-            </div>
 
-            <div class="card" id="danger-card">
-                <div class="card-header">
-                    <h2>⚙️ Acciones</h2>
-                </div>
+                <!-- Botones de Acción Inmediata -->
                 <div class="grid grid-cols-2 gap-2">
-                    <button class="btn bg-red-500/10 text-red-500 border-red-500/20 text-[10px]" onclick="resetMatch()">🔄 REINICIAR</button>
-                    <button class="btn text-[10px]" onclick="undoLastAction()">↩️ DESHACER</button>
+                    <button class="btn btn-warning text-xs font-bold py-2.5 flex items-center justify-center gap-1 shadow" onclick="triggerNextSponsorFullscreen()">
+                        <span>▶️ Proyectar Ahora</span>
+                    </button>
+                    <button class="btn btn-secondary text-xs font-bold py-2.5 flex items-center justify-center gap-1" onclick="hideSponsorFullscreen()">
+                        <span>✕ Ocultar Pantalla Completa</span>
+                    </button>
+                </div>
+
+                <!-- Formulario Añadir Patrocinador con selector Foto / Vídeo -->
+                <div class="space-y-1.5 pt-1 border-t border-white/5">
+                    <label class="block text-[9px] text-gray-400 font-bold">Añadir Patrocinador / Anuncio:</label>
+                    <div class="flex flex-wrap sm:flex-nowrap gap-1.5">
+                        <select id="sponsor-type-select" class="form-input text-xs w-28 bg-black/60">
+                            <option value="image">📷 Foto / Logo</option>
+                            <option value="video">🎬 Vídeo (.mp4/web)</option>
+                        </select>
+                        <input type="text" id="sponsor-name-input" class="form-input text-xs flex-1" placeholder="Nombre (Ej: Bodegas Manzanos)">
+                        <input type="text" id="sponsor-logo-input" class="form-input text-xs flex-1" placeholder="URL de la imagen o del vídeo">
+                        <button class="btn btn-success text-xs px-4 font-bold" onclick="addSponsorLogo()">+ Añadir</button>
+                    </div>
+                </div>
+
+                <!-- Lista de Patrocinadores -->
+                <div id="sponsor-logos-list" class="max-h-36 overflow-y-auto space-y-1 bg-black/30 p-2 rounded-xl"></div>
+            </div>
+
+            <!-- 4. EMISIÓN EN DIRECTO (PINCHAR PANTALLA) -->
+            <div class="card p-4 space-y-3 bg-red-950/20 rounded-2xl border border-red-500/20 col-span-12" id="live-card">
+                <div class="flex items-center justify-between">
+                    <h3 class="text-xs font-black text-red-400 uppercase tracking-[0.2em] flex items-center gap-1.5">
+                        <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse"></span>
+                        📺 Emisión en Directo (Pinchar en Pantalla)
+                    </h3>
+                    <span id="live-status-badge" class="px-2.5 py-0.5 text-[9px] font-bold rounded-full bg-black/40 text-gray-400 border border-white/5">
+                        Inactivo
+                    </span>
+                </div>
+                
+                <div class="space-y-2">
+                    <input type="text" id="live-url-input" class="form-input text-xs w-full" placeholder="URL del directo: YouTube, stream .mp4 o web..." value="">
+                    
+                    <div class="flex items-center justify-between px-1">
+                        <label class="flex items-center gap-2 text-[10px] text-gray-300 cursor-pointer">
+                            <input type="checkbox" id="live-ticker-toggle" checked onchange="toggleLiveTicker()" class="rounded bg-black border-white/20 text-cdpa-yellow">
+                            <span>Mostrar carrusel inferior de patrocinadores durante el directo</span>
+                        </label>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-2 pt-1">
+                        <button id="live-start-btn" class="btn btn-danger text-xs font-bold py-2.5 flex items-center justify-center gap-1 shadow-lg shadow-red-900/40" onclick="startLiveBroadcast()">
+                            <span>🔴 Pinchar en Pantalla</span>
+                        </button>
+                        <button id="live-stop-btn" class="btn btn-secondary text-xs font-bold py-2.5 flex items-center justify-center gap-1" onclick="stopLiveBroadcast()">
+                            <span>⏹️ Quitar Directo</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. ACCIONES DE SEGURIDAD / RESET -->
+            <div class="card p-3 col-span-12 bg-black/20 border border-white/5 flex items-center justify-between" id="danger-card">
+                <span class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Acciones Rápidas:</span>
+                <div class="flex gap-2">
+                    <button class="btn text-[10px] px-3 py-1.5" onclick="undoLastAction()">↩️ Deshacer Último</button>
+                    <button class="btn bg-red-500/10 text-red-500 border border-red-500/20 text-[10px] px-3 py-1.5" onclick="resetMatch()">⚠️ Reiniciar Todo</button>
                 </div>
             </div>
         </div>

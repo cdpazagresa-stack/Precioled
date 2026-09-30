@@ -498,14 +498,44 @@ function renderSponsorFullscreenOverlay() {
         const title = document.getElementById('sponsor-fullscreen-title');
         const fill = document.getElementById('sponsor-progress-fill');
         
-        if (img) {
-            if (fs.logoUrl) {
-                img.src = fs.logoUrl;
-                img.style.display = 'block';
-            } else {
-                img.style.display = 'none';
+        const video = document.getElementById('sponsor-fullscreen-video');
+        const embed = document.getElementById('sponsor-fullscreen-embed');
+        
+        const isVideo = fs.mediaType === 'video' || (fs.logoUrl && /\.(mp4|webm|ogg)($|\?)/i.test(fs.logoUrl));
+        const isYouTube = fs.logoUrl && /(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|live\/|watch\?.+&v=))([\w-]{11})/.test(fs.logoUrl);
+
+        if (isYouTube) {
+            const ytMatch = fs.logoUrl.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|live\/|watch\?.+&v=))([\w-]{11})/);
+            const videoId = ytMatch ? ytMatch[1] : '';
+            if (embed) {
+                embed.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&mute=0&controls=0&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+                embed.style.display = 'block';
             }
+            if (img) img.style.display = 'none';
+            if (video) { video.pause(); video.style.display = 'none'; video.src = ''; }
+        } else if (isVideo) {
+            if (video) {
+                if (video.src !== fs.logoUrl) {
+                    video.src = fs.logoUrl;
+                }
+                video.style.display = 'block';
+                video.play().catch(() => {});
+            }
+            if (img) img.style.display = 'none';
+            if (embed) { embed.innerHTML = ''; embed.style.display = 'none'; }
+        } else {
+            if (img) {
+                if (fs.logoUrl) {
+                    img.src = fs.logoUrl;
+                    img.style.display = 'block';
+                } else {
+                    img.style.display = 'none';
+                }
+            }
+            if (video) { video.pause(); video.style.display = 'none'; video.src = ''; }
+            if (embed) { embed.innerHTML = ''; embed.style.display = 'none'; }
         }
+
         if (title) {
             if (fs.logoUrl) {
                 title.style.display = 'none';
@@ -525,6 +555,10 @@ function renderSponsorFullscreenOverlay() {
         }
     } else {
         overlay.style.display = 'none';
+        const video = document.getElementById('sponsor-fullscreen-video');
+        const embed = document.getElementById('sponsor-fullscreen-embed');
+        if (video) { video.pause(); video.src = ''; video.style.display = 'none'; }
+        if (embed) { embed.innerHTML = ''; embed.style.display = 'none'; }
     }
 }
 

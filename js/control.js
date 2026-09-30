@@ -234,6 +234,13 @@ function setPeriod(el) {
     if (period === 'DESCANSO' || period === 'FINAL') {
         matchTimer.pause(activeField);
         f.status = period === 'FINAL' ? 'finished' : 'halftime';
+        
+        // Auto-salto de patrocinador a pantalla completa en descanso / final
+        if (matchState.sponsorConfig?.autoHalftime !== false && matchState.sponsorConfig?.autoSync) {
+            setTimeout(() => {
+                triggerNextSponsorFullscreen();
+            }, 800);
+        }
     } else {
         f.status = f.timerRunning ? 'live' : 'pre_match';
     }
@@ -1216,12 +1223,15 @@ function toggleSponsorAutoSync() {
 
 function updateSponsorConfig() {
     if (!matchState.sponsorConfig) {
-        matchState.sponsorConfig = { autoSync: false, intervalMinutes: 5, exposureSeconds: 6, currentIndex: 0, lastBlock: 0 };
+        matchState.sponsorConfig = { autoSync: false, intervalMinutes: 5, exposureSeconds: 6, currentIndex: 0, lastBlock: 0, autoHalftime: true };
     }
     const intInput = document.getElementById('sponsor-interval-mins');
     const durInput = document.getElementById('sponsor-duration-secs');
+    const halfToggle = document.getElementById('sponsor-halftime-toggle');
+
     if (intInput) matchState.sponsorConfig.intervalMinutes = Math.max(1, parseInt(intInput.value) || 5);
     if (durInput) matchState.sponsorConfig.exposureSeconds = Math.max(2, parseInt(durInput.value) || 6);
+    if (halfToggle) matchState.sponsorConfig.autoHalftime = halfToggle.checked;
     broadcastState();
 }
 
@@ -1231,13 +1241,16 @@ function updateSponsorConfigUI() {
     if (btn) {
         btn.textContent = autoSync ? '🟢 Auto: Activo' : '⚪ Auto: Inactivo';
         btn.className = autoSync 
-            ? 'px-2 py-0.5 text-[10px] font-bold rounded-full border border-green-500/40 bg-green-500/20 text-green-400'
-            : 'px-2 py-0.5 text-[10px] font-bold rounded-full border border-white/10 bg-white/5 text-gray-400';
+            ? 'px-2.5 py-1 text-[10px] font-bold rounded-full border border-green-500/40 bg-green-500/20 text-green-400'
+            : 'px-2.5 py-1 text-[10px] font-bold rounded-full border border-white/10 bg-white/5 text-gray-400';
     }
     const intInput = document.getElementById('sponsor-interval-mins');
     const durInput = document.getElementById('sponsor-duration-secs');
+    const halfToggle = document.getElementById('sponsor-halftime-toggle');
+
     if (intInput && matchState.sponsorConfig?.intervalMinutes) intInput.value = matchState.sponsorConfig.intervalMinutes;
     if (durInput && matchState.sponsorConfig?.exposureSeconds) durInput.value = matchState.sponsorConfig.exposureSeconds;
+    if (halfToggle && matchState.sponsorConfig?.autoHalftime !== undefined) halfToggle.checked = matchState.sponsorConfig.autoHalftime;
 }
 
 function triggerNextSponsorFullscreen(sponsorId = null) {
@@ -1259,16 +1272,19 @@ function triggerNextSponsorFullscreen(sponsorId = null) {
     }
     
     const duration = matchState.sponsorConfig?.exposureSeconds || 6;
+    const isVideo = sponsor.mediaType === 'video' || (sponsor.logoUrl && /\.(mp4|webm|ogg)($|\?)/i.test(sponsor.logoUrl));
+    
     matchState.sponsorFullscreen = {
         active: true,
         name: sponsor.name,
         logoUrl: sponsor.logoUrl,
+        mediaType: isVideo ? 'video' : 'image',
         duration: duration,
         timestamp: Date.now()
     };
     
     broadcastState();
-    showToast(`Mostrando patrocinador: ${sponsor.name} (${duration}s)`, 'success');
+    showToast(`Mostrando patrocinador: ${sponsor.name} (${isVideo ? 'Vídeo' : 'Foto'}, ${duration}s)`, 'success');
     
     clearTimeout(window._sponsorTimerTimeout);
     window._sponsorTimerTimeout = setTimeout(() => {
@@ -1286,9 +1302,11 @@ function hideSponsorFullscreen() {
 function addSponsorLogo() {
     const nameInput = document.getElementById('sponsor-name-input');
     const logoInput = document.getElementById('sponsor-logo-input');
+    const typeSelect = document.getElementById('sponsor-type-select');
     
     const name = nameInput.value.trim();
     const logoUrl = logoInput.value.trim();
+    const mediaType = typeSelect ? typeSelect.value : 'image';
     
     if (!name && !logoUrl) return;
     
@@ -1296,8 +1314,9 @@ function addSponsorLogo() {
     
     matchState.sponsorLogos.push({
         id: Date.now().toString(),
-        name: name || 'Patrocinador',
-        logoUrl: logoUrl
+        name: name || (mediaType === 'video' ? 'Vídeo Anuncio' : 'Patrocinador'),
+        logoUrl: logoUrl,
+        mediaType: mediaType
     });
     
     nameInput.value = '';
@@ -1305,7 +1324,7 @@ function addSponsorLogo() {
     
     broadcastState();
     renderSponsorLogosList();
-    showToast('Patrocinador añadido', 'info');
+    showToast(`Patrocinador añadido (${mediaType === 'video' ? '🎬 Vídeo' : '📷 Foto'})`, 'info');
 }
 
 function removeSponsorLogo(id) {
@@ -1325,11 +1344,16 @@ function renderSponsorLogosList() {
         return;
     }
     
-    container.innerHTML = logos.map(s => `
+    container.innerHTML = logos.map(s => {
+        const isVideo = s.mediaType === 'video' || (s.logoUrl && /\.(mp4|webm|ogg)($|\?)/i.test(s.logoUrl));
+        return `
         <div class="flex items-center justify-between bg-black/40 p-2 rounded border border-white/5 mb-1">
             <div class="flex items-center gap-2 overflow-hidden flex-1 cursor-pointer" onclick="triggerNextSponsorFullscreen('${s.id}')" title="Clic para proyectar a pantalla completa">
-                ${s.logoUrl ? `<img src="${s.logoUrl}" class="w-6 h-6 object-contain rounded bg-white/10" onerror="this.style.display='none'">` : `<div class="w-6 h-6 rounded bg-cdpa-yellow/20 flex items-center justify-center text-[10px] font-bold text-cdpa-yellow">${(s.name || '?').charAt(0)}</div>`}
-                <span class="text-xs text-white truncate font-medium">${s.name || 'Logo sin nombre'}</span>
+                ${s.logoUrl && !isVideo ? `<img src="${s.logoUrl}" class="w-6 h-6 object-contain rounded bg-white/10" onerror="this.style.display='none'">` : `<div class="w-6 h-6 rounded bg-cdpa-yellow/20 flex items-center justify-center text-[10px] font-bold text-cdpa-yellow">${isVideo ? '🎬' : (s.name || '?').charAt(0)}</div>`}
+                <div class="flex items-center gap-1.5 overflow-hidden">
+                    <span class="text-xs text-white truncate font-medium">${s.name || 'Logo sin nombre'}</span>
+                    <span class="text-[9px] px-1 rounded ${isVideo ? 'bg-purple-500/20 text-purple-300' : 'bg-blue-500/20 text-blue-300'}">${isVideo ? 'Vídeo' : 'Foto'}</span>
+                </div>
             </div>
             <div class="flex items-center gap-1">
                 <button class="text-yellow-400 hover:bg-yellow-400/20 px-2 py-1 rounded text-[10px] font-bold" onclick="triggerNextSponsorFullscreen('${s.id}')" title="Proyectar a pantalla completa">
@@ -1340,7 +1364,29 @@ function renderSponsorLogosList() {
                 </button>
             </div>
         </div>
-    `).join('');
+        `;
+    }).join('');
+}
+
+// ── Control del Panel de Funciones Avanzadas ───────────────────
+function toggleAdvancedPanel() {
+    const content = document.getElementById('advanced-panel-content');
+    const chevron = document.getElementById('advanced-chevron');
+    if (!content) return;
+    const isHidden = content.classList.contains('hidden');
+    content.classList.toggle('hidden', !isHidden);
+    if (chevron) {
+        chevron.textContent = isHidden ? '▲ Plegar' : '▼ Desplegar';
+    }
+}
+
+function switchAdvancedTab(tabId, btn) {
+    document.querySelectorAll('.adv-tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.adv-tab-content').forEach(c => c.classList.add('hidden'));
+    
+    if (btn) btn.classList.add('active');
+    const target = document.getElementById('adv-tab-' + tabId);
+    if (target) target.classList.remove('hidden');
 }
 
 // ── Live Broadcast Management (Pinchar Directo con Ticker) ───
