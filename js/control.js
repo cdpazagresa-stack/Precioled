@@ -76,13 +76,18 @@ function initControlPanel() {
     }
 }
 
-// ── PeerJS Conexión ──────────────────────────────────────────
+// ── Conexión Remota (Nube 4G/5G + P2P) ──────────────────────────
 function connectRemote() {
-    const roomId = document.getElementById('peer-id-input').value.trim();
+    const inputEl = document.getElementById('peer-id-input');
+    const roomId = inputEl ? inputEl.value.trim().toUpperCase() : '';
     if (roomId) {
+        if (inputEl) inputEl.value = roomId;
         syncManager.connectToHost(roomId);
+        if (typeof showToast === 'function') {
+            showToast('Conectando con la pantalla en sala ' + roomId + '...', 'info');
+        }
     } else {
-        alert("Introduce un código de sala válido");
+        alert("Introduce un código de sala válido (ej. AZAGRESA-1234)");
     }
 }
 

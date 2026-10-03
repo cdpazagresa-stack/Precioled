@@ -102,8 +102,12 @@
                     <span id="remote-status" class="badge">❌ Desconectado</span>
                 </div>
                 <div class="flex gap-2 p-1">
-                    <input type="text" id="peer-id-input" class="form-input text-lg font-mono tracking-widest" placeholder="ID DE SALA (SALA-XXXX)" style="flex:1">
+                    <input type="text" id="peer-id-input" class="form-input text-lg font-mono tracking-widest uppercase" placeholder="ID DE SALA (AZAGRESA-XXXX)" style="flex:1">
                     <button class="btn btn-primary px-6" onclick="connectRemote()">CONECTAR</button>
+                </div>
+                <div class="px-2 py-1 flex items-center gap-1.5 text-xs text-slate-400">
+                    <span>📡</span>
+                    <span>Funciona con <strong>datos móviles 4G/5G</strong> y cualquier red Wi-Fi sin necesidad de estar en la misma red local.</span>
                 </div>
             </div>
 
@@ -623,6 +627,9 @@
     <div id="toast" class="toast"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <!-- Sync Engines: MQTT over WSS (Cloud 4G/5G) + PeerJS (P2P) -->
+    <script src="js/mqtt.min.js"></script>
+    <script>if (typeof mqtt === 'undefined') { document.write('<script src="https://unpkg.com/mqtt@5.3.5/dist/mqtt.min.js"><\\/script>'); }</script>
     <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
     <script src="js/remote-sync.js"></script>
     <script src="js/timer.js"></script>
